@@ -1,4 +1,4 @@
-# Module 9: Reinforcement Learning (curated resources)
+# Module 7: Reinforcement Learning (curated resources)
 
 Curated entry to reinforcement learning (RL) with emphasis on **control** and **how rewards shape what the agent learns**. Main external index: **[Awesome RL](https://github.com/aikorea/awesome-rl)**, especially **[Applications → Control](https://github.com/aikorea/awesome-rl?tab=readme-ov-file#control)**.
 
@@ -65,8 +65,8 @@ These bullets are **local PE-oriented notes**, not quotations from `#control`.
 ## Place in this course
 
 - **Module 1 (MHA)** — search over **design parameters**. **RL** — search over a **policy** (state → action) under dynamics and uncertainty.  
-- **Module 7** — simulation loops as inexpensive **rollouts** for training or evaluation (fidelity and reward design matter).  
-- **Module 8** — mostly **supervised** learning on logs; RL matters for **closed-loop** behavior and interactive or simulated training.
+- **Module 8** (`8_PE_Simulation_Automation`) — simulation loops as inexpensive **rollouts** for training or evaluation (fidelity and reward design matter).  
+- **Module 9** (`9_Case_Studies_PE`) — mostly **supervised** learning on logs; RL matters for **closed-loop** behavior and interactive or simulated training.
 
 ## Recommended reading path
 
@@ -76,7 +76,7 @@ These bullets are **local PE-oriented notes**, not quotations from `#control`.
 
 ## Local notebooks (placeholder)
 
-When notebooks exist under `9_Reinforcement_Learning/`, list them here, e.g. environment definition, reward specification, training loop, evaluation plots.
+When notebooks exist under `7_Reinforcement_Learning/`, list them here, e.g. environment definition, reward specification, training loop, evaluation plots.
 
 ---
 

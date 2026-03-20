@@ -1,4 +1,4 @@
-# 8_Case_Studies_PE
+# 9_Case_Studies_PE
 
 End-to-end AI case studies for power electronics: data preparation, surrogates, optimization, uncertainty, and deployment-oriented acceleration.
 

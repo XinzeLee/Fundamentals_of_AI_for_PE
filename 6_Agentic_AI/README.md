@@ -41,7 +41,7 @@ Bridge material for PE-GPT, not a local notebook lab.
 - Public releases are described as simplified relative to the full research stack.  
 - Python-centric codebase with core modules and tutorials.  
 - Streamlit front end (`main.py`) and `requirements` files for setup.  
-- After `5_PIML`: PINN/PANN ↔ zoo; `1_MHA` ↔ optimization layer; `7_PE_Simulation_Automation` ↔ verification loops.
+- After `5_PIML`: PINN/PANN ↔ zoo; `1_MHA` ↔ optimization layer; `8_PE_Simulation_Automation` ↔ verification loops.
 
 ## Recommended path
 

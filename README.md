@@ -24,9 +24,9 @@ Structured summary of topics, notebook code volume, data assets, and algorithm c
 | `4_Neural_Network` | NN fundamentals, sequences, multimodal / MDN |
 | `5_PIML` | Physics-informed modeling (`PINN`); PANN summary in `PANN/` |
 | `6_Agentic_AI` | Agentic AI and PE-GPT (documentation and external links; no local `.ipynb` here) |
-| `7_PE_Simulation_Automation` | LTspice, PLECS, Simulink automation |
-| `8_Case_Studies_PE` | Buck, DAB, IGBT, magnetic modeling case studies |
-| `9_Reinforcement_Learning` | Curated RL reading and links (no local notebooks in-repo) |
+| `7_Reinforcement_Learning` | Curated RL reading and links (no local notebooks in-repo) |
+| `8_PE_Simulation_Automation` | LTspice, PLECS, Simulink automation |
+| `9_Case_Studies_PE` | Buck, DAB, IGBT, magnetic modeling case studies |
 
 ## 2. Notebooks by module
 
@@ -38,8 +38,9 @@ Structured summary of topics, notebook code volume, data assets, and algorithm c
 | `3_Ensemble_Learning` | 1 | 542 | Ensembles |
 | `4_Neural_Network` | 4 | 1,775 | Deep learning |
 | `5_PIML` | 3 | 1,131 | Physics-informed examples |
-| `7_PE_Simulation_Automation` | 2 | 245 | Tool automation |
-| `8_Case_Studies_PE` | 9 | 4,318 | Applied studies |
+| `7_Reinforcement_Learning` | 0 | 0 | Curated RL reading (no local notebooks) |
+| `8_PE_Simulation_Automation` | 2 | 245 | Tool automation |
+| `9_Case_Studies_PE` | 9 | 4,318 | Applied studies |
 
 Case-study notebooks account for the largest share of code, followed by neural-network and MHA modules.
 
@@ -126,7 +127,9 @@ Labels used in the inventory fall into three groups:
     prior_integration_example2.ipynb
 6_Agentic_AI/
   README.md
-7_PE_Simulation_Automation/
+7_Reinforcement_Learning/
+  README.md
+8_PE_Simulation_Automation/
   LTspiceAutomation/
     CAB425M12XM3_LTspice.asy
     DPT_Test_Stand_HB_automate.asc
@@ -139,7 +142,7 @@ Labels used in the inventory fall into three groups:
   SimulinkAutomation/
     BuckConverter.slx
     BuckConverter_Automation.m
-8_Case_Studies_PE/
+9_Case_Studies_PE/
   Buck_Design/
     buck_comprehensive_case_study.ipynb
     buck_modeling_NN.ipynb
@@ -168,16 +171,14 @@ Labels used in the inventory fall into three groups:
     magnet_lstm.ipynb
     Temperature[C]_downscaled.csv
     Volumetric_losses[Wm-3]_downscaled.csv
-9_Reinforcement_Learning/
-  README.md
 ```
 
 ### 4.2 Representative notebooks
 
 | Notebook | Code lines | Note |
 |---|---:|---|
-| `8_Case_Studies_PE/DAB_Design/Performance_Modeling_and_Design/one_stop_AI_DAB_modulation.ipynb` | 1,213 | Broad applied workflow (optimization, classical ML, NN, anomaly models) |
-| `8_Case_Studies_PE/Buck_Design/buck_comprehensive_case_study.ipynb` | 905 | End-to-end buck study |
+| `9_Case_Studies_PE/DAB_Design/Performance_Modeling_and_Design/one_stop_AI_DAB_modulation.ipynb` | 1,213 | Broad applied workflow (optimization, classical ML, NN, anomaly models) |
+| `9_Case_Studies_PE/Buck_Design/buck_comprehensive_case_study.ipynb` | 905 | End-to-end buck study |
 | `4_Neural_Network/Signal_Domain/rnn_basics.ipynb` | 806 | RNN / LSTM / GRU / CNN / Transformer |
 | `1_MHA/Multi_Objective_MHA/multi_obj_MHA_master.ipynb` | 652 | NSGA-II and Pareto analysis |
 | `3_Ensemble_Learning/ensemle_learning.ipynb` | 542 | Ensemble benchmarks |
@@ -204,14 +205,14 @@ Labels used in the inventory fall into three groups:
 | `5_PIML/PINN/pinn_ode.ipynb` | 233 | FNN/MLP (PyTorch)<br>PINN (Physics-Informed Neural Network) | synthetic / generated (random) |
 | `5_PIML/PINN/prior_integration_example.ipynb` | 387 | FNN/MLP (PyTorch)<br>PINN (Physics-Informed Neural Network) | synthetic / generated (random) |
 | `5_PIML/PINN/prior_integration_example2.ipynb` | 511 | FNN/MLP (PyTorch)<br>PINN (Physics-Informed Neural Network) | synthetic / generated (random) |
-| `7_PE_Simulation_Automation/LTspiceAutomation/LTspiceAtuomate.ipynb` | 140 | — | — |
-| `7_PE_Simulation_Automation/PlecsAutomation/Data acquisition.ipynb` | 105 | — | — |
-| `8_Case_Studies_PE/Buck_Design/buck_comprehensive_case_study.ipynb` | 905 | FNN/MLP (PyTorch)<br>Genetic Algorithm (GA)<br>PSO (Particle Swarm Optimization)<br>XGBoost (regression)<br>sklearn:RandomForestRegressor<br>sklearn:Ridge<br>sklearn:SVR | synthetic / generated (random) |
-| `8_Case_Studies_PE/Buck_Design/buck_modeling_NN.ipynb` | 381 | FNN/MLP (PyTorch)<br>XGBoost (regression)<br>sklearn:RandomForestRegressor<br>sklearn:TSNE | — |
-| `8_Case_Studies_PE/Buck_Design/xgboost_buck_modeling.ipynb` | 272 | PSO (Particle Swarm Optimization)<br>XGBoost (regression) | — |
-| `8_Case_Studies_PE/DAB_Design/Adaptive_Modulation/TinyML.ipynb` | 533 | FNN/MLP (PyTorch) | — |
-| `8_Case_Studies_PE/DAB_Design/Performance_Modeling_and_Design/one_stop_AI_DAB_modulation.ipynb` | 1213 | FNN/MLP (PyTorch)<br>Genetic Algorithm (GA)<br>PSO (Particle Swarm Optimization)<br>XGBoost (classification)<br>XGBoost (regression)<br>sklearn:IsolationForest<br>sklearn:OneClassSVM<br>sklearn:PCA<br>sklearn:SVR<br>sklearn:TSNE | synthetic / generated (random) |
-| `8_Case_Studies_PE/DAB_Design/Time_Domain_Modeling/time_series_modeling.ipynb` | 166 | FNN/MLP (PyTorch)<br>LSTM (PyTorch) | synthetic / generated (random) |
-| `8_Case_Studies_PE/IGBT_Maintenance/rul_prediction.ipynb` | 365 | FNN/MLP (PyTorch)<br>LSTM (PyTorch) | synthetic / generated (random) |
-| `8_Case_Studies_PE/Magnetic_Modeling/magnet_fnn.ipynb` | 260 | FNN/MLP (PyTorch) | — |
-| `8_Case_Studies_PE/Magnetic_Modeling/magnet_lstm.ipynb` | 223 | FNN/MLP (PyTorch)<br>LSTM (PyTorch) | — |
+| `8_PE_Simulation_Automation/LTspiceAutomation/LTspiceAtuomate.ipynb` | 140 | — | — |
+| `8_PE_Simulation_Automation/PlecsAutomation/Data acquisition.ipynb` | 105 | — | — |
+| `9_Case_Studies_PE/Buck_Design/buck_comprehensive_case_study.ipynb` | 905 | FNN/MLP (PyTorch)<br>Genetic Algorithm (GA)<br>PSO (Particle Swarm Optimization)<br>XGBoost (regression)<br>sklearn:RandomForestRegressor<br>sklearn:Ridge<br>sklearn:SVR | synthetic / generated (random) |
+| `9_Case_Studies_PE/Buck_Design/buck_modeling_NN.ipynb` | 381 | FNN/MLP (PyTorch)<br>XGBoost (regression)<br>sklearn:RandomForestRegressor<br>sklearn:TSNE | — |
+| `9_Case_Studies_PE/Buck_Design/xgboost_buck_modeling.ipynb` | 272 | PSO (Particle Swarm Optimization)<br>XGBoost (regression) | — |
+| `9_Case_Studies_PE/DAB_Design/Adaptive_Modulation/TinyML.ipynb` | 533 | FNN/MLP (PyTorch) | — |
+| `9_Case_Studies_PE/DAB_Design/Performance_Modeling_and_Design/one_stop_AI_DAB_modulation.ipynb` | 1213 | FNN/MLP (PyTorch)<br>Genetic Algorithm (GA)<br>PSO (Particle Swarm Optimization)<br>XGBoost (classification)<br>XGBoost (regression)<br>sklearn:IsolationForest<br>sklearn:OneClassSVM<br>sklearn:PCA<br>sklearn:SVR<br>sklearn:TSNE | synthetic / generated (random) |
+| `9_Case_Studies_PE/DAB_Design/Time_Domain_Modeling/time_series_modeling.ipynb` | 166 | FNN/MLP (PyTorch)<br>LSTM (PyTorch) | synthetic / generated (random) |
+| `9_Case_Studies_PE/IGBT_Maintenance/rul_prediction.ipynb` | 365 | FNN/MLP (PyTorch)<br>LSTM (PyTorch) | synthetic / generated (random) |
+| `9_Case_Studies_PE/Magnetic_Modeling/magnet_fnn.ipynb` | 260 | FNN/MLP (PyTorch) | — |
+| `9_Case_Studies_PE/Magnetic_Modeling/magnet_lstm.ipynb` | 223 | FNN/MLP (PyTorch)<br>LSTM (PyTorch) | — |

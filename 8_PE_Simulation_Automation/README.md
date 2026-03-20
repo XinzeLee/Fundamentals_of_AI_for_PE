@@ -1,4 +1,4 @@
-# 7_PE_Simulation_Automation
+# 8_PE_Simulation_Automation
 
 Automation for PE simulation: batch runs, metrics extraction, and CSV-friendly outputs for downstream ML.
 
