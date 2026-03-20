@@ -1,61 +1,59 @@
-## Concise Repository Report
-### `Fundamentals_of_AI_for_PE`
+# Fundamentals of AI for PE — repository overview
 
-A compact summary of structure, code volume, data footprint, and algorithm coverage.  
-Scope excludes `.md` files.
+Structured summary of topics, notebook code volume, data assets, and algorithm coverage across Jupyter notebooks (`.ipynb`). Documentation files are omitted from the metrics below.
 
-## Executive snapshot
+## Overview
 
 | Metric | Value |
 |---|---:|
-| Executable lines (notebooks) | **10,111** |
-| Notebooks scanned | **26** |
-| PE datasets | **6** |
-| Algorithms covered (detected) | **24** |
+| Code lines (notebook cells) | **10,111** |
+| Jupyter notebooks | **26** |
+| PE-oriented datasets | **6** |
+| Algorithm labels (see §3) | **24** |
 
-**Bottom line:** this is a teaching-oriented AI-for-power-electronics repository, with the largest code weight in case studies, neural networks, and metaheuristic optimization.
+**Summary:** Teaching-oriented AI-for-power-electronics material, with the most notebook code in case studies, neural networks, and metaheuristic optimization.
 
-## 1) What the repository contains
+## 1. Contents and learning path
 
-The repository is organized as a learning path:
+| Folder | Role |
+|--------|------|
+| `0_To_Get_Started` | Environment setup and package checks |
+| `1_MHA` | Single- and multi-objective metaheuristic optimization |
+| `2_Classic_ML` | Classical machine learning baselines |
+| `3_Ensemble_Learning` | Tree and ensemble methods |
+| `4_Neural_Network` | NN fundamentals, sequences, multimodal / MDN |
+| `5_PIML` | Physics-informed modeling (`PINN`); PANN summary in `PANN/` |
+| `6_Agentic_AI` | Agentic AI and PE-GPT (documentation and external links; no local `.ipynb` here) |
+| `7_PE_Simulation_Automation` | LTspice, PLECS, Simulink automation |
+| `8_Case_Studies_PE` | Buck, DAB, IGBT, magnetic modeling case studies |
+| `9_Reinforcement_Learning` | Curated RL reading and links (no local notebooks in-repo) |
 
-- `0_To_Get_Started`: setup and environment checking.
-- `1_MHA`: single- and multi-objective metaheuristic optimization.
-- `2_Classic_ML`: baseline classical machine learning.
-- `3_Ensemble_Learning`: tree/ensemble comparisons.
-- `4_Neural_Network`: NN fundamentals, sequence models, and multimodal density modeling.
-- `5_PIML`: physics-informed modeling examples (`PINN`).
-- `7_PE_Simulation_Automation`: LTspice, Plecs, and Simulink automation scripts/notebooks.
-- `8_Case_Studies_PE`: applied studies in Buck design, DAB design, IGBT maintenance, and magnetic modeling.
+## 2. Notebooks by module
 
-`6_Agentic_AI` exists in the tree but has no non-`.md` executable notebook content in this scan.
-
-## 2) Module distribution
-
-| Module | Notebooks | Exec. lines | Role |
+| Module | Notebooks | Code lines | Role |
 |---|---:|---:|---|
-| `0_To_Get_Started` | 1 | 293 | Setup and orientation |
-| `1_MHA` | 5 | 1,656 | Optimization-focused core block |
-| `2_Classic_ML` | 1 | 151 | Compact classical baseline |
-| `3_Ensemble_Learning` | 1 | 542 | Tree and ensemble methods |
-| `4_Neural_Network` | 4 | 1,775 | Core deep-learning instruction |
+| `0_To_Get_Started` | 1 | 293 | Setup |
+| `1_MHA` | 5 | 1,656 | Optimization core |
+| `2_Classic_ML` | 1 | 151 | Classical baseline |
+| `3_Ensemble_Learning` | 1 | 542 | Ensembles |
+| `4_Neural_Network` | 4 | 1,775 | Deep learning |
 | `5_PIML` | 3 | 1,131 | Physics-informed examples |
-| `7_PE_Simulation_Automation` | 2 | 245 | Toolchain automation |
-| `8_Case_Studies_PE` | 9 | 4,318 | Largest applied component |
+| `7_PE_Simulation_Automation` | 2 | 245 | Tool automation |
+| `8_Case_Studies_PE` | 9 | 4,318 | Applied studies |
 
-The case-study notebooks contribute the largest share of executable code, followed by neural-network and MHA modules.
+Case-study notebooks account for the largest share of code, followed by neural-network and MHA modules.
 
-## 3) Algorithm and data coverage
+## 3. Algorithms and data
 
-### 3.1 Algorithm coverage
+### 3.1 Algorithms
 
-Detected algorithm labels fall into three families:
+Labels used in the inventory fall into three groups:
 
-- **Optimization:** Genetic Algorithm, PSO, NSGA-II.
-- **Neural models:** FNN/MLP, CNN, RNN, GRU, LSTM, Transformer/Attention, MDN, PINN.
-- **Classical/ensemble:** Decision Trees, Random Forests, Ridge, SVR, PCA, TSNE, Isolation Forest, One-Class SVM, XGBoost.
+- **Optimization:** Genetic Algorithm, PSO, NSGA-II  
+- **Neural models:** FNN/MLP, CNN, RNN, GRU, LSTM, Transformer/Attention, MDN, PINN  
+- **Classical / ensemble:** Decision Trees, Random Forests, Ridge, SVR, PCA, TSNE, Isolation Forest, One-Class SVM, XGBoost  
 
-Full detected set (**24** labels):
+**Full list (24 labels):**
 
 - `CNN (PyTorch)`
 - `FNN/MLP (PyTorch)`
@@ -82,17 +80,17 @@ Full detected set (**24** labels):
 - `sklearn:SVR`
 - `sklearn:TSNE`
 
-### 3.2 Data coverage
+### 3.2 Data
 
-| Data pattern | Examples |
-|---|---|
-| Built-in datasets | `Iris`, `Breast Cancer`, `California Housing`, and `sklearn make_*` generators |
-| Synthetic/generated data | Used repeatedly in optimization, PINN, and sequence-model notebooks |
-| Domain-specific repository files | CSV and MAT files in Buck, DAB, IGBT, and magnetic-modeling case studies; dense waveform CSV set in DAB time-domain modeling |
+| Kind | Examples |
+|------|----------|
+| Built-in / sklearn | `Iris`, `Breast Cancer`, `California Housing`, `make_*` generators |
+| Synthetic | Optimization, PINN, sequence models |
+| Repository files | CSV/MAT in Buck, DAB, IGBT, magnetic studies; DAB waveform CSVs |
 
-## 4) Structure and representative files
+## 4. Tree and representative notebooks
 
-### 4.1 Folder structure (topics + subfolders)
+### 4.1 Layout
 
 ```text
 0_To_Get_Started/
@@ -119,12 +117,15 @@ Full detected set (**24** labels):
   Signal_Domain/
     rnn_basics.ipynb
 5_PIML/
+  README.md
   PANN/
+    README.md
   PINN/
     pinn_ode.ipynb
     prior_integration_example.ipynb
     prior_integration_example2.ipynb
 6_Agentic_AI/
+  README.md
 7_PE_Simulation_Automation/
   LTspiceAutomation/
     CAB425M12XM3_LTspice.asy
@@ -167,48 +168,50 @@ Full detected set (**24** labels):
     magnet_lstm.ipynb
     Temperature[C]_downscaled.csv
     Volumetric_losses[Wm-3]_downscaled.csv
+9_Reinforcement_Learning/
+  README.md
 ```
 
 ### 4.2 Representative notebooks
 
-| Notebook | Exec. lines | What it represents |
+| Notebook | Code lines | Note |
 |---|---:|---|
-| `8_Case_Studies_PE/DAB_Design/Performance_Modeling_and_Design/one_stop_AI_DAB_modulation.ipynb` | 1,213 | Most feature-dense applied workflow (optimization + classical ML + NN + anomaly-related models) |
-| `8_Case_Studies_PE/Buck_Design/buck_comprehensive_case_study.ipynb` | 905 | End-to-end PE case study with optimization and model comparison |
-| `4_Neural_Network/Signal_Domain/rnn_basics.ipynb` | 806 | Sequence modeling coverage: RNN/LSTM/GRU/CNN/Transformer |
-| `1_MHA/Multi_Objective_MHA/multi_obj_MHA_master.ipynb` | 652 | Multi-objective optimization foundation (NSGA-II + Pareto analysis) |
-| `3_Ensemble_Learning/ensemle_learning.ipynb` | 542 | Ensemble benchmarking and classical ML comparisons |
-| `5_PIML/PINN/prior_integration_example2.ipynb` | 511 | Physics-informed neural modeling depth |
+| `8_Case_Studies_PE/DAB_Design/Performance_Modeling_and_Design/one_stop_AI_DAB_modulation.ipynb` | 1,213 | Broad applied workflow (optimization, classical ML, NN, anomaly models) |
+| `8_Case_Studies_PE/Buck_Design/buck_comprehensive_case_study.ipynb` | 905 | End-to-end buck study |
+| `4_Neural_Network/Signal_Domain/rnn_basics.ipynb` | 806 | RNN / LSTM / GRU / CNN / Transformer |
+| `1_MHA/Multi_Objective_MHA/multi_obj_MHA_master.ipynb` | 652 | NSGA-II and Pareto analysis |
+| `3_Ensemble_Learning/ensemle_learning.ipynb` | 542 | Ensemble benchmarks |
+| `5_PIML/PINN/prior_integration_example2.ipynb` | 511 | PINN depth |
 
-## 5) Per-notebook appendix (algorithm/data map)
+## 5. Per-notebook reference
 
-Counting rule for executable lines: non-empty code-cell lines excluding pure `#` comments.
+*Code line counts: non-empty lines in code cells, excluding lines that are only `#` comments.*
 
-| Notebook | Executable lines | Algorithms used (detected) | Datasets used (detected) |
+| Notebook | Code lines | Algorithms | Datasets |
 |---|---:|---|---|
 | `0_To_Get_Started/package_install.ipynb` | 293 | FNN/MLP (PyTorch)<br>Genetic Algorithm (GA)<br>PSO (Particle Swarm Optimization)<br>XGBoost (classification)<br>sklearn:LinearRegression | sklearn.datasets.load_iris<br>sklearn.datasets.make_regression |
-| `1_MHA/Multi_Objective_MHA/multi_obj_MHA_master.ipynb` | 652 | NSGA-II (multi-objective GA)<br>PSO (Particle Swarm Optimization) | synthetic/generated (random) |
-| `1_MHA/Single_Objective_MHA/algorithm_stats_compare.ipynb` | 90 | Genetic Algorithm (GA)<br>PSO (Particle Swarm Optimization) | - |
-| `1_MHA/Single_Objective_MHA/buck_design_PSO.ipynb` | 377 | PSO (Particle Swarm Optimization) | - |
-| `1_MHA/Single_Objective_MHA/pso_hyp_tuning.ipynb` | 189 | PSO (Particle Swarm Optimization) | synthetic/generated (random) |
-| `1_MHA/Single_Objective_MHA/sing_obj_MHA.ipynb` | 348 | PSO (Particle Swarm Optimization) | synthetic/generated (random) |
+| `1_MHA/Multi_Objective_MHA/multi_obj_MHA_master.ipynb` | 652 | NSGA-II (multi-objective GA)<br>PSO (Particle Swarm Optimization) | synthetic / generated (random) |
+| `1_MHA/Single_Objective_MHA/algorithm_stats_compare.ipynb` | 90 | Genetic Algorithm (GA)<br>PSO (Particle Swarm Optimization) | — |
+| `1_MHA/Single_Objective_MHA/buck_design_PSO.ipynb` | 377 | PSO (Particle Swarm Optimization) | — |
+| `1_MHA/Single_Objective_MHA/pso_hyp_tuning.ipynb` | 189 | PSO (Particle Swarm Optimization) | synthetic / generated (random) |
+| `1_MHA/Single_Objective_MHA/sing_obj_MHA.ipynb` | 348 | PSO (Particle Swarm Optimization) | synthetic / generated (random) |
 | `2_Classic_ML/classic_ML.ipynb` | 151 | sklearn:DecisionTreeClassifier | sklearn.datasets.load_breast_cancer |
 | `3_Ensemble_Learning/ensemle_learning.ipynb` | 542 | XGBoost (classification)<br>XGBoost (regression)<br>sklearn:DecisionTreeClassifier<br>sklearn:PCA<br>sklearn:RandomForestClassifier<br>sklearn:Ridge | sklearn.datasets.make_classification |
 | `4_Neural_Network/Fundamentals/NN_basics.ipynb` | 449 | FNN/MLP (PyTorch) | sklearn.datasets.fetch_california_housing<br>sklearn.datasets.load_breast_cancer |
 | `4_Neural_Network/Good_Practices/good_practice_NN.ipynb` | 207 | FNN/MLP (PyTorch) | sklearn.datasets.fetch_california_housing |
-| `4_Neural_Network/Multi_Modal_Distribution/mixture_density_net_ensemble_learning.ipynb` | 313 | FNN/MLP (PyTorch)<br>Mixture Density Network (MDN)<br>sklearn:RandomForestRegressor | - |
-| `4_Neural_Network/Signal_Domain/rnn_basics.ipynb` | 806 | CNN (PyTorch)<br>FNN/MLP (PyTorch)<br>GRU (PyTorch)<br>LSTM (PyTorch)<br>RNN (PyTorch)<br>Transformer/Attention<br>Transformer/Attention (PyTorch) | synthetic/generated (random) |
-| `5_PIML/PINN/pinn_ode.ipynb` | 233 | FNN/MLP (PyTorch)<br>PINN (Physics-Informed Neural Network) | synthetic/generated (random) |
-| `5_PIML/PINN/prior_integration_example.ipynb` | 387 | FNN/MLP (PyTorch)<br>PINN (Physics-Informed Neural Network) | synthetic/generated (random) |
-| `5_PIML/PINN/prior_integration_example2.ipynb` | 511 | FNN/MLP (PyTorch)<br>PINN (Physics-Informed Neural Network) | synthetic/generated (random) |
-| `7_PE_Simulation_Automation/LTspiceAutomation/LTspiceAtuomate.ipynb` | 140 | - | - |
-| `7_PE_Simulation_Automation/PlecsAutomation/Data acquisition.ipynb` | 105 | - | - |
-| `8_Case_Studies_PE/Buck_Design/buck_comprehensive_case_study.ipynb` | 905 | FNN/MLP (PyTorch)<br>Genetic Algorithm (GA)<br>PSO (Particle Swarm Optimization)<br>XGBoost (regression)<br>sklearn:RandomForestRegressor<br>sklearn:Ridge<br>sklearn:SVR | synthetic/generated (random) |
-| `8_Case_Studies_PE/Buck_Design/buck_modeling_NN.ipynb` | 381 | FNN/MLP (PyTorch)<br>XGBoost (regression)<br>sklearn:RandomForestRegressor<br>sklearn:TSNE | - |
-| `8_Case_Studies_PE/Buck_Design/xgboost_buck_modeling.ipynb` | 272 | PSO (Particle Swarm Optimization)<br>XGBoost (regression) | - |
-| `8_Case_Studies_PE/DAB_Design/Adaptive_Modulation/TinyML.ipynb` | 533 | FNN/MLP (PyTorch) | - |
-| `8_Case_Studies_PE/DAB_Design/Performance_Modeling_and_Design/one_stop_AI_DAB_modulation.ipynb` | 1213 | FNN/MLP (PyTorch)<br>Genetic Algorithm (GA)<br>PSO (Particle Swarm Optimization)<br>XGBoost (classification)<br>XGBoost (regression)<br>sklearn:IsolationForest<br>sklearn:OneClassSVM<br>sklearn:PCA<br>sklearn:SVR<br>sklearn:TSNE | synthetic/generated (random) |
-| `8_Case_Studies_PE/DAB_Design/Time_Domain_Modeling/time_series_modeling.ipynb` | 166 | FNN/MLP (PyTorch)<br>LSTM (PyTorch) | synthetic/generated (random) |
-| `8_Case_Studies_PE/IGBT_Maintenance/rul_prediction.ipynb` | 365 | FNN/MLP (PyTorch)<br>LSTM (PyTorch) | synthetic/generated (random) |
-| `8_Case_Studies_PE/Magnetic_Modeling/magnet_fnn.ipynb` | 260 | FNN/MLP (PyTorch) | - |
-| `8_Case_Studies_PE/Magnetic_Modeling/magnet_lstm.ipynb` | 223 | FNN/MLP (PyTorch)<br>LSTM (PyTorch) | - |
+| `4_Neural_Network/Multi_Modal_Distribution/mixture_density_net_ensemble_learning.ipynb` | 313 | FNN/MLP (PyTorch)<br>Mixture Density Network (MDN)<br>sklearn:RandomForestRegressor | — |
+| `4_Neural_Network/Signal_Domain/rnn_basics.ipynb` | 806 | CNN (PyTorch)<br>FNN/MLP (PyTorch)<br>GRU (PyTorch)<br>LSTM (PyTorch)<br>RNN (PyTorch)<br>Transformer/Attention<br>Transformer/Attention (PyTorch) | synthetic / generated (random) |
+| `5_PIML/PINN/pinn_ode.ipynb` | 233 | FNN/MLP (PyTorch)<br>PINN (Physics-Informed Neural Network) | synthetic / generated (random) |
+| `5_PIML/PINN/prior_integration_example.ipynb` | 387 | FNN/MLP (PyTorch)<br>PINN (Physics-Informed Neural Network) | synthetic / generated (random) |
+| `5_PIML/PINN/prior_integration_example2.ipynb` | 511 | FNN/MLP (PyTorch)<br>PINN (Physics-Informed Neural Network) | synthetic / generated (random) |
+| `7_PE_Simulation_Automation/LTspiceAutomation/LTspiceAtuomate.ipynb` | 140 | — | — |
+| `7_PE_Simulation_Automation/PlecsAutomation/Data acquisition.ipynb` | 105 | — | — |
+| `8_Case_Studies_PE/Buck_Design/buck_comprehensive_case_study.ipynb` | 905 | FNN/MLP (PyTorch)<br>Genetic Algorithm (GA)<br>PSO (Particle Swarm Optimization)<br>XGBoost (regression)<br>sklearn:RandomForestRegressor<br>sklearn:Ridge<br>sklearn:SVR | synthetic / generated (random) |
+| `8_Case_Studies_PE/Buck_Design/buck_modeling_NN.ipynb` | 381 | FNN/MLP (PyTorch)<br>XGBoost (regression)<br>sklearn:RandomForestRegressor<br>sklearn:TSNE | — |
+| `8_Case_Studies_PE/Buck_Design/xgboost_buck_modeling.ipynb` | 272 | PSO (Particle Swarm Optimization)<br>XGBoost (regression) | — |
+| `8_Case_Studies_PE/DAB_Design/Adaptive_Modulation/TinyML.ipynb` | 533 | FNN/MLP (PyTorch) | — |
+| `8_Case_Studies_PE/DAB_Design/Performance_Modeling_and_Design/one_stop_AI_DAB_modulation.ipynb` | 1213 | FNN/MLP (PyTorch)<br>Genetic Algorithm (GA)<br>PSO (Particle Swarm Optimization)<br>XGBoost (classification)<br>XGBoost (regression)<br>sklearn:IsolationForest<br>sklearn:OneClassSVM<br>sklearn:PCA<br>sklearn:SVR<br>sklearn:TSNE | synthetic / generated (random) |
+| `8_Case_Studies_PE/DAB_Design/Time_Domain_Modeling/time_series_modeling.ipynb` | 166 | FNN/MLP (PyTorch)<br>LSTM (PyTorch) | synthetic / generated (random) |
+| `8_Case_Studies_PE/IGBT_Maintenance/rul_prediction.ipynb` | 365 | FNN/MLP (PyTorch)<br>LSTM (PyTorch) | synthetic / generated (random) |
+| `8_Case_Studies_PE/Magnetic_Modeling/magnet_fnn.ipynb` | 260 | FNN/MLP (PyTorch) | — |
+| `8_Case_Studies_PE/Magnetic_Modeling/magnet_lstm.ipynb` | 223 | FNN/MLP (PyTorch)<br>LSTM (PyTorch) | — |
