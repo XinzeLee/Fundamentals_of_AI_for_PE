@@ -11,6 +11,17 @@
 
 End-to-end AI case studies for power electronics: data preparation, surrogates, optimization, uncertainty, and deployment-oriented acceleration.
 
+## External datasets
+
+Some case studies use **public datasets** in addition to CSV/MAT files shipped in this folder:
+
+| Study | Source | Link |
+|--------|--------|------|
+| **IGBT maintenance (RUL)** | NASA — Insulated Gate Bipolar Transistor (IGBT) accelerated aging | [data.nasa.gov — IGBT accelerated aging](https://data.nasa.gov/dataset/insulated-gate-bipolar-transistor-igbt-accelerated-aging) |
+| **Magnetic modeling** | Princeton University — MagNet Challenge | [MagNet Challenge](https://www.princeton.edu/~minjie/magnet.html) |
+
+The bundled `.mat` / `*_downscaled.csv` files in `IGBT_Maintenance` and `Magnetic_Modeling` are derived from or aligned with these sources for tutorial use; refer to the original sites for licensing and citation requirements.
+
 ## Scope
 
 **Subfolders:** `Buck_Design`, `DAB_Design/Adaptive_Modulation`, `DAB_Design/Performance_Modeling_and_Design`, `DAB_Design/Time_Domain_Modeling`, `IGBT_Maintenance`, `Magnetic_Modeling`.
@@ -100,7 +111,7 @@ End-to-end AI case studies for power electronics: data preparation, surrogates, 
 
 **Topics:** RUL from `.mat` data; cycle/minima extraction and windowing; probabilistic BiLSTM; uncertainty bands.
 
-**Algorithms & data:** Probabilistic BiLSTM with Gaussian NLL. `april22nd-23rdIgbtIRCG40BC30kd-A17.mat`.
+**Algorithms & data:** Probabilistic BiLSTM with Gaussian NLL. `april22nd-23rdIgbtIRCG40BC30kd-A17.mat` (from NASA IGBT accelerated aging data — [dataset page](https://data.nasa.gov/dataset/insulated-gate-bipolar-transistor-igbt-accelerated-aging)).
 
 **Notes:** Scaler fit on train; point error plus interval coverage (e.g. 90% CI).
 
@@ -112,7 +123,7 @@ End-to-end AI case studies for power electronics: data preparation, surrogates, 
 
 **Topics:** Core loss from harmonics + operating conditions; FFT features from B-waveforms; FNN regression.
 
-**Algorithms & data:** FNN for volumetric core loss. `B_waveform[T]_downscaled.csv`, `Frequency[Hz]_downscaled.csv`, `Temperature[C]_downscaled.csv`, `Volumetric_losses[Wm-3]_downscaled.csv`.
+**Algorithms & data:** FNN for volumetric core loss. `B_waveform[T]_downscaled.csv`, `Frequency[Hz]_downscaled.csv`, `Temperature[C]_downscaled.csv`, `Volumetric_losses[Wm-3]_downscaled.csv` (MagNet-style data — [Princeton MagNet Challenge](https://www.princeton.edu/~minjie/magnet.html)).
 
 **Notes:** Log targets and scaling; MAE, RMSE, MAPE; parameter count.
 
@@ -120,7 +131,7 @@ End-to-end AI case studies for power electronics: data preparation, surrogates, 
 
 **Topics:** BiLSTM temporal features + frequency/temperature numeric inputs; FC head for volumetric loss.
 
-**Algorithms & data:** BiLSTM + fused numeric branch. Same four CSVs as above.
+**Algorithms & data:** BiLSTM + fused numeric branch. Same four CSVs as above (see [MagNet Challenge](https://www.princeton.edu/~minjie/magnet.html)).
 
 **Notes:** Shared split indices across branches; multi-input `Dataset` / `DataLoader` pattern.
 
@@ -139,8 +150,8 @@ End-to-end AI case studies for power electronics: data preparation, surrogates, 
 
 - **Buck:** `total_100W_12V.csv`, `sync_buck_performances_cleaned.csv`  
 - **DAB:** `DAB_TPS.csv`, `optimization_results.csv`, `Time_Domain_Modeling/Waveform/*.csv`  
-- **IGBT:** `april22nd-23rdIgbtIRCG40BC30kd-A17.mat`  
-- **Magnetic:** the four `*_downscaled.csv` files listed above  
+- **IGBT:** `april22nd-23rdIgbtIRCG40BC30kd-A17.mat` — see [NASA IGBT accelerated aging](https://data.nasa.gov/dataset/insulated-gate-bipolar-transistor-igbt-accelerated-aging)  
+- **Magnetic:** the four `*_downscaled.csv` files listed above — see [Princeton MagNet Challenge](https://www.princeton.edu/~minjie/magnet.html)  
 
 ## Recommended order
 

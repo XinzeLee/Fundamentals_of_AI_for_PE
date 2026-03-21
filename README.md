@@ -9,6 +9,17 @@
 
 ---
 
+## Navigate this README
+
+| Section | Jump to |
+|--------|---------|
+| Repository metrics | [Overview](#overview) |
+| Module folders & roles | [1. Contents and learning path](#1-contents-and-learning-path) |
+| Notebook counts by folder | [2. Notebooks by module](#2-notebooks-by-module) |
+| Algorithm & data inventory | [3. Algorithms and data](#3-algorithms-and-data) → [3.1 Algorithms](#31-algorithms) · [3.2 Data](#32-data) |
+| File tree & highlighted notebooks | [4. Tree and representative notebooks](#4-tree-and-representative-notebooks) → [4.1 Layout](#41-layout) · [4.2 Representative notebooks](#42-representative-notebooks) |
+| Full per-notebook table | [5. Per-notebook reference](#5-per-notebook-reference) |
+
 Structured summary of topics, notebook code volume, data assets, and algorithm coverage across Jupyter notebooks (`.ipynb`). Documentation files are omitted from the metrics below.
 
 ## Overview
@@ -26,30 +37,30 @@ Structured summary of topics, notebook code volume, data assets, and algorithm c
 
 | Folder | Role |
 |--------|------|
-| `0_To_Get_Started` | Environment setup and package checks |
-| `1_MHA` | Single- and multi-objective metaheuristic optimization |
-| `2_Classic_ML` | Classical machine learning baselines |
-| `3_Ensemble_Learning` | Tree and ensemble methods |
-| `4_Neural_Network` | NN fundamentals, sequences, multimodal / MDN |
-| `5_PIML` | Physics-informed modeling (`PINN`); PANN summary in `PANN/` |
-| `6_Agentic_AI` | Agentic AI and PE-GPT (documentation and external links; no local `.ipynb` here) |
-| `7_Reinforcement_Learning` | Curated RL reading and links (no local notebooks in-repo) |
-| `8_PE_Simulation_Automation` | LTspice, PLECS, Simulink automation |
-| `9_Case_Studies_PE` | Buck, DAB, IGBT, magnetic modeling case studies |
+| [`0_To_Get_Started`](0_To_Get_Started/README.md) | Environment setup and package checks |
+| [`1_MHA`](1_MHA/README.md) | Single- and multi-objective metaheuristic optimization |
+| [`2_Classic_ML`](2_Classic_ML/README.md) | Classical machine learning baselines |
+| [`3_Ensemble_Learning`](3_Ensemble_Learning/README.md) | Tree and ensemble methods |
+| [`4_Neural_Network`](4_Neural_Network/README.md) | NN fundamentals, sequences, multimodal / MDN |
+| [`5_PIML`](5_PIML/README.md) | Physics-informed modeling (`PINN`); PANN summary in [`PANN/`](5_PIML/PANN/README.md) |
+| [`6_Agentic_AI`](6_Agentic_AI/README.md) | Agentic AI and PE-GPT (documentation and external links; no local `.ipynb` here) |
+| [`7_Reinforcement_Learning`](7_Reinforcement_Learning/README.md) | Curated RL reading and links (no local notebooks in-repo) |
+| [`8_PE_Simulation_Automation`](8_PE_Simulation_Automation/README.md) | LTspice, PLECS, Simulink automation |
+| [`9_Case_Studies_PE`](9_Case_Studies_PE/README.md) | Buck, DAB, IGBT, magnetic modeling case studies |
 
 ## 2. Notebooks by module
 
 | Module | Notebooks | Code lines | Role |
 |---|---:|---:|---|
-| `0_To_Get_Started` | 1 | 293 | Setup |
-| `1_MHA` | 5 | 1,656 | Optimization core |
-| `2_Classic_ML` | 1 | 151 | Classical baseline |
-| `3_Ensemble_Learning` | 1 | 542 | Ensembles |
-| `4_Neural_Network` | 4 | 1,775 | Deep learning |
-| `5_PIML` | 3 | 1,131 | Physics-informed examples |
-| `7_Reinforcement_Learning` | 0 | 0 | Curated RL reading (no local notebooks) |
-| `8_PE_Simulation_Automation` | 2 | 245 | Tool automation |
-| `9_Case_Studies_PE` | 9 | 4,318 | Applied studies |
+| [`0_To_Get_Started`](0_To_Get_Started/README.md) | 1 | 293 | Setup |
+| [`1_MHA`](1_MHA/README.md) | 5 | 1,656 | Optimization core |
+| [`2_Classic_ML`](2_Classic_ML/README.md) | 1 | 151 | Classical baseline |
+| [`3_Ensemble_Learning`](3_Ensemble_Learning/README.md) | 1 | 542 | Ensembles |
+| [`4_Neural_Network`](4_Neural_Network/README.md) | 4 | 1,775 | Deep learning |
+| [`5_PIML`](5_PIML/README.md) | 3 | 1,131 | Physics-informed examples |
+| [`7_Reinforcement_Learning`](7_Reinforcement_Learning/README.md) | 0 | 0 | Curated RL reading (no local notebooks) |
+| [`8_PE_Simulation_Automation`](8_PE_Simulation_Automation/README.md) | 2 | 245 | Tool automation |
+| [`9_Case_Studies_PE`](9_Case_Studies_PE/README.md) | 9 | 4,318 | Applied studies |
 
 Case-study notebooks account for the largest share of code, followed by neural-network and MHA modules.
 
@@ -96,7 +107,7 @@ Labels used in the inventory fall into three groups:
 |------|----------|
 | Built-in / sklearn | `Iris`, `Breast Cancer`, `California Housing`, `make_*` generators |
 | Synthetic | Optimization, PINN, sequence models |
-| Repository files | CSV/MAT in Buck, DAB, IGBT, magnetic studies; DAB waveform CSVs |
+| Repository files | CSV/MAT in Buck, DAB, IGBT, magnetic studies; DAB waveform CSVs — external sources for IGBT RUL & MagNet-style magnetic data: [9_Case_Studies_PE — External datasets](9_Case_Studies_PE/README.md#external-datasets) |
 
 ## 4. Tree and representative notebooks
 
