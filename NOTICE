@@ -1,0 +1,60 @@
+Fundamentals_of_AI_for_PE
+Copyright 2026 Xinze Li
+
+This repository uses a dual-license structure:
+
+----------------------------------------------------------------------
+1. Code License (Apache License 2.0)
+----------------------------------------------------------------------
+
+All source code, including:
+- Python scripts
+- Jupyter notebook code cells
+- Algorithms and software implementations
+
+is licensed under the Apache License, Version 2.0.
+
+You may:
+- Use, modify, and distribute the code
+- Incorporate the code into proprietary systems
+
+Subject to the terms of the Apache License 2.0.
+
+
+----------------------------------------------------------------------
+2. Educational Content License (CC BY-NC 4.0)
+----------------------------------------------------------------------
+
+All non-code content, including:
+- Text explanations
+- Markdown cells in Jupyter notebooks
+- Figures, diagrams, and educational materials
+
+is licensed under the Creative Commons Attribution-NonCommercial 4.0
+International License (CC BY-NC 4.0).
+
+License details:
+https://creativecommons.org/licenses/by-nc/4.0/
+
+You are free to:
+- Share and adapt the material
+
+Under the following terms:
+- Attribution — You must give appropriate credit:
+  Author: Xinze Li
+  Source: This repository
+
+- NonCommercial — You may NOT use the material for commercial purposes
+  without explicit permission from the author.
+
+
+----------------------------------------------------------------------
+3. Clarification of Scope
+----------------------------------------------------------------------
+
+- "Code" refers to executable or functional components.
+- "Educational Content" refers to explanatory and instructional material.
+- Commercial use of educational content is prohibited without permission.
+
+For commercial licensing inquiries regarding educational content,
+please contact the author.
