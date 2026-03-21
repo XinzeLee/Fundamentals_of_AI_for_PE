@@ -41,7 +41,7 @@ Structured summary of topics, notebook code volume, data assets, and algorithm c
 | [`1_MHA`](1_MHA/) | Single- and multi-objective metaheuristic optimization |
 | [`2_Classic_ML`](2_Classic_ML/) | Classical machine learning baselines |
 | [`3_Ensemble_Learning`](3_Ensemble_Learning/) | Tree and ensemble methods |
-| [`4_Neural_Network`](4_Neural_Network/) | NN fundamentals, sequences, multimodal / MDN |
+| [`4_Neural_Network`](4_Neural_Network/) | NN fundamentals, sequences, multimodal / MDN; [`Graph_NN/`](4_Neural_Network/Graph_NN/) (GNN resources) |
 | [`5_PIML`](5_PIML/) | Physics-informed modeling (`PINN`); PANN summary in [`PANN/`](5_PIML/PANN/) |
 | [`6_Agentic_AI`](6_Agentic_AI/) | Agentic AI and PE-GPT (documentation and external links; no local `.ipynb` here) |
 | [`7_Reinforcement_Learning`](7_Reinforcement_Learning/) | Curated RL reading and links (no local notebooks in-repo) |
@@ -133,6 +133,8 @@ Labels used in the inventory fall into three groups:
     NN_basics.ipynb
   Good_Practices/
     good_practice_NN.ipynb
+  Graph_NN/
+    README.md
   Multi_Modal_Distribution/
     mixture_density_net_ensemble_learning.ipynb
   Signal_Domain/
@@ -236,3 +238,15 @@ Labels used in the inventory fall into three groups:
 | `9_Case_Studies_PE/IGBT_Maintenance/rul_prediction.ipynb` | 365 | FNN/MLP (PyTorch)<br>LSTM (PyTorch) | synthetic / generated (random) |
 | `9_Case_Studies_PE/Magnetic_Modeling/magnet_fnn.ipynb` | 260 | FNN/MLP (PyTorch) | — |
 | `9_Case_Studies_PE/Magnetic_Modeling/magnet_lstm.ipynb` | 223 | FNN/MLP (PyTorch)<br>LSTM (PyTorch) | — |
+
+## License
+
+This repository uses a dual-license structure:
+
+- **Code**: Apache License 2.0  
+- **Educational Content (text, figures, explanations)**: CC BY-NC 4.0  
+
+- Code can be used freely.  
+- Educational materials cannot be used commercially without permission.  
+
+See the `LICENSE` and `NOTICE` files for details.

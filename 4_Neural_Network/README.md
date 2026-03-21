@@ -17,6 +17,7 @@ Neural networks from tabular regression/classification through sequence models a
 - `Good_Practices/good_practice_NN.ipynb`  
 - `Signal_Domain/rnn_basics.ipynb`  
 - `Multi_Modal_Distribution/mixture_density_net_ensemble_learning.ipynb`  
+- [`Graph_NN/README.md`](Graph_NN/README.md) — graph neural networks: external course (GML2023), Awesome GNN list, PE application (C2G)  
 
 ## Outcomes
 
@@ -25,6 +26,7 @@ Neural networks from tabular regression/classification through sequence models a
 - Sequence models for waveforms / time series (RNN, LSTM, GRU, BiLSTM, related variants)  
 - Probabilistic regression via MDN and uncertainty in the outputs  
 - Model combination on multimodal targets and comparison to ensemble baselines  
+- *(Graph track)* Where to learn **GNNs** and how they apply to **converter graphs** — see [`Graph_NN/README.md`](Graph_NN/README.md)
 
 ---
 
@@ -87,3 +89,4 @@ Neural networks from tabular regression/classification through sequence models a
 2. `Good_Practices/good_practice_NN.ipynb`  
 3. `Signal_Domain/rnn_basics.ipynb`  
 4. `Multi_Modal_Distribution/mixture_density_net_ensemble_learning.ipynb`  
+5. *(Optional graph track)* [`Graph_NN/README.md`](Graph_NN/README.md) — external GML2023 course, Awesome GNN list, C2G for converters  
