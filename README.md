@@ -1,5 +1,25 @@
 # Fundamentals of AI for PE — repository overview
 
+## Companion tools
+
+Use the interactive **Algorithm Selector** to narrow AI/ML approaches for your PE task, and the **ChatGPT** tutor for deeper Q&A and resource-rich reports aligned with this course.
+
+<p align="center">
+  <a href="https://xinzelee.github.io/AI_for_PE_Algorithm_Selector/">
+    <img src="https://img.shields.io/badge/Open_algorithm_selector_(web_app)-2563eb?style=for-the-badge&logo=googlechrome&logoColor=white" alt="Open the Algorithm Selector web app" />
+  </a>
+  &nbsp;&nbsp;
+  <a href="https://chatgpt.com/g/g-698618895c2481919e113c49bafe23ee-fundamentals-of-ai-for-pe">
+    <img src="https://img.shields.io/badge/Open_ChatGPT_assistant-10a37f?style=for-the-badge&logo=openai&logoColor=white" alt="Open the Fundamentals of AI for PE ChatGPT assistant" />
+  </a>
+</p>
+
+<p align="center">
+  <sub>Source code for the selector: <a href="https://github.com/XinzeLee/AI_for_PE_Algorithm_Selector">XinzeLee/AI_for_PE_Algorithm_Selector</a></sub>
+</p>
+
+---
+
 ## Authorship & status
 
 - **Course / code author:** Xinze Li  
@@ -13,12 +33,14 @@
 
 | Section | Jump to |
 |--------|---------|
+| Companion tools | [Algorithm selector & ChatGPT](#companion-tools) |
 | Repository metrics | [Overview](#overview) |
 | Module folders & roles | [1. Contents and learning path](#1-contents-and-learning-path) |
 | Notebook counts by folder | [2. Notebooks by module](#2-notebooks-by-module) |
 | Algorithm & data inventory | [3. Algorithms and data](#3-algorithms-and-data) → [3.1 Algorithms](#31-algorithms) · [3.2 Data](#32-data) |
 | File tree & highlighted notebooks | [4. Tree and representative notebooks](#4-tree-and-representative-notebooks) → [4.1 Layout](#41-layout) · [4.2 Representative notebooks](#42-representative-notebooks) |
 | Full per-notebook table | [5. Per-notebook reference](#5-per-notebook-reference) |
+| Article ↔ repo mapping | [Alignment with the tutorial article](#alignment-with-the-tutorial-article) |
 
 Structured summary of topics, notebook code volume, data assets, and algorithm coverage across Jupyter notebooks (`.ipynb`). Documentation files are omitted from the metrics below.
 
@@ -238,6 +260,27 @@ Labels used in the inventory fall into three groups:
 | `9_Case_Studies_PE/IGBT_Maintenance/rul_prediction.ipynb` | 365 | FNN/MLP (PyTorch)<br>LSTM (PyTorch) | synthetic / generated (random) |
 | `9_Case_Studies_PE/Magnetic_Modeling/magnet_fnn.ipynb` | 260 | FNN/MLP (PyTorch) | — |
 | `9_Case_Studies_PE/Magnetic_Modeling/magnet_lstm.ipynb` | 223 | FNN/MLP (PyTorch)<br>LSTM (PyTorch) | — |
+
+## Alignment with the tutorial article
+
+This repository accompanies the invited tutorial *Fundamentals of Artificial Intelligences for Power Electronics* (*IEEE Trans. Ind. Electron.*, 2026). The mapping below links **top-level folders** (and selected subfolders) to **article sections** as numbered in the paper.
+
+| Folder | Article sections |
+|--------|------------------|
+| [`0_To_Get_Started`](0_To_Get_Started/) | Prerequisite environment; supports hands-on material across the paper |
+| [`1_MHA`](1_MHA/) | II-A–II-D (`Single_Objective_MHA`: II-A, II-C, II-D; `Multi_Objective_MHA`: II-B, II-C) |
+| [`2_Classic_ML`](2_Classic_ML/) | III-A; IV-D; IV-E |
+| [`3_Ensemble_Learning`](3_Ensemble_Learning/) | III-A; IV-D; IV-E |
+| [`4_Neural_Network`](4_Neural_Network/) | See subfolders in [4_Neural_Network/README.md](4_Neural_Network/README.md) |
+| [`4_Neural_Network/Graph_NN`](4_Neural_Network/Graph_NN/) | III-E; IV-F |
+| [`5_PIML`](5_PIML/) (`PINN/`) | V |
+| [`5_PIML/PANN`](5_PIML/PANN/) | V-C; VII-E |
+| [`6_Agentic_AI`](6_Agentic_AI/) | VI |
+| [`7_Reinforcement_Learning`](7_Reinforcement_Learning/) | IV-D; IV-F |
+| [`8_PE_Simulation_Automation`](8_PE_Simulation_Automation/) | IV-A |
+| [`9_Case_Studies_PE`](9_Case_Studies_PE/) | See [9_Case_Studies_PE/README.md](9_Case_Studies_PE/README.md) (Buck, DAB threads, IGBT, magnetics) |
+
+Per-folder detail appears in each module’s README under **Alignment with the tutorial article**.
 
 ## License
 

@@ -9,6 +9,14 @@
 
 ---
 
+## Alignment with the tutorial article
+
+**Discussion in the article:** Section IV-A (simulation automation and batch data acquisition).
+
+The automation notebooks here illustrate the **data acquisition** loop described in *Fundamentals of Artificial Intelligences for Power Electronics* (*IEEE Trans. Ind. Electron.*, 2026).
+
+---
+
 Automation for PE simulation: batch runs, metrics extraction, and CSV-friendly outputs for downstream ML.
 
 ## Contents

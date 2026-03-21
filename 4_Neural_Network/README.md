@@ -9,6 +9,20 @@
 
 ---
 
+## Alignment with the tutorial article
+
+Subfolders map to sections of *Fundamentals of Artificial Intelligences for Power Electronics* (*IEEE Trans. Ind. Electron.*, 2026) as follows:
+
+| Subfolder | Article sections |
+|-----------|------------------|
+| [`Fundamentals/`](Fundamentals/) | Section III; Section IV-C; Section IV-D; Section IV-F |
+| [`Good_Practices/`](Good_Practices/) | Section IV-G |
+| [`Signal_Domain/`](Signal_Domain/) | Section III-C; Section IV-F; Section IV-G |
+| [`Multi_Modal_Distribution/`](Multi_Modal_Distribution/) | Section IV-E; Section IV-F |
+| [`Graph_NN/`](Graph_NN/) | Section III-E; Section IV-F (see [`Graph_NN/README.md`](Graph_NN/README.md)) |
+
+---
+
 Neural networks from tabular regression/classification through sequence models and mixture-density (MDN) regression.
 
 ## Contents

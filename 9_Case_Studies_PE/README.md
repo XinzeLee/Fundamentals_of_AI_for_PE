@@ -9,6 +9,21 @@
 
 ---
 
+## Alignment with the tutorial article
+
+Case-study folders map to **Section VII** (and supporting sections) of *Fundamentals of Artificial Intelligences for Power Electronics* (*IEEE Trans. Ind. Electron.*, 2026):
+
+| Folder | Article sections |
+|--------|------------------|
+| [`Buck_Design/`](Buck_Design/) | VII-A; VII-B; VII-C |
+| [`DAB_Design/Performance_Modeling_and_Design/`](DAB_Design/Performance_Modeling_and_Design/) | IV-B; VII-A; VII-B; VII-C |
+| [`DAB_Design/Time_Domain_Modeling/`](DAB_Design/Time_Domain_Modeling/) | VII-B |
+| [`DAB_Design/Adaptive_Modulation/`](DAB_Design/Adaptive_Modulation/) | VII-D |
+| [`IGBT_Maintenance/`](IGBT_Maintenance/) | VII-F |
+| [`Magnetic_Modeling/`](Magnetic_Modeling/) | III-C; IV-F; IV-G |
+
+---
+
 End-to-end AI case studies for power electronics: data preparation, surrogates, optimization, uncertainty, and deployment-oriented acceleration.
 
 ## External datasets

@@ -9,6 +9,14 @@
 
 ---
 
+## Alignment with the tutorial article
+
+**Discussion in the article:** Section VI (agentic AI, LLM tooling, PE-GPT-style workflows).
+
+This documentation folder supports the **agentic AI** discussion in *Fundamentals of Artificial Intelligences for Power Electronics* (*IEEE Trans. Ind. Electron.*, 2026).
+
+---
+
 Agentic AI for power-electronics workflows, with pointers to the external **PE-GPT** project.
 
 ## Official repository

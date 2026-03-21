@@ -9,6 +9,14 @@
 
 ---
 
+## Alignment with the tutorial article
+
+**Discussion in the article:** [`Single_Objective_MHA/`](Single_Objective_MHA/) — Section II-A; Section II-C; Section II-D. [`Multi_Objective_MHA/`](Multi_Objective_MHA/) — Section II-B; Section II-C.
+
+The notebooks here support the metaheuristic optimization narrative in the invited tutorial *Fundamentals of Artificial Intelligences for Power Electronics* (*IEEE Trans. Ind. Electron.*, 2026).
+
+---
+
 Single- and multi-objective metaheuristics from benchmark functions to power-electronics-style design problems.
 
 ## Contents

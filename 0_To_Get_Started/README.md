@@ -9,6 +9,12 @@
 
 ---
 
+## Alignment with the tutorial article
+
+**Role:** Environment setup used before running notebooks referenced throughout the invited tutorial *Fundamentals of Artificial Intelligences for Power Electronics* (*IEEE Trans. Ind. Electron.*, 2026). There is no dedicated article section—this folder supports the practical material in all modules.
+
+---
+
 Onboarding for the course repo: Python environment and package checks before the AI-for-PE notebooks.
 
 ## Contents

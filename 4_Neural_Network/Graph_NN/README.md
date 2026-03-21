@@ -9,6 +9,14 @@
 
 ---
 
+## Alignment with the tutorial article
+
+**Discussion in the article:** Section III-E; Section IV-F.
+
+These resources complement the **graph data** and **GNN architecture** discussion in *Fundamentals of Artificial Intelligences for Power Electronics* (*IEEE Trans. Ind. Electron.*, 2026).
+
+---
+
 Graph neural networks (GNNs) for **relational data**: circuit topologies, module layouts, control graphs, and other PE structures where **nodes and edges** carry physical meaning. This folder currently provides **curated external resources** aligned with the tutorial’s graph-data discussion; local teaching notebooks may be added later.
 
 ## Contents

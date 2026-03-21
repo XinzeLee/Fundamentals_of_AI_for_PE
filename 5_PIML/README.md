@@ -9,6 +9,14 @@
 
 ---
 
+## Alignment with the tutorial article
+
+**Discussion in the article:** Section V (physics-informed ML; PINN-style losses in [`PINN/`](PINN/)).
+
+For **physics-in-architecture (PANN)** material, see [`PANN/README.md`](PANN/README.md) (Sections V-C and VII-E in the article).
+
+---
+
 Physics priors in neural training: **PINN-style** residual losses in the notebooks here, plus **PANN-style** physics-in-architecture modeling (summary and links in [`PANN/README.md`](PANN/README.md)).
 
 ## Contents

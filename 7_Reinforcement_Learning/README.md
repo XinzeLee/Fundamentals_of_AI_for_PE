@@ -9,6 +9,14 @@
 
 ---
 
+## Alignment with the tutorial article
+
+**Discussion in the article:** Section IV-D; Section IV-F (reinforcement learning and learning types / architectures).
+
+These curated resources support the **RL** thread in *Fundamentals of Artificial Intelligences for Power Electronics* (*IEEE Trans. Ind. Electron.*, 2026).
+
+---
+
 Curated entry to reinforcement learning (RL) with emphasis on **control** and **how rewards shape what the agent learns**. Main external index: **[Awesome RL](https://github.com/aikorea/awesome-rl)**, especially **[Applications → Control](https://github.com/aikorea/awesome-rl?tab=readme-ov-file#control)**.
 
 > **Note:** Awesome RL’s maintainers state the list is **no longer updated**. The links below remain useful references; for current libraries, see [Gymnasium](https://gymnasium.farama.org/), [Ray RLlib](https://github.com/ray-project/ray), [Stable-Baselines3](https://github.com/DLR-RM/stable-baselines3), and similar projects also linked from Awesome RL.

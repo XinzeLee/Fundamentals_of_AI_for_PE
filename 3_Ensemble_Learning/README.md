@@ -9,6 +9,14 @@
 
 ---
 
+## Alignment with the tutorial article
+
+**Discussion in the article:** Section III-A; Section IV-D; Section IV-E.
+
+The ensemble-learning notebook supports the tree/ensemble discussion in *Fundamentals of Artificial Intelligences for Power Electronics* (*IEEE Trans. Ind. Electron.*, 2026).
+
+---
+
 Ensemble methods under difficult data conditions: when gains appear and when they break down.
 
 ## Contents

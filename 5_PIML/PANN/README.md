@@ -9,6 +9,14 @@
 
 ---
 
+## Alignment with the tutorial article
+
+**Discussion in the article:** Section V-C; Section VII-E (PANN-style identification and case study links).
+
+This bridge document supports the **physics-in-architecture** thread in *Fundamentals of Artificial Intelligences for Power Electronics* (*IEEE Trans. Ind. Electron.*, 2026).
+
+---
+
 Bridge to the external **PANN** project and its role in physics-informed AI for power electronics.
 
 ## Official repository
