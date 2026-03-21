@@ -1,5 +1,14 @@
 # 3_Ensemble_Learning
 
+## Authorship & status
+
+- **Course / code author:** Xinze Li  
+- **Tutorial article:** Xinze Li, Fanfan Lin, Juan J. Rodríguez-Andina, Sergio Vazquez, Homer Alan Mantooth, Leopoldo García Franquelo, “Fundamentals of Artificial Intelligences for Power Electronics,” *IEEE Transactions on Industrial Electronics*, 2026.
+
+*These learning resources are still under active refinement; notebooks, data, and documentation may change.*
+
+---
+
 Ensemble methods under difficult data conditions: when gains appear and when they break down.
 
 ## Contents

@@ -1,5 +1,14 @@
 # 5_PIML / PANN
 
+## Authorship & status
+
+- **Course / code author:** Xinze Li  
+- **Tutorial article:** Xinze Li, Fanfan Lin, Juan J. Rodríguez-Andina, Sergio Vazquez, Homer Alan Mantooth, Leopoldo García Franquelo, “Fundamentals of Artificial Intelligences for Power Electronics,” *IEEE Transactions on Industrial Electronics*, 2026.
+
+*These learning resources are still under active refinement; notebooks, data, and documentation may change.*
+
+---
+
 Bridge to the external **PANN** project and its role in physics-informed AI for power electronics.
 
 ## Official repository
