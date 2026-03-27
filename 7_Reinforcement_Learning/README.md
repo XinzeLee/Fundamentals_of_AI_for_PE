@@ -27,7 +27,7 @@ Curated entry to reinforcement learning (RL) with emphasis on **control** and **
 |------|-------------|
 | **Reading (control)** | Classic RL-for-control papers under Awesome RL’s `#control` anchor (summary below). |
 | **Rewards & objectives** | Related themes elsewhere on the same Awesome RL page and ties to control / PE. |
-| **Local notebooks** | None in this folder yet; extend this file when notebooks are added. |
+| **Local notebooks** | `RL_toyexamples.ipynb` — minimal DDPG (continuous duty) voltage regulation on an averaged buck model (NumPy + PyTorch). |
 
 ---
 
@@ -91,9 +91,9 @@ These bullets are **local PE-oriented notes**, not quotations from `#control`.
 2. Read one **continuous control** survey (Theory section on Awesome RL).  
 3. One platform (e.g. Gymnasium + a baseline library) and a classic **cart-pole** or **pendulum** baseline before custom PE environments.
 
-## Local notebooks (placeholder)
+## Local notebooks
 
-When notebooks exist under `7_Reinforcement_Learning/`, list them here, e.g. environment definition, reward specification, training loop, evaluation plots.
+- **`RL_toyexamples.ipynb`** — DDPG with replay buffer and target soft-updates on a continuous-duty buck averaged-voltage regulation task (pedagogical; not a switching simulator). Resets use arbitrary initial output voltage (and current) between physical bounds.
 
 ---
 
