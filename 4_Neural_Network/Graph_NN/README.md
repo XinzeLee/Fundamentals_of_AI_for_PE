@@ -97,7 +97,7 @@ Graph neural networks (GNNs) for **relational data**: circuit topologies, module
 ## Fit with the PE AI tutorial
 
 - **Data modality:** Graph inputs align with “graph data in PE” (topologies, layouts, signal-flow or control diagrams).  
-- **Hybrid models:** Combine graph encoders with **tabular** or **sequence** branches (see `4_Neural_Network/` FNN and `Signal_Domain/` notebooks) when both relational and time-series information matter.  
+- **Hybrid models:** Combine graph encoders with **tabular**, **spatial field** (see `4_Neural_Network/Field_Data/field_temperature_residual_fnn.ipynb`), or **sequence** branches (`Signal_Domain/`) when relational structure coexists with grids or time series.  
 - **Trust & data:** As with other deep models, pair graph surrogates with **validation**, **uncertainty**, and **physics checks** where safety-critical.
 
 ---

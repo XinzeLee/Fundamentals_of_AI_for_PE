@@ -29,6 +29,11 @@
     <img src="https://img.shields.io/badge/Open_rnn_basics_in_Colab-ffffff?style=for-the-badge&logo=googlecolab&logoColor=black" alt="Open rnn_basics.ipynb in Colab" />
   </a>
 </p>
+<p align="center">
+  <a href="https://colab.research.google.com/github/XinzeLee/Fundamentals_of_AI_for_PE/blob/main/4_Neural_Network/Field_Data/field_temperature_residual_fnn.ipynb">
+    <img src="https://img.shields.io/badge/Open_field_temperature_residual_FNN_in_Colab-ffffff?style=for-the-badge&logo=googlecolab&logoColor=black" alt="Open field_temperature_residual_fnn.ipynb in Colab" />
+  </a>
+</p>
 
 ---
 
@@ -40,18 +45,20 @@ Subfolders map to sections of *Fundamentals of Artificial Intelligences for Powe
 |-----------|------------------|
 | [`Fundamentals/`](Fundamentals/) | Section III; Section IV-C; Section IV-D; Section IV-F |
 | [`Good_Practices/`](Good_Practices/) | Section IV-G |
+| [`Field_Data/`](Field_Data/) | Section III-C; Section IV-F; Section IV-G (thermal field regression; builds on good practices) |
 | [`Signal_Domain/`](Signal_Domain/) | Section III-C; Section IV-F; Section IV-G |
 | [`Multi_Modal_Distribution/`](Multi_Modal_Distribution/) | Section IV-E; Section IV-F |
 | [`Graph_NN/`](Graph_NN/) | Section III-E; Section IV-F (see [`Graph_NN/README.md`](Graph_NN/README.md)) |
 
 ---
 
-Neural networks from tabular regression/classification through sequence models and mixture-density (MDN) regression, including a **hysteresis** extension (Part 3b in the MDN notebook): rate-independent loops, **Prandtl–Ishlinskii** play-operator superposition vs an **MDN** that targets multimodal **p(y|x)**, with references to **B–H**-style behavior in magnetic components.
+Neural networks from tabular regression/classification through **spatial (3D) field** regression, sequence models, and mixture-density (MDN) regression, including a **hysteresis** extension (Part 3b in the MDN notebook): rate-independent loops, **Prandtl–Ishlinskii** play-operator superposition vs an **MDN** that targets multimodal **p(y|x)**, with references to **B–H**-style behavior in magnetic components.
 
 ## Contents
 
 - `Fundamentals/NN_basics.ipynb`  
 - `Good_Practices/good_practice_NN.ipynb`  
+- `Field_Data/field_temperature_residual_fnn.ipynb`  
 - `Signal_Domain/rnn_basics.ipynb`  
 - `Multi_Modal_Distribution/mixture_density_net_ensemble_learning.ipynb`  
 - [`Graph_NN/README.md`](Graph_NN/README.md) — graph neural networks: external course (GML2023), Awesome GNN list, PE application (C2G)  
@@ -59,7 +66,8 @@ Neural networks from tabular regression/classification through sequence models a
 ## Outcomes
 
 - Feedforward networks for regression and classification  
-- Train/val/test splits, normalization, minibatches, checkpoints  
+- Train/val/test splits, normalization, minibatches, and **best-weight** selection (saved to disk where noted, or **in memory only** in `Field_Data/`)  
+- **3D thermal fields:** residual (skip-connection) FNN from tabular samples; **per-CSV** train/val/test splits; diagnostics (incl. 3-D residual plots and hotspot reporting)  
 - Sequence models for waveforms / time series (RNN, LSTM, GRU, BiLSTM, related variants)  
 - Probabilistic regression via MDN and uncertainty in the outputs  
 - Model combination on multimodal targets and comparison to ensemble baselines  
@@ -88,6 +96,16 @@ Neural networks from tabular regression/classification through sequence models a
 
 ---
 
+### `Field_Data/field_temperature_residual_fnn.ipynb`
+
+**Topics:** Same **good-practice** recipe as `good_practice_NN.ipynb`, applied to **3D temperature fields**: load every `*.csv` in `Field_Data/` (kernel cwd = notebook folder), parse **loss** and **Tamb** from filenames, use **`x,y,z,loss,Tamb` → `T`**. **Residual** feedforward network (`BatchNorm1d`, skip blocks); `ReduceLROnPlateau`; **best `state_dict` kept in RAM** (no local checkpoint file); train/val/test split **by CSV file** (with clear fallbacks for one or two files). Spatial diagnostics: **3-D scatter** colored by `T_true - T_pred`, hotspot (**max true T** on the test split).
+
+**Algorithms & data:** Residual FNN / MLP (PyTorch). Local **`Tfield_*_downsampled.csv`** samples in `Field_Data/` (additional scenarios may live in `Field_Data/cap_Tfield/`—copy or symlink into the notebook folder if you want them picked up by the same `glob`).
+
+**Notes:** Run with working directory **`4_Neural_Network/Field_Data`** (default in Jupyter; Colab cell `cd`s there). Colab badge above opens this notebook from the hosted copy.
+
+---
+
 ### `Signal_Domain/rnn_basics.ipynb`
 
 **Topics:** DAB waveform CSV loading and preprocessing; windowed FFN, RNN, LSTM, GRU, BiLSTM; further sequence directions in the notebook text; splits, model size, prediction plots.
@@ -111,6 +129,7 @@ Neural networks from tabular regression/classification through sequence models a
 ## Algorithm summary
 
 - FNN / MLP (regression and classification)  
+- Residual (skip-block) FNN for **3D field** regression (`Field_Data/`)  
 - RNN family: vanilla RNN, LSTM, GRU, BiLSTM  
 - Mixture Density Network (MDN)  
 - `RandomForestRegressor` as a reference in the MDN notebook  
@@ -119,6 +138,7 @@ Neural networks from tabular regression/classification through sequence models a
 ## Data summary
 
 - Tabular: California Housing, Breast Cancer  
+- **Thermal field samples:** `Field_Data` CSVs (`x,y,z,T`; power loss and ambient encoded in the filename)  
 - PE waveforms: DAB CSV time series  
 - Synthetic nonlinear regression (`make_moons`-style pipeline)  
 - Synthetic hysteresis loop (time-ordered input, multimodal **p(y|x)** vs PI state)  
@@ -127,6 +147,7 @@ Neural networks from tabular regression/classification through sequence models a
 
 1. `Fundamentals/NN_basics.ipynb`  
 2. `Good_Practices/good_practice_NN.ipynb`  
-3. `Signal_Domain/rnn_basics.ipynb`  
-4. `Multi_Modal_Distribution/mixture_density_net_ensemble_learning.ipynb`  
-5. *(Optional graph track)* [`Graph_NN/README.md`](Graph_NN/README.md) — external GML2023 course, Awesome GNN list, C2G for converters  
+3. `Field_Data/field_temperature_residual_fnn.ipynb` *(spatial regression + file-wise splits; best after good practices)*  
+4. `Signal_Domain/rnn_basics.ipynb`  
+5. `Multi_Modal_Distribution/mixture_density_net_ensemble_learning.ipynb`  
+6. *(Optional graph track)* [`Graph_NN/README.md`](Graph_NN/README.md) — external GML2023 course, Awesome GNN list, C2G for converters  

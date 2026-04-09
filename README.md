@@ -49,9 +49,9 @@ Structured summary of topics, notebook code volume, data assets, and algorithm c
 
 | Metric | Value |
 |---|---:|
-| Code lines (notebook cells) | **11,247** |
-| Jupyter notebooks | **29** |
-| PE-oriented datasets | **6** |
+| Code lines (notebook cells) | **11,637** |
+| Jupyter notebooks | **30** |
+| PE-oriented datasets | **7** |
 | Algorithm labels (see §3) | **24** |
 
 **Summary:** Teaching-oriented AI-for-power-electronics material, with the most notebook code in case studies, neural networks, and metaheuristic optimization.
@@ -64,7 +64,7 @@ Structured summary of topics, notebook code volume, data assets, and algorithm c
 | [`1_MHA`](1_MHA/) | Single- and multi-objective metaheuristic optimization |
 | [`2_Classic_ML`](2_Classic_ML/) | Classical machine learning baselines |
 | [`3_Ensemble_Learning`](3_Ensemble_Learning/) | Tree and ensemble methods |
-| [`4_Neural_Network`](4_Neural_Network/) | NN fundamentals, sequences, multimodal / MDN (incl. synthetic hysteresis: Prandtl–Ishlinskii-style play-operator NN vs MDN, B–H–style motivation); [`Graph_NN/`](4_Neural_Network/Graph_NN/) (GNN resources) |
+| [`4_Neural_Network`](4_Neural_Network/) | NN fundamentals, **3D thermal field** regression (`Field_Data/`), good practices, sequences, multimodal / MDN (incl. synthetic hysteresis: Prandtl–Ishlinskii-style play-operator NN vs MDN, B–H–style motivation); [`Graph_NN/`](4_Neural_Network/Graph_NN/) (GNN resources) |
 | [`5_PIML`](5_PIML/) | Physics-informed modeling (`PINN`); PANN summary in [`PANN/`](5_PIML/PANN/) |
 | [`6_Agentic_AI`](6_Agentic_AI/) | Agentic AI and PE-GPT (documentation and external links; no local `.ipynb` here) |
 | [`7_Reinforcement_Learning`](7_Reinforcement_Learning/) | Buck regulation tutorials — DQN (`RL_buck_control.ipynb`) and DDPG (`DDPG_buck_control.ipynb`) — plus curated RL reading |
@@ -79,7 +79,7 @@ Structured summary of topics, notebook code volume, data assets, and algorithm c
 | [`1_MHA`](1_MHA/) | 5 | 1,721 | Optimization core |
 | [`2_Classic_ML`](2_Classic_ML/) | 2 | 246 | Polynomial Ridge (synthetic regression) + classical classification |
 | [`3_Ensemble_Learning`](3_Ensemble_Learning/) | 1 | 555 | Ensembles |
-| [`4_Neural_Network`](4_Neural_Network/) | 4 | 1,942 | Deep learning |
+| [`4_Neural_Network`](4_Neural_Network/) | 5 | 2,283 | Deep learning |
 | [`5_PIML`](5_PIML/) | 3 | 925 | Physics-informed examples (`PINN/`) |
 | [`7_Reinforcement_Learning`](7_Reinforcement_Learning/) | 2 | 846 | RL tutorials (DQN + DDPG buck) + curated reading |
 | [`8_PE_Simulation_Automation`](8_PE_Simulation_Automation/) | 2 | 271 | Tool automation |
@@ -130,7 +130,7 @@ Labels used in the inventory fall into three groups:
 |------|----------|
 | Built-in / sklearn | `Iris`, `Breast Cancer`, `California Housing`, `make_*` generators |
 | Synthetic | Optimization, PINN, sequence models |
-| Repository files | CSV/MAT in Buck, DAB, IGBT, magnetic studies; DAB waveform CSVs — external sources for IGBT RUL & MagNet-style magnetic data: [9_Case_Studies_PE — External datasets](9_Case_Studies_PE/#external-datasets) |
+| Repository files | CSV/MAT in Buck, DAB, IGBT, magnetic studies; **3D thermal field** downsampled CSVs in [`4_Neural_Network/Field_Data`](4_Neural_Network/Field_Data/) (loss/Tamb in filename, `x,y,z,T` in file); DAB waveform CSVs — external sources for IGBT RUL & MagNet-style magnetic data: [9_Case_Studies_PE — External datasets](9_Case_Studies_PE/#external-datasets) |
 
 ## 4. Tree and representative notebooks
 
@@ -153,6 +153,11 @@ Labels used in the inventory fall into three groups:
 3_Ensemble_Learning/
   ensemle_learning.ipynb
 4_Neural_Network/
+  Field_Data/
+    field_temperature_residual_fnn.ipynb
+    Tfield_*_downsampled.csv
+    cap_Tfield/
+      (additional T-field CSV scenarios)
   Fundamentals/
     NN_basics.ipynb
   Good_Practices/
@@ -250,6 +255,7 @@ Labels used in the inventory fall into three groups:
 | `3_Ensemble_Learning/ensemle_learning.ipynb` | 555 | XGBoost (classification)<br>XGBoost (regression)<br>sklearn:DecisionTreeClassifier<br>sklearn:PCA<br>sklearn:RandomForestClassifier<br>sklearn:Ridge | sklearn.datasets.make_classification |
 | `4_Neural_Network/Fundamentals/NN_basics.ipynb` | 462 | FNN/MLP (PyTorch) | sklearn.datasets.fetch_california_housing<br>sklearn.datasets.load_breast_cancer |
 | `4_Neural_Network/Good_Practices/good_practice_NN.ipynb` | 220 | FNN/MLP (PyTorch) | sklearn.datasets.fetch_california_housing |
+| `4_Neural_Network/Field_Data/field_temperature_residual_fnn.ipynb` | 341 | FNN/MLP (PyTorch); residual (skip) blocks | `4_Neural_Network/Field_Data/*.csv` (3D samples: `x,y,z`, `T`; loss & Tamb from filename) |
 | `4_Neural_Network/Multi_Modal_Distribution/mixture_density_net_ensemble_learning.ipynb` | 441 | FNN/MLP (PyTorch)<br>Mixture Density Network (MDN)<br>sklearn:RandomForestRegressor<br>Prandtl–Ishlinskii–style hysteresis (play operators, PyTorch) | synthetic nonlinear regression; synthetic rate-independent hysteresis loop |
 | `4_Neural_Network/Signal_Domain/rnn_basics.ipynb` | 819 | CNN (PyTorch)<br>FNN/MLP (PyTorch)<br>GRU (PyTorch)<br>LSTM (PyTorch)<br>RNN (PyTorch)<br>Transformer/Attention<br>Transformer/Attention (PyTorch) | synthetic / generated (random) |
 | `5_PIML/PINN/pinn_ode.ipynb` | 341 | FNN/MLP (PyTorch)<br>PINN (ODE; fixed collocation, soft IC, composite loss, Adam + L-BFGS) | synthetic cooling curve + noisy samples |
