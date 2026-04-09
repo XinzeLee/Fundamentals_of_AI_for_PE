@@ -9,6 +9,16 @@
 
 ---
 
+## Google Colab
+
+<p align="center">
+  <a href="https://colab.research.google.com/github/XinzeLee/Fundamentals_of_AI_for_PE/blob/main/0_To_Get_Started/package_install.ipynb">
+    <img src="https://img.shields.io/badge/Open_in_Colab-ffffff?style=for-the-badge&logo=googlecolab&logoColor=black" alt="Open package_install.ipynb in Colab" />
+  </a>
+</p>
+
+---
+
 ## Alignment with the tutorial article
 
 **Role:** Environment setup used before running notebooks referenced throughout the invited tutorial *Fundamentals of Artificial Intelligences for Power Electronics* (*IEEE Trans. Ind. Electron.*, 2026). There is no dedicated article section—this folder supports the practical material in all modules.

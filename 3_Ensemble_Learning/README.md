@@ -9,6 +9,16 @@
 
 ---
 
+## Google Colab
+
+<p align="center">
+  <a href="https://colab.research.google.com/github/XinzeLee/Fundamentals_of_AI_for_PE/blob/main/3_Ensemble_Learning/ensemle_learning.ipynb">
+    <img src="https://img.shields.io/badge/Open_ensemle_learning_in_Colab-ffffff?style=for-the-badge&logo=googlecolab&logoColor=black" alt="Open ensemle_learning.ipynb in Colab" />
+  </a>
+</p>
+
+---
+
 ## Alignment with the tutorial article
 
 **Discussion in the article:** Section III-A; Section IV-D; Section IV-E.

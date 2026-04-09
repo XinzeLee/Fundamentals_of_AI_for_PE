@@ -9,6 +9,12 @@
 
 ---
 
+## Google Colab
+
+This folder lists **curated external** GNN resources only (no local `.ipynb`). For Colab launchers for in-repo neural-network notebooks, see [`../README.md`](../README.md).
+
+---
+
 ## Alignment with the tutorial article
 
 **Discussion in the article:** Section III-E; Section IV-F.

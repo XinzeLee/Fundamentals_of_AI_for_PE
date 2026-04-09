@@ -1,0 +1,22 @@
+# Python dependencies for Fundamentals_of_AI_for_PE tutorial notebooks.
+# System tools (e.g. LTspice, PLECS, MATLAB) are not installable via pip.
+
+numpy
+matplotlib
+seaborn
+pandas
+scipy
+scikit-learn
+xgboost
+torch
+pyswarms
+pygad
+scikit-image
+imageio
+paretoset
+onnx
+onnxruntime
+fuzzytree
+PyLTSpice
+func-timeout
+tqdm

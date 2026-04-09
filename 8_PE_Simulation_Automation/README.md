@@ -9,6 +9,20 @@
 
 ---
 
+## Google Colab
+
+<p align="center">
+  <a href="https://colab.research.google.com/github/XinzeLee/Fundamentals_of_AI_for_PE/blob/main/8_PE_Simulation_Automation/LTspiceAutomation/LTspiceAtuomate.ipynb">
+    <img src="https://img.shields.io/badge/Open_LTspice_notebook_in_Colab-ffffff?style=for-the-badge&logo=googlecolab&logoColor=black" alt="Open LTspiceAtuomate.ipynb in Colab" />
+  </a>
+  &nbsp;&nbsp;
+  <a href="https://colab.research.google.com/github/XinzeLee/Fundamentals_of_AI_for_PE/blob/main/8_PE_Simulation_Automation/PlecsAutomation/Data%20acquisition.ipynb">
+    <img src="https://img.shields.io/badge/Open_PLECS_data_notebook_in_Colab-ffffff?style=for-the-badge&logo=googlecolab&logoColor=black" alt="Open Data acquisition.ipynb in Colab" />
+  </a>
+</p>
+
+---
+
 ## Alignment with the tutorial article
 
 **Discussion in the article:** Section IV-A (simulation automation and batch data acquisition).

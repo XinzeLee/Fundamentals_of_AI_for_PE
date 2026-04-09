@@ -29,11 +29,48 @@ Use the interactive **Algorithm Selector** to narrow AI/ML approaches for your P
 
 ---
 
+## Google Colab
+
+Tutorial notebooks can be run in **Google Colab**. Each notebook includes an **Open in Colab** badge and a short setup cell (clone this repository and `pip install -r requirements.txt`). The links below open the same files on the `main` branch of [`XinzeLee/Fundamentals_of_AI_for_PE`](https://github.com/XinzeLee/Fundamentals_of_AI_for_PE).
+
+<p align="left"><a href="https://colab.research.google.com/github/XinzeLee/Fundamentals_of_AI_for_PE/blob/main/0_To_Get_Started/package_install.ipynb"><img src="https://img.shields.io/badge/Open_in_Colab-ffffff?style=for-the-badge&logo=googlecolab&logoColor=black" alt="Open in Colab: package_install.ipynb" /></a> — <code>0_To_Get_Started/package_install.ipynb</code></p>
+<p align="left"><a href="https://colab.research.google.com/github/XinzeLee/Fundamentals_of_AI_for_PE/blob/main/1_MHA/Multi_Objective_MHA/multi_obj_MHA_master.ipynb"><img src="https://img.shields.io/badge/Open_in_Colab-ffffff?style=for-the-badge&logo=googlecolab&logoColor=black" alt="Open in Colab: multi_obj_MHA_master.ipynb" /></a> — <code>1_MHA/Multi_Objective_MHA/multi_obj_MHA_master.ipynb</code></p>
+<p align="left"><a href="https://colab.research.google.com/github/XinzeLee/Fundamentals_of_AI_for_PE/blob/main/1_MHA/Single_Objective_MHA/algorithm_stats_compare.ipynb"><img src="https://img.shields.io/badge/Open_in_Colab-ffffff?style=for-the-badge&logo=googlecolab&logoColor=black" alt="Open in Colab: algorithm_stats_compare.ipynb" /></a> — <code>1_MHA/Single_Objective_MHA/algorithm_stats_compare.ipynb</code></p>
+<p align="left"><a href="https://colab.research.google.com/github/XinzeLee/Fundamentals_of_AI_for_PE/blob/main/1_MHA/Single_Objective_MHA/buck_design_PSO.ipynb"><img src="https://img.shields.io/badge/Open_in_Colab-ffffff?style=for-the-badge&logo=googlecolab&logoColor=black" alt="Open in Colab: buck_design_PSO.ipynb" /></a> — <code>1_MHA/Single_Objective_MHA/buck_design_PSO.ipynb</code></p>
+<p align="left"><a href="https://colab.research.google.com/github/XinzeLee/Fundamentals_of_AI_for_PE/blob/main/1_MHA/Single_Objective_MHA/pso_hyp_tuning.ipynb"><img src="https://img.shields.io/badge/Open_in_Colab-ffffff?style=for-the-badge&logo=googlecolab&logoColor=black" alt="Open in Colab: pso_hyp_tuning.ipynb" /></a> — <code>1_MHA/Single_Objective_MHA/pso_hyp_tuning.ipynb</code></p>
+<p align="left"><a href="https://colab.research.google.com/github/XinzeLee/Fundamentals_of_AI_for_PE/blob/main/1_MHA/Single_Objective_MHA/sing_obj_MHA.ipynb"><img src="https://img.shields.io/badge/Open_in_Colab-ffffff?style=for-the-badge&logo=googlecolab&logoColor=black" alt="Open in Colab: sing_obj_MHA.ipynb" /></a> — <code>1_MHA/Single_Objective_MHA/sing_obj_MHA.ipynb</code></p>
+<p align="left"><a href="https://colab.research.google.com/github/XinzeLee/Fundamentals_of_AI_for_PE/blob/main/2_Classic_ML/ridge_polynomial_regression.ipynb"><img src="https://img.shields.io/badge/Open_in_Colab-ffffff?style=for-the-badge&logo=googlecolab&logoColor=black" alt="Open in Colab: ridge_polynomial_regression.ipynb" /></a> — <code>2_Classic_ML/ridge_polynomial_regression.ipynb</code></p>
+<p align="left"><a href="https://colab.research.google.com/github/XinzeLee/Fundamentals_of_AI_for_PE/blob/main/2_Classic_ML/classic_ML.ipynb"><img src="https://img.shields.io/badge/Open_in_Colab-ffffff?style=for-the-badge&logo=googlecolab&logoColor=black" alt="Open in Colab: classic_ML.ipynb" /></a> — <code>2_Classic_ML/classic_ML.ipynb</code></p>
+<p align="left"><a href="https://colab.research.google.com/github/XinzeLee/Fundamentals_of_AI_for_PE/blob/main/3_Ensemble_Learning/ensemle_learning.ipynb"><img src="https://img.shields.io/badge/Open_in_Colab-ffffff?style=for-the-badge&logo=googlecolab&logoColor=black" alt="Open in Colab: ensemle_learning.ipynb" /></a> — <code>3_Ensemble_Learning/ensemle_learning.ipynb</code></p>
+<p align="left"><a href="https://colab.research.google.com/github/XinzeLee/Fundamentals_of_AI_for_PE/blob/main/4_Neural_Network/Fundamentals/NN_basics.ipynb"><img src="https://img.shields.io/badge/Open_in_Colab-ffffff?style=for-the-badge&logo=googlecolab&logoColor=black" alt="Open in Colab: NN_basics.ipynb" /></a> — <code>4_Neural_Network/Fundamentals/NN_basics.ipynb</code></p>
+<p align="left"><a href="https://colab.research.google.com/github/XinzeLee/Fundamentals_of_AI_for_PE/blob/main/4_Neural_Network/Good_Practices/good_practice_NN.ipynb"><img src="https://img.shields.io/badge/Open_in_Colab-ffffff?style=for-the-badge&logo=googlecolab&logoColor=black" alt="Open in Colab: good_practice_NN.ipynb" /></a> — <code>4_Neural_Network/Good_Practices/good_practice_NN.ipynb</code></p>
+<p align="left"><a href="https://colab.research.google.com/github/XinzeLee/Fundamentals_of_AI_for_PE/blob/main/4_Neural_Network/Multi_Modal_Distribution/mixture_density_net_ensemble_learning.ipynb"><img src="https://img.shields.io/badge/Open_in_Colab-ffffff?style=for-the-badge&logo=googlecolab&logoColor=black" alt="Open in Colab: mixture_density_net_ensemble_learning.ipynb" /></a> — <code>4_Neural_Network/Multi_Modal_Distribution/mixture_density_net_ensemble_learning.ipynb</code></p>
+<p align="left"><a href="https://colab.research.google.com/github/XinzeLee/Fundamentals_of_AI_for_PE/blob/main/4_Neural_Network/Signal_Domain/rnn_basics.ipynb"><img src="https://img.shields.io/badge/Open_in_Colab-ffffff?style=for-the-badge&logo=googlecolab&logoColor=black" alt="Open in Colab: rnn_basics.ipynb" /></a> — <code>4_Neural_Network/Signal_Domain/rnn_basics.ipynb</code></p>
+<p align="left"><a href="https://colab.research.google.com/github/XinzeLee/Fundamentals_of_AI_for_PE/blob/main/5_PIML/PINN/pinn_ode.ipynb"><img src="https://img.shields.io/badge/Open_in_Colab-ffffff?style=for-the-badge&logo=googlecolab&logoColor=black" alt="Open in Colab: pinn_ode.ipynb" /></a> — <code>5_PIML/PINN/pinn_ode.ipynb</code></p>
+<p align="left"><a href="https://colab.research.google.com/github/XinzeLee/Fundamentals_of_AI_for_PE/blob/main/5_PIML/PINN/pinn_pde.ipynb"><img src="https://img.shields.io/badge/Open_in_Colab-ffffff?style=for-the-badge&logo=googlecolab&logoColor=black" alt="Open in Colab: pinn_pde.ipynb" /></a> — <code>5_PIML/PINN/pinn_pde.ipynb</code></p>
+<p align="left"><a href="https://colab.research.google.com/github/XinzeLee/Fundamentals_of_AI_for_PE/blob/main/5_PIML/PINN/prior_integration_example.ipynb"><img src="https://img.shields.io/badge/Open_in_Colab-ffffff?style=for-the-badge&logo=googlecolab&logoColor=black" alt="Open in Colab: prior_integration_example.ipynb" /></a> — <code>5_PIML/PINN/prior_integration_example.ipynb</code></p>
+<p align="left"><a href="https://colab.research.google.com/github/XinzeLee/Fundamentals_of_AI_for_PE/blob/main/7_Reinforcement_Learning/RL_buck_control.ipynb"><img src="https://img.shields.io/badge/Open_in_Colab-ffffff?style=for-the-badge&logo=googlecolab&logoColor=black" alt="Open in Colab: RL_buck_control.ipynb" /></a> — <code>7_Reinforcement_Learning/RL_buck_control.ipynb</code></p>
+<p align="left"><a href="https://colab.research.google.com/github/XinzeLee/Fundamentals_of_AI_for_PE/blob/main/7_Reinforcement_Learning/DDPG_buck_control.ipynb"><img src="https://img.shields.io/badge/Open_in_Colab-ffffff?style=for-the-badge&logo=googlecolab&logoColor=black" alt="Open in Colab: DDPG_buck_control.ipynb" /></a> — <code>7_Reinforcement_Learning/DDPG_buck_control.ipynb</code></p>
+<p align="left"><a href="https://colab.research.google.com/github/XinzeLee/Fundamentals_of_AI_for_PE/blob/main/8_PE_Simulation_Automation/LTspiceAutomation/LTspiceAtuomate.ipynb"><img src="https://img.shields.io/badge/Open_in_Colab-ffffff?style=for-the-badge&logo=googlecolab&logoColor=black" alt="Open in Colab: LTspiceAtuomate.ipynb" /></a> — <code>8_PE_Simulation_Automation/LTspiceAutomation/LTspiceAtuomate.ipynb</code></p>
+<p align="left"><a href="https://colab.research.google.com/github/XinzeLee/Fundamentals_of_AI_for_PE/blob/main/8_PE_Simulation_Automation/PlecsAutomation/Data%20acquisition.ipynb"><img src="https://img.shields.io/badge/Open_in_Colab-ffffff?style=for-the-badge&logo=googlecolab&logoColor=black" alt="Open in Colab: Data acquisition.ipynb" /></a> — <code>8_PE_Simulation_Automation/PlecsAutomation/Data acquisition.ipynb</code></p>
+<p align="left"><a href="https://colab.research.google.com/github/XinzeLee/Fundamentals_of_AI_for_PE/blob/main/9_Case_Studies_PE/Buck_Design/buck_comprehensive_case_study.ipynb"><img src="https://img.shields.io/badge/Open_in_Colab-ffffff?style=for-the-badge&logo=googlecolab&logoColor=black" alt="Open in Colab: buck_comprehensive_case_study.ipynb" /></a> — <code>9_Case_Studies_PE/Buck_Design/buck_comprehensive_case_study.ipynb</code></p>
+<p align="left"><a href="https://colab.research.google.com/github/XinzeLee/Fundamentals_of_AI_for_PE/blob/main/9_Case_Studies_PE/Buck_Design/buck_modeling_NN.ipynb"><img src="https://img.shields.io/badge/Open_in_Colab-ffffff?style=for-the-badge&logo=googlecolab&logoColor=black" alt="Open in Colab: buck_modeling_NN.ipynb" /></a> — <code>9_Case_Studies_PE/Buck_Design/buck_modeling_NN.ipynb</code></p>
+<p align="left"><a href="https://colab.research.google.com/github/XinzeLee/Fundamentals_of_AI_for_PE/blob/main/9_Case_Studies_PE/Buck_Design/xgboost_buck_modeling.ipynb"><img src="https://img.shields.io/badge/Open_in_Colab-ffffff?style=for-the-badge&logo=googlecolab&logoColor=black" alt="Open in Colab: xgboost_buck_modeling.ipynb" /></a> — <code>9_Case_Studies_PE/Buck_Design/xgboost_buck_modeling.ipynb</code></p>
+<p align="left"><a href="https://colab.research.google.com/github/XinzeLee/Fundamentals_of_AI_for_PE/blob/main/9_Case_Studies_PE/DAB_Design/Adaptive_Modulation/TinyML.ipynb"><img src="https://img.shields.io/badge/Open_in_Colab-ffffff?style=for-the-badge&logo=googlecolab&logoColor=black" alt="Open in Colab: TinyML.ipynb" /></a> — <code>9_Case_Studies_PE/DAB_Design/Adaptive_Modulation/TinyML.ipynb</code></p>
+<p align="left"><a href="https://colab.research.google.com/github/XinzeLee/Fundamentals_of_AI_for_PE/blob/main/9_Case_Studies_PE/DAB_Design/Performance_Modeling_and_Design/one_stop_AI_DAB_modulation.ipynb"><img src="https://img.shields.io/badge/Open_in_Colab-ffffff?style=for-the-badge&logo=googlecolab&logoColor=black" alt="Open in Colab: one_stop_AI_DAB_modulation.ipynb" /></a> — <code>9_Case_Studies_PE/DAB_Design/Performance_Modeling_and_Design/one_stop_AI_DAB_modulation.ipynb</code></p>
+<p align="left"><a href="https://colab.research.google.com/github/XinzeLee/Fundamentals_of_AI_for_PE/blob/main/9_Case_Studies_PE/DAB_Design/Time_Domain_Modeling/time_series_modeling.ipynb"><img src="https://img.shields.io/badge/Open_in_Colab-ffffff?style=for-the-badge&logo=googlecolab&logoColor=black" alt="Open in Colab: time_series_modeling.ipynb" /></a> — <code>9_Case_Studies_PE/DAB_Design/Time_Domain_Modeling/time_series_modeling.ipynb</code></p>
+<p align="left"><a href="https://colab.research.google.com/github/XinzeLee/Fundamentals_of_AI_for_PE/blob/main/9_Case_Studies_PE/IGBT_Maintenance/rul_prediction.ipynb"><img src="https://img.shields.io/badge/Open_in_Colab-ffffff?style=for-the-badge&logo=googlecolab&logoColor=black" alt="Open in Colab: rul_prediction.ipynb" /></a> — <code>9_Case_Studies_PE/IGBT_Maintenance/rul_prediction.ipynb</code></p>
+<p align="left"><a href="https://colab.research.google.com/github/XinzeLee/Fundamentals_of_AI_for_PE/blob/main/9_Case_Studies_PE/Magnetic_Modeling/magnet_fnn.ipynb"><img src="https://img.shields.io/badge/Open_in_Colab-ffffff?style=for-the-badge&logo=googlecolab&logoColor=black" alt="Open in Colab: magnet_fnn.ipynb" /></a> — <code>9_Case_Studies_PE/Magnetic_Modeling/magnet_fnn.ipynb</code></p>
+<p align="left"><a href="https://colab.research.google.com/github/XinzeLee/Fundamentals_of_AI_for_PE/blob/main/9_Case_Studies_PE/Magnetic_Modeling/magnet_lstm.ipynb"><img src="https://img.shields.io/badge/Open_in_Colab-ffffff?style=for-the-badge&logo=googlecolab&logoColor=black" alt="Open in Colab: magnet_lstm.ipynb" /></a> — <code>9_Case_Studies_PE/Magnetic_Modeling/magnet_lstm.ipynb</code></p>
+
+---
+
 ## Navigate this README
 
 | Section | Jump to |
 |--------|---------|
 | Companion tools | [Algorithm selector & ChatGPT](#companion-tools) |
+| Google Colab | [Colab links for all notebooks](#google-colab) |
 | Repository metrics | [Overview](#overview) |
 | Module folders & roles | [1. Contents and learning path](#1-contents-and-learning-path) |
 | Notebook counts by folder | [2. Notebooks by module](#2-notebooks-by-module) |
@@ -48,8 +85,8 @@ Structured summary of topics, notebook code volume, data assets, and algorithm c
 
 | Metric | Value |
 |---|---:|
-| Code lines (notebook cells) | **10,111** |
-| Jupyter notebooks | **26** |
+| Code lines (notebook cells) | **11,247** |
+| Jupyter notebooks | **29** |
 | PE-oriented datasets | **6** |
 | Algorithm labels (see §3) | **24** |
 
@@ -63,10 +100,10 @@ Structured summary of topics, notebook code volume, data assets, and algorithm c
 | [`1_MHA`](1_MHA/) | Single- and multi-objective metaheuristic optimization |
 | [`2_Classic_ML`](2_Classic_ML/) | Classical machine learning baselines |
 | [`3_Ensemble_Learning`](3_Ensemble_Learning/) | Tree and ensemble methods |
-| [`4_Neural_Network`](4_Neural_Network/) | NN fundamentals, sequences, multimodal / MDN; [`Graph_NN/`](4_Neural_Network/Graph_NN/) (GNN resources) |
+| [`4_Neural_Network`](4_Neural_Network/) | NN fundamentals, sequences, multimodal / MDN (incl. synthetic hysteresis: Prandtl–Ishlinskii-style play-operator NN vs MDN, B–H–style motivation); [`Graph_NN/`](4_Neural_Network/Graph_NN/) (GNN resources) |
 | [`5_PIML`](5_PIML/) | Physics-informed modeling (`PINN`); PANN summary in [`PANN/`](5_PIML/PANN/) |
 | [`6_Agentic_AI`](6_Agentic_AI/) | Agentic AI and PE-GPT (documentation and external links; no local `.ipynb` here) |
-| [`7_Reinforcement_Learning`](7_Reinforcement_Learning/) | Curated RL reading and links (no local notebooks in-repo) |
+| [`7_Reinforcement_Learning`](7_Reinforcement_Learning/) | Buck regulation tutorials — DQN (`RL_buck_control.ipynb`) and DDPG (`DDPG_buck_control.ipynb`) — plus curated RL reading |
 | [`8_PE_Simulation_Automation`](8_PE_Simulation_Automation/) | LTspice, PLECS, Simulink automation |
 | [`9_Case_Studies_PE`](9_Case_Studies_PE/) | Buck, DAB, IGBT, magnetic modeling case studies |
 
@@ -74,15 +111,15 @@ Structured summary of topics, notebook code volume, data assets, and algorithm c
 
 | Module | Notebooks | Code lines | Role |
 |---|---:|---:|---|
-| [`0_To_Get_Started`](0_To_Get_Started/) | 1 | 293 | Setup |
-| [`1_MHA`](1_MHA/) | 5 | 1,656 | Optimization core |
-| [`2_Classic_ML`](2_Classic_ML/) | 1 | 151 | Classical baseline |
-| [`3_Ensemble_Learning`](3_Ensemble_Learning/) | 1 | 542 | Ensembles |
-| [`4_Neural_Network`](4_Neural_Network/) | 4 | 1,775 | Deep learning |
-| [`5_PIML`](5_PIML/) | 3 | 1,131 | Physics-informed examples |
-| [`7_Reinforcement_Learning`](7_Reinforcement_Learning/) | 0 | 0 | Curated RL reading (no local notebooks) |
-| [`8_PE_Simulation_Automation`](8_PE_Simulation_Automation/) | 2 | 245 | Tool automation |
-| [`9_Case_Studies_PE`](9_Case_Studies_PE/) | 9 | 4,318 | Applied studies |
+| [`0_To_Get_Started`](0_To_Get_Started/) | 1 | 306 | Setup |
+| [`1_MHA`](1_MHA/) | 5 | 1,721 | Optimization core |
+| [`2_Classic_ML`](2_Classic_ML/) | 2 | 246 | Polynomial Ridge (synthetic regression) + classical classification |
+| [`3_Ensemble_Learning`](3_Ensemble_Learning/) | 1 | 555 | Ensembles |
+| [`4_Neural_Network`](4_Neural_Network/) | 4 | 1,942 | Deep learning |
+| [`5_PIML`](5_PIML/) | 3 | 925 | Physics-informed examples (`PINN/`) |
+| [`7_Reinforcement_Learning`](7_Reinforcement_Learning/) | 2 | 846 | RL tutorials (DQN + DDPG buck) + curated reading |
+| [`8_PE_Simulation_Automation`](8_PE_Simulation_Automation/) | 2 | 271 | Tool automation |
+| [`9_Case_Studies_PE`](9_Case_Studies_PE/) | 9 | 4,435 | Applied studies |
 
 Case-study notebooks account for the largest share of code, followed by neural-network and MHA modules.
 
@@ -148,6 +185,7 @@ Labels used in the inventory fall into three groups:
     sing_obj_MHA.ipynb
 2_Classic_ML/
   classic_ML.ipynb
+  ridge_polynomial_regression.ipynb
 3_Ensemble_Learning/
   ensemle_learning.ipynb
 4_Neural_Network/
@@ -167,12 +205,14 @@ Labels used in the inventory fall into three groups:
     README.md
   PINN/
     pinn_ode.ipynb
+    pinn_pde.ipynb
     prior_integration_example.ipynb
-    prior_integration_example2.ipynb
 6_Agentic_AI/
   README.md
 7_Reinforcement_Learning/
   README.md
+  DDPG_buck_control.ipynb
+  RL_buck_control.ipynb
 8_PE_Simulation_Automation/
   LTspiceAutomation/
     CAB425M12XM3_LTspice.asy
@@ -221,12 +261,13 @@ Labels used in the inventory fall into three groups:
 
 | Notebook | Code lines | Note |
 |---|---:|---|
-| `9_Case_Studies_PE/DAB_Design/Performance_Modeling_and_Design/one_stop_AI_DAB_modulation.ipynb` | 1,213 | Broad applied workflow (optimization, classical ML, NN, anomaly models) |
-| `9_Case_Studies_PE/Buck_Design/buck_comprehensive_case_study.ipynb` | 905 | End-to-end buck study |
-| `4_Neural_Network/Signal_Domain/rnn_basics.ipynb` | 806 | RNN / LSTM / GRU / CNN / Transformer |
-| `1_MHA/Multi_Objective_MHA/multi_obj_MHA_master.ipynb` | 652 | NSGA-II and Pareto analysis |
-| `3_Ensemble_Learning/ensemle_learning.ipynb` | 542 | Ensemble benchmarks |
-| `5_PIML/PINN/prior_integration_example2.ipynb` | 511 | PINN depth |
+| `9_Case_Studies_PE/DAB_Design/Performance_Modeling_and_Design/one_stop_AI_DAB_modulation.ipynb` | 1,226 | Broad applied workflow (optimization, classical ML, NN, anomaly models) |
+| `9_Case_Studies_PE/Buck_Design/buck_comprehensive_case_study.ipynb` | 918 | End-to-end buck study |
+| `4_Neural_Network/Signal_Domain/rnn_basics.ipynb` | 819 | RNN / LSTM / GRU / CNN / Transformer |
+| `1_MHA/Multi_Objective_MHA/multi_obj_MHA_master.ipynb` | 665 | NSGA-II and Pareto analysis |
+| `3_Ensemble_Learning/ensemle_learning.ipynb` | 555 | Ensemble benchmarks |
+| `7_Reinforcement_Learning/RL_buck_control.ipynb` | 404 | DQN-style voltage control on an averaged buck (toy) |
+| `7_Reinforcement_Learning/DDPG_buck_control.ipynb` | 442 | DDPG continuous-action voltage control on the same averaged buck (toy) |
 
 ## 5. Per-notebook reference
 
@@ -234,32 +275,35 @@ Labels used in the inventory fall into three groups:
 
 | Notebook | Code lines | Algorithms | Datasets |
 |---|---:|---|---|
-| `0_To_Get_Started/package_install.ipynb` | 293 | FNN/MLP (PyTorch)<br>Genetic Algorithm (GA)<br>PSO (Particle Swarm Optimization)<br>XGBoost (classification)<br>sklearn:LinearRegression | sklearn.datasets.load_iris<br>sklearn.datasets.make_regression |
-| `1_MHA/Multi_Objective_MHA/multi_obj_MHA_master.ipynb` | 652 | NSGA-II (multi-objective GA)<br>PSO (Particle Swarm Optimization) | synthetic / generated (random) |
-| `1_MHA/Single_Objective_MHA/algorithm_stats_compare.ipynb` | 90 | Genetic Algorithm (GA)<br>PSO (Particle Swarm Optimization) | — |
-| `1_MHA/Single_Objective_MHA/buck_design_PSO.ipynb` | 377 | PSO (Particle Swarm Optimization) | — |
-| `1_MHA/Single_Objective_MHA/pso_hyp_tuning.ipynb` | 189 | PSO (Particle Swarm Optimization) | synthetic / generated (random) |
-| `1_MHA/Single_Objective_MHA/sing_obj_MHA.ipynb` | 348 | PSO (Particle Swarm Optimization) | synthetic / generated (random) |
-| `2_Classic_ML/classic_ML.ipynb` | 151 | sklearn:DecisionTreeClassifier | sklearn.datasets.load_breast_cancer |
-| `3_Ensemble_Learning/ensemle_learning.ipynb` | 542 | XGBoost (classification)<br>XGBoost (regression)<br>sklearn:DecisionTreeClassifier<br>sklearn:PCA<br>sklearn:RandomForestClassifier<br>sklearn:Ridge | sklearn.datasets.make_classification |
-| `4_Neural_Network/Fundamentals/NN_basics.ipynb` | 449 | FNN/MLP (PyTorch) | sklearn.datasets.fetch_california_housing<br>sklearn.datasets.load_breast_cancer |
-| `4_Neural_Network/Good_Practices/good_practice_NN.ipynb` | 207 | FNN/MLP (PyTorch) | sklearn.datasets.fetch_california_housing |
-| `4_Neural_Network/Multi_Modal_Distribution/mixture_density_net_ensemble_learning.ipynb` | 313 | FNN/MLP (PyTorch)<br>Mixture Density Network (MDN)<br>sklearn:RandomForestRegressor | — |
-| `4_Neural_Network/Signal_Domain/rnn_basics.ipynb` | 806 | CNN (PyTorch)<br>FNN/MLP (PyTorch)<br>GRU (PyTorch)<br>LSTM (PyTorch)<br>RNN (PyTorch)<br>Transformer/Attention<br>Transformer/Attention (PyTorch) | synthetic / generated (random) |
-| `5_PIML/PINN/pinn_ode.ipynb` | 233 | FNN/MLP (PyTorch)<br>PINN (Physics-Informed Neural Network) | synthetic / generated (random) |
-| `5_PIML/PINN/prior_integration_example.ipynb` | 387 | FNN/MLP (PyTorch)<br>PINN (Physics-Informed Neural Network) | synthetic / generated (random) |
-| `5_PIML/PINN/prior_integration_example2.ipynb` | 511 | FNN/MLP (PyTorch)<br>PINN (Physics-Informed Neural Network) | synthetic / generated (random) |
-| `8_PE_Simulation_Automation/LTspiceAutomation/LTspiceAtuomate.ipynb` | 140 | — | — |
-| `8_PE_Simulation_Automation/PlecsAutomation/Data acquisition.ipynb` | 105 | — | — |
-| `9_Case_Studies_PE/Buck_Design/buck_comprehensive_case_study.ipynb` | 905 | FNN/MLP (PyTorch)<br>Genetic Algorithm (GA)<br>PSO (Particle Swarm Optimization)<br>XGBoost (regression)<br>sklearn:RandomForestRegressor<br>sklearn:Ridge<br>sklearn:SVR | synthetic / generated (random) |
-| `9_Case_Studies_PE/Buck_Design/buck_modeling_NN.ipynb` | 381 | FNN/MLP (PyTorch)<br>XGBoost (regression)<br>sklearn:RandomForestRegressor<br>sklearn:TSNE | — |
-| `9_Case_Studies_PE/Buck_Design/xgboost_buck_modeling.ipynb` | 272 | PSO (Particle Swarm Optimization)<br>XGBoost (regression) | — |
-| `9_Case_Studies_PE/DAB_Design/Adaptive_Modulation/TinyML.ipynb` | 533 | FNN/MLP (PyTorch) | — |
-| `9_Case_Studies_PE/DAB_Design/Performance_Modeling_and_Design/one_stop_AI_DAB_modulation.ipynb` | 1213 | FNN/MLP (PyTorch)<br>Genetic Algorithm (GA)<br>PSO (Particle Swarm Optimization)<br>XGBoost (classification)<br>XGBoost (regression)<br>sklearn:IsolationForest<br>sklearn:OneClassSVM<br>sklearn:PCA<br>sklearn:SVR<br>sklearn:TSNE | synthetic / generated (random) |
-| `9_Case_Studies_PE/DAB_Design/Time_Domain_Modeling/time_series_modeling.ipynb` | 166 | FNN/MLP (PyTorch)<br>LSTM (PyTorch) | synthetic / generated (random) |
-| `9_Case_Studies_PE/IGBT_Maintenance/rul_prediction.ipynb` | 365 | FNN/MLP (PyTorch)<br>LSTM (PyTorch) | synthetic / generated (random) |
-| `9_Case_Studies_PE/Magnetic_Modeling/magnet_fnn.ipynb` | 260 | FNN/MLP (PyTorch) | — |
-| `9_Case_Studies_PE/Magnetic_Modeling/magnet_lstm.ipynb` | 223 | FNN/MLP (PyTorch)<br>LSTM (PyTorch) | — |
+| `0_To_Get_Started/package_install.ipynb` | 306 | FNN/MLP (PyTorch)<br>Genetic Algorithm (GA)<br>PSO (Particle Swarm Optimization)<br>XGBoost (classification)<br>sklearn:LinearRegression | sklearn.datasets.load_iris<br>sklearn.datasets.make_regression |
+| `1_MHA/Multi_Objective_MHA/multi_obj_MHA_master.ipynb` | 665 | NSGA-II (multi-objective GA)<br>PSO (Particle Swarm Optimization) | synthetic / generated (random) |
+| `1_MHA/Single_Objective_MHA/algorithm_stats_compare.ipynb` | 103 | Genetic Algorithm (GA)<br>PSO (Particle Swarm Optimization) | — |
+| `1_MHA/Single_Objective_MHA/buck_design_PSO.ipynb` | 390 | PSO (Particle Swarm Optimization) | — |
+| `1_MHA/Single_Objective_MHA/pso_hyp_tuning.ipynb` | 202 | PSO (Particle Swarm Optimization) | synthetic / generated (random) |
+| `1_MHA/Single_Objective_MHA/sing_obj_MHA.ipynb` | 361 | PSO (Particle Swarm Optimization) | synthetic / generated (random) |
+| `2_Classic_ML/ridge_polynomial_regression.ipynb` | 82 | sklearn:Ridge | synthetic / generated (random) |
+| `2_Classic_ML/classic_ML.ipynb` | 164 | sklearn:DecisionTreeClassifier | sklearn.datasets.load_breast_cancer |
+| `3_Ensemble_Learning/ensemle_learning.ipynb` | 555 | XGBoost (classification)<br>XGBoost (regression)<br>sklearn:DecisionTreeClassifier<br>sklearn:PCA<br>sklearn:RandomForestClassifier<br>sklearn:Ridge | sklearn.datasets.make_classification |
+| `4_Neural_Network/Fundamentals/NN_basics.ipynb` | 462 | FNN/MLP (PyTorch) | sklearn.datasets.fetch_california_housing<br>sklearn.datasets.load_breast_cancer |
+| `4_Neural_Network/Good_Practices/good_practice_NN.ipynb` | 220 | FNN/MLP (PyTorch) | sklearn.datasets.fetch_california_housing |
+| `4_Neural_Network/Multi_Modal_Distribution/mixture_density_net_ensemble_learning.ipynb` | 441 | FNN/MLP (PyTorch)<br>Mixture Density Network (MDN)<br>sklearn:RandomForestRegressor<br>Prandtl–Ishlinskii–style hysteresis (play operators, PyTorch) | synthetic nonlinear regression; synthetic rate-independent hysteresis loop |
+| `4_Neural_Network/Signal_Domain/rnn_basics.ipynb` | 819 | CNN (PyTorch)<br>FNN/MLP (PyTorch)<br>GRU (PyTorch)<br>LSTM (PyTorch)<br>RNN (PyTorch)<br>Transformer/Attention<br>Transformer/Attention (PyTorch) | synthetic / generated (random) |
+| `5_PIML/PINN/pinn_ode.ipynb` | 341 | FNN/MLP (PyTorch)<br>PINN (ODE; fixed collocation, soft IC, composite loss, Adam + L-BFGS) | synthetic cooling curve + noisy samples |
+| `5_PIML/PINN/pinn_pde.ipynb` | 259 | FNN/MLP (PyTorch)<br>PINN (PDE; fixed grids, soft IC/BC, composite loss, Adam + L-BFGS) | synthetic Burgers reference (MoL) |
+| `5_PIML/PINN/prior_integration_example.ipynb` | 400 | FNN/MLP (PyTorch)<br>PINN (Physics-Informed Neural Network) | synthetic / generated (random) |
+| `7_Reinforcement_Learning/RL_buck_control.ipynb` | 404 | DQN (PyTorch; toy averaged buck) | synthetic / generated (random) |
+| `7_Reinforcement_Learning/DDPG_buck_control.ipynb` | 442 | DDPG (PyTorch; toy averaged buck) | synthetic / generated (random) |
+| `8_PE_Simulation_Automation/LTspiceAutomation/LTspiceAtuomate.ipynb` | 153 | — | — |
+| `8_PE_Simulation_Automation/PlecsAutomation/Data acquisition.ipynb` | 118 | — | — |
+| `9_Case_Studies_PE/Buck_Design/buck_comprehensive_case_study.ipynb` | 918 | FNN/MLP (PyTorch)<br>Genetic Algorithm (GA)<br>PSO (Particle Swarm Optimization)<br>XGBoost (regression)<br>sklearn:RandomForestRegressor<br>sklearn:Ridge<br>sklearn:SVR | synthetic / generated (random) |
+| `9_Case_Studies_PE/Buck_Design/buck_modeling_NN.ipynb` | 394 | FNN/MLP (PyTorch)<br>XGBoost (regression)<br>sklearn:RandomForestRegressor<br>sklearn:TSNE | — |
+| `9_Case_Studies_PE/Buck_Design/xgboost_buck_modeling.ipynb` | 285 | PSO (Particle Swarm Optimization)<br>XGBoost (regression) | — |
+| `9_Case_Studies_PE/DAB_Design/Adaptive_Modulation/TinyML.ipynb` | 546 | FNN/MLP (PyTorch) | — |
+| `9_Case_Studies_PE/DAB_Design/Performance_Modeling_and_Design/one_stop_AI_DAB_modulation.ipynb` | 1226 | FNN/MLP (PyTorch)<br>Genetic Algorithm (GA)<br>PSO (Particle Swarm Optimization)<br>XGBoost (classification)<br>XGBoost (regression)<br>sklearn:IsolationForest<br>sklearn:OneClassSVM<br>sklearn:PCA<br>sklearn:SVR<br>sklearn:TSNE | synthetic / generated (random) |
+| `9_Case_Studies_PE/DAB_Design/Time_Domain_Modeling/time_series_modeling.ipynb` | 179 | FNN/MLP (PyTorch)<br>LSTM (PyTorch) | synthetic / generated (random) |
+| `9_Case_Studies_PE/IGBT_Maintenance/rul_prediction.ipynb` | 378 | FNN/MLP (PyTorch)<br>LSTM (PyTorch) | synthetic / generated (random) |
+| `9_Case_Studies_PE/Magnetic_Modeling/magnet_fnn.ipynb` | 273 | FNN/MLP (PyTorch) | — |
+| `9_Case_Studies_PE/Magnetic_Modeling/magnet_lstm.ipynb` | 236 | FNN/MLP (PyTorch)<br>LSTM (PyTorch) | — |
 
 ## Alignment with the tutorial article
 

@@ -9,6 +9,22 @@
 
 ---
 
+## Google Colab
+
+<p align="center">
+  <a href="https://colab.research.google.com/github/XinzeLee/Fundamentals_of_AI_for_PE/blob/main/7_Reinforcement_Learning/RL_buck_control.ipynb">
+    <img src="https://img.shields.io/badge/Open_RL_buck_control_in_Colab-ffffff?style=for-the-badge&logo=googlecolab&logoColor=black" alt="Open RL_buck_control.ipynb in Colab" />
+  </a>
+</p>
+
+<p align="center">
+  <a href="https://colab.research.google.com/github/XinzeLee/Fundamentals_of_AI_for_PE/blob/main/7_Reinforcement_Learning/DDPG_buck_control.ipynb">
+    <img src="https://img.shields.io/badge/Open_DDPG_buck_control_in_Colab-ffffff?style=for-the-badge&logo=googlecolab&logoColor=black" alt="Open DDPG_buck_control.ipynb in Colab" />
+  </a>
+</p>
+
+---
+
 ## Alignment with the tutorial article
 
 **Discussion in the article:** Section IV-D; Section IV-F (reinforcement learning and learning types / architectures).
@@ -27,7 +43,7 @@ Curated entry to reinforcement learning (RL) with emphasis on **control** and **
 |------|-------------|
 | **Reading (control)** | Classic RL-for-control papers under Awesome RL’s `#control` anchor (summary below). |
 | **Rewards & objectives** | Related themes elsewhere on the same Awesome RL page and ties to control / PE. |
-| **Local notebooks** | `RL_toyexamples.ipynb` — minimal DDPG (continuous duty) voltage regulation on an averaged buck model (NumPy + PyTorch). |
+| **Local notebooks** | `RL_buck_control.ipynb` — DQN-style discrete duty steps; `DDPG_buck_control.ipynb` — DDPG with continuous normalized actions for the same averaged buck voltage-tracking task (NumPy + PyTorch). Both include an optional smooth-duty reward variant. |
 
 ---
 
@@ -93,7 +109,8 @@ These bullets are **local PE-oriented notes**, not quotations from `#control`.
 
 ## Local notebooks
 
-- **`RL_toyexamples.ipynb`** — DDPG with replay buffer and target soft-updates on a continuous-duty buck averaged-voltage regulation task (pedagogical; not a switching simulator). Resets use arbitrary initial output voltage (and current) between physical bounds.
+- **`RL_buck_control.ipynb`** — DQN (discrete duty steps) with experience replay and a target network on an averaged buck voltage-tracking task (pedagogical; not a switching simulator). Resets vary input voltage, reference, and initial state.
+- **`DDPG_buck_control.ipynb`** — DDPG (continuous action in \([-1,1]\), Ornstein–Uhlenbeck exploration, target actor–critic, soft updates) on the same averaged plant and reward framing; compares baseline tracking to a smooth-duty penalty, analogous to the DQN notebook.
 
 ---
 

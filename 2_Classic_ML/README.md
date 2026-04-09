@@ -9,6 +9,20 @@
 
 ---
 
+## Google Colab
+
+<p align="center">
+  <a href="https://colab.research.google.com/github/XinzeLee/Fundamentals_of_AI_for_PE/blob/main/2_Classic_ML/ridge_polynomial_regression.ipynb">
+    <img src="https://img.shields.io/badge/Open_ridge_polynomial_regression-ffffff?style=for-the-badge&logo=googlecolab&logoColor=black" alt="Open ridge_polynomial_regression.ipynb in Colab" />
+  </a>
+  &nbsp;&nbsp;
+  <a href="https://colab.research.google.com/github/XinzeLee/Fundamentals_of_AI_for_PE/blob/main/2_Classic_ML/classic_ML.ipynb">
+    <img src="https://img.shields.io/badge/Open_classic_ML_in_Colab-ffffff?style=for-the-badge&logo=googlecolab&logoColor=black" alt="Open classic_ML.ipynb in Colab" />
+  </a>
+</p>
+
+---
+
 ## Alignment with the tutorial article
 
 **Discussion in the article:** Section III-A; Section IV-D; Section IV-E.
@@ -17,14 +31,16 @@ The classical ML baseline here supports the tutorial narrative in *Fundamentals 
 
 ---
 
-Classical machine learning via a single classification workflow.
+Classical machine learning: a **regression** notebook (polynomial features + Ridge on synthetic data) and a **classification** notebook (decision trees on Breast Cancer).
 
 ## Contents
 
-- `classic_ML.ipynb`
+- `ridge_polynomial_regression.ipynb` — bias–variance story in 1-D  
+- `classic_ML.ipynb` — classification and decision boundaries  
 
 ## Outcomes
 
+- **Polynomial Ridge regression** on synthetic 1-D data: **underfitting**, **overfitting**, and regularization (`ridge_polynomial_regression.ipynb`)  
 - `scikit-learn` classification pipeline from data to metrics  
 - Decision tree training on a standard benchmark  
 - Accuracy and confusion matrix  
@@ -65,7 +81,8 @@ Classical machine learning via a single classification workflow.
 
 ## Recommended order
 
-1. Baseline path with default `scikit-learn` only.  
-2. Review confusion matrix and boundaries for the classic tree.  
-3. Optionally install `fuzzytree` and compare.  
-4. Try other feature pairs or `max_depth` to see boundary changes.
+1. `ridge_polynomial_regression.ipynb` for the regression / regularization narrative.  
+2. `classic_ML.ipynb` with default `scikit-learn` only (decision tree).  
+3. Review confusion matrix and boundaries for the classic tree.  
+4. Optionally install `fuzzytree` and compare.  
+5. Try other feature pairs or `max_depth` to see boundary changes.

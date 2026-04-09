@@ -9,6 +9,33 @@
 
 ---
 
+## Google Colab
+
+<p align="center">
+  <a href="https://colab.research.google.com/github/XinzeLee/Fundamentals_of_AI_for_PE/blob/main/1_MHA/Multi_Objective_MHA/multi_obj_MHA_master.ipynb">
+    <img src="https://img.shields.io/badge/Open_multi_obj_MHA_in_Colab-ffffff?style=for-the-badge&logo=googlecolab&logoColor=black" alt="Open multi_obj_MHA_master.ipynb in Colab" />
+  </a>
+  &nbsp;&nbsp;
+  <a href="https://colab.research.google.com/github/XinzeLee/Fundamentals_of_AI_for_PE/blob/main/1_MHA/Single_Objective_MHA/algorithm_stats_compare.ipynb">
+    <img src="https://img.shields.io/badge/Open_algorithm_stats_compare_in_Colab-ffffff?style=for-the-badge&logo=googlecolab&logoColor=black" alt="Open algorithm_stats_compare.ipynb in Colab" />
+  </a>
+</p>
+<p align="center">
+  <a href="https://colab.research.google.com/github/XinzeLee/Fundamentals_of_AI_for_PE/blob/main/1_MHA/Single_Objective_MHA/buck_design_PSO.ipynb">
+    <img src="https://img.shields.io/badge/Open_buck_design_PSO_in_Colab-ffffff?style=for-the-badge&logo=googlecolab&logoColor=black" alt="Open buck_design_PSO.ipynb in Colab" />
+  </a>
+  &nbsp;&nbsp;
+  <a href="https://colab.research.google.com/github/XinzeLee/Fundamentals_of_AI_for_PE/blob/main/1_MHA/Single_Objective_MHA/pso_hyp_tuning.ipynb">
+    <img src="https://img.shields.io/badge/Open_pso_hyp_tuning_in_Colab-ffffff?style=for-the-badge&logo=googlecolab&logoColor=black" alt="Open pso_hyp_tuning.ipynb in Colab" />
+  </a>
+  &nbsp;&nbsp;
+  <a href="https://colab.research.google.com/github/XinzeLee/Fundamentals_of_AI_for_PE/blob/main/1_MHA/Single_Objective_MHA/sing_obj_MHA.ipynb">
+    <img src="https://img.shields.io/badge/Open_sing_obj_MHA_in_Colab-ffffff?style=for-the-badge&logo=googlecolab&logoColor=black" alt="Open sing_obj_MHA.ipynb in Colab" />
+  </a>
+</p>
+
+---
+
 ## Alignment with the tutorial article
 
 **Discussion in the article:** [`Single_Objective_MHA/`](Single_Objective_MHA/) — Section II-A; Section II-C; Section II-D. [`Multi_Objective_MHA/`](Multi_Objective_MHA/) — Section II-B; Section II-C.

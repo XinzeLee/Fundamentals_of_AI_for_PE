@@ -9,6 +9,12 @@
 
 ---
 
+## Google Colab
+
+This module is **documentation and external links** only (no Jupyter notebooks in this folder). For hands-on Colab notebooks elsewhere in the course, start from the [repository root README](../README.md#google-colab).
+
+---
+
 ## Alignment with the tutorial article
 
 **Discussion in the article:** Section VI (agentic AI, LLM tooling, PE-GPT-style workflows).

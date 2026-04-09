@@ -9,6 +9,55 @@
 
 ---
 
+## Google Colab
+
+<p align="center">
+  <a href="https://colab.research.google.com/github/XinzeLee/Fundamentals_of_AI_for_PE/blob/main/9_Case_Studies_PE/Buck_Design/buck_comprehensive_case_study.ipynb">
+    <img src="https://img.shields.io/badge/Buck_comprehensive-ffffff?style=for-the-badge&logo=googlecolab&logoColor=black" alt="Open buck_comprehensive_case_study.ipynb in Colab" />
+  </a>
+  &nbsp;&nbsp;
+  <a href="https://colab.research.google.com/github/XinzeLee/Fundamentals_of_AI_for_PE/blob/main/9_Case_Studies_PE/Buck_Design/buck_modeling_NN.ipynb">
+    <img src="https://img.shields.io/badge/Buck_modeling_NN-ffffff?style=for-the-badge&logo=googlecolab&logoColor=black" alt="Open buck_modeling_NN.ipynb in Colab" />
+  </a>
+  &nbsp;&nbsp;
+  <a href="https://colab.research.google.com/github/XinzeLee/Fundamentals_of_AI_for_PE/blob/main/9_Case_Studies_PE/Buck_Design/xgboost_buck_modeling.ipynb">
+    <img src="https://img.shields.io/badge/Buck_XGBoost-ffffff?style=for-the-badge&logo=googlecolab&logoColor=black" alt="Open xgboost_buck_modeling.ipynb in Colab" />
+  </a>
+</p>
+<p align="center">
+  <a href="https://colab.research.google.com/github/XinzeLee/Fundamentals_of_AI_for_PE/blob/main/9_Case_Studies_PE/DAB_Design/Adaptive_Modulation/TinyML.ipynb">
+    <img src="https://img.shields.io/badge/DAB_TinyML-ffffff?style=for-the-badge&logo=googlecolab&logoColor=black" alt="Open TinyML.ipynb in Colab" />
+  </a>
+  &nbsp;&nbsp;
+  <a href="https://colab.research.google.com/github/XinzeLee/Fundamentals_of_AI_for_PE/blob/main/9_Case_Studies_PE/DAB_Design/Performance_Modeling_and_Design/one_stop_AI_DAB_modulation.ipynb">
+    <img src="https://img.shields.io/badge/DAB_one_stop-ffffff?style=for-the-badge&logo=googlecolab&logoColor=black" alt="Open one_stop_AI_DAB_modulation.ipynb in Colab" />
+  </a>
+  &nbsp;&nbsp;
+  <a href="https://colab.research.google.com/github/XinzeLee/Fundamentals_of_AI_for_PE/blob/main/9_Case_Studies_PE/DAB_Design/Time_Domain_Modeling/time_series_modeling.ipynb">
+    <img src="https://img.shields.io/badge/DAB_time_series-ffffff?style=for-the-badge&logo=googlecolab&logoColor=black" alt="Open time_series_modeling.ipynb in Colab" />
+  </a>
+</p>
+<p align="center">
+  <a href="https://colab.research.google.com/github/XinzeLee/Fundamentals_of_AI_for_PE/blob/main/9_Case_Studies_PE/IGBT_Maintenance/rul_prediction.ipynb">
+    <img src="https://img.shields.io/badge/IGBT_RUL-ffffff?style=for-the-badge&logo=googlecolab&logoColor=black" alt="Open rul_prediction.ipynb in Colab" />
+  </a>
+  &nbsp;&nbsp;
+  <a href="https://colab.research.google.com/github/XinzeLee/Fundamentals_of_AI_for_PE/blob/main/9_Case_Studies_PE/Magnetic_Modeling/magnet_fnn.ipynb">
+    <img src="https://img.shields.io/badge/Magnetics_FNN-ffffff?style=for-the-badge&logo=googlecolab&logoColor=black" alt="Open magnet_fnn.ipynb in Colab" />
+  </a>
+  &nbsp;&nbsp;
+  <a href="https://colab.research.google.com/github/XinzeLee/Fundamentals_of_AI_for_PE/blob/main/9_Case_Studies_PE/Magnetic_Modeling/magnet_lstm.ipynb">
+    <img src="https://img.shields.io/badge/Magnetics_LSTM-ffffff?style=for-the-badge&logo=googlecolab&logoColor=black" alt="Open magnet_lstm.ipynb in Colab" />
+  </a>
+</p>
+<p align="center">
+  <a href="https://colab.research.google.com/github/XinzeLee/Fundamentals_of_AI_for_PE/blob/main/9_Case_Studies_PE/PV_Plant_FDD/attention_fdd.ipynb">
+    <img src="https://img.shields.io/badge/PV_FDD_attention-ffffff?style=for-the-badge&logo=googlecolab&logoColor=black" alt="Open attention_fdd.ipynb in Colab" />
+  </a>
+</p>
+
+---
+
 ## Alignment with the tutorial article
 
 Case-study folders map to **Section VII** (and supporting sections) of *Fundamentals of Artificial Intelligences for Power Electronics* (*IEEE Trans. Ind. Electron.*, 2026):
@@ -39,7 +88,7 @@ The bundled `.mat` / `*_downscaled.csv` files in `IGBT_Maintenance` and `Magneti
 
 ## Scope
 
-**Subfolders:** `Buck_Design`, `DAB_Design/Adaptive_Modulation`, `DAB_Design/Performance_Modeling_and_Design`, `DAB_Design/Time_Domain_Modeling`, `IGBT_Maintenance`, `Magnetic_Modeling`.
+**Subfolders:** `Buck_Design`, `DAB_Design/Adaptive_Modulation`, `DAB_Design/Performance_Modeling_and_Design`, `DAB_Design/Time_Domain_Modeling`, `IGBT_Maintenance`, `Magnetic_Modeling`, `PV_Plant_FDD`.
 
 **Notebooks**
 
@@ -52,6 +101,7 @@ The bundled `.mat` / `*_downscaled.csv` files in `IGBT_Maintenance` and `Magneti
 7. `IGBT_Maintenance/rul_prediction.ipynb`  
 8. `Magnetic_Modeling/magnet_fnn.ipynb`  
 9. `Magnetic_Modeling/magnet_lstm.ipynb`  
+10. `PV_Plant_FDD/attention_fdd.ipynb`  
 
 ## Outcomes
 
@@ -149,6 +199,18 @@ The bundled `.mat` / `*_downscaled.csv` files in `IGBT_Maintenance` and `Magneti
 **Algorithms & data:** BiLSTM + fused numeric branch. Same four CSVs as above (see [MagNet Challenge](https://www.princeton.edu/~minjie/magnet.html)).
 
 **Notes:** Shared split indices across branches; multi-input `Dataset` / `DataLoader` pattern.
+
+---
+
+## PV plant fault detection
+
+### `PV_Plant_FDD/attention_fdd.ipynb`
+
+**Topics:** Multi-class PV fault / condition classification from synchronized DC electrical waveforms (`idc1`, `idc2`, `vdc1`, `vdc2`) with labels `f_nv` from `dataset_amb.mat`; windowed sequences; Transformer encoder and learnable-query attention pooling.
+
+**Algorithms & data:** PyTorch `TransformerEncoder`, multi-head cross-attention pool, class-weighted cross-entropy, temporal train/val/test split, channel z-score from train only, AdamW with warmup + cosine LR decay, gradient clipping, early stopping on validation macro-F1. `dataset_elec.mat`, `dataset_amb.mat` (same folder).
+
+**Notes:** Place the notebook (or run with cwd) next to the `.mat` files, or open from repo root so the loader resolves paths.
 
 ---
 

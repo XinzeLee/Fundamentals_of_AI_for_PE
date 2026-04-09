@@ -9,6 +9,12 @@
 
 ---
 
+## Google Colab
+
+This folder is a **bridge** to the external [PANN](https://github.com/XinzeLee/PANN) repository; there is no local `.ipynb` here. For Colab-ready PINN notebooks in *this* course repo, use the buttons on [`../README.md`](../README.md) (`PINN/pinn_ode.ipynb`, `PINN/pinn_pde.ipynb`, `PINN/prior_integration_example.ipynb`). **`pinn_ode.ipynb` and `pinn_pde.ipynb`** share the same training recipe in the loss: fixed sampling points, soft IC/BC (or IC + data for the ODE), scalar weights on each term, and Adam + optional L-BFGS.
+
+---
+
 ## Alignment with the tutorial article
 
 **Discussion in the article:** Section V-C; Section VII-E (PANN-style identification and case study links).
