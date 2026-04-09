@@ -38,10 +38,6 @@
   </a>
 </p>
 <p align="center">
-  <a href="https://colab.research.google.com/github/XinzeLee/Fundamentals_of_AI_for_PE/blob/main/9_Case_Studies_PE/IGBT_Maintenance/rul_prediction.ipynb">
-    <img src="https://img.shields.io/badge/IGBT_RUL-ffffff?style=for-the-badge&logo=googlecolab&logoColor=black" alt="Open rul_prediction.ipynb in Colab" />
-  </a>
-  &nbsp;&nbsp;
   <a href="https://colab.research.google.com/github/XinzeLee/Fundamentals_of_AI_for_PE/blob/main/9_Case_Studies_PE/Magnetic_Modeling/magnet_fnn.ipynb">
     <img src="https://img.shields.io/badge/Magnetics_FNN-ffffff?style=for-the-badge&logo=googlecolab&logoColor=black" alt="Open magnet_fnn.ipynb in Colab" />
   </a>
@@ -51,8 +47,8 @@
   </a>
 </p>
 <p align="center">
-  <a href="https://colab.research.google.com/github/XinzeLee/Fundamentals_of_AI_for_PE/blob/main/9_Case_Studies_PE/PV_Plant_FDD/attention_fdd.ipynb">
-    <img src="https://img.shields.io/badge/PV_FDD_attention-ffffff?style=for-the-badge&logo=googlecolab&logoColor=black" alt="Open attention_fdd.ipynb in Colab" />
+  <a href="https://colab.research.google.com/github/XinzeLee/Fundamentals_of_AI_for_PE/blob/main/9_Case_Studies_PE/IGBT_Maintenance/rul_prediction.ipynb">
+    <img src="https://img.shields.io/badge/IGBT_RUL-ffffff?style=for-the-badge&logo=googlecolab&logoColor=black" alt="Open rul_prediction.ipynb in Colab" />
   </a>
 </p>
 
