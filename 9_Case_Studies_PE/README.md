@@ -84,7 +84,9 @@ The bundled `.mat` / `*_downscaled.csv` files in `IGBT_Maintenance` and `Magneti
 
 ## Scope
 
-**Subfolders:** `Buck_Design`, `DAB_Design/Adaptive_Modulation`, `DAB_Design/Performance_Modeling_and_Design`, `DAB_Design/Time_Domain_Modeling`, `IGBT_Maintenance`, `Magnetic_Modeling`, `PV_Plant_FDD`.
+**Subfolders:** `Buck_Design`, `DAB_Design/Adaptive_Modulation`, `DAB_Design/Performance_Modeling_and_Design`, `DAB_Design/Time_Domain_Modeling`, `IGBT_Maintenance`, `Magnetic_Modeling`.
+
+**Related (thermal field):** For **3-D temperature** regression from downsampled CSV probes \\((x,y,z)\\) with loss/ambient in filenames, see [`4_Neural_Network/Field_Data/`](../4_Neural_Network/Field_Data/) (`field_temperature_residual_fnn.ipynb`)—complements the **magnetic** field / loss-density threads here.
 
 **Notebooks**
 
@@ -97,7 +99,6 @@ The bundled `.mat` / `*_downscaled.csv` files in `IGBT_Maintenance` and `Magneti
 7. `IGBT_Maintenance/rul_prediction.ipynb`  
 8. `Magnetic_Modeling/magnet_fnn.ipynb`  
 9. `Magnetic_Modeling/magnet_lstm.ipynb`  
-10. `PV_Plant_FDD/attention_fdd.ipynb`  
 
 ## Outcomes
 
@@ -195,18 +196,6 @@ The bundled `.mat` / `*_downscaled.csv` files in `IGBT_Maintenance` and `Magneti
 **Algorithms & data:** BiLSTM + fused numeric branch. Same four CSVs as above (see [MagNet Challenge](https://www.princeton.edu/~minjie/magnet.html)).
 
 **Notes:** Shared split indices across branches; multi-input `Dataset` / `DataLoader` pattern.
-
----
-
-## PV plant fault detection
-
-### `PV_Plant_FDD/attention_fdd.ipynb`
-
-**Topics:** Multi-class PV fault / condition classification from synchronized DC electrical waveforms (`idc1`, `idc2`, `vdc1`, `vdc2`) with labels `f_nv` from `dataset_amb.mat`; windowed sequences; Transformer encoder and learnable-query attention pooling.
-
-**Algorithms & data:** PyTorch `TransformerEncoder`, multi-head cross-attention pool, class-weighted cross-entropy, temporal train/val/test split, channel z-score from train only, AdamW with warmup + cosine LR decay, gradient clipping, early stopping on validation macro-F1. `dataset_elec.mat`, `dataset_amb.mat` (same folder).
-
-**Notes:** Place the notebook (or run with cwd) next to the `.mat` files, or open from repo root so the loader resolves paths.
 
 ---
 

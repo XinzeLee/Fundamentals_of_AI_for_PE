@@ -42,8 +42,13 @@ Use the interactive **Algorithm Selector** to narrow AI/ML approaches for your P
 | File tree & highlighted notebooks | [4. Tree and representative notebooks](#4-tree-and-representative-notebooks) → [4.1 Layout](#41-layout) · [4.2 Representative notebooks](#42-representative-notebooks) |
 | Full per-notebook table | [5. Per-notebook reference](#5-per-notebook-reference) |
 | Article ↔ repo mapping | [Alignment with the tutorial article](#alignment-with-the-tutorial-article) |
+| Education article (PDF) | [Companion education article](#companion-education-article-pilot-course) |
 
 Structured summary of topics, notebook code volume, data assets, and algorithm coverage across Jupyter notebooks (`.ipynb`). Documentation files are omitted from the metrics below.
+
+## Google Colab
+
+Each module README includes **Open in Colab** badges for its notebooks. On Colab, the usual first code cell clones this repository to `/content/Fundamentals_of_AI_for_PE`, runs `pip install -r requirements.txt`, and sets the working directory so paths resolve. **Exception:** [`8_PE_Simulation_Automation`](8_PE_Simulation_Automation/) relies on local simulators (LTspice, PLECS, etc.) and is not intended for Colab.
 
 ## Overview
 
@@ -52,7 +57,7 @@ Structured summary of topics, notebook code volume, data assets, and algorithm c
 | Code lines (notebook cells) | **11,637** |
 | Jupyter notebooks | **30** |
 | PE-oriented datasets | **7** |
-| Algorithm labels (see §3) | **24** |
+| Algorithm labels (see section 3) | **24** |
 
 **Summary:** Teaching-oriented AI-for-power-electronics material, with the most notebook code in case studies, neural networks, and metaheuristic optimization.
 
@@ -80,9 +85,9 @@ Structured summary of topics, notebook code volume, data assets, and algorithm c
 | [`2_Classic_ML`](2_Classic_ML/) | 2 | 246 | Polynomial Ridge (synthetic regression) + classical classification |
 | [`3_Ensemble_Learning`](3_Ensemble_Learning/) | 1 | 555 | Ensembles |
 | [`4_Neural_Network`](4_Neural_Network/) | 5 | 2,283 | Deep learning |
-| [`5_PIML`](5_PIML/) | 3 | 925 | Physics-informed examples (`PINN/`) |
+| [`5_PIML`](5_PIML/) | 3 | 1,000 | Physics-informed examples (`PINN/`) |
 | [`7_Reinforcement_Learning`](7_Reinforcement_Learning/) | 2 | 846 | RL tutorials (DQN + DDPG buck) + curated reading |
-| [`8_PE_Simulation_Automation`](8_PE_Simulation_Automation/) | 2 | 271 | Tool automation |
+| [`8_PE_Simulation_Automation`](8_PE_Simulation_Automation/) | 2 | 245 | Tool automation |
 | [`9_Case_Studies_PE`](9_Case_Studies_PE/) | 9 | 4,435 | Applied studies |
 
 Case-study notebooks account for the largest share of code, followed by neural-network and MHA modules.
@@ -224,6 +229,8 @@ Labels used in the inventory fall into three groups:
     magnet_lstm.ipynb
     Temperature[C]_downscaled.csv
     Volumetric_losses[Wm-3]_downscaled.csv
+docs/
+  Reforming Power Electronics Education in the Era of AI.pdf
 ```
 
 ### 4.2 Representative notebooks
@@ -263,8 +270,8 @@ Labels used in the inventory fall into three groups:
 | `5_PIML/PINN/prior_integration_example.ipynb` | 400 | FNN/MLP (PyTorch)<br>PINN (Physics-Informed Neural Network) | synthetic / generated (random) |
 | `7_Reinforcement_Learning/RL_buck_control.ipynb` | 404 | DQN (PyTorch; toy averaged buck) | synthetic / generated (random) |
 | `7_Reinforcement_Learning/DDPG_buck_control.ipynb` | 442 | DDPG (PyTorch; toy averaged buck) | synthetic / generated (random) |
-| `8_PE_Simulation_Automation/LTspiceAutomation/LTspiceAtuomate.ipynb` | 153 | — | — |
-| `8_PE_Simulation_Automation/PlecsAutomation/Data acquisition.ipynb` | 118 | — | — |
+| `8_PE_Simulation_Automation/LTspiceAutomation/LTspiceAtuomate.ipynb` | 140 | — | — |
+| `8_PE_Simulation_Automation/PlecsAutomation/Data acquisition.ipynb` | 105 | — | — |
 | `9_Case_Studies_PE/Buck_Design/buck_comprehensive_case_study.ipynb` | 918 | FNN/MLP (PyTorch)<br>Genetic Algorithm (GA)<br>PSO (Particle Swarm Optimization)<br>XGBoost (regression)<br>sklearn:RandomForestRegressor<br>sklearn:Ridge<br>sklearn:SVR | synthetic / generated (random) |
 | `9_Case_Studies_PE/Buck_Design/buck_modeling_NN.ipynb` | 394 | FNN/MLP (PyTorch)<br>XGBoost (regression)<br>sklearn:RandomForestRegressor<br>sklearn:TSNE | — |
 | `9_Case_Studies_PE/Buck_Design/xgboost_buck_modeling.ipynb` | 285 | PSO (Particle Swarm Optimization)<br>XGBoost (regression) | — |
@@ -286,6 +293,7 @@ This repository accompanies the invited tutorial *Fundamentals of Artificial Int
 | [`2_Classic_ML`](2_Classic_ML/) | III-A; IV-D; IV-E |
 | [`3_Ensemble_Learning`](3_Ensemble_Learning/) | III-A; IV-D; IV-E |
 | [`4_Neural_Network`](4_Neural_Network/) | See subfolders in [4_Neural_Network/README.md](4_Neural_Network/README.md) |
+| [`4_Neural_Network/Field_Data`](4_Neural_Network/Field_Data/) | III-C; IV-F; IV-G (3-D thermal samples → **T**; [`field_temperature_residual_fnn.ipynb`](4_Neural_Network/Field_Data/field_temperature_residual_fnn.ipynb)) |
 | [`4_Neural_Network/Graph_NN`](4_Neural_Network/Graph_NN/) | III-E; IV-F |
 | [`5_PIML`](5_PIML/) (`PINN/`) | V |
 | [`5_PIML/PANN`](5_PIML/PANN/) | V-C; VII-E |
@@ -295,6 +303,12 @@ This repository accompanies the invited tutorial *Fundamentals of Artificial Int
 | [`9_Case_Studies_PE`](9_Case_Studies_PE/) | See [9_Case_Studies_PE/README.md](9_Case_Studies_PE/README.md) (Buck, DAB threads, IGBT, magnetics) |
 
 Per-folder detail appears in each module’s README under **Alignment with the tutorial article**.
+
+## Companion education article (pilot course)
+
+**[Reforming Power Electronics Education in the Era of AI: A Pilot Course by the University of Arkansas Power Group](docs/Reforming%20Power%20Electronics%20Education%20in%20the%20Era%20of%20AI.pdf)** — Xinze Li and H. Alan Mantooth ([`docs/`](docs/)). Short education paper on a pilot *Fundamentals of AI for Power Electronics* course.
+
+**Conclusion (in brief):** Effective AI-for-PE education should build **domain-grounded judgment** using open materials—not generic AI training alone. The authors call on **students, educators, industry, and public funders** to advance PE-relevant curricula, workforce training, responsibly shareable data, and supporting policy. The PDF frames this repository and the [companion tools](#companion-tools) at the top of this README as practical pieces of that wider effort; see the PDF for the full argument and references.
 
 ## License
 
