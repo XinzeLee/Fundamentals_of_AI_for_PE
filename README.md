@@ -54,10 +54,10 @@ Each module README includes **Open in Colab** badges for its notebooks. On Colab
 
 | Metric | Value |
 |---|---:|
-| Code lines (notebook cells) | **11,637** |
-| Jupyter notebooks | **30** |
+| Code lines (notebook cells) | **11,950** |
+| Jupyter notebooks | **31** |
 | PE-oriented datasets | **7** |
-| Algorithm labels (see section 3) | **24** |
+| Algorithm labels (see section 3) | **25** |
 
 **Summary:** Teaching-oriented AI-for-power-electronics material, with the most notebook code in case studies, neural networks, and metaheuristic optimization.
 
@@ -82,7 +82,7 @@ Each module README includes **Open in Colab** badges for its notebooks. On Colab
 |---|---:|---:|---|
 | [`0_To_Get_Started`](0_To_Get_Started/) | 1 | 306 | Setup |
 | [`1_MHA`](1_MHA/) | 5 | 1,721 | Optimization core |
-| [`2_Classic_ML`](2_Classic_ML/) | 2 | 246 | Polynomial Ridge (synthetic regression) + classical classification |
+| [`2_Classic_ML`](2_Classic_ML/) | 3 | 559 | Polynomial Ridge (synthetic) + classical classification + GP regression & Bayesian optimization (California housing) |
 | [`3_Ensemble_Learning`](3_Ensemble_Learning/) | 1 | 555 | Ensembles |
 | [`4_Neural_Network`](4_Neural_Network/) | 5 | 2,283 | Deep learning |
 | [`5_PIML`](5_PIML/) | 3 | 1,000 | Physics-informed examples (`PINN/`) |
@@ -100,9 +100,9 @@ Labels used in the inventory fall into three groups:
 
 - **Optimization:** Genetic Algorithm, PSO, NSGA-II  
 - **Neural models:** FNN/MLP, CNN, RNN, GRU, LSTM, Transformer/Attention, MDN, PINN  
-- **Classical / ensemble:** Decision Trees, Random Forests, Ridge, SVR, PCA, TSNE, Isolation Forest, One-Class SVM, XGBoost  
+- **Classical / ensemble:** Decision Trees, Random Forests, Ridge, SVR, PCA, TSNE, Isolation Forest, One-Class SVM, XGBoost, Gaussian process regression (sklearn)  
 
-**Full list (24 labels):**
+**Full list (25 labels):**
 
 - `CNN (PyTorch)`
 - `FNN/MLP (PyTorch)`
@@ -118,6 +118,7 @@ Labels used in the inventory fall into three groups:
 - `Transformer/Attention (PyTorch)`
 - `XGBoost (classification)`
 - `XGBoost (regression)`
+- `sklearn:GaussianProcessRegressor`
 - `sklearn:DecisionTreeClassifier`
 - `sklearn:IsolationForest`
 - `sklearn:LinearRegression`
@@ -154,6 +155,7 @@ Labels used in the inventory fall into three groups:
     sing_obj_MHA.ipynb
 2_Classic_ML/
   classic_ML.ipynb
+  gaussian_process_bayesian_optimization.ipynb
   ridge_polynomial_regression.ipynb
 3_Ensemble_Learning/
   ensemle_learning.ipynb
@@ -259,6 +261,7 @@ docs/
 | `1_MHA/Single_Objective_MHA/sing_obj_MHA.ipynb` | 361 | PSO (Particle Swarm Optimization) | synthetic / generated (random) |
 | `2_Classic_ML/ridge_polynomial_regression.ipynb` | 82 | sklearn:Ridge | synthetic / generated (random) |
 | `2_Classic_ML/classic_ML.ipynb` | 164 | sklearn:DecisionTreeClassifier | sklearn.datasets.load_breast_cancer |
+| `2_Classic_ML/gaussian_process_bayesian_optimization.ipynb` | 313 | sklearn:GaussianProcessRegressor (constant × RBF kernel; marginal-likelihood fit); Bayesian optimization (expected improvement over log-hyperparameters) | sklearn.datasets.fetch_california_housing |
 | `3_Ensemble_Learning/ensemle_learning.ipynb` | 555 | XGBoost (classification)<br>XGBoost (regression)<br>sklearn:DecisionTreeClassifier<br>sklearn:PCA<br>sklearn:RandomForestClassifier<br>sklearn:Ridge | sklearn.datasets.make_classification |
 | `4_Neural_Network/Fundamentals/NN_basics.ipynb` | 462 | FNN/MLP (PyTorch) | sklearn.datasets.fetch_california_housing<br>sklearn.datasets.load_breast_cancer |
 | `4_Neural_Network/Good_Practices/good_practice_NN.ipynb` | 220 | FNN/MLP (PyTorch) | sklearn.datasets.fetch_california_housing |
