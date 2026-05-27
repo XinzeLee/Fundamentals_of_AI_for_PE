@@ -64,9 +64,13 @@ Control as sequential decisions under dynamics; learning from **returns, costs, 
 
 ## Recommended learning sequence
 
-1. Skim the **Control** list: [link](https://github.com/aikorea/awesome-rl?tab=readme-ov-file#control).  
-2. Read one **continuous control** survey (Theory section on Awesome RL).  
-3. One platform (e.g. Gymnasium + a baseline library) and a classic **cart-pole** or **pendulum** baseline before custom PE environments.
+1. Start with `RL_buck_control.ipynb`: explore DQN-style RL for voltage tracking in a buck converter—focus on how reward choices impact tracking and constraint satisfaction.
+2. Continue to `DDPG_buck_control.ipynb`: try DDPG (continuous actions) on the same task, and compare its performance to the discrete DQN approach—pay attention to the optional smooth-duty reward modification.
+3. Experiment by varying reward weights and plant parameters—observe effects on learned policy behavior and stability in both notebooks.
+4. Use provided utilities to reset environment conditions (input voltage, setpoint) for robustness and generalization testing.
+5. (Optional) Extend the notebooks: modify the reward, add constraints or new objectives relevant to your PE/control goals, and document changes in agent learning.
+   
+This hands-on sequence illustrates key RL-for-control concepts in a power electronics context, emphasizing how local notebook experiments guide reward and algorithm choice.
 
 ## Local notebooks
 

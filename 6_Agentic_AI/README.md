@@ -26,14 +26,14 @@ Agentic AI for power-electronics workflows, with pointers to the external **PE-G
 ## Outcomes
 
 - Agentic workflow: LLM-led steps, tools, and PE design tasks  
-- PE-GPT stack: LLM agent, RAG, model zoo, simulation hooks, optimization  
+- PE-GPT stack: LLM, RAG, model zoo, simulation hooks, optimization  
 - Where domain knowledge, physics-based models, and automation meet  
 - Example task classes: component selection, modulation optimization, parameter design  
 - High-level picture of local deployment (Streamlit, dependencies)  
 
 ## Notes
 
-- PE-GPT is a **workflow** (agent + tools + models), not a single static model.  
+- PE-GPT is an **agentic-AI framework** (agent + tools + models), not a single foundational model.  
 - Public releases are described as simplified relative to the full research stack.  
 - Python-centric codebase with core modules and tutorials.  
 - Streamlit front end (`main.py`) and `requirements` files for setup.  

@@ -64,6 +64,6 @@ The ensemble-learning notebook supports the tree/ensemble discussion in *Fundame
 
 1. Run sections with fixed seeds for reproducibility.  
 2. Compare score distributions, not only means.  
-3. Tie each failure mode to the data generator settings.  
+3. Tie each EL algorithm failure mode to the data generator settings.  
 4. Vary noise, imbalance ratio, and correlation to see regime changes.  
-5. Reuse the notebook as a template for pre-deployment stress tests.
+5. Reuse the notebook as a template for pre-deployment tests.

@@ -118,7 +118,7 @@ Neural networks from tabular regression/classification through **spatial (3D) fi
 
 ### `Multi_Modal_Distribution/mixture_density_net_ensemble_learning.ipynb`
 
-**Topics:** FNN → MDN for predictive uncertainty; optional hysteresis loop (play-operator NN vs MDN on $p(y|x)$).
+**Topics:** FNN → MDN for predictive uncertainty; optional hysteresis loop (play-operator NN vs MDN on \\(p(y|x)\\)).
 
 **Algorithms & data:** FNN, MDN, `RandomForestRegressor`; synthetic regression + hysteresis loop.
 

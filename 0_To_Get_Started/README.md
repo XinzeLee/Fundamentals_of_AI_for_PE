@@ -36,8 +36,6 @@ Onboarding for the course repo: Python environment and package checks before the
 - Python environment suitable for the course (`conda` + `pip`)  
 - Core AI/ML packages installed and importable  
 - Short sanity checks for numerics, plotting, classical ML, PyTorch, and optimization libraries  
-- Basic reading of metrics, training curves, and optimizer output  
-- Typical package warnings and when they are usually safe to ignore  
 
 ---
 

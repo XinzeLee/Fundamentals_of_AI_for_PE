@@ -24,14 +24,14 @@ Use the interactive **Algorithm Selector** to narrow AI/ML approaches for your P
 
 This repository accompanies the invited tutorial *Fundamentals of Artificial Intelligence for Power Electronics* (*IEEE Trans. Ind. Electron.*, 2026). Section numbers below follow the **revised manuscript** structure:
 
-| Article section | Topic (short) |
+| Article section | Topic |
 |-----------------|---------------|
 | **I** | Introduction |
 | **II** | Basics of PE data (tabular, signal, field, graph, unstructured) |
 | **III** | Fundamentals of ML for PE (simulation automation, EDA, preprocessing, learning types, architectures, NNs, good practices) |
 | **IV** | Fundamentals of PIML for PE |
 | **V** | Fundamentals of MHAs for PE optimization |
-| **VI** | Agentic AI (incl. PE-GPT2) |
+| **VI** | Agentic AI (including PE-GPT) |
 | **VII** | One-stop AI applications throughout the PE lifecycle |
 | **VIII** | Conclusion and outlook |
 

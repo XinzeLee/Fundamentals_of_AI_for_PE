@@ -51,7 +51,7 @@ Classical machine learning: **regression** notebooks (polynomial Ridge on synthe
 - Decision tree training on a standard benchmark  
 - Accuracy and confusion matrix  
 - Decision boundaries in 2D projected feature space  
-- Optional fuzzy decision tree branch and version quirks  
+- Fuzzy decision tree branch
 
 ---
 
