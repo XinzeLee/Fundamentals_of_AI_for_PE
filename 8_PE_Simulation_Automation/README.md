@@ -3,7 +3,7 @@
 ## Authorship & status
 
 - **Course / code author:** Xinze Li  
-- **Tutorial article:** Xinze Li, Fanfan Lin, Juan J. Rodríguez-Andina, Sergio Vazquez, Homer Alan Mantooth, Leopoldo García Franquelo, “Fundamentals of Artificial Intelligences for Power Electronics,” *IEEE Transactions on Industrial Electronics*, 2026.
+- **Tutorial article:** Xinze Li, Fanfan Lin, Juan J. Rodríguez-Andina, Sergio Vazquez, Homer Alan Mantooth, Leopoldo García Franquelo, “Fundamentals of Artificial Intelligence for Power Electronics,” *IEEE Transactions on Industrial Electronics*, 2026.
 
 *These learning resources are still under active refinement; notebooks, data, and documentation may change.*
 
@@ -17,9 +17,9 @@ The simulation automation notebooks cannot be implemented on Google Colab.
 
 ## Alignment with the tutorial article
 
-**Discussion in the article:** Section IV-A (simulation automation and batch data acquisition).
+**Discussion in the article:** **Section III-A** (simulation automation for batch data acquisition).
 
-The automation notebooks here illustrate the **data acquisition** loop described in *Fundamentals of Artificial Intelligences for Power Electronics* (*IEEE Trans. Ind. Electron.*, 2026).
+The automation notebooks here illustrate the **data acquisition** loop described in *Fundamentals of Artificial Intelligence for Power Electronics* (*IEEE Trans. Ind. Electron.*, 2026).
 
 ---
 
@@ -29,8 +29,9 @@ Automation for PE simulation: batch runs, metrics extraction, and CSV-friendly o
 
 | Kind | Path |
 |------|------|
-| Notebooks | `LTspiceAutomation/LTspiceAtuomate.ipynb`, `PlecsAutomation/Data acquisition.ipynb` |
-| MATLAB | `SimulinkAutomation/BuckConverter_Automation.m` — Simulink buck automation |
+| LTspice | `LTspiceAutomation/LTspiceAtuomate.ipynb` — LTspice automation |
+| Plecs | `PlecsAutomation/Data acquisition.ipynb` — Plecs automation |
+| MATLAB | `SimulinkAutomation/BuckConverter_Automation.m` — Simulink automation |
 
 ## Outcomes
 
@@ -64,21 +65,6 @@ Automation for PE simulation: batch runs, metrics extraction, and CSV-friendly o
 
 ---
 
-## Automation coverage
-
-- Exhaustive grid search over user-defined ranges  
-- Batch invocation of simulators from Python or MATLAB  
-- Threaded PLECS jobs with timeouts  
-- Automated metrics from raw traces and CSV persistence  
-
-## Data products
-
-- Per-case waveform time series  
-- One CSV row per operating point or design  
-- Simulator channel names (currents, voltages, thermal nodes) depend on the schematic  
-
----
-
 ## Ansys-style workflows
 
 A practical pattern for AEDT-class tools:
@@ -89,7 +75,7 @@ A practical pattern for AEDT-class tools:
 
 Recording a known-good GUI flow first, then generalizing, is usually the fastest path to reliable automation.
 
-## Recommended order
+## Recommended learning sequence
 
 1. LTspice notebook — local sweep mechanics.  
 2. PLECS XML-RPC notebook — API-style remote control.  

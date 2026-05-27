@@ -3,7 +3,7 @@
 ## Authorship & status
 
 - **Course / code author:** Xinze Li  
-- **Tutorial article:** Xinze Li, Fanfan Lin, Juan J. Rodríguez-Andina, Sergio Vazquez, Homer Alan Mantooth, Leopoldo García Franquelo, “Fundamentals of Artificial Intelligences for Power Electronics,” *IEEE Transactions on Industrial Electronics*, 2026.
+- **Tutorial article:** Xinze Li, Fanfan Lin, Juan J. Rodríguez-Andina, Sergio Vazquez, Homer Alan Mantooth, Leopoldo García Franquelo, “Fundamentals of Artificial Intelligence for Power Electronics,” *IEEE Transactions on Industrial Electronics*, 2026.
 
 *These learning resources are still under active refinement; notebooks, data, and documentation may change.*
 
@@ -56,16 +56,16 @@
 
 ## Alignment with the tutorial article
 
-Case-study folders map to **Section VII** (and supporting sections) of *Fundamentals of Artificial Intelligences for Power Electronics* (*IEEE Trans. Ind. Electron.*, 2026):
+Case-study folders map to **Section VII** (*One-stop AI applications throughout the PE lifecycle*) of *Fundamentals of Artificial Intelligence for Power Electronics* (*IEEE Trans. Ind. Electron.*, 2026):
 
 | Folder | Article sections |
 |--------|------------------|
-| [`Buck_Design/`](Buck_Design/) | VII-A; VII-B; VII-C |
-| [`DAB_Design/Performance_Modeling_and_Design/`](DAB_Design/Performance_Modeling_and_Design/) | IV-B; VII-A; VII-B; VII-C |
-| [`DAB_Design/Time_Domain_Modeling/`](DAB_Design/Time_Domain_Modeling/) | VII-B |
-| [`DAB_Design/Adaptive_Modulation/`](DAB_Design/Adaptive_Modulation/) | VII-D |
-| [`IGBT_Maintenance/`](IGBT_Maintenance/) | VII-F |
-| [`Magnetic_Modeling/`](Magnetic_Modeling/) | III-C; IV-F; IV-G |
+| [`Buck_Design/`](Buck_Design/) | **VII-A** (EDA); **VII-B** (ML surrogate modeling); **VII-C** (MHA optimization) |
+| [`DAB_Design/Performance_Modeling_and_Design/`](DAB_Design/Performance_Modeling_and_Design/) | **VII-A**; **VII-B**; **VII-C** |
+| [`DAB_Design/Time_Domain_Modeling/`](DAB_Design/Time_Domain_Modeling/) | **VII-B** (sequence / surrogate modeling) |
+| [`DAB_Design/Adaptive_Modulation/`](DAB_Design/Adaptive_Modulation/) | **VII-D** (TinyML for PE control) |
+| [`IGBT_Maintenance/`](IGBT_Maintenance/) | **VII-F** (probabilistic RUL prediction) |
+| [`Magnetic_Modeling/`](Magnetic_Modeling/) | **II-C** (tabular / field-motivated loss data); **VII-B** (surrogate modeling) |
 
 ---
 
@@ -215,7 +215,7 @@ The bundled `.mat` / `*_downscaled.csv` files in `IGBT_Maintenance` and `Magneti
 - **IGBT:** `april22nd-23rdIgbtIRCG40BC30kd-A17.mat` — see [NASA IGBT accelerated aging](https://data.nasa.gov/dataset/insulated-gate-bipolar-transistor-igbt-accelerated-aging)  
 - **Magnetic:** the four `*_downscaled.csv` files listed above — see [Princeton MagNet Challenge](https://www.princeton.edu/~minjie/magnet.html)  
 
-## Recommended order
+## Recommended learning sequence
 
 1. `Buck_Design/buck_comprehensive_case_study.ipynb`  
 2. `Buck_Design/buck_modeling_NN.ipynb`, `xgboost_buck_modeling.ipynb`  

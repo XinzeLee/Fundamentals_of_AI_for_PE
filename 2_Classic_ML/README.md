@@ -3,7 +3,7 @@
 ## Authorship & status
 
 - **Course / code author:** Xinze Li  
-- **Tutorial article:** Xinze Li, Fanfan Lin, Juan J. Rodríguez-Andina, Sergio Vazquez, Homer Alan Mantooth, Leopoldo García Franquelo, “Fundamentals of Artificial Intelligences for Power Electronics,” *IEEE Transactions on Industrial Electronics*, 2026.
+- **Tutorial article:** Xinze Li, Fanfan Lin, Juan J. Rodríguez-Andina, Sergio Vazquez, Homer Alan Mantooth, Leopoldo García Franquelo, “Fundamentals of Artificial Intelligence for Power Electronics,” *IEEE Transactions on Industrial Electronics*, 2026.
 
 *These learning resources are still under active refinement; notebooks, data, and documentation may change.*
 
@@ -29,9 +29,9 @@
 
 ## Alignment with the tutorial article
 
-**Discussion in the article:** Section III-A; Section IV-D; Section IV-E.
+**Discussion in the article:** [`ridge_polynomial_regression.ipynb`](ridge_polynomial_regression.ipynb) — **Section III-C–III-E** (features + regularized regression). [`classic_ML.ipynb`](classic_ML.ipynb) — **Section III-B**, **III-E** (EDA, decision trees). [`gaussian_process_bayesian_optimization.ipynb`](gaussian_process_bayesian_optimization.ipynb) — **Section III-E** (GP regression), **V-C** (Bayesian hyperparameter optimization).
 
-The classical ML baseline here supports the tutorial narrative in *Fundamentals of Artificial Intelligences for Power Electronics* (*IEEE Trans. Ind. Electron.*, 2026).
+The classical ML baseline here supports the tutorial narrative in *Fundamentals of Artificial Intelligence for Power Electronics* (*IEEE Trans. Ind. Electron.*, 2026).
 
 ---
 
@@ -57,22 +57,9 @@ Classical machine learning: **regression** notebooks (polynomial Ridge on synthe
 
 ## Notebook outline
 
-**Data**
-
-- `sklearn.datasets.load_breast_cancer`  
-- Two features selected for 2D visualization; stratified train/test split  
-
-**Models**
-
-- `DecisionTreeClassifier(max_depth=4, random_state=42)`  
-- Optional `fuzzytree.FuzzyDecisionTreeClassifier` with fallback if missing or failing  
-- Aligned depth settings when both trees run  
-
-**Visualization**
-
-- Confusion matrices (`seaborn.heatmap`)  
-- Decision boundaries for classic and optional fuzzy models  
-- Index checks before plotting to avoid out-of-range features  
+- **`ridge_polynomial_regression.ipynb`** — 1-D bias–variance with polynomial Ridge.  
+- **`gaussian_process_bayesian_optimization.ipynb`** — GP regression on California housing + expected-improvement BO for kernel/noise hyperparameters.  
+- **`classic_ML.ipynb`** — Breast Cancer classification; decision boundaries (optional fuzzy tree branch).  
 
 ## Algorithms & data
 
@@ -82,10 +69,9 @@ Classical machine learning: **regression** notebooks (polynomial Ridge on synthe
 ## Notes
 
 - Depth matched between classic and fuzzy tree where possible for a fair comparison.  
-- Heatmaps and 2D boundaries support both numeric and geometric interpretation.  
-- `fuzzytree` APIs differ by release; the notebook uses conservative argument handling.
+- Heatmaps and 2D boundaries support both numeric and geometric interpretation.
 
-## Recommended order
+## Recommended learning sequence
 
 1. `ridge_polynomial_regression.ipynb` for the regression / regularization narrative.  
 2. `gaussian_process_bayesian_optimization.ipynb` for surrogate modeling and BO (optional second regression track).  

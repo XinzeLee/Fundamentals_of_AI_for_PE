@@ -3,7 +3,7 @@
 ## Authorship & status
 
 - **Course / code author:** Xinze Li  
-- **Tutorial article:** Xinze Li, Fanfan Lin, Juan J. Rodríguez-Andina, Sergio Vazquez, Homer Alan Mantooth, Leopoldo García Franquelo, “Fundamentals of Artificial Intelligences for Power Electronics,” *IEEE Transactions on Industrial Electronics*, 2026.
+- **Tutorial article:** Xinze Li, Fanfan Lin, Juan J. Rodríguez-Andina, Sergio Vazquez, Homer Alan Mantooth, Leopoldo García Franquelo, “Fundamentals of Artificial Intelligence for Power Electronics,” *IEEE Transactions on Industrial Electronics*, 2026.
 
 *These learning resources are still under active refinement; notebooks, data, and documentation may change.*
 
@@ -21,7 +21,7 @@
 
 ## Alignment with the tutorial article
 
-**Role:** Environment setup used before running notebooks referenced throughout the invited tutorial *Fundamentals of Artificial Intelligences for Power Electronics* (*IEEE Trans. Ind. Electron.*, 2026). There is no dedicated article section—this folder supports the practical material in all modules.
+**Role:** Environment setup used before running notebooks referenced throughout the invited tutorial *Fundamentals of Artificial Intelligence for Power Electronics* (*IEEE Trans. Ind. Electron.*, 2026). There is no dedicated article section—this folder supports the hands-on material in **Section III–VII** and all modules.
 
 ---
 
@@ -48,18 +48,6 @@ Onboarding for the course repo: Python environment and package checks before the
 - Example environment: `conda create -n ai_pe python=3.10 -y` then `conda activate ai_pe`  
 - Packages: `numpy`, `matplotlib`, `scikit-learn`, `seaborn`, `torch`, `pyswarms`, `pygad`, `xgboost`
 
-**Per-library checks**
-
-| Library | Coverage |
-|---------|----------|
-| NumPy | Arrays, matrix ops, RNG, small linear algebra |
-| Matplotlib | Line / scatter / bar / fill, subplots |
-| scikit-learn | Synthetic regression, split, linear regression, metrics |
-| PyTorch | CPU/CUDA, small FNN, training loop, loss plots |
-| PySwarms | PSO with trajectory / landscape-style plots |
-| PyGAD | GA setup, evolution, fitness / population plots |
-| XGBoost | Iris classification, split, accuracy vs. rounds |
-
 ## Algorithms & data
 
 **Algorithms:** Linear regression (`sklearn`), MLP (PyTorch), PSO (PySwarms), GA (PyGAD), XGBoost classifier.
@@ -68,13 +56,9 @@ Onboarding for the course repo: Python environment and package checks before the
 
 ## Notes
 
-- Each library block runs small runnable examples, not import-only checks.  
-- PyTorch block selects CPU or CUDA when available.  
-- Plots support qualitative checks (fit, residuals, convergence).  
-- **Environment:** PyGAD may print compatibility/deprecation messages; XGBoost may warn about pandas APIs depending on versions — usually non-blocking for these demos.  
-- Some sections chain several packages (e.g. sklearn + matplotlib + seaborn).
+- Each library block runs small runnable examples, not import-only checks.
 
-## Recommended order
+## Recommended learning sequence
 
 1. Open `package_install.ipynb` in a fresh environment.  
 2. Resolve any import errors before later modules.  

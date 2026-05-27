@@ -3,23 +3,17 @@
 ## Authorship & status
 
 - **Course / code author:** Xinze Li  
-- **Tutorial article:** Xinze Li, Fanfan Lin, Juan J. Rodríguez-Andina, Sergio Vazquez, Homer Alan Mantooth, Leopoldo García Franquelo, “Fundamentals of Artificial Intelligences for Power Electronics,” *IEEE Transactions on Industrial Electronics*, 2026.
+- **Tutorial article:** Xinze Li, Fanfan Lin, Juan J. Rodríguez-Andina, Sergio Vazquez, Homer Alan Mantooth, Leopoldo García Franquelo, “Fundamentals of Artificial Intelligence for Power Electronics,” *IEEE Transactions on Industrial Electronics*, 2026.
 
 *These learning resources are still under active refinement; notebooks, data, and documentation may change.*
 
 ---
 
-## Google Colab
-
-This module is **documentation and external links** only (no Jupyter notebooks in this folder). For hands-on Colab notebooks elsewhere in the course, start from the [repository root README](../README.md#google-colab).
-
----
-
 ## Alignment with the tutorial article
 
-**Discussion in the article:** Section VI (agentic AI, LLM tooling, PE-GPT-style workflows).
+**Discussion in the article:** **Section VI** (VI-A generative AI basics; VI-B reactive → agentic leap; VI-C PE-GPT2 process automation).
 
-This documentation folder supports the **agentic AI** discussion in *Fundamentals of Artificial Intelligences for Power Electronics* (*IEEE Trans. Ind. Electron.*, 2026).
+This documentation folder supports the **agentic AI** discussion in *Fundamentals of Artificial Intelligence for Power Electronics* (*IEEE Trans. Ind. Electron.*, 2026).
 
 ---
 
@@ -37,27 +31,6 @@ Agentic AI for power-electronics workflows, with pointers to the external **PE-G
 - Example task classes: component selection, modulation optimization, parameter design  
 - High-level picture of local deployment (Streamlit, dependencies)  
 
----
-
-## Module role
-
-Bridge material for PE-GPT, not a local notebook lab.
-
-1. **Concepts** — PE-focused multimodal LLM framework for design.  
-2. **Architecture** — LLM reasoning, RAG over a PE knowledge base, model zoo (incl. PANN), simulation links, metaheuristic optimization.  
-3. **Examples (from PE-GPT)** — Flyback component selection; DAB modulation; buck parameter design.  
-4. **Deployment** — Repository clone, requirements, Streamlit entry; optional PLECS XML-RPC for simulation-in-the-loop.
-
-## Algorithms & assets (from PE-GPT descriptions)
-
-- LLM agent orchestration  
-- RAG for retrieval and grounding  
-- Metaheuristic optimization for objectives  
-- PANN-class models in the zoo  
-- Simulation-coupled decision loops  
-
-**Data / assets:** Knowledge-base documents, multimodal PE inputs/outputs, tutorial/demo materials. **This folder has no course `.ipynb` files** — follow the GitHub repo for code.
-
 ## Notes
 
 - PE-GPT is a **workflow** (agent + tools + models), not a single static model.  
@@ -66,7 +39,7 @@ Bridge material for PE-GPT, not a local notebook lab.
 - Streamlit front end (`main.py`) and `requirements` files for setup.  
 - After `5_PIML`: PINN/PANN ↔ zoo; `1_MHA` ↔ optimization layer; `8_PE_Simulation_Automation` ↔ verification loops.
 
-## Recommended path
+## Recommended learning sequence
 
 1. Local foundations: `1_MHA`, `4_Neural_Network`, `5_PIML`.  
 2. Read [PE-GPT README](https://github.com/XinzeLee/PE-GPT/blob/main/README.md).  

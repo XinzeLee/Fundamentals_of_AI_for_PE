@@ -3,7 +3,7 @@
 ## Authorship & status
 
 - **Course / code author:** Xinze Li  
-- **Tutorial article:** Xinze Li, Fanfan Lin, Juan J. Rodríguez-Andina, Sergio Vazquez, Homer Alan Mantooth, Leopoldo García Franquelo, “Fundamentals of Artificial Intelligences for Power Electronics,” *IEEE Transactions on Industrial Electronics*, 2026.
+- **Tutorial article:** Xinze Li, Fanfan Lin, Juan J. Rodríguez-Andina, Sergio Vazquez, Homer Alan Mantooth, Leopoldo García Franquelo, “Fundamentals of Artificial Intelligence for Power Electronics,” *IEEE Transactions on Industrial Electronics*, 2026.
 
 *These learning resources are still under active refinement; notebooks, data, and documentation may change.*
 
@@ -17,9 +17,9 @@ This folder is a **bridge** to the external [PANN](https://github.com/XinzeLee/P
 
 ## Alignment with the tutorial article
 
-**Discussion in the article:** Section V-C; Section VII-E (PANN-style identification and case study links).
+**Discussion in the article:** **Sec. IV-B** (integrating prior knowledge into ML); **Sec. VII-E** (PANN for parameter identification).
 
-This bridge document supports the **physics-in-architecture** thread in *Fundamentals of Artificial Intelligences for Power Electronics* (*IEEE Trans. Ind. Electron.*, 2026).
+This bridge document supports the **physics-in-architecture** thread in *Fundamentals of Artificial Intelligence for Power Electronics* (*IEEE Trans. Ind. Electron.*, 2026).
 
 ---
 
@@ -50,7 +50,7 @@ Bridge to the external **PANN** project and its role in physics-informed AI for 
 
 **Resources:** IEEE and related paper pointers in the upstream README; Colab links; clone + requirements + notebook workflow.
 
-## Recommended path with this course
+## Recommended learning sequence
 
 1. Work through `5_PIML/PINN/` notebooks in this repo.  
 2. Open [XinzeLee/PANN](https://github.com/XinzeLee/PANN) and read its [`README.md`](https://github.com/XinzeLee/PANN/blob/main/README.md).  

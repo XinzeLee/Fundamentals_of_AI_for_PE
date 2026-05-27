@@ -3,7 +3,7 @@
 ## Authorship & status
 
 - **Course / code author:** Xinze Li  
-- **Tutorial article:** Xinze Li, Fanfan Lin, Juan J. Rodríguez-Andina, Sergio Vazquez, Homer Alan Mantooth, Leopoldo García Franquelo, “Fundamentals of Artificial Intelligences for Power Electronics,” *IEEE Transactions on Industrial Electronics*, 2026.
+- **Tutorial article:** Xinze Li, Fanfan Lin, Juan J. Rodríguez-Andina, Sergio Vazquez, Homer Alan Mantooth, Leopoldo García Franquelo, “Fundamentals of Artificial Intelligence for Power Electronics,” *IEEE Transactions on Industrial Electronics*, 2026.
 
 *These learning resources are still under active refinement; notebooks, data, and documentation may change.*
 
@@ -31,9 +31,9 @@
 
 ## Alignment with the tutorial article
 
-**Discussion in the article:** Section V (physics-informed ML; PINN-style losses in [`PINN/`](PINN/)).
+**Discussion in the article:** [`PINN/`](PINN/) notebooks — **Section IV-A–IV-C** (PIML motivation, priors, PINN fundamentals). [`prior_integration_example.ipynb`](PINN/prior_integration_example.ipynb) emphasizes **IV-B** (integrating prior knowledge).
 
-For **physics-in-architecture (PANN)** material, see [`PANN/README.md`](PANN/README.md) (Sections V-C and VII-E in the article).
+For **physics-in-architecture (PANN)** material, see [`PANN/README.md`](PANN/README.md) (**Section IV-B**; **VII-E**).
 
 ---
 
@@ -43,8 +43,8 @@ Physics priors in neural training: **PINN-style** residual losses in the noteboo
 
 | Kind | Path |
 |------|------|
-| Notebooks | `PINN/pinn_ode.ipynb`, `PINN/pinn_pde.ipynb`, `PINN/prior_integration_example.ipynb` |
-| PANN bridge | [`PANN/README.md`](PANN/README.md) — external [XinzeLee/PANN](https://github.com/XinzeLee/PANN) |
+| Physics-informed Neural Network | `PINN/pinn_ode.ipynb`, `PINN/pinn_pde.ipynb`, `PINN/prior_integration_example.ipynb` |
+| Physics-in-architecture Neural Network | [`PANN/README.md`](PANN/README.md) — external [XinzeLee/PANN](https://github.com/XinzeLee/PANN) |
 
 ## Outcomes
 
@@ -59,19 +59,21 @@ Physics priors in neural training: **PINN-style** residual losses in the noteboo
 
 ### `PINN/pinn_ode.ipynb`
 
-**Topics:** Newton’s law of cooling (ODE $dT/dt = k(T_\infty - T)$) with **closed-form ground truth**; **data-only** FNN baseline on sparse noisy samples; **PINN** aligned with `pinn_pde.ipynb`: time preconditioning, **bounded tanh** head for temperature, **fixed** collocation times and **fixed** IC points, **soft** IC via MSE, **weighted composite** loss (ODE residual + IC + sparse data); **known** $k$ vs **learnable** $k=\exp(\log k)$; Adam + **gradient clipping** + `ReduceLROnPlateau`, optional **L-BFGS** polish; **relative** $L_2$ vs the analytical curve and loss histories.
+**Topics:** Newton cooling ODE $dT/dt = k(T_\infty - T)$; data-only FNN vs PINN with composite loss (ODE residual + IC + sparse data); known vs learnable $k$.
 
-**Algorithms & data:** FNN baseline + PINN (ODE residuals via `torch.autograd.grad`). Synthetic temperature–time trajectories only (no external CSV/MAT required).
+**Algorithms & data:** FNN + PINN (ODE residuals via autograd). Synthetic cooling trajectories.
 
-**Notes:** Same training “recipe” as Burgers PINN (fixed sampling, soft constraints, composite weights, hybrid optimizers); joint estimation of $k$ needs informative data weights / enough collocation points when measurements are very sparse.
+**Notes:** Same recipe as `pinn_pde.ipynb` (fixed collocation, soft constraints, Adam + optional L-BFGS).
 
 ---
 
 ### `PINN/pinn_pde.ipynb`
 
-**Topics:** Viscous Burgers equation $u_t + u u_x = \nu u_{xx}$ on $[-1,1] \times [0,T]$ with Dirichlet boundaries; **method-of-lines** reference (`scipy.integrate.solve_ivp`) for ground truth; **PINN** with input/output preconditioning, **fixed** PDE/IC/BC point sets, **soft** (learnable) IC/BC penalties, **balanced composite** loss ($\lambda_{\mathrm{pde}} L_{\mathrm{pde}} + \lambda_{\mathrm{ic}} L_{\mathrm{ic}} + \lambda_{\mathrm{bc}} L_{\mathrm{bc}}$), Adam + gradient clipping + `ReduceLROnPlateau` + optional **L-BFGS**; relative $L_2$ error on a test grid and contour/slice plots.
+**Topics:** Burgers PDE PINN; MoL reference solution; fixed collocation grids; weighted PDE + IC + BC loss; contour diagnostics.
 
-**Algorithms & data:** FNN + PINN (PDE residuals via AD). Synthetic reference field only (no external data files).
+**Algorithms & data:** FNN + PINN (PDE residuals via autograd). Synthetic Burgers reference field.
+
+**Notes:** Tune $\lambda$ weights so no single term dominates training.
 
 ---
 
@@ -114,7 +116,7 @@ The PINN notebooks here emphasize **residual constraints in the loss**. PANN com
 - Validation checkpoints help on sensitive PINN loss surfaces.  
 - Track both prediction error (e.g. MSE / relative $L_2$ vs. ground truth) and physics side (residuals, parameter plausibility).
 
-## Recommended order
+## Recommended learning sequence
 
 1. `PINN/pinn_ode.ipynb`  
 2. `PINN/pinn_pde.ipynb`  

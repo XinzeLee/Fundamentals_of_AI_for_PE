@@ -3,7 +3,7 @@
 ## Authorship & status
 
 - **Course / code author:** Xinze Li  
-- **Tutorial article:** Xinze Li, Fanfan Lin, Juan J. Rodríguez-Andina, Sergio Vazquez, Homer Alan Mantooth, Leopoldo García Franquelo, “Fundamentals of Artificial Intelligences for Power Electronics,” *IEEE Transactions on Industrial Electronics*, 2026.
+- **Tutorial article:** Xinze Li, Fanfan Lin, Juan J. Rodríguez-Andina, Sergio Vazquez, Homer Alan Mantooth, Leopoldo García Franquelo, “Fundamentals of Artificial Intelligence for Power Electronics,” *IEEE Transactions on Industrial Electronics*, 2026.
 
 *These learning resources are still under active refinement; notebooks, data, and documentation may change.*
 
@@ -21,13 +21,11 @@
 
 ## Alignment with the tutorial article
 
-**Discussion in the article:** Section III-A; Section IV-D; Section IV-E.
+**Discussion in the article:** **Section III-E** (tree and ensemble ML architectures).
 
-The ensemble-learning notebook supports the tree/ensemble discussion in *Fundamentals of Artificial Intelligences for Power Electronics* (*IEEE Trans. Ind. Electron.*, 2026).
+The ensemble-learning notebook supports the tree/ensemble discussion in *Fundamentals of Artificial Intelligence for Power Electronics* (*IEEE Trans. Ind. Electron.*, 2026).
 
 ---
-
-Ensemble methods under difficult data conditions: when gains appear and when they break down.
 
 ## Contents
 
@@ -57,13 +55,12 @@ Ensemble methods under difficult data conditions: when gains appear and when the
 
 ## Notes
 
-- Mean ± std over repeats instead of a single split.  
-- Leading method depends on the pathology (correlation, imbalance, noise).  
-- t-tests support “meaningful gap” vs. noise.  
-- PCA and outlier cleaning appear as explicit mitigation steps.  
-- XGBoost may print pandas-related warnings on some stacks; usually non-fatal for the tutorial flow.
+- The notebook is organized as **stress tests**: correlated features, class imbalance, and noisy regression—each with a different failure mode for tree ensembles.  
+- Compare **distributions** of scores over repeated splits, not a single lucky train/test partition.  
+- **PCA** and **outlier removal** are shown as explicit mitigations when raw features or labels are pathological.  
+- Use the same workflow before trusting ensemble surrogates on real PE tabular data (magnetics, converter tables, etc.).
 
-## Recommended order
+## Recommended learning sequence
 
 1. Run sections with fixed seeds for reproducibility.  
 2. Compare score distributions, not only means.  

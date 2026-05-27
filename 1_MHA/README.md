@@ -3,7 +3,7 @@
 ## Authorship & status
 
 - **Course / code author:** Xinze Li  
-- **Tutorial article:** Xinze Li, Fanfan Lin, Juan J. Rodríguez-Andina, Sergio Vazquez, Homer Alan Mantooth, Leopoldo García Franquelo, “Fundamentals of Artificial Intelligences for Power Electronics,” *IEEE Transactions on Industrial Electronics*, 2026.
+- **Tutorial article:** Xinze Li, Fanfan Lin, Juan J. Rodríguez-Andina, Sergio Vazquez, Homer Alan Mantooth, Leopoldo García Franquelo, “Fundamentals of Artificial Intelligence for Power Electronics,” *IEEE Transactions on Industrial Electronics*, 2026.
 
 *These learning resources are still under active refinement; notebooks, data, and documentation may change.*
 
@@ -38,9 +38,9 @@
 
 ## Alignment with the tutorial article
 
-**Discussion in the article:** [`Single_Objective_MHA/`](Single_Objective_MHA/) — Section II-A; Section II-C; Section II-D. [`Multi_Objective_MHA/`](Multi_Objective_MHA/) — Section II-B; Section II-C.
+**Discussion in the article:** [`Single_Objective_MHA/`](Single_Objective_MHA/) — **Section V-A** (generic MHA workflow), **V-C** (hyperparameter tuning). [`Multi_Objective_MHA/`](Multi_Objective_MHA/) — **Section V-B** (multi-objective MHAs), **V-C** (tuning).
 
-The notebooks here support the metaheuristic optimization narrative in the invited tutorial *Fundamentals of Artificial Intelligences for Power Electronics* (*IEEE Trans. Ind. Electron.*, 2026).
+The notebooks here support the metaheuristic optimization narrative in the invited tutorial *Fundamentals of Artificial Intelligence for Power Electronics* (*IEEE Trans. Ind. Electron.*, 2026).
 
 ---
 
@@ -121,13 +121,7 @@ Single- and multi-objective metaheuristics from benchmark functions to power-ele
 - **Multi-objective:** NSGA-II, non-dominated sorting, Pareto analysis  
 - **Baselines:** Differential Evolution, SLSQP, BFGS, Nelder-Mead, LP  
 
-## Data summary
-
-- Benchmarks: Sphere, Rastrigin, ZDT-1, One-Max–style objectives  
-- Analytical PE-style surfaces for buck design  
-- Little use of external CSV/MAT; mostly on-the-fly objective evaluations  
-
-## Recommended order
+## Recommended learning sequence
 
 1. `sing_obj_MHA.ipynb`  
 2. `pso_hyp_tuning.ipynb`  

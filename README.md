@@ -20,10 +20,47 @@ Use the interactive **Algorithm Selector** to narrow AI/ML approaches for your P
 
 ---
 
+## Alignment with the tutorial article
+
+This repository accompanies the invited tutorial *Fundamentals of Artificial Intelligence for Power Electronics* (*IEEE Trans. Ind. Electron.*, 2026). Section numbers below follow the **revised manuscript** structure:
+
+| Article section | Topic (short) |
+|-----------------|---------------|
+| **I** | Introduction |
+| **II** | Basics of PE data (tabular, signal, field, graph, unstructured) |
+| **III** | Fundamentals of ML for PE (simulation automation, EDA, preprocessing, learning types, architectures, NNs, good practices) |
+| **IV** | Fundamentals of PIML for PE |
+| **V** | Fundamentals of MHAs for PE optimization |
+| **VI** | Agentic AI (incl. PE-GPT2) |
+| **VII** | One-stop AI applications throughout the PE lifecycle |
+| **VIII** | Conclusion and outlook |
+
+**Folder ↔ article mapping**
+
+| Folder | Article sections |
+|--------|------------------|
+| [`0_To_Get_Started`](0_To_Get_Started/) | Prerequisite environment; supports hands-on material across the paper |
+| [`1_MHA`](1_MHA/) | **V** — `Single_Objective_MHA/`: V-A, V-C; `Multi_Objective_MHA/`: V-B, V-C |
+| [`2_Classic_ML`](2_Classic_ML/) | **III-B–III-E** (EDA, preprocessing, learning types, ML architectures); GP + BO notebook also illustrates hyperparameter search workflows related to **V-C** |
+| [`3_Ensemble_Learning`](3_Ensemble_Learning/) | **III-E** (tree / ensemble architectures) |
+| [`4_Neural_Network`](4_Neural_Network/) | **II** (modalities) + **III-F–III-G** — see [4_Neural_Network/README.md](4_Neural_Network/README.md) |
+| [`4_Neural_Network/Field_Data`](4_Neural_Network/Field_Data/) | **II-C**; **III-F–III-G** ([`field_temperature_residual_fnn.ipynb`](4_Neural_Network/Field_Data/field_temperature_residual_fnn.ipynb)) |
+| [`4_Neural_Network/Graph_NN`](4_Neural_Network/Graph_NN/) | **II-D**; **III-E** |
+| [`5_PIML`](5_PIML/) (`PINN/`) | **IV-A–IV-C** |
+| [`5_PIML/PANN`](5_PIML/PANN/) | **IV-B**; **VII-E** |
+| [`6_Agentic_AI`](6_Agentic_AI/) | **VI** (VI-A–VI-C) |
+| [`7_Reinforcement_Learning`](7_Reinforcement_Learning/) | **III-D** (reinforcement learning) |
+| [`8_PE_Simulation_Automation`](8_PE_Simulation_Automation/) | **III-A** (simulation automation for batch data acquisition) |
+| [`9_Case_Studies_PE`](9_Case_Studies_PE/) | **VII** — see [9_Case_Studies_PE/README.md](9_Case_Studies_PE/README.md) |
+
+Per-folder detail appears in each module’s README under **Alignment with the tutorial article**.
+
+---
+
 ## Authorship & status
 
 - **Course / code author:** Xinze Li  
-- **Tutorial article:** Xinze Li, Fanfan Lin, Juan J. Rodríguez-Andina, Sergio Vazquez, Homer Alan Mantooth, Leopoldo García Franquelo, “Fundamentals of Artificial Intelligences for Power Electronics,” *IEEE Transactions on Industrial Electronics*, 2026.
+- **Tutorial article:** Xinze Li, Fanfan Lin, Juan J. Rodríguez-Andina, Sergio Vazquez, Homer Alan Mantooth, Leopoldo García Franquelo, “Fundamentals of Artificial Intelligence for Power Electronics,” *IEEE Transactions on Industrial Electronics*, 2026.
 
 *These learning resources are still under active refinement; notebooks, data, and documentation may change.*
 
@@ -34,21 +71,19 @@ Use the interactive **Algorithm Selector** to narrow AI/ML approaches for your P
 | Section | Jump to |
 |--------|---------|
 | Companion tools | [Algorithm selector & ChatGPT](#companion-tools) |
+| Article ↔ repo mapping | [Alignment with the tutorial article](#alignment-with-the-tutorial-article) |
 | Google Colab | [Colab links for all notebooks](#google-colab) |
 | Repository metrics | [Overview](#overview) |
-| Module folders & roles | [1. Contents and learning path](#1-contents-and-learning-path) |
-| Notebook counts by folder | [2. Notebooks by module](#2-notebooks-by-module) |
-| Algorithm & data inventory | [3. Algorithms and data](#3-algorithms-and-data) → [3.1 Algorithms](#31-algorithms) · [3.2 Data](#32-data) |
-| File tree & highlighted notebooks | [4. Tree and representative notebooks](#4-tree-and-representative-notebooks) → [4.1 Layout](#41-layout) · [4.2 Representative notebooks](#42-representative-notebooks) |
-| Full per-notebook table | [5. Per-notebook reference](#5-per-notebook-reference) |
-| Article ↔ repo mapping | [Alignment with the tutorial article](#alignment-with-the-tutorial-article) |
+| Module folders & learning path | [1. Contents and learning path](#1-contents-and-learning-path) |
+| Algorithm & data inventory | [2. Algorithms and data](#2-algorithms-and-data) → [2.1 Algorithms](#21-algorithms) · [2.2 Data](#22-data) |
+| Full per-notebook table | [3. Per-notebook reference](#3-per-notebook-reference) |
 | Education article (PDF) | [Companion education article](#companion-education-article-pilot-course) |
 
 Structured summary of topics, notebook code volume, data assets, and algorithm coverage across Jupyter notebooks (`.ipynb`). Documentation files are omitted from the metrics below.
 
 ## Google Colab
 
-Each module README includes **Open in Colab** badges for its notebooks. On Colab, the usual first code cell clones this repository to `/content/Fundamentals_of_AI_for_PE`, runs `pip install -r requirements.txt`, and sets the working directory so paths resolve. **Exception:** [`8_PE_Simulation_Automation`](8_PE_Simulation_Automation/) relies on local simulators (LTspice, PLECS, etc.) and is not intended for Colab.
+Each module README includes **Open in Colab** badges for its notebooks. On Colab, the usual first code cell clones this repository to `/content/Fundamentals_of_AI_for_PE`, runs `pip install -r requirements.txt`, and sets the working directory to the notebook’s folder so paths resolve. **Exception:** [`8_PE_Simulation_Automation`](8_PE_Simulation_Automation/) relies on local simulators (LTspice, PLECS, etc.) and is not intended for Colab.
 
 ## Overview
 
@@ -56,45 +91,31 @@ Each module README includes **Open in Colab** badges for its notebooks. On Colab
 |---|---:|
 | Code lines (notebook cells) | **11,950** |
 | Jupyter notebooks | **31** |
-| PE-oriented datasets | **7** |
-| Algorithm labels (see section 3) | **25** |
+| PE-oriented dataset families | **7** |
+| Algorithm labels (see section 2) | **25** |
 
 **Summary:** Teaching-oriented AI-for-power-electronics material, with the most notebook code in case studies, neural networks, and metaheuristic optimization.
 
-## 1. Contents and learning path
+## 1. Contents and algorithm learning path
 
-| Folder | Role |
-|--------|------|
-| [`0_To_Get_Started`](0_To_Get_Started/) | Environment setup and package checks |
-| [`1_MHA`](1_MHA/) | Single- and multi-objective metaheuristic optimization |
-| [`2_Classic_ML`](2_Classic_ML/) | Classical machine learning baselines |
-| [`3_Ensemble_Learning`](3_Ensemble_Learning/) | Tree and ensemble methods |
-| [`4_Neural_Network`](4_Neural_Network/) | NN fundamentals, **3D thermal field** regression (`Field_Data/`), good practices, sequences, multimodal / MDN (incl. synthetic hysteresis: Prandtl–Ishlinskii-style play-operator NN vs MDN, B–H–style motivation); [`Graph_NN/`](4_Neural_Network/Graph_NN/) (GNN resources) |
-| [`5_PIML`](5_PIML/) | Physics-informed modeling (`PINN`); PANN summary in [`PANN/`](5_PIML/PANN/) |
-| [`6_Agentic_AI`](6_Agentic_AI/) | Agentic AI and PE-GPT (documentation and external links; no local `.ipynb` here) |
-| [`7_Reinforcement_Learning`](7_Reinforcement_Learning/) | Buck regulation tutorials — DQN (`RL_buck_control.ipynb`) and DDPG (`DDPG_buck_control.ipynb`) — plus curated RL reading |
-| [`8_PE_Simulation_Automation`](8_PE_Simulation_Automation/) | LTspice, PLECS, Simulink automation |
-| [`9_Case_Studies_PE`](9_Case_Studies_PE/) | Buck, DAB, IGBT, magnetic modeling case studies |
-
-## 2. Notebooks by module
-
-| Module | Notebooks | Code lines | Role |
-|---|---:|---:|---|
-| [`0_To_Get_Started`](0_To_Get_Started/) | 1 | 306 | Setup |
-| [`1_MHA`](1_MHA/) | 5 | 1,721 | Optimization core |
-| [`2_Classic_ML`](2_Classic_ML/) | 3 | 559 | Polynomial Ridge (synthetic) + classical classification + GP regression & Bayesian optimization (California housing) |
-| [`3_Ensemble_Learning`](3_Ensemble_Learning/) | 1 | 555 | Ensembles |
-| [`4_Neural_Network`](4_Neural_Network/) | 5 | 2,283 | Deep learning |
-| [`5_PIML`](5_PIML/) | 3 | 1,000 | Physics-informed examples (`PINN/`) |
-| [`7_Reinforcement_Learning`](7_Reinforcement_Learning/) | 2 | 846 | RL tutorials (DQN + DDPG buck) + curated reading |
-| [`8_PE_Simulation_Automation`](8_PE_Simulation_Automation/) | 2 | 245 | Tool automation |
-| [`9_Case_Studies_PE`](9_Case_Studies_PE/) | 9 | 4,435 | Applied studies |
+| Folder | Notebooks | Code lines | Role |
+|--------|---:|---:|------|
+| [`0_To_Get_Started`](0_To_Get_Started/) | 1 | 306 | Environment setup and package checks |
+| [`1_MHA`](1_MHA/) | 5 | 1,721 | Single- and multi-objective metaheuristic optimization (**Sec. V**) |
+| [`2_Classic_ML`](2_Classic_ML/) | 3 | 559 | Polynomial Ridge (synthetic), classical classification, GP regression & Bayesian optimization (**Sec. III**) |
+| [`3_Ensemble_Learning`](3_Ensemble_Learning/) | 1 | 555 | Tree and ensemble methods (**Sec. III-E**) |
+| [`4_Neural_Network`](4_Neural_Network/) | 5 | 2,283 | NN fundamentals, **3D thermal field** regression (`Field_Data/`), good practices, sequences, MDN / hysteresis; [`Graph_NN/`](4_Neural_Network/Graph_NN/) resources (**Sec. II–III**) |
+| [`5_PIML`](5_PIML/) | 3 | 1,000 | Physics-informed modeling (`PINN/`); PANN summary in [`PANN/`](5_PIML/PANN/) (**Sec. IV; VII-E**) |
+| [`6_Agentic_AI`](6_Agentic_AI/) | — | — | Agentic AI and PE-GPT (documentation; no local `.ipynb`) (**Sec. VI**) |
+| [`7_Reinforcement_Learning`](7_Reinforcement_Learning/) | 2 | 846 | Buck regulation tutorials — DQN and DDPG — plus curated RL reading (**Sec. III-D**) |
+| [`8_PE_Simulation_Automation`](8_PE_Simulation_Automation/) | 2 | 245 | LTspice, PLECS, Simulink automation (**Sec. III-A**) |
+| [`9_Case_Studies_PE`](9_Case_Studies_PE/) | 9 | 4,435 | Buck, DAB, IGBT, magnetic modeling case studies (**Sec. VII**) |
 
 Case-study notebooks account for the largest share of code, followed by neural-network and MHA modules.
 
-## 3. Algorithms and data
+## 2. Algorithms and data
 
-### 3.1 Algorithms
+### 2.1 Algorithms
 
 Labels used in the inventory fall into three groups:
 
@@ -130,124 +151,42 @@ Labels used in the inventory fall into three groups:
 - `sklearn:SVR`
 - `sklearn:TSNE`
 
-### 3.2 Data
+### 2.2 Data
 
-| Kind | Examples |
-|------|----------|
-| Built-in / sklearn | `Iris`, `Breast Cancer`, `California Housing`, `make_*` generators |
-| Synthetic | Optimization, PINN, sequence models |
-| Repository files | CSV/MAT in Buck, DAB, IGBT, magnetic studies; **3D thermal field** downsampled CSVs in [`4_Neural_Network/Field_Data`](4_Neural_Network/Field_Data/) (loss/Tamb in filename, `x,y,z,T` in file); DAB waveform CSVs — external sources for IGBT RUL & MagNet-style magnetic data: [9_Case_Studies_PE — External datasets](9_Case_Studies_PE/#external-datasets) |
+**Index of PE-oriented dataset families (D1–D7)** — bundled CSV/MAT in the repo or documented external sources used by case-study and field notebooks:
 
-## 4. Tree and representative notebooks
+| ID | Family | Modality | Location / source | Primary notebooks |
+|----|--------|----------|-------------------|-------------------|
+| **D1** | Synchronous buck performance | Tabular | [`9_Case_Studies_PE/Buck_Design/sync_buck_performances_cleaned.csv`](9_Case_Studies_PE/Buck_Design/sync_buck_performances_cleaned.csv), [`total_100W_12V.csv`](9_Case_Studies_PE/Buck_Design/total_100W_12V.csv) | `buck_modeling_NN.ipynb`, `xgboost_buck_modeling.ipynb`, `buck_comprehensive_case_study.ipynb` |
+| **D2** | DAB modulation / performance table | Tabular | [`9_Case_Studies_PE/DAB_Design/Performance_Modeling_and_Design/DAB_TPS.csv`](9_Case_Studies_PE/DAB_Design/Performance_Modeling_and_Design/DAB_TPS.csv) | `one_stop_AI_DAB_modulation.ipynb` |
+| **D3** | DAB adaptive-modulation sweep | Tabular | [`9_Case_Studies_PE/DAB_Design/Adaptive_Modulation/optimization_results.csv`](9_Case_Studies_PE/DAB_Design/Adaptive_Modulation/optimization_results.csv) | `TinyML.ipynb` |
+| **D4** | DAB time-domain waveforms | Signal (time series) | [`9_Case_Studies_PE/DAB_Design/Time_Domain_Modeling/Waveform/*.csv`](9_Case_Studies_PE/DAB_Design/Time_Domain_Modeling/Waveform/) (100 files) | `time_series_modeling.ipynb`, `rnn_basics.ipynb` |
+| **D5** | IGBT accelerated aging (RUL) | Signal / tabular windows | [`9_Case_Studies_PE/IGBT_Maintenance/april22nd-23rdIgbtIRCG40BC30kd-A17.mat`](9_Case_Studies_PE/IGBT_Maintenance/april22nd-23rdIgbtIRCG40BC30kd-A17.mat) — derived from [NASA IGBT dataset](https://data.nasa.gov/dataset/insulated-gate-bipolar-transistor-igbt-accelerated-aging) | `rul_prediction.ipynb` |
+| **D6** | Magnetic core-loss (MagNet-style) | Tabular + harmonic features | [`9_Case_Studies_PE/Magnetic_Modeling/*_downscaled.csv`](9_Case_Studies_PE/Magnetic_Modeling/) (4 files) — aligned with [Princeton MagNet Challenge](https://www.princeton.edu/~minjie/magnet.html) | `magnet_fnn.ipynb`, `magnet_lstm.ipynb` |
+| **D7** | 3-D thermal field samples | Field (spatial) | [`4_Neural_Network/Field_Data/cap_Tfield/Tfield_*_downsampled.csv`](4_Neural_Network/Field_Data/cap_Tfield/) (70 scenarios; `x,y,z,T`; loss & Tamb in filename) | `field_temperature_residual_fnn.ipynb` |
 
-### 4.1 Layout
+**Built-in / sklearn datasets (no repo file)**
 
-```text
-0_To_Get_Started/
-  package_install.ipynb
-1_MHA/
-  Multi_Objective_MHA/
-    multi_obj_MHA_master.ipynb
-  Single_Objective_MHA/
-    algorithm_stats_compare.ipynb
-    buck_design_PSO.ipynb
-    pso_hyp_tuning.ipynb
-    sing_obj_MHA.ipynb
-2_Classic_ML/
-  classic_ML.ipynb
-  gaussian_process_bayesian_optimization.ipynb
-  ridge_polynomial_regression.ipynb
-3_Ensemble_Learning/
-  ensemle_learning.ipynb
-4_Neural_Network/
-  Field_Data/
-    field_temperature_residual_fnn.ipynb
-    Tfield_*_downsampled.csv
-    cap_Tfield/
-      (additional T-field CSV scenarios)
-  Fundamentals/
-    NN_basics.ipynb
-  Good_Practices/
-    good_practice_NN.ipynb
-  Graph_NN/
-    README.md
-  Multi_Modal_Distribution/
-    mixture_density_net_ensemble_learning.ipynb
-  Signal_Domain/
-    rnn_basics.ipynb
-5_PIML/
-  README.md
-  PANN/
-    README.md
-  PINN/
-    pinn_ode.ipynb
-    pinn_pde.ipynb
-    prior_integration_example.ipynb
-6_Agentic_AI/
-  README.md
-7_Reinforcement_Learning/
-  README.md
-  DDPG_buck_control.ipynb
-  RL_buck_control.ipynb
-8_PE_Simulation_Automation/
-  LTspiceAutomation/
-    CAB425M12XM3_LTspice.asy
-    DPT_Test_Stand_HB_automate.asc
-    LTspiceAtuomate.ipynb
-  PlecsAutomation/
-    C2M0080120D.xml
-    C2M0080120D_bodydiode.xml
-    DAB_sample1.plecs
-    Data acquisition.ipynb
-  SimulinkAutomation/
-    BuckConverter.slx
-    BuckConverter_Automation.m
-9_Case_Studies_PE/
-  Buck_Design/
-    buck_comprehensive_case_study.ipynb
-    buck_modeling_NN.ipynb
-    sync_buck_performances_cleaned.csv
-    total_100W_12V.csv
-    xgboost_buck_modeling.ipynb
-  DAB_Design/
-    Adaptive_Modulation/
-      optimization_results.csv
-      TinyML.ipynb
-    Performance_Modeling_and_Design/
-      DAB_TPS.csv
-      one_stop_AI_DAB_modulation.ipynb
-      utils.py
-    Time_Domain_Modeling/
-      time_series_modeling.ipynb
-      Waveform/
-        *.csv
-  IGBT_Maintenance/
-    april22nd-23rdIgbtIRCG40BC30kd-A17.mat
-    rul_prediction.ipynb
-  Magnetic_Modeling/
-    B_waveform[T]_downscaled.csv
-    Frequency[Hz]_downscaled.csv
-    magnet_fnn.ipynb
-    magnet_lstm.ipynb
-    Temperature[C]_downscaled.csv
-    Volumetric_losses[Wm-3]_downscaled.csv
-docs/
-  Reforming Power Electronics Education in the Era of AI.pdf
-```
+| Dataset | Modality | Notebooks (examples) |
+|---------|----------|----------------------|
+| `sklearn.datasets.load_iris` | Tabular | `package_install.ipynb` |
+| `sklearn.datasets.load_breast_cancer` | Tabular | `classic_ML.ipynb`, `NN_basics.ipynb` |
+| `sklearn.datasets.fetch_california_housing` | Tabular | `NN_basics.ipynb`, `good_practice_NN.ipynb`, `gaussian_process_bayesian_optimization.ipynb` |
+| `sklearn.datasets.make_regression`, `make_classification`, `make_moons`, etc. | Synthetic tabular | `package_install.ipynb`, `ensemle_learning.ipynb`, `mixture_density_net_ensemble_learning.ipynb`, … |
 
-### 4.2 Representative notebooks
+**Synthetic / generated in-notebook (no external file)**
 
-| Notebook | Code lines | Note |
-|---|---:|---|
-| `9_Case_Studies_PE/DAB_Design/Performance_Modeling_and_Design/one_stop_AI_DAB_modulation.ipynb` | 1,226 | Broad applied workflow (optimization, classical ML, NN, anomaly models) |
-| `9_Case_Studies_PE/Buck_Design/buck_comprehensive_case_study.ipynb` | 918 | End-to-end buck study |
-| `4_Neural_Network/Signal_Domain/rnn_basics.ipynb` | 819 | RNN / LSTM / GRU / CNN / Transformer |
-| `1_MHA/Multi_Objective_MHA/multi_obj_MHA_master.ipynb` | 665 | NSGA-II and Pareto analysis |
-| `3_Ensemble_Learning/ensemle_learning.ipynb` | 555 | Ensemble benchmarks |
-| `7_Reinforcement_Learning/RL_buck_control.ipynb` | 404 | DQN-style voltage control on an averaged buck (toy) |
-| `7_Reinforcement_Learning/DDPG_buck_control.ipynb` | 442 | DDPG continuous-action voltage control on the same averaged buck (toy) |
+| Use | Modality | Notebooks (examples) |
+|-----|----------|----------------------|
+| Optimization benchmarks (Sphere, Rastrigin, ZDT-1, …) | Scalar objectives | `1_MHA/**/*.ipynb` |
+| Analytical buck / PE-style surfaces | Tabular design space | `buck_design_PSO.ipynb`, `buck_comprehensive_case_study.ipynb` |
+| PINN teaching curves (ODE cooling, Burgers PDE) | Field / time | `5_PIML/PINN/*.ipynb` |
+| Sequence / control rollouts | Signal / state trajectories | `rnn_basics.ipynb`, `7_Reinforcement_Learning/*.ipynb` |
+| Hysteresis loops, MDN demos | Synthetic nonlinear | `mixture_density_net_ensemble_learning.ipynb` |
 
-## 5. Per-notebook reference
+External dataset licensing and citations: [9_Case_Studies_PE — External datasets](9_Case_Studies_PE/#external-datasets).
+
+## 3. Per-notebook reference
 
 *Code line counts: non-empty lines in code cells, excluding lines that are only `#` comments.*
 
@@ -265,9 +204,9 @@ docs/
 | `3_Ensemble_Learning/ensemle_learning.ipynb` | 555 | XGBoost (classification)<br>XGBoost (regression)<br>sklearn:DecisionTreeClassifier<br>sklearn:PCA<br>sklearn:RandomForestClassifier<br>sklearn:Ridge | sklearn.datasets.make_classification |
 | `4_Neural_Network/Fundamentals/NN_basics.ipynb` | 462 | FNN/MLP (PyTorch) | sklearn.datasets.fetch_california_housing<br>sklearn.datasets.load_breast_cancer |
 | `4_Neural_Network/Good_Practices/good_practice_NN.ipynb` | 220 | FNN/MLP (PyTorch) | sklearn.datasets.fetch_california_housing |
-| `4_Neural_Network/Field_Data/field_temperature_residual_fnn.ipynb` | 341 | FNN/MLP (PyTorch); residual (skip) blocks | `4_Neural_Network/Field_Data/*.csv` (3D samples: `x,y,z`, `T`; loss & Tamb from filename) |
+| `4_Neural_Network/Field_Data/field_temperature_residual_fnn.ipynb` | 341 | FNN/MLP (PyTorch); residual (skip) blocks | **D7** — `Field_Data/cap_Tfield/*.csv` |
 | `4_Neural_Network/Multi_Modal_Distribution/mixture_density_net_ensemble_learning.ipynb` | 441 | FNN/MLP (PyTorch)<br>Mixture Density Network (MDN)<br>sklearn:RandomForestRegressor<br>Prandtl–Ishlinskii–style hysteresis (play operators, PyTorch) | synthetic nonlinear regression; synthetic rate-independent hysteresis loop |
-| `4_Neural_Network/Signal_Domain/rnn_basics.ipynb` | 819 | CNN (PyTorch)<br>FNN/MLP (PyTorch)<br>GRU (PyTorch)<br>LSTM (PyTorch)<br>RNN (PyTorch)<br>Transformer/Attention<br>Transformer/Attention (PyTorch) | synthetic / generated (random) |
+| `4_Neural_Network/Signal_Domain/rnn_basics.ipynb` | 819 | CNN (PyTorch)<br>FNN/MLP (PyTorch)<br>GRU (PyTorch)<br>LSTM (PyTorch)<br>RNN (PyTorch)<br>Transformer/Attention<br>Transformer/Attention (PyTorch) | synthetic / generated (random); **D4** waveforms when run with local CSVs |
 | `5_PIML/PINN/pinn_ode.ipynb` | 341 | FNN/MLP (PyTorch)<br>PINN (ODE; fixed collocation, soft IC, composite loss, Adam + L-BFGS) | synthetic cooling curve + noisy samples |
 | `5_PIML/PINN/pinn_pde.ipynb` | 259 | FNN/MLP (PyTorch)<br>PINN (PDE; fixed grids, soft IC/BC, composite loss, Adam + L-BFGS) | synthetic Burgers reference (MoL) |
 | `5_PIML/PINN/prior_integration_example.ipynb` | 400 | FNN/MLP (PyTorch)<br>PINN (Physics-Informed Neural Network) | synthetic / generated (random) |
@@ -275,37 +214,15 @@ docs/
 | `7_Reinforcement_Learning/DDPG_buck_control.ipynb` | 442 | DDPG (PyTorch; toy averaged buck) | synthetic / generated (random) |
 | `8_PE_Simulation_Automation/LTspiceAutomation/LTspiceAtuomate.ipynb` | 140 | — | — |
 | `8_PE_Simulation_Automation/PlecsAutomation/Data acquisition.ipynb` | 105 | — | — |
-| `9_Case_Studies_PE/Buck_Design/buck_comprehensive_case_study.ipynb` | 918 | FNN/MLP (PyTorch)<br>Genetic Algorithm (GA)<br>PSO (Particle Swarm Optimization)<br>XGBoost (regression)<br>sklearn:RandomForestRegressor<br>sklearn:Ridge<br>sklearn:SVR | synthetic / generated (random) |
-| `9_Case_Studies_PE/Buck_Design/buck_modeling_NN.ipynb` | 394 | FNN/MLP (PyTorch)<br>XGBoost (regression)<br>sklearn:RandomForestRegressor<br>sklearn:TSNE | — |
-| `9_Case_Studies_PE/Buck_Design/xgboost_buck_modeling.ipynb` | 285 | PSO (Particle Swarm Optimization)<br>XGBoost (regression) | — |
-| `9_Case_Studies_PE/DAB_Design/Adaptive_Modulation/TinyML.ipynb` | 546 | FNN/MLP (PyTorch) | — |
-| `9_Case_Studies_PE/DAB_Design/Performance_Modeling_and_Design/one_stop_AI_DAB_modulation.ipynb` | 1226 | FNN/MLP (PyTorch)<br>Genetic Algorithm (GA)<br>PSO (Particle Swarm Optimization)<br>XGBoost (classification)<br>XGBoost (regression)<br>sklearn:IsolationForest<br>sklearn:OneClassSVM<br>sklearn:PCA<br>sklearn:SVR<br>sklearn:TSNE | synthetic / generated (random) |
-| `9_Case_Studies_PE/DAB_Design/Time_Domain_Modeling/time_series_modeling.ipynb` | 179 | FNN/MLP (PyTorch)<br>LSTM (PyTorch) | synthetic / generated (random) |
-| `9_Case_Studies_PE/IGBT_Maintenance/rul_prediction.ipynb` | 378 | FNN/MLP (PyTorch)<br>LSTM (PyTorch) | synthetic / generated (random) |
-| `9_Case_Studies_PE/Magnetic_Modeling/magnet_fnn.ipynb` | 273 | FNN/MLP (PyTorch) | — |
-| `9_Case_Studies_PE/Magnetic_Modeling/magnet_lstm.ipynb` | 236 | FNN/MLP (PyTorch)<br>LSTM (PyTorch) | — |
-
-## Alignment with the tutorial article
-
-This repository accompanies the invited tutorial *Fundamentals of Artificial Intelligences for Power Electronics* (*IEEE Trans. Ind. Electron.*, 2026). The mapping below links **top-level folders** (and selected subfolders) to **article sections** as numbered in the paper.
-
-| Folder | Article sections |
-|--------|------------------|
-| [`0_To_Get_Started`](0_To_Get_Started/) | Prerequisite environment; supports hands-on material across the paper |
-| [`1_MHA`](1_MHA/) | II-A–II-D (`Single_Objective_MHA`: II-A, II-C, II-D; `Multi_Objective_MHA`: II-B, II-C) |
-| [`2_Classic_ML`](2_Classic_ML/) | III-A; IV-D; IV-E |
-| [`3_Ensemble_Learning`](3_Ensemble_Learning/) | III-A; IV-D; IV-E |
-| [`4_Neural_Network`](4_Neural_Network/) | See subfolders in [4_Neural_Network/README.md](4_Neural_Network/README.md) |
-| [`4_Neural_Network/Field_Data`](4_Neural_Network/Field_Data/) | III-C; IV-F; IV-G (3-D thermal samples → **T**; [`field_temperature_residual_fnn.ipynb`](4_Neural_Network/Field_Data/field_temperature_residual_fnn.ipynb)) |
-| [`4_Neural_Network/Graph_NN`](4_Neural_Network/Graph_NN/) | III-E; IV-F |
-| [`5_PIML`](5_PIML/) (`PINN/`) | V |
-| [`5_PIML/PANN`](5_PIML/PANN/) | V-C; VII-E |
-| [`6_Agentic_AI`](6_Agentic_AI/) | VI |
-| [`7_Reinforcement_Learning`](7_Reinforcement_Learning/) | IV-D; IV-F |
-| [`8_PE_Simulation_Automation`](8_PE_Simulation_Automation/) | IV-A |
-| [`9_Case_Studies_PE`](9_Case_Studies_PE/) | See [9_Case_Studies_PE/README.md](9_Case_Studies_PE/README.md) (Buck, DAB threads, IGBT, magnetics) |
-
-Per-folder detail appears in each module’s README under **Alignment with the tutorial article**.
+| `9_Case_Studies_PE/Buck_Design/buck_comprehensive_case_study.ipynb` | 918 | FNN/MLP (PyTorch)<br>Genetic Algorithm (GA)<br>PSO (Particle Swarm Optimization)<br>XGBoost (regression)<br>sklearn:RandomForestRegressor<br>sklearn:Ridge<br>sklearn:SVR | synthetic / generated (random); **D1** |
+| `9_Case_Studies_PE/Buck_Design/buck_modeling_NN.ipynb` | 394 | FNN/MLP (PyTorch)<br>XGBoost (regression)<br>sklearn:RandomForestRegressor<br>sklearn:TSNE | **D1** |
+| `9_Case_Studies_PE/Buck_Design/xgboost_buck_modeling.ipynb` | 285 | PSO (Particle Swarm Optimization)<br>XGBoost (regression) | **D1** |
+| `9_Case_Studies_PE/DAB_Design/Adaptive_Modulation/TinyML.ipynb` | 546 | FNN/MLP (PyTorch) | **D3** |
+| `9_Case_Studies_PE/DAB_Design/Performance_Modeling_and_Design/one_stop_AI_DAB_modulation.ipynb` | 1226 | FNN/MLP (PyTorch)<br>Genetic Algorithm (GA)<br>PSO (Particle Swarm Optimization)<br>XGBoost (classification)<br>XGBoost (regression)<br>sklearn:IsolationForest<br>sklearn:OneClassSVM<br>sklearn:PCA<br>sklearn:SVR<br>sklearn:TSNE | synthetic / generated (random); **D2** |
+| `9_Case_Studies_PE/DAB_Design/Time_Domain_Modeling/time_series_modeling.ipynb` | 179 | FNN/MLP (PyTorch)<br>LSTM (PyTorch) | **D4** |
+| `9_Case_Studies_PE/IGBT_Maintenance/rul_prediction.ipynb` | 378 | FNN/MLP (PyTorch)<br>LSTM (PyTorch) | **D5** |
+| `9_Case_Studies_PE/Magnetic_Modeling/magnet_fnn.ipynb` | 273 | FNN/MLP (PyTorch) | **D6** |
+| `9_Case_Studies_PE/Magnetic_Modeling/magnet_lstm.ipynb` | 236 | FNN/MLP (PyTorch)<br>LSTM (PyTorch) | **D6** |
 
 ## Companion education article (pilot course)
 

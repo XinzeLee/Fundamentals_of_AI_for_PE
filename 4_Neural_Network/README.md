@@ -3,7 +3,7 @@
 ## Authorship & status
 
 - **Course / code author:** Xinze Li  
-- **Tutorial article:** Xinze Li, Fanfan Lin, Juan J. Rodríguez-Andina, Sergio Vazquez, Homer Alan Mantooth, Leopoldo García Franquelo, “Fundamentals of Artificial Intelligences for Power Electronics,” *IEEE Transactions on Industrial Electronics*, 2026.
+- **Tutorial article:** Xinze Li, Fanfan Lin, Juan J. Rodríguez-Andina, Sergio Vazquez, Homer Alan Mantooth, Leopoldo García Franquelo, “Fundamentals of Artificial Intelligence for Power Electronics,” *IEEE Transactions on Industrial Electronics*, 2026.
 
 *These learning resources are still under active refinement; notebooks, data, and documentation may change.*
 
@@ -39,16 +39,16 @@
 
 ## Alignment with the tutorial article
 
-Subfolders map to sections of *Fundamentals of Artificial Intelligences for Power Electronics* (*IEEE Trans. Ind. Electron.*, 2026) as follows:
+Subfolders map to **Section II** (PE data modalities) and **Section III** (NN topics) of *Fundamentals of Artificial Intelligence for Power Electronics* (*IEEE Trans. Ind. Electron.*, 2026) as follows:
 
 | Subfolder | Article sections |
 |-----------|------------------|
-| [`Fundamentals/`](Fundamentals/) | Section III; Section IV-C; Section IV-D; Section IV-F |
-| [`Good_Practices/`](Good_Practices/) | Section IV-G |
-| [`Field_Data/`](Field_Data/) | Section III-C; Section IV-F; Section IV-G (thermal field regression; builds on good practices) |
-| [`Signal_Domain/`](Signal_Domain/) | Section III-C; Section IV-F; Section IV-G |
-| [`Multi_Modal_Distribution/`](Multi_Modal_Distribution/) | Section IV-E; Section IV-F |
-| [`Graph_NN/`](Graph_NN/) | Section III-E; Section IV-F (see [`Graph_NN/README.md`](Graph_NN/README.md)) |
+| [`Fundamentals/`](Fundamentals/) | **III-F** (fundamentals of NNs) |
+| [`Good_Practices/`](Good_Practices/) | **III-G** (good practices of NNs) |
+| [`Field_Data/`](Field_Data/) | **II-C** (field data); **III-F**, **III-G** |
+| [`Signal_Domain/`](Signal_Domain/) | **II-B** (signal-domain data); **III-F** (sequence models) |
+| [`Multi_Modal_Distribution/`](Multi_Modal_Distribution/) | **III-F** (MDN / probabilistic NN outputs) |
+| [`Graph_NN/`](Graph_NN/) | **II-D**, **III-E** (see [`Graph_NN/README.md`](Graph_NN/README.md)) |
 
 ---
 
@@ -98,11 +98,11 @@ Neural networks from tabular regression/classification through **spatial (3D) fi
 
 ### `Field_Data/field_temperature_residual_fnn.ipynb`
 
-**Topics:** Same **good-practice** recipe as `good_practice_NN.ipynb`, applied to **3D temperature fields**: load every `*.csv` in `Field_Data/` (kernel cwd = notebook folder), parse **loss** and **Tamb** from filenames, use **`x,y,z,loss,Tamb` → `T`**. **Residual** feedforward network (`BatchNorm1d`, skip blocks); `ReduceLROnPlateau`; **best `state_dict` kept in RAM** (no local checkpoint file); train/val/test split **by CSV file** (with clear fallbacks for one or two files). Spatial diagnostics: **3-D scatter** colored by `T_true - T_pred`, hotspot (**max true T** on the test split).
+**Topics:** 3-D thermal field regression — residual FNN on downsampled `Tfield_*` CSVs (`x,y,z,loss,Tamb` → `T`); file-wise train/val/test splits; 3-D residual diagnostics.
 
-**Algorithms & data:** Residual FNN / MLP (PyTorch). Local **`Tfield_*_downsampled.csv`** samples in `Field_Data/` (additional scenarios may live in `Field_Data/cap_Tfield/`—copy or symlink into the notebook folder if you want them picked up by the same `glob`).
+**Algorithms & data:** Residual FNN (PyTorch). **`Field_Data/cap_Tfield/*.csv`** (loss and ambient in filename).
 
-**Notes:** Run with working directory **`4_Neural_Network/Field_Data`** (default in Jupyter; Colab cell `cd`s there). Colab badge above opens this notebook from the hosted copy.
+**Notes:** Run with cwd **`4_Neural_Network/Field_Data`** (Colab setup cell `cd`s there).
 
 ---
 
@@ -118,11 +118,11 @@ Neural networks from tabular regression/classification through **spatial (3D) fi
 
 ### `Multi_Modal_Distribution/mixture_density_net_ensemble_learning.ipynb`
 
-**Topics:** Deterministic FNN baseline → MDN (`pi`, `mu`, `sigma`) with MDN loss; predictive mean and intervals; `RandomForestRegressor` benchmark. **Part 3b** adds the same synthetic **hysteresis** setting as the standalone Prandtl–Ishlinskii notebook: **play operators**, a **Prandtl–Ishlinskii–style NN** trained with MSE, and an **MDN** on the loop—contrasting state-based loop tracing with a multimodal conditional density and tying the story to **B–H** loops in real cores.
+**Topics:** FNN → MDN for predictive uncertainty; optional hysteresis loop (play-operator NN vs MDN on $p(y|x)$).
 
-**Algorithms & data:** FNN, MDN, RandomForestRegressor; play-operator stack / Prandtl–Ishlinskii–style subnetwork (PyTorch). Synthetic nonlinear regression from a `make_moons`-style pipeline; sinusoidal-input **rate-independent** hysteresis loop (aligned parameters with the PI tutorial notebook).
+**Algorithms & data:** FNN, MDN, `RandomForestRegressor`; synthetic regression + hysteresis loop.
 
-**Notes:** Validation checkpoints and schedulers; emphasis on uncertainty bands, not only point predictions. Part 3b is inserted before the ensemble section: read MDN definitions earlier in the notebook first.
+**Notes:** Read MDN definitions before Part 3b (hysteresis / B–H motivation).
 
 ---
 
@@ -143,7 +143,7 @@ Neural networks from tabular regression/classification through **spatial (3D) fi
 - Synthetic nonlinear regression (`make_moons`-style pipeline)  
 - Synthetic hysteresis loop (time-ordered input, multimodal **p(y|x)** vs PI state)  
 
-## Recommended order
+## Recommended learning sequence
 
 1. `Fundamentals/NN_basics.ipynb`  
 2. `Good_Practices/good_practice_NN.ipynb`  
