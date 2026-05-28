@@ -26,7 +26,7 @@ The automation notebooks here illustrate the **data acquisition** loop described
 ## Review article excerpt
 
 > <p align="center">
->   <img src="../docs/img/python-simulation-automation.png" alt="Python-driven simulation automation workflow for power electronics" width="720" />
+>   <img src="../docs/img/python-simulation-automation.PNG" alt="Python-driven simulation automation workflow for power electronics" width="720" />
 > </p>
 >
 > <p align="center"><em>Figure 1. Power electronics simulation automation.</em></p>

@@ -38,7 +38,7 @@ The classical ML baseline here supports the review narrative in *Fundamentals of
 ## Review article excerpt
 
 > <p align="center">
->   <img src="../docs/img/ML-project-workflow.png" alt="Machine learning workflow for data-driven power electronics projects" width="720" />
+>   <img src="../docs/img/ML-project-workflow.png" alt="Machine learning workflow for data-driven power electronics projects" width="950" />
 > </p>
 >
 > <p align="center"><em>Figure 1. Machine learning workflows for data-driven power electronics projects in a nutshell.</em></p>
@@ -48,7 +48,7 @@ The classical ML baseline here supports the review narrative in *Fundamentals of
 > In practice, EDA, preprocessing, training, and tuning often form an **iterative loop**: prediction errors or abnormal results can reveal data issues and motivate further refinement of acquisition, preprocessing, or model choice—themes covered in **Sec. III-B–III-E** and in notebooks such as [`classic_ML.ipynb`](classic_ML.ipynb) and [`ridge_polynomial_regression.ipynb`](ridge_polynomial_regression.ipynb).
 >
 > <p align="center">
->   <img src="../docs/img/classic-ML-models.PNG" alt="Machine learning model families for power electronics data" width="720" />
+>   <img src="../docs/img/classic-ML-models.PNG" alt="Machine learning model families for power electronics data" width="950" />
 > </p>
 >
 > <p align="center"><em>Figure 2. Machine learning models.</em></p>

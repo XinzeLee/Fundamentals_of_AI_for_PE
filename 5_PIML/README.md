@@ -53,7 +53,7 @@ For **physics-in-architecture (PANN)** material, see [`PANN/README.md`](PANN/REA
 > Both strategies constrain learning with domain knowledge, helping produce more physically consistent predictions while reducing overfitting compared with a purely data-driven baseline—illustrated in [`PINN/prior_integration_example.ipynb`](PINN/prior_integration_example.ipynb).
 >
 > <p align="center">
->   <img src="../docs/img/physics-informed-machine-learning.png" alt="Physics-informed machine learning strategies and trade-offs" width="720" />
+>   <img src="../docs/img/physics-informed-machine-learning.png" alt="Physics-informed machine learning strategies and trade-offs" width="950" />
 > </p>
 >
 > <p align="center"><em>Figure 2. Main physics-informed machine learning strategies and their pros and cons.</em></p>
