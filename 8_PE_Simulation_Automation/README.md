@@ -23,6 +23,20 @@ The automation notebooks here illustrate the **data acquisition** loop described
 
 ---
 
+## Review article excerpt
+
+> <p align="center">
+>   <img src="../docs/img/python-simulation-automation.png" alt="Python-driven simulation automation workflow for power electronics" width="720" />
+> </p>
+>
+> <p align="center"><em>Figure 1. Power electronics simulation automation.</em></p>
+>
+> This figure introduces a simple **iterative workflow** for simulation automation in power electronics. **Python** schedules and sweeps simulation parameters, while tools such as **PLECS**, **LTspice**, **MATLAB/Simulink**, and **Ansys** run the simulations and export waveforms or performance metrics through configured I/O interfaces. Results are **parsed, stored, and analyzed**, forming an automated loop for efficient **batch data acquisition** for ML modeling and optimization (**Sec. III-A**).
+>
+> This folder implements that pattern for three stacks: [`LTspiceAutomation/LTspiceAtuomate.ipynb`](LTspiceAutomation/LTspiceAtuomate.ipynb), [`PlecsAutomation/Data acquisition.ipynb`](PlecsAutomation/Data%20acquisition.ipynb), and [`SimulinkAutomation/BuckConverter_Automation.m`](SimulinkAutomation/BuckConverter_Automation.m). Downstream use cases include surrogates in [`2_Classic_ML/`](../2_Classic_ML/), [`4_Neural_Network/`](../4_Neural_Network/), and case studies in [`9_Case_Studies_PE/`](../9_Case_Studies_PE/).
+
+---
+
 Automation for PE simulation: batch runs, metrics extraction, and CSV-friendly outputs for downstream ML.
 
 ## Contents

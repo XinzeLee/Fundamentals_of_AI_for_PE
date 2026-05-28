@@ -37,6 +37,37 @@ For **physics-in-architecture (PANN)** material, see [`PANN/README.md`](PANN/REA
 
 ---
 
+## Review article excerpt
+
+> <p align="center">
+>   <img src="../docs/img/prior-integration-methods.png" alt="Prior integration in loss versus architecture using apparent power relation" width="720" />
+> </p>
+>
+> <p align="center"><em>Figure 1. Case study of knowledge integration using P² + Q² = S², where P, Q, and S denote active, reactive, and apparent power, respectively.</em></p>
+>
+> Figure 1 introduces the basic idea of **physics-informed learning**, where generic physical prior knowledge is integrated into machine learning to improve data efficiency, interpretability, and generalization. Using the apparent-power relation **P² + Q² = S²** as an example, a purely data-driven model learns the mapping from P and Q to S only by minimizing prediction error. Physical priors can be added in two ways:
+>
+> - **Prior in loss** — the physics equation is included as an additional penalty term (PINN-style; see [`PINN/`](PINN/)).  
+> - **Prior in architecture** — the network structure is designed to reflect the physical equation directly (PANN-style; see [`PANN/README.md`](PANN/README.md)).
+>
+> Both strategies constrain learning with domain knowledge, helping produce more physically consistent predictions while reducing overfitting compared with a purely data-driven baseline—illustrated in [`PINN/prior_integration_example.ipynb`](PINN/prior_integration_example.ipynb).
+>
+> <p align="center">
+>   <img src="../docs/img/physics-informed-machine-learning.png" alt="Physics-informed machine learning strategies and trade-offs" width="720" />
+> </p>
+>
+> <p align="center"><em>Figure 2. Main physics-informed machine learning strategies and their pros and cons.</em></p>
+>
+> Figure 2 illustrates the fundamentals of **physics-informed machine learning (PIML)**, where physical laws—often expressed as **partial differential equations (PDEs)**—are embedded into ML models. PIML can be implemented in three main ways:
+>
+> - **Physics-in-initialization** — physics guides initialization of neural parameters; easy to implement but largely data-driven after training.  
+> - **Physics-in-loss** — PDE residuals or physical constraints are added as extra loss terms; practical balance between capacity and physical consistency, but requires careful tuning of physics-loss weights and may need more training epochs ([`pinn_ode.ipynb`](PINN/pinn_ode.ipynb), [`pinn_pde.ipynb`](PINN/pinn_pde.ipynb)).  
+> - **Physics-in-architecture** — the network structure directly represents governing physics; strongest physical consistency, lightweight structure, and generalizability, but accuracy depends on the fidelity of the embedded physics model ([`PANN/README.md`](PANN/README.md), external [XinzeLee/PANN](https://github.com/XinzeLee/PANN)).
+>
+> **Physics-in-loss** PIML has been widely used in multi-physics simulation to supplement finite-element or finite-volume modeling (FEM, FVM). **Physics-in-architecture** PIML is actively developed for **time-domain modeling of power converters**.
+
+---
+
 Physics priors in neural training: **PINN-style** residual losses in the notebooks here, plus **PANN-style** physics-in-architecture modeling (summary and links in [`PANN/README.md`](PANN/README.md)).
 
 ## Contents

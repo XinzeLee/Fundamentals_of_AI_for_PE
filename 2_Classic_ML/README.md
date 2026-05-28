@@ -35,6 +35,34 @@ The classical ML baseline here supports the review narrative in *Fundamentals of
 
 ---
 
+## Review article excerpt
+
+> <p align="center">
+>   <img src="../docs/img/ML-project-workflow.png" alt="Machine learning workflow for data-driven power electronics projects" width="720" />
+> </p>
+>
+> <p align="center"><em>Figure 1. Machine learning workflows for data-driven power electronics projects in a nutshell.</em></p>
+>
+> Figure 1 introduces a generic workflow for **data-driven machine learning projects** in power electronics. A typical project begins with **data acquisition** (simulation or experimental data via parameter sampling), followed by **Exploratory Data Analysis(EDA)**, cleaning, and **feature scaling** before model training. After training, **hyperparameters are tuned** to balance underfitting and overfitting, and the model can be **deployed** on the target platform.
+>
+> In practice, EDA, preprocessing, training, and tuning often form an **iterative loop**: prediction errors or abnormal results can reveal data issues and motivate further refinement of acquisition, preprocessing, or model choice—themes covered in **Sec. III-B–III-E** and in notebooks such as [`classic_ML.ipynb`](classic_ML.ipynb) and [`ridge_polynomial_regression.ipynb`](ridge_polynomial_regression.ipynb).
+>
+> <p align="center">
+>   <img src="../docs/img/classic-ML-models.png" alt="Machine learning model families for power electronics data" width="720" />
+> </p>
+>
+> <p align="center"><em>Figure 2. Machine learning models.</em></p>
+>
+> Figure 2 summarizes common **machine learning model families** and their fit to different PE data formats:
+>
+> - **Classic ML** (generalized linear, kernel-based, tree-based, instance-based, probabilistic graphical models) — strong for **small- to medium-sized tabular** data with physically meaningful features (this folder).  
+> - **Ensemble learning** — combines weak learners for better generalization; strong baselines for **medium- to large tabular** PE data (see [`3_Ensemble_Learning/`](../3_Ensemble_Learning/)).  
+> - **Neural networks** — flexible input representations, backbones, and heads for diverse formats and tasks when tabular conversion loses structure (waveform causality, field geometry, etc.; see [`4_Neural_Network/`](../4_Neural_Network/)).
+>
+> Hyperparameter search for surrogate models also connects to **Sec. V-C**, as in [`gaussian_process_bayesian_optimization.ipynb`](gaussian_process_bayesian_optimization.ipynb).
+
+---
+
 Classical machine learning: **regression** notebooks (polynomial Ridge on synthetic data; GP regression + Bayesian hyperparameter optimization on California housing) and a **classification** notebook (decision trees on Breast Cancer).
 
 ## Contents

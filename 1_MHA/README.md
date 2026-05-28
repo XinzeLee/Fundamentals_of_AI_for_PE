@@ -44,6 +44,33 @@ The notebooks here support the metaheuristic optimization narrative in the invit
 
 ---
 
+## Review article excerpt
+
+> <p align="center">
+>   <img src="../docs/img/meta-heuristic-algorithms.png" alt="Generic workflow of meta-heuristic algorithms for power electronics optimization" width="720" />
+> </p>
+>
+> <p align="center"><em>Figure 1. Generic workflow of MHAs.</em></p>
+>
+> Figure 1 introduces the generic workflow of **meta-heuristic algorithms (MHAs)** for optimization problems in power electronics. An MHA starts by initializing a group of candidate solutions, evaluates each candidate using a user-defined objective function, and then generates new candidates based on the search rule of the selected algorithm. Through repeated evaluation, candidate generation, and algorithm update, the search gradually moves toward better solutions until the stopping condition is reached.
+>
+> In power electronics, this workflow supports **converter design optimization**, **controller parameter tuning**, **maximum power point tracking**, and **circuit parameter identification**—especially when the problem is nonlinear, multi-objective, or difficult to solve with analytical methods. The notebooks in this folder implement that loop on benchmarks and PE-style design surfaces.
+>
+> <p align="center">
+>   <img src="../docs/img/multi-objective-MHA.PNG" alt="Decomposition-based and population-based multi-objective meta-heuristic algorithms" width="720" />
+> </p>
+>
+> <p align="center"><em>Figure 2. Decomposition-based and population-based multi-objective MHAs.</em></p>
+>
+> Figure 2 introduces two common ways to handle **multi-objective optimization (MOO)** in meta-heuristic algorithms:
+>
+> - **Decomposition-based MOO** — multiple objectives are combined into one scalar objective using predefined weights. This approach is simple and intuitive, but it needs careful weight selection and objective normalization, and can suffer from the curse of dimensionality in objective space.  
+> - **Population-based MOO** — a population of candidates is evaluated and ranked by dominance. Instead of a single optimum, the search approximates a **Pareto front**, which is especially useful in PE design when trading off efficiency, power density, reliability, and cost. See [`Multi_Objective_MHA/`](Multi_Objective_MHA/) for hands-on examples.
+>
+> **MHA tuning:** balance **global exploration** and **local exploitation**. A practical strategy is broad exploration in early iterations (cover diverse regions of the design space), then gradually emphasize local refinement around promising solutions—as explored in **Sec. V-C** notebooks such as `pso_hyp_tuning.ipynb`.
+
+---
+
 Single- and multi-objective metaheuristics from benchmark functions to power-electronics-style design problems.
 
 ## Contents

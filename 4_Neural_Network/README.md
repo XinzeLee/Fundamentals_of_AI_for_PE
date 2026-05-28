@@ -52,6 +52,47 @@ Subfolders map to **Section II** (PE data modalities) and **Section III** (NN to
 
 ---
 
+## Review article excerpt
+
+> <p align="center">
+>   <img src="../docs/img/PE-data-formats.png" alt="Power electronics data formats and feature invariants" width="720" />
+> </p>
+>
+> <p align="center"><em>Figure 1. Power electronics data formats and their key feature invariants. Unstructured data are omitted because they are not specific to PE.</em></p>
+>
+> Figure 1 introduces the major **power-electronics data formats**. PE data are not limited to standard structured, tabular features; they also include semi-structured **signal-domain** data, **field** data, and **graph** data, each with its own feature invariants.
+>
+> - **Tabular data** — numerical and categorical features (e.g. efficiency, topology class), where each column has a fixed physical meaning ([`Fundamentals/`](Fundamentals/), [`Good_Practices/`](Good_Practices/)).  
+> - **Signal-domain data** — waveforms and spectra with temporal or spectral locality, causality, and multi-timescale hierarchy ([`Signal_Domain/`](Signal_Domain/)).  
+> - **Field data** — multi-physics distributions with geometric structure ([`Field_Data/`](Field_Data/)).  
+> - **Graph data** — circuit topologies, control diagrams, and PCB layouts through connectivity, graph locality, and multi-hop dependency ([`Graph_NN/`](Graph_NN/)).
+>
+> Recognizing these formats is essential for selecting neural-network architectures that preserve underlying PE-specific information.
+>
+> <p align="center">
+>   <img src="../docs/img/ML-across-PE-lifecycle.png" alt="Machine learning applications across the power converter lifecycle" width="720" />
+> </p>
+>
+> <p align="center"><em>Figure 2. Applications of ML algorithms throughout the lifecycle phases of power converters.</em></p>
+>
+> Figure 2 summarizes how different **learning types** support AI applications across the PE lifecycle:
+>
+> - **Design** — supervised learning maps design variables to performance metrics; inverse modeling recommends feasible parameters from targets; unsupervised learning supports clustering or dimensionality reduction; reinforcement learning can assist topology synthesis or design-space exploration.  
+> - **Control** — supervised learning models control performance or imitates existing controllers; reinforcement learning explores new control trajectories via interaction with a converter model or simulator (see [`7_Reinforcement_Learning/`](../7_Reinforcement_Learning/)).  
+> - **Maintenance** — supervised learning for system identification, RUL estimation, and fault classification; unsupervised or semi-supervised learning for fault detection when labeled failures are scarce (see [`9_Case_Studies_PE/`](../9_Case_Studies_PE/)).
+>
+> <p align="center">
+>   <img src="../docs/img/NN-fundamentals.png" alt="Modular neural network structure with backbone and head for power electronics" width="720" />
+> </p>
+>
+> <p align="center"><em>Figure 3. Modular structure of neural networks, consisting of a model backbone and a model head.</em></p>
+>
+> Figure 3 illustrates the **modular structure of neural networks (NNs)** for power electronics applications. A generic NN consists of a **model backbone** and a **model head**. The backbone starts with **data tensorization**, where different PE data formats are converted into suitable tensor representations—tabular features, signal-domain sequences, field tensors, or graph-structured inputs. Hidden layers then extract task-relevant features using architectures matched to the data format: feedforward layers for tabular data; recurrent or convolutional layers for signal-domain data; convolutional layers for field or image-like data; graph layers for topology-structured data. The **model head** (output layer and loss function) determines the learning type—regression, classification, density estimation, or reinforcement learning. In this way, NNs provide a flexible framework that interfaces with diverse PE data formats while supporting different learning tasks through backbone and head design (see [`Fundamentals/NN_basics.ipynb`](Fundamentals/NN_basics.ipynb), [`Multi_Modal_Distribution/`](Multi_Modal_Distribution/) for MDN outputs).
+>
+> **NN tuning:** the central goal is to find the right balance between **underfitting** and **overfitting**. A practical strategy is to first intentionally **overfit** the training set with a sufficiently large model, ensuring enough capacity to capture the latent input–output mapping, then gradually **simplify and regularize** based on validation performance. **Architecture tuning** typically starts with capacity-related parameters (number of hidden layers and neurons), followed by layer types, activation functions, normalization layers, and residual connections. **Optimizer-related hyperparameters**—training epochs, learning rate, and regularization strength—should then be tuned to improve convergence and generalization. **Early stopping** is particularly useful when validation loss stops improving and the model begins to overfit. In practice, more complex architectures (layer stacking, hybrid blocks) should be adopted only when they provide measurable gains, verified through **ablation studies**—workflow emphasized in [`Good_Practices/good_practice_NN.ipynb`](Good_Practices/good_practice_NN.ipynb) and [`Field_Data/field_temperature_residual_fnn.ipynb`](Field_Data/field_temperature_residual_fnn.ipynb).
+
+---
+
 Neural networks from tabular regression/classification through **spatial (3D) field** regression, sequence models, and mixture-density (MDN) regression, including a **hysteresis** extension (Part 3b in the MDN notebook): rate-independent loops, **Prandtl–Ishlinskii** play-operator superposition vs an **MDN** that targets multimodal **p(y|x)**, with references to **B–H**-style behavior in magnetic components.
 
 ## Contents
