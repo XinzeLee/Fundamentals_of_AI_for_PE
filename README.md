@@ -1,4 +1,4 @@
-# Fundamentals of AI for PE — repository overview
+﻿# Fundamentals of AI for PE — repository overview
 
 ## Companion tools
 
@@ -20,9 +20,9 @@ Use the interactive **Algorithm Selector** to narrow AI/ML approaches for your P
 
 ---
 
-## Alignment with the tutorial article
+## Alignment with the review article
 
-This repository accompanies the invited tutorial *Fundamentals of Artificial Intelligence for Power Electronics* (*IEEE Trans. Ind. Electron.*, 2026). Section numbers below follow the **revised manuscript** structure:
+This repository accompanies the invited review *Fundamentals of Artificial Intelligence for Power Electronics* (*IEEE Trans. Ind. Electron.*, 2026). Section numbers below follow the **revised manuscript** structure:
 
 | Article section | Topic |
 |-----------------|---------------|
@@ -50,7 +50,25 @@ This repository accompanies the invited tutorial *Fundamentals of Artificial Int
 | [`8_PE_Simulation_Automation`](8_PE_Simulation_Automation/) | **III-A** (simulation automation for batch data acquisition) |
 | [`9_Case_Studies_PE`](9_Case_Studies_PE/) | **VII** — see [9_Case_Studies_PE/README.md](9_Case_Studies_PE/README.md) |
 
-Per-folder detail appears in each module’s README under **Alignment with the tutorial article**.
+Per-folder detail appears in each module’s README under **Alignment with the review article**.
+
+---
+
+## Review article excerpt
+
+> <p align="center">
+>   <img src="docs/img/what-which-how-framework.png" alt="What-Which-How framework for introducing AI fundamentals in power electronics" width="720" />
+> </p>
+>
+> <p align="center"><em>Figure 1. “What–Which–How” framework to introduce the fundamentals of AI for PE.</em></p>
+>
+> This repository (**hands-on Jupyter notebooks**), together with the [Algorithm Selector](https://xinzelee.github.io/AI_for_PE_Algorithm_Selector/) web app and [ChatGPT assistant](#companion-tools), supports a practical **What–Which–How** framework for introducing AI fundamentals in power electronics.
+>
+> 1. **What** — clarify the PE problem you want to solve.  
+> 2. **Which** — select suitable AI models, from classic machine learning and ensemble learning to neural-network architectures (and related topics in this repo).  
+> 3. **How** — tune and deploy those models through guided, hands-on coding.
+>
+> The framework aims to make AI methods more **accessible** and **actionable** for the PE community.
 
 ---
 
@@ -65,7 +83,7 @@ Per-folder detail appears in each module’s README under **Alignment with the t
 ## Authorship & status
 
 - **Course / code author:** Xinze Li  
-- **Tutorial article:** Xinze Li, Fanfan Lin, Juan J. Rodríguez-Andina, Sergio Vazquez, Homer Alan Mantooth, Leopoldo García Franquelo, “Fundamentals of Artificial Intelligence for Power Electronics,” *IEEE Transactions on Industrial Electronics*, 2026.
+- **Review article:** Xinze Li, Fanfan Lin, Juan J. Rodríguez-Andina, Sergio Vazquez, Homer Alan Mantooth, Leopoldo García Franquelo, “Fundamentals of Artificial Intelligence for Power Electronics,” *IEEE Transactions on Industrial Electronics*, 2026.
 
 *These learning resources are still under active refinement; notebooks, data, and documentation may change.*
 
@@ -76,7 +94,8 @@ Per-folder detail appears in each module’s README under **Alignment with the t
 | Section | Jump to |
 |--------|---------|
 | Companion tools | [Algorithm selector & ChatGPT](#companion-tools) |
-| Article ↔ repo mapping | [Alignment with the tutorial article](#alignment-with-the-tutorial-article) |
+| Article ↔ repo mapping | [Alignment with the review article](#alignment-with-the-review-article) |
+| What–Which–How framework | [Review article excerpt](#review-article-excerpt) |
 | Education article (PDF) | [Companion education article](#companion-education-article-pilot-course) |
 | Google Colab | [Colab links for all notebooks](#google-colab) |
 | Repository metrics | [Overview](#overview) |

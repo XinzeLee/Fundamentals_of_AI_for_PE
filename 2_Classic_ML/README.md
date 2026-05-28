@@ -1,9 +1,9 @@
-# 2_Classic_ML
+﻿# 2_Classic_ML
 
 ## Authorship & status
 
 - **Course / code author:** Xinze Li  
-- **Tutorial article:** Xinze Li, Fanfan Lin, Juan J. Rodríguez-Andina, Sergio Vazquez, Homer Alan Mantooth, Leopoldo García Franquelo, “Fundamentals of Artificial Intelligence for Power Electronics,” *IEEE Transactions on Industrial Electronics*, 2026.
+- **Review article:** Xinze Li, Fanfan Lin, Juan J. Rodríguez-Andina, Sergio Vazquez, Homer Alan Mantooth, Leopoldo García Franquelo, “Fundamentals of Artificial Intelligence for Power Electronics,” *IEEE Transactions on Industrial Electronics*, 2026.
 
 *These learning resources are still under active refinement; notebooks, data, and documentation may change.*
 
@@ -27,11 +27,11 @@
 
 ---
 
-## Alignment with the tutorial article
+## Alignment with the review article
 
 **Discussion in the article:** [`ridge_polynomial_regression.ipynb`](ridge_polynomial_regression.ipynb) — **Section III-C–III-E** (features + regularized regression). [`classic_ML.ipynb`](classic_ML.ipynb) — **Section III-B**, **III-E** (EDA, decision trees). [`gaussian_process_bayesian_optimization.ipynb`](gaussian_process_bayesian_optimization.ipynb) — **Section III-E** (GP regression), **V-C** (Bayesian hyperparameter optimization).
 
-The classical ML baseline here supports the tutorial narrative in *Fundamentals of Artificial Intelligence for Power Electronics* (*IEEE Trans. Ind. Electron.*, 2026).
+The classical ML baseline here supports the review narrative in *Fundamentals of Artificial Intelligence for Power Electronics* (*IEEE Trans. Ind. Electron.*, 2026).
 
 ---
 

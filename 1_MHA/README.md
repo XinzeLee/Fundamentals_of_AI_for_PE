@@ -1,9 +1,9 @@
-# 1_MHA (Meta-Heuristic Algorithms)
+﻿# 1_MHA (Meta-Heuristic Algorithms)
 
 ## Authorship & status
 
 - **Course / code author:** Xinze Li  
-- **Tutorial article:** Xinze Li, Fanfan Lin, Juan J. Rodríguez-Andina, Sergio Vazquez, Homer Alan Mantooth, Leopoldo García Franquelo, “Fundamentals of Artificial Intelligence for Power Electronics,” *IEEE Transactions on Industrial Electronics*, 2026.
+- **Review article:** Xinze Li, Fanfan Lin, Juan J. Rodríguez-Andina, Sergio Vazquez, Homer Alan Mantooth, Leopoldo García Franquelo, “Fundamentals of Artificial Intelligence for Power Electronics,” *IEEE Transactions on Industrial Electronics*, 2026.
 
 *These learning resources are still under active refinement; notebooks, data, and documentation may change.*
 
@@ -36,11 +36,11 @@
 
 ---
 
-## Alignment with the tutorial article
+## Alignment with the review article
 
 **Discussion in the article:** [`Single_Objective_MHA/`](Single_Objective_MHA/) — **Section V-A** (generic MHA workflow), **V-C** (hyperparameter tuning). [`Multi_Objective_MHA/`](Multi_Objective_MHA/) — **Section V-B** (multi-objective MHAs), **V-C** (tuning).
 
-The notebooks here support the metaheuristic optimization narrative in the invited tutorial *Fundamentals of Artificial Intelligence for Power Electronics* (*IEEE Trans. Ind. Electron.*, 2026).
+The notebooks here support the metaheuristic optimization narrative in the invited review *Fundamentals of Artificial Intelligence for Power Electronics* (*IEEE Trans. Ind. Electron.*, 2026).
 
 ---
 

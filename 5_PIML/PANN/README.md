@@ -1,9 +1,9 @@
-# 5_PIML / PANN
+﻿# 5_PIML / PANN
 
 ## Authorship & status
 
 - **Course / code author:** Xinze Li  
-- **Tutorial article:** Xinze Li, Fanfan Lin, Juan J. Rodríguez-Andina, Sergio Vazquez, Homer Alan Mantooth, Leopoldo García Franquelo, “Fundamentals of Artificial Intelligence for Power Electronics,” *IEEE Transactions on Industrial Electronics*, 2026.
+- **Review article:** Xinze Li, Fanfan Lin, Juan J. Rodríguez-Andina, Sergio Vazquez, Homer Alan Mantooth, Leopoldo García Franquelo, “Fundamentals of Artificial Intelligence for Power Electronics,” *IEEE Transactions on Industrial Electronics*, 2026.
 
 *These learning resources are still under active refinement; notebooks, data, and documentation may change.*
 
@@ -15,7 +15,7 @@ This folder is a **bridge** to the external [PANN](https://github.com/XinzeLee/P
 
 ---
 
-## Alignment with the tutorial article
+## Alignment with the review article
 
 **Discussion in the article:** **Sec. IV-B** (integrating prior knowledge into ML); **Sec. VII-E** (PANN for parameter identification).
 

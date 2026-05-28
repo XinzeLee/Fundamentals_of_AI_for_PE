@@ -1,9 +1,9 @@
-# 0_To_Get_Started
+﻿# 0_To_Get_Started
 
 ## Authorship & status
 
 - **Course / code author:** Xinze Li  
-- **Tutorial article:** Xinze Li, Fanfan Lin, Juan J. Rodríguez-Andina, Sergio Vazquez, Homer Alan Mantooth, Leopoldo García Franquelo, “Fundamentals of Artificial Intelligence for Power Electronics,” *IEEE Transactions on Industrial Electronics*, 2026.
+- **Review article:** Xinze Li, Fanfan Lin, Juan J. Rodríguez-Andina, Sergio Vazquez, Homer Alan Mantooth, Leopoldo García Franquelo, “Fundamentals of Artificial Intelligence for Power Electronics,” *IEEE Transactions on Industrial Electronics*, 2026.
 
 *These learning resources are still under active refinement; notebooks, data, and documentation may change.*
 
@@ -19,9 +19,9 @@
 
 ---
 
-## Alignment with the tutorial article
+## Alignment with the review article
 
-**Role:** Environment setup used before running notebooks referenced throughout the invited tutorial *Fundamentals of Artificial Intelligence for Power Electronics* (*IEEE Trans. Ind. Electron.*, 2026). There is no dedicated article section—this folder supports the hands-on material in **Section III–VII** and all modules.
+**Role:** Environment setup used before running notebooks referenced throughout the invited review *Fundamentals of Artificial Intelligence for Power Electronics* (*IEEE Trans. Ind. Electron.*, 2026). There is no dedicated article section—this folder supports the hands-on material in **Section III–VII** and all modules.
 
 ---
 
