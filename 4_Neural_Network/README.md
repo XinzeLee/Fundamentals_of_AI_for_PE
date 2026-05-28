@@ -55,7 +55,7 @@ Subfolders map to **Section II** (PE data modalities) and **Section III** (NN to
 ## Review article excerpt
 
 > <p align="center">
->   <img src="../docs/img/PE-data-formats.png" alt="Power electronics data formats and feature invariants" width="720" />
+>   <img src="../docs/img/PE-data-formats.png" alt="Power electronics data formats and feature invariants" width="950" />
 > </p>
 >
 > <p align="center"><em>Figure 1. Power electronics data formats and their key feature invariants. Unstructured data are omitted because they are not specific to PE.</em></p>
@@ -70,7 +70,7 @@ Subfolders map to **Section II** (PE data modalities) and **Section III** (NN to
 > Recognizing these formats is essential for selecting neural-network architectures that preserve underlying PE-specific information.
 >
 > <p align="center">
->   <img src="../docs/img/ML-across-PE-lifecycle.png" alt="Machine learning applications across the power converter lifecycle" width="720" />
+>   <img src="../docs/img/ML-across-PE-lifecycle.png" alt="Machine learning applications across the power converter lifecycle" width="950" />
 > </p>
 >
 > <p align="center"><em>Figure 2. Applications of ML algorithms throughout the lifecycle phases of power converters.</em></p>
@@ -82,7 +82,7 @@ Subfolders map to **Section II** (PE data modalities) and **Section III** (NN to
 > - **Maintenance** — supervised learning for system identification, RUL estimation, and fault classification; unsupervised or semi-supervised learning for fault detection when labeled failures are scarce (see [`9_Case_Studies_PE/`](../9_Case_Studies_PE/)).
 >
 > <p align="center">
->   <img src="../docs/img/NN-fundamentals.png" alt="Modular neural network structure with backbone and head for power electronics" width="720" />
+>   <img src="../docs/img/NN-fundamentals.png" alt="Modular neural network structure with backbone and head for power electronics" width="950" />
 > </p>
 >
 > <p align="center"><em>Figure 3. Modular structure of neural networks, consisting of a model backbone and a model head.</em></p>
