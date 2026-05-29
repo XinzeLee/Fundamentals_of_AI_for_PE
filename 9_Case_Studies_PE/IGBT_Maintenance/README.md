@@ -27,6 +27,12 @@ This notebook supports the **IGBT maintenance / RUL** case study in *Fundamental
 
 ---
 
+## Review article excerpt
+
+Review figures and discussion for probabilistic IGBT **RUL** (**Sec. VII-F**) are in [`../Magnetic_Modeling/README.md`](../Magnetic_Modeling/README.md#review-article-excerpt). Run the hands-on notebook in this folder: [`rul_prediction.ipynb`](rul_prediction.ipynb).
+
+---
+
 Probabilistic remaining useful life (RUL) from accelerated-aging IGBT measurements.
 
 ## External dataset

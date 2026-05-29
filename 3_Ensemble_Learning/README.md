@@ -21,9 +21,23 @@
 
 ## Alignment with the review article
 
-**Discussion in the article:** **Section III-E** (tree and ensemble ML architectures).
+**Discussion in the article:** **Sec. III-E** (tree and ensemble ML architectures).
 
 The ensemble-learning notebook supports the tree/ensemble discussion in *Fundamentals of Artificial Intelligence for Power Electronics* (*IEEE Trans. Ind. Electron.*, 2026).
+
+---
+
+## Review article excerpt
+
+> **Ensemble learning** improves generalization by combining multiple weak models into a stronger predictor. Classic ML models may **underfit** when too simple or **overfit** when too sensitive to training noise. Ensembles aggregate many unit models so different learners capture different regions, patterns, or modes of the data—especially useful in PE for **nonlinear** or **multi-modal** behavior (e.g. magnetic hysteresis and converter performance tables). See [`ensemle_learning.ipynb`](ensemle_learning.ipynb) for controlled stress tests on tabular data.
+>
+> Common strategies include:
+>
+> - **Stacking** — combine heterogeneous models through a meta-model.  
+> - **Bagging** — train on resampled datasets and aggregate outputs.  
+> - **Boosting** — sequentially correct weak models by focusing on prior errors.
+>
+> **Tree-based ensembles** (random forests, **XGBoost**) are strong baselines for tabular PE data: they handle **rotation invariance** well and add capacity beyond a single decision tree—used in case studies such as [`9_Case_Studies_PE/Buck_Design/`](../9_Case_Studies_PE/Buck_Design/README.md) and [`9_Case_Studies_PE/DAB_Design/Performance_Modeling_and_Design/`](../9_Case_Studies_PE/DAB_Design/Performance_Modeling_and_Design/README.md).
 
 ---
 

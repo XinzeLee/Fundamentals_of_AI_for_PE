@@ -48,9 +48,7 @@ This repository accompanies the invited review *Fundamentals of Artificial Intel
 | [`6_Agentic_AI`](6_Agentic_AI/) | **VI** (VI-A–VI-C) |
 | [`7_Reinforcement_Learning`](7_Reinforcement_Learning/) | **III-D** (reinforcement learning) |
 | [`8_PE_Simulation_Automation`](8_PE_Simulation_Automation/) | **III-A** (simulation automation for batch data acquisition) |
-| [`9_Case_Studies_PE`](9_Case_Studies_PE/) | **VII** — see [9_Case_Studies_PE/README.md](9_Case_Studies_PE/README.md) |
-
-Per-folder detail appears in each module’s README under **Alignment with the review article**.
+| [`9_Case_Studies_PE`](9_Case_Studies_PE/) | **VII** — see [9_Case_Studies_PE/README.md](9_Case_Studies_PE/README.md) and case-study READMEs below |
 
 ---
 
@@ -94,7 +92,7 @@ Per-folder detail appears in each module’s README under **Alignment with the r
 | Section | Jump to |
 |--------|---------|
 | Companion tools | [Algorithm selector & ChatGPT](#companion-tools) |
-| Article ↔ repo mapping | [Alignment with the review article](#alignment-with-the-review-article) |
+| Article ↔ repo mapping | [Alignment with the review article](#alignment-with-the-review-article) · [Case studies (Sec. VII)](#case-studies-sec-vii) |
 | What–Which–How framework | [Review article excerpt](#review-article-excerpt) |
 | Education article (PDF) | [Companion education article](#companion-education-article-pilot-course) |
 | Google Colab | [Colab links for all notebooks](#google-colab) |
@@ -132,7 +130,7 @@ Each module README includes **Open in Colab** badges for its notebooks. On Colab
 | [`6_Agentic_AI`](6_Agentic_AI/) | — | — | Agentic AI and PE-GPT (documentation; no local `.ipynb`) (**Sec. VI**) |
 | [`7_Reinforcement_Learning`](7_Reinforcement_Learning/) | 2 | 846 | Buck regulation tutorials — DQN and DDPG — plus curated RL reading (**Sec. III-D**) |
 | [`8_PE_Simulation_Automation`](8_PE_Simulation_Automation/) | 2 | 245 | LTspice, PLECS, Simulink automation (**Sec. III-A**) |
-| [`9_Case_Studies_PE`](9_Case_Studies_PE/) | 9 | 4,435 | Buck, DAB, IGBT, magnetic modeling case studies (**Sec. VII**) |
+| [`9_Case_Studies_PE`](9_Case_Studies_PE/) | 9 | 4,435 | Buck; DAB (performance / waveforms / TinyML — [tracks](9_Case_Studies_PE/DAB_Design/README.md)); IGBT RUL; magnetics (**Sec. VII**) — [overview](9_Case_Studies_PE/README.md) |
 
 Case-study notebooks account for the largest share of code, followed by neural-network and MHA modules.
 
@@ -180,12 +178,12 @@ Labels used in the inventory fall into three groups:
 
 | ID | Family | Modality | Location / source | Primary notebooks |
 |----|--------|----------|-------------------|-------------------|
-| **D1** | Synchronous buck performance | Tabular | [`9_Case_Studies_PE/Buck_Design/sync_buck_performances_cleaned.csv`](9_Case_Studies_PE/Buck_Design/sync_buck_performances_cleaned.csv), [`total_100W_12V.csv`](9_Case_Studies_PE/Buck_Design/total_100W_12V.csv) | `buck_modeling_NN.ipynb`, `xgboost_buck_modeling.ipynb`, `buck_comprehensive_case_study.ipynb` |
-| **D2** | DAB modulation / performance table | Tabular | [`9_Case_Studies_PE/DAB_Design/Performance_Modeling_and_Design/DAB_TPS.csv`](9_Case_Studies_PE/DAB_Design/Performance_Modeling_and_Design/DAB_TPS.csv) | `one_stop_AI_DAB_modulation.ipynb` |
-| **D3** | DAB adaptive-modulation sweep | Tabular | [`9_Case_Studies_PE/DAB_Design/Adaptive_Modulation/optimization_results.csv`](9_Case_Studies_PE/DAB_Design/Adaptive_Modulation/optimization_results.csv) | `TinyML.ipynb` |
-| **D4** | DAB time-domain waveforms | Signal (time series) | [`9_Case_Studies_PE/DAB_Design/Time_Domain_Modeling/Waveform/*.csv`](9_Case_Studies_PE/DAB_Design/Time_Domain_Modeling/Waveform/) (100 files) | `time_series_modeling.ipynb`, `rnn_basics.ipynb` |
-| **D5** | IGBT accelerated aging (RUL) | Signal / tabular windows | [`9_Case_Studies_PE/IGBT_Maintenance/april22nd-23rdIgbtIRCG40BC30kd-A17.mat`](9_Case_Studies_PE/IGBT_Maintenance/april22nd-23rdIgbtIRCG40BC30kd-A17.mat) — derived from [NASA IGBT dataset](https://data.nasa.gov/dataset/insulated-gate-bipolar-transistor-igbt-accelerated-aging) | `rul_prediction.ipynb` |
-| **D6** | Magnetic core-loss (MagNet-style) | Tabular + harmonic features | [`9_Case_Studies_PE/Magnetic_Modeling/*_downscaled.csv`](9_Case_Studies_PE/Magnetic_Modeling/) (4 files) — aligned with [Princeton MagNet Challenge](https://www.princeton.edu/~minjie/magnet.html) | `magnet_fnn.ipynb`, `magnet_lstm.ipynb` |
+| **D1** | Synchronous buck performance | Tabular | [`sync_buck_performances_cleaned.csv`](9_Case_Studies_PE/Buck_Design/sync_buck_performances_cleaned.csv), [`total_100W_12V.csv`](9_Case_Studies_PE/Buck_Design/total_100W_12V.csv) — [README](9_Case_Studies_PE/Buck_Design/README.md) | `buck_modeling_NN.ipynb`, `xgboost_buck_modeling.ipynb`, `buck_comprehensive_case_study.ipynb` |
+| **D2** | DAB modulation / performance table | Tabular | [`DAB_TPS.csv`](9_Case_Studies_PE/DAB_Design/Performance_Modeling_and_Design/DAB_TPS.csv) — [README](9_Case_Studies_PE/DAB_Design/Performance_Modeling_and_Design/README.md) | `one_stop_AI_DAB_modulation.ipynb` |
+| **D3** | DAB adaptive-modulation sweep | Tabular | [`optimization_results.csv`](9_Case_Studies_PE/DAB_Design/Adaptive_Modulation/optimization_results.csv) — [README](9_Case_Studies_PE/DAB_Design/Adaptive_Modulation/README.md) | `TinyML.ipynb` |
+| **D4** | DAB time-domain waveforms | Signal (time series) | [`Waveform/*.csv`](9_Case_Studies_PE/DAB_Design/Time_Domain_Modeling/Waveform/) (100 files) — [README](9_Case_Studies_PE/DAB_Design/Time_Domain_Modeling/README.md) | `time_series_modeling.ipynb`, `rnn_basics.ipynb` |
+| **D5** | IGBT accelerated aging (RUL) | Signal / tabular windows | [`april22nd-23rdIgbtIRCG40BC30kd-A17.mat`](9_Case_Studies_PE/IGBT_Maintenance/april22nd-23rdIgbtIRCG40BC30kd-A17.mat) — [README](9_Case_Studies_PE/IGBT_Maintenance/README.md); [NASA IGBT dataset](https://data.nasa.gov/dataset/insulated-gate-bipolar-transistor-igbt-accelerated-aging) | `rul_prediction.ipynb` |
+| **D6** | Magnetic core-loss (MagNet-style) | Tabular + harmonic features | [`*_downscaled.csv`](9_Case_Studies_PE/Magnetic_Modeling/) (4 files) — [README](9_Case_Studies_PE/Magnetic_Modeling/README.md); [MagNet Challenge](https://www.princeton.edu/~minjie/magnet.html) | `magnet_fnn.ipynb`, `magnet_lstm.ipynb` |
 | **D7** | 3-D thermal field samples | Field (spatial) | [`4_Neural_Network/Field_Data/cap_Tfield/Tfield_*_downsampled.csv`](4_Neural_Network/Field_Data/cap_Tfield/) (70 scenarios; `x,y,z,T`; loss & Tamb in filename) | `field_temperature_residual_fnn.ipynb` |
 
 **Built-in / sklearn datasets (no repo file)**
@@ -207,7 +205,7 @@ Labels used in the inventory fall into three groups:
 | Sequence / control rollouts | Signal / state trajectories | `rnn_basics.ipynb`, `7_Reinforcement_Learning/*.ipynb` |
 | Hysteresis loops, MDN demos | Synthetic nonlinear | `mixture_density_net_ensemble_learning.ipynb` |
 
-External dataset licensing and citations: [9_Case_Studies_PE](9_Case_Studies_PE/README.md) (see subfolder READMEs for NASA IGBT and MagNet sources).
+External dataset licensing and citations: [9_Case_Studies_PE](9_Case_Studies_PE/README.md) — per-track READMEs under `Buck_Design/`, `DAB_Design/` ([performance](9_Case_Studies_PE/DAB_Design/Performance_Modeling_and_Design/README.md), [time-domain](9_Case_Studies_PE/DAB_Design/Time_Domain_Modeling/README.md), [TinyML](9_Case_Studies_PE/DAB_Design/Adaptive_Modulation/README.md)), `IGBT_Maintenance/`, and `Magnetic_Modeling/`.
 
 ## License
 

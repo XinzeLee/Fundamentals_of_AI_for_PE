@@ -33,6 +33,26 @@ These notebooks support the **magnetic core loss** case study in *Fundamentals o
 
 ---
 
+## Review article excerpt
+
+> <p align="center">
+>   <img src="../../docs/img/RUL-prediction-accuracy.png" alt="Probabilistic BiLSTM RUL prediction accuracy and confidence interval" width="720" />
+> </p>
+>
+> <p align="center"><em>Figure 1. Probabilistic BiLSTM to predict RUL and quantify uncertainty: RUL accuracy and confidence interval.</em></p>
+>
+> <p align="center">
+>   <img src="../../docs/img/RUL-prediction-BiLSTM-workflow.png" alt="Workflow of probabilistic BiLSTM for IGBT RUL prediction" width="720" />
+> </p>
+>
+> <p align="center"><em>Figure 2. Workflow of the probabilistic BiLSTM and case studies.</em></p>
+>
+> This case study presents **probabilistic RUL prediction** for **IGBT aging** using a neural network (**Sec. VII-F**). Instead of a single remaining-useful-life value, the model outputs an **expected RUL** and an **uncertainty range**. Figure 1 compares the predicted mean with true RUL; the **90% confidence interval** quantifies prediction uncertainty.
+>
+> Figure 2 outlines the workflow: electrical and thermal signals (node voltages, collector–emitter current, package temperature) feed a **BiLSTM** backbone. The head predicts a **Gaussian RUL distribution** via mean and log-variance outputs. Training with **negative log-likelihood** loss captures both the RUL trend and input-dependent uncertainty—supporting reliability-aware maintenance with an expected lifetime and a decision-oriented confidence range. Implemented in [`../IGBT_Maintenance/rul_prediction.ipynb`](../IGBT_Maintenance/rul_prediction.ipynb) (NASA accelerated-aging data).
+
+---
+
 Core-loss surrogate modeling from B-waveforms, frequency, and temperature (MagNet-style downscaled CSVs).
 
 ## External dataset

@@ -27,9 +27,23 @@
 
 ## Alignment with the review article
 
-**Discussion in the article:** **Section III-D** (learning types — reinforcement learning for PE control).
+**Discussion in the article:** **Sec. III-D** (learning types — reinforcement learning for PE control).
 
 These curated resources support the **RL** thread in *Fundamentals of Artificial Intelligence for Power Electronics* (*IEEE Trans. Ind. Electron.*, 2026).
+
+---
+
+## Review article excerpt
+
+> **Reinforcement learning (RL)** learns an optimal **action policy** through trial-and-reward interaction with an environment, rather than from a fixed pre-collected dataset alone. In a typical formulation, the **environment** defines state evolution, the **actor** maps observed states to control actions, and the **critic** estimates long-term return. The **reward function** is the central design choice—it defines “good behavior,” e.g. fast transient response, small steady-state error, low current stress, or safe operation (see **PE-oriented reward sketch** below and [`RL_buck_control.ipynb`](RL_buck_control.ipynb), [`DDPG_buck_control.ipynb`](DDPG_buck_control.ipynb)).
+>
+> In power electronics, RL fits **sequential decision-making** naturally:
+>
+> - **Converter control** — hardware or a simulator is the environment; the agent is the controller learning switching or modulation actions.  
+> - **Topology synthesis** — actions add, remove, or modify circuit components.  
+> - **System-level coordination** — **multi-agent RL** can coordinate PV inverters, storage, and EVs for active/reactive power optimization.
+>
+> Batch simulation for rollouts connects to [`8_PE_Simulation_Automation/`](../8_PE_Simulation_Automation/README.md) (**Sec. III-A**). Curated reading: **[Awesome RL](https://github.com/aikorea/awesome-rl)**.
 
 ---
 

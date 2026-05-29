@@ -78,7 +78,7 @@ End-to-end AI case studies for power electronics: data preparation, surrogates, 
 | IGBT maintenance (RUL) | [`IGBT_Maintenance/README.md`](IGBT_Maintenance/README.md) |
 | Magnetic core loss | [`Magnetic_Modeling/README.md`](Magnetic_Modeling/README.md) |
 
-**DAB subfolders:** `Adaptive_Modulation/`, `Performance_Modeling_and_Design/`, `Time_Domain_Modeling/` (see [`DAB_Design/README.md`](DAB_Design/README.md)).
+**DAB subfolders:** [`Performance_Modeling_and_Design/`](DAB_Design/Performance_Modeling_and_Design/README.md), [`Time_Domain_Modeling/`](DAB_Design/Time_Domain_Modeling/README.md), [`Adaptive_Modulation/`](DAB_Design/Adaptive_Modulation/README.md) (overview: [`DAB_Design/README.md`](DAB_Design/README.md)).
 
 **Notebooks**
 

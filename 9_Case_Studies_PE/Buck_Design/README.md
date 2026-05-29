@@ -35,6 +35,28 @@ These notebooks support the **buck converter** one-stop case study in *Fundament
 
 ---
 
+## Review article excerpt
+
+> <p align="center">
+>   <img src="../../docs/img/buck-eda-and-modeling.png" alt="Buck converter EDA, PCA, t-SNE, and ML modeling accuracy" width="720" />
+> </p>
+>
+> <p align="center"><em>Figure 1. Correlation map, principal component analysis, t-SNE plot, and the accuracy of ML-based modeling for buck converters.</em></p>
+>
+> This case study has **two stages**: machine learning **surrogate modeling** and **meta-heuristic optimization**. Figure 1 summarizes the correlation map, **principal component analysis** of design variables (**f<sub>s</sub>**, **L**, **C**) and objectives (**η**, **I<sub>ripple</sub>**, **V<sub>ripple</sub>**), a **t-SNE** plot of all variables, and the accuracy of ML-based efficiency modeling.
+>
+> From the correlation map and PCA, all three design variables (**f<sub>s</sub>**, **L**, **C**) contribute nontrivially to the three objectives (**η**, **I<sub>ripple</sub>**, **V<sub>ripple</sub>**), so ML model inputs include **f<sub>s</sub>**, **L**, and **C**. In the accuracy plot, **XGBoost** reaches higher accuracy than the NN, illustrating strong performance of **tree-based ensemble** methods on tabular buck data—see [`buck_modeling_NN.ipynb`](buck_modeling_NN.ipynb), [`xgboost_buck_modeling.ipynb`](xgboost_buck_modeling.ipynb), and EDA in [`buck_comprehensive_case_study.ipynb`](buck_comprehensive_case_study.ipynb).
+>
+> <p align="center">
+>   <img src="../../docs/img/buck-MHA-optimization.png" alt="GA versus PSO fitness for buck converter optimization" width="720" />
+> </p>
+>
+> <p align="center"><em>Figure 2. Comparison between GA and PSO for buck circuit optimization.</em></p>
+>
+> Figure 2 presents the **fitness evolution** of **genetic algorithm (GA)** and **particle swarm optimization (PSO)** on the buck optimization task. In this case, **GA achieves comparable efficiency optimization performance** to PSO—implemented in [`buck_comprehensive_case_study.ipynb`](buck_comprehensive_case_study.ipynb) and [`xgboost_buck_modeling.ipynb`](xgboost_buck_modeling.ipynb) (**Sec. VII-C**).
+
+---
+
 Synchronous buck design: exploration, surrogate modeling, and metaheuristic optimization on simulation-derived performance tables.
 
 ## Contents
