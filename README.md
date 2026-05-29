@@ -55,7 +55,7 @@ This repository accompanies the invited review *Fundamentals of Artificial Intel
 ## Review article excerpt
 
 > <p align="center">
->   <img src="docs/img/what-which-how-framework.png" alt="What-Which-How framework for introducing AI fundamentals in power electronics" width="720" />
+>   <img src="docs/img/what-which-how-framework.png" alt="What-Which-How framework for introducing AI fundamentals in power electronics" width="800" />
 > </p>
 >
 > <p align="center"><em>Figure 1. “What–Which–How” framework to introduce the fundamentals of AI for PE.</em></p>
