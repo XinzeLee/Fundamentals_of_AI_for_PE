@@ -23,6 +23,26 @@ This bridge document supports the **physics-in-architecture** thread in *Fundame
 
 ---
 
+## Review article excerpt
+
+> <p align="center">
+>   <img src="../../docs/img/PANN-training.png" alt="PANN training profile for DAB converter parameter identification" width="720" />
+> </p>
+>
+> <p align="center"><em>Figure 1. PANN-based parameter identification of DAB converters: the training profile.</em></p>
+>
+> <p align="center">
+>   <img src="../../docs/img/PANN-waveforms.png" alt="DAB waveforms before and after PANN parameter identification" width="720" />
+> </p>
+>
+> <p align="center"><em>Figure 2. Exemplary waveforms in the test set before and after training.</em></p>
+>
+> Figure 1 shows training of a **PANN** model—equivalent to **parameter identification** of a DAB converter (**Sec. VII-E**; physics-in-architecture prior, **Sec. IV-B**). Before identification, predicted **i<sub>L</sub>** deviates from measurements under the initial parameters. After training, identified parameters converge to **L<sub>k</sub> = 62.9 μH**, **R<sub>L</sub> = 1.2 Ω**, and **n = 1**; reconstructed waveforms in Figure 2 show practical consistency with measurements.
+>
+> Hands-on code and tutorials: [XinzeLee/PANN](https://github.com/XinzeLee/PANN). Related DAB workflows in [`9_Case_Studies_PE/DAB_Design/`](../../9_Case_Studies_PE/DAB_Design/README.md). Contrast with PINN notebooks in [`../PINN/`](../README.md) (**physics in the loss**).
+
+---
+
 Bridge to the external **PANN** project and its role in physics-informed AI for power electronics.
 
 ## Official repository
