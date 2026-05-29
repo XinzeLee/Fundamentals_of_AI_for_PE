@@ -25,15 +25,13 @@
 
 ## Alignment with the review article
 
-**Discussion in the article:** **Sec. II-C** (tabular / field-motivated loss data); **VII-B** (surrogate modeling).
+**Discussion in the article:** **Section II-C** (tabular / field-motivated loss data); **VII-B** (surrogate modeling).
 
-These notebooks support the **magnetic core loss** case study in *Fundamentals of Artificial Intelligence for Power Electronics* (*IEEE Trans. Ind. Electron.*, 2026). Parent overview: [`../README.md`](../README.md).
-
-**Related (thermal field):** For **3-D temperature** regression from downsampled CSV probes $(x,y,z)$ with loss/ambient in filenames, see [`4_Neural_Network/Field_Data/`](../../4_Neural_Network/Field_Data/) (`field_temperature_residual_fnn.ipynb`).
+These notebooks support the **magnetic core loss** case study in *Fundamentals of Artificial Intelligence for Power Electronics* (*IEEE Trans. Ind. Electron.*, 2026). 
 
 ---
 
-Core-loss surrogate modeling from B-waveforms, frequency, and temperature (MagNet-style downscaled CSVs).
+Core-loss surrogate modeling from B-waveforms, frequency, and temperature (MagNet downscaled CSVs).
 
 ## External dataset
 
@@ -41,7 +39,7 @@ Core-loss surrogate modeling from B-waveforms, frequency, and temperature (MagNe
 |--------|------|
 | Princeton University — MagNet Challenge | [MagNet Challenge](https://www.princeton.edu/~minjie/magnet.html) |
 
-The four `*_downscaled.csv` files in this folder are derived from or aligned with MagNet-style data for tutorial use; refer to Princeton for licensing and citation requirements.
+The four `*_downscaled.csv` files in this folder are derived from or aligned with MagNet-style data for tutorial use; refer to [MagNet Challenge](https://www.princeton.edu/~minjie/magnet.html) for citation requirements.
 
 ## Contents
 
@@ -61,9 +59,9 @@ The four `*_downscaled.csv` files in this folder are derived from or aligned wit
 
 **Topics:** Core loss from harmonics + operating conditions; FFT features from B-waveforms; FNN regression.
 
-**Algorithms & data:** FNN for volumetric core loss. `B_waveform[T]_downscaled.csv`, `Frequency[Hz]_downscaled.csv`, `Temperature[C]_downscaled.csv`, `Volumetric_losses[Wm-3]_downscaled.csv` (MagNet-style data — [Princeton MagNet Challenge](https://www.princeton.edu/~minjie/magnet.html)).
+**Algorithms & data:** FNN for volumetric core loss. `B_waveform[T]_downscaled.csv`, `Frequency[Hz]_downscaled.csv`, `Temperature[C]_downscaled.csv`, `Volumetric_losses[Wm-3]_downscaled.csv` (MagNet data — [Princeton MagNet Challenge](https://www.princeton.edu/~minjie/magnet.html)).
 
-**Notes:** Log targets and scaling; MAE, RMSE, MAPE; parameter count.
+**Notes:** Input and output scaling; waveform sequence conversion; parameter count.
 
 ---
 
@@ -73,7 +71,7 @@ The four `*_downscaled.csv` files in this folder are derived from or aligned wit
 
 **Algorithms & data:** BiLSTM + fused numeric branch. Same four CSVs as above (see [MagNet Challenge](https://www.princeton.edu/~minjie/magnet.html)).
 
-**Notes:** Shared split indices across branches; multi-input `Dataset` / `DataLoader` pattern.
+**Notes:** Multi-modal data; feature fusion; hybrid tabular and sequential input data.
 
 ---
 

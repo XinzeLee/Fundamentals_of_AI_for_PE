@@ -21,9 +21,9 @@
 
 ## Alignment with the review article
 
-**Discussion in the article:** **Sec. VII-A** (EDA); **VII-B** (surrogate modeling); **VII-C** (MHA optimization).
+**Discussion in the article:** **Section VII-A** (Exploratory data analysis); **VII-B** (ML surrogate modeling); **VII-C** (MHA optimization).
 
-This notebook supports the **DAB performance modeling and design** thread in *Fundamentals of Artificial Intelligence for Power Electronics* (*IEEE Trans. Ind. Electron.*, 2026). Parent overview: [`../README.md`](../README.md) · [`../../README.md`](../../README.md).
+This notebook supports the **DAB performance modeling and design** thread in *Fundamentals of Artificial Intelligence for Power Electronics* (*IEEE Trans. Ind. Electron.*, 2026). 
 
 ---
 
@@ -59,7 +59,7 @@ This notebook supports the **DAB performance modeling and design** thread in *Fu
 >
 > <p align="center"><em>Figure 4. Accuracy of XGBoost and NN models for DAB current-stress and zero voltage switching modeling.</em></p>
 >
-> Figure 4 reports accuracy for **current stress** and **zero-voltage switching (ZVS)** modeling. NNs reach **comparable or slightly higher** accuracy than XGBoost baselines when good practices are used—e.g. early stopping and normalization layers (**Sec. III-G**).
+> Figure 4 reports accuracy for **current stress** and **zero-voltage switching (ZVS)** modeling. NNs reach **comparable or slightly higher** accuracy than XGBoost baselines when good practices are used—e.g. early stopping and normalization layers (**Section III-G**).
 >
 > <p align="center">
 >   <img src="../../../docs/img/surface-contours-dab-modulation.png" alt="Regression surface contours from XGBoost and Tanh NN for DAB modulation" width="720" />
@@ -75,11 +75,11 @@ This notebook supports the **DAB performance modeling and design** thread in *Fu
 >
 > <p align="center"><em>Figure 6. GA and PSO for DAB modulation optimization (V<sub>out</sub> = 160 V, P<sub>L</sub> = 300 W).</em></p>
 >
-> Trained ML surrogates then couple to **GA** and **PSO** (**Sec. VII-C**). Peak current stress **i<sub>pp</sub>** is minimized subject to full **ZVS** (n<sub>ZVS</sub> = 8). In the continuous search over **D<sub>1</sub>**, **D<sub>2</sub>**, **PSO** outperforms **GA** in convergence speed and final objective. Twenty repeated runs and a two-sample **t-test** give *P* = 4.1×10<sup>−4</sup>, confirming a statistically significant improvement.
+> Trained ML surrogates then couple to **GA** and **PSO** (**Section VII-C**). Peak current stress **i<sub>pp</sub>** is minimized subject to full **ZVS** (n<sub>ZVS</sub> = 8). In the continuous search over **D<sub>1</sub>**, **D<sub>2</sub>**, **PSO** outperforms **GA** in convergence speed and final objective. 20 repeated runs and a two-sample **t-test** give *P* = 4.1×10<sup>−4</sup>, confirming a statistically significant improvement.
 
 ---
 
-One-stop DAB pipeline: exploratory analysis, data quality control, surrogate training, and metaheuristic optimization on tabular modulation data.
+One-stop DAB pipeline: exploratory analysis, data quality control, surrogate training, and metaheuristic optimization on tabular data.
 
 ## Contents
 
@@ -90,7 +90,7 @@ One-stop DAB pipeline: exploratory analysis, data quality control, surrogate tra
 ## Outcomes
 
 - EDA, PCA, and t-SNE on DAB modulation / performance tables  
-- Outlier and validity screening (e.g. ZVS-style filters) before modeling  
+- Data preprocessing before modeling  
 - Compare XGBoost, Random Forest, SVR, and neural surrogates  
 - Surrogate-assisted **PSO** and **GA** over modulation objectives  
 
@@ -102,7 +102,7 @@ One-stop DAB pipeline: exploratory analysis, data quality control, surrogate tra
 
 **Algorithms & data:** XGBoost, Random Forest, SVR, PCA, t-SNE, One-Class SVM, Isolation Forest, FNN-style models, PSO, GA. `DAB_TPS.csv`.
 
-**Notes:** Quality control before optimization (validity, ZVS-style filters, outliers); shared plotting/analysis helpers in `utils.py`.
+**Notes:** Data preprocessing and analysis; ML-based regression for current stress and ML-based classification for zero voltage switching; MHA minimizes current stress while ensuring full ZVS operation.
 
 ---
 

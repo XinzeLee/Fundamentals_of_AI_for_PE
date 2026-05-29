@@ -21,9 +21,9 @@
 
 ## Alignment with the review article
 
-**Discussion in the article:** **Sec. VII-F** (probabilistic remaining useful life prediction).
+**Discussion in the article:** **Section VII-F** (probabilistic remaining useful life prediction).
 
-This notebook supports the **IGBT maintenance / RUL** case study in *Fundamentals of Artificial Intelligence for Power Electronics* (*IEEE Trans. Ind. Electron.*, 2026). Parent overview: [`../README.md`](../README.md).
+This notebook supports the **IGBT maintenance / RUL** case study in *Fundamentals of Artificial Intelligence for Power Electronics* (*IEEE Trans. Ind. Electron.*, 2026).
 
 ---
 
@@ -41,7 +41,7 @@ This notebook supports the **IGBT maintenance / RUL** case study in *Fundamental
 >
 > <p align="center"><em>Figure 2. Workflow of the probabilistic BiLSTM and case studies.</em></p>
 >
-> This case study presents **probabilistic RUL prediction** for **IGBT aging** using a neural network (**Sec. VII-F**). Instead of a single remaining-useful-life value, the model outputs an **expected RUL** and an **uncertainty range**. Figure 1 compares the predicted mean with true RUL; the **90% confidence interval** quantifies prediction uncertainty.
+> This case study presents **probabilistic RUL prediction** for **IGBT aging** using a neural network (**Section VII-F**). Instead of a single remaining-useful-life value, the model outputs an **expected RUL** and an **uncertainty range**. Figure 1 compares the predicted mean with true RUL; the **90% confidence interval** quantifies prediction uncertainty.
 >
 > Figure 2 outlines the workflow: electrical and thermal signals (node voltages, collector–emitter current, package temperature) feed a **BiLSTM** backbone. The head predicts a **Gaussian RUL distribution** via **mean** and **log-variance** outputs. Training with **negative log-likelihood** loss learns both the RUL trend and input-dependent uncertainty—supporting reliability-aware maintenance with an expected lifetime and a confidence range for decision-making. See [`rul_prediction.ipynb`](rul_prediction.ipynb) and the [NASA IGBT accelerated-aging dataset](https://data.nasa.gov/dataset/insulated-gate-bipolar-transistor-igbt-accelerated-aging).
 
@@ -55,7 +55,7 @@ Probabilistic remaining useful life (RUL) from accelerated-aging IGBT measuremen
 |--------|------|
 | NASA — Insulated Gate Bipolar Transistor (IGBT) accelerated aging | [data.nasa.gov — IGBT accelerated aging](https://data.nasa.gov/dataset/insulated-gate-bipolar-transistor-igbt-accelerated-aging) |
 
-The bundled `april22nd-23rdIgbtIRCG40BC30kd-A17.mat` is aligned with this dataset for tutorial use; refer to NASA for licensing and citation requirements.
+The bundled `april22nd-23rdIgbtIRCG40BC30kd-A17.mat` is aligned with this dataset for tutorial use; refer to NASA for citation requirements.
 
 ## Contents
 
@@ -65,8 +65,8 @@ The bundled `april22nd-23rdIgbtIRCG40BC30kd-A17.mat` is aligned with this datase
 ## Outcomes
 
 - Load and window cycle-based features from `.mat` aging data  
-- Train a probabilistic sequence model with uncertainty bands  
-- Report point error and interval coverage (e.g. 90% CI) on held-out cycles  
+- Train a probabilistic sequence model (BiLSTM) with uncertainty intervals  
+- Report point error and interval coverage (e.g. 90% confidence interval) on the test set  
 
 ---
 
@@ -82,7 +82,7 @@ The bundled `april22nd-23rdIgbtIRCG40BC30kd-A17.mat` is aligned with this datase
 
 ## Algorithm summary
 
-- Probabilistic BiLSTM (Gaussian NLL)  
+- Probabilistic BiLSTM (Gaussian NLL loss)  
 - Cycle / minima feature extraction and windowing  
 
 ## Data summary

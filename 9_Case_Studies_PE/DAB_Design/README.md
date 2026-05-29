@@ -35,7 +35,7 @@
 | [`Time_Domain_Modeling/`](Time_Domain_Modeling/) | **VII-B** | [`Time_Domain_Modeling/README.md`](Time_Domain_Modeling/README.md) |
 | [`Adaptive_Modulation/`](Adaptive_Modulation/) | **VII-D** | [`Adaptive_Modulation/README.md`](Adaptive_Modulation/README.md) |
 
-These notebooks support the **dual-active-bridge (DAB)** case studies in *Fundamentals of Artificial Intelligence for Power Electronics* (*IEEE Trans. Ind. Electron.*, 2026). Parent overview: [`../README.md`](../README.md).
+These notebooks support the **dual-active-bridge (DAB)** case studies in *Fundamentals of Artificial Intelligence for Power Electronics* (*IEEE Trans. Ind. Electron.*, 2026).
 
 ---
 
@@ -49,14 +49,12 @@ DAB modulation and performance: one-stop EDA-to-optimization pipeline, waveform 
 | Time-domain waveforms | [`Time_Domain_Modeling/README.md`](Time_Domain_Modeling/README.md) | `time_series_modeling.ipynb` |
 | Adaptive modulation (TinyML) | [`Adaptive_Modulation/README.md`](Adaptive_Modulation/README.md) | `TinyML.ipynb` |
 
-Per-notebook **Topics**, **Algorithms & data**, and **Notes** are in each subfolder README.
-
 ## Outcomes
 
-- Quality control (outliers, validity / ZVS-style filters) before surrogate training  
+- Data preprocessing before surrogate training  
 - Compare XGBoost, Random Forest, SVR, and neural surrogates on modulation performance  
-- PSO / GA over trained surrogates  
-- Recurrent models on DAB waveform CSVs  
+- PSO / GA for modulation optimization, which interact with trained ML surrogates  
+- Time-domain modeling: Recurrent NNs for DAB inductor current waveform modeling   
 - Model compression: pruning, ONNX, quantization for edge inference  
 
 ## Algorithm summary

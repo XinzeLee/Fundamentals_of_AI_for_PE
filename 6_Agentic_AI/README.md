@@ -11,7 +11,7 @@
 
 ## Alignment with the review article
 
-**Discussion in the article:** **Section VI** (VI-A generative AI basics; VI-B reactive → agentic leap; VI-C PE-GPT2 process automation).
+**Discussion in the article:** **Section VI** (VI-A generative AI basics; VI-B reactive → agentic leap; VI-C PE-GPT process automation).
 
 This documentation folder supports the **agentic AI** discussion in *Fundamentals of Artificial Intelligence for Power Electronics* (*IEEE Trans. Ind. Electron.*, 2026).
 
@@ -28,10 +28,10 @@ This documentation folder supports the **agentic AI** discussion in *Fundamental
 > This figure presents a conceptual hierarchy from **predictive AI** to **generative AI** and then to **agentic AI** for power electronics:
 >
 > - **Predictive AI** — task-specific models for regression, classification, clustering, optimization, and related workflows; the modeling and decision-support layer for well-scoped PE problems (see modules `1_MHA`–`5_PIML`, `7_Reinforcement_Learning`, `9_Case_Studies_PE` in this repository).  
-> - **Generative AI** — large language and multimodal models that interpret intent, reason, generate content, and understand visual semantics (**Sec. VI-A**).  
-> - **Agentic AI** — integrates LLMs, tools, memory, and reasoning to move from reactive generation toward **proactive orchestration**, enabling more autonomous workflows for PE design, control, analysis, and lifecycle management (**Sec. VI-B–VI-C**).
+> - **Generative AI** — large language and multimodal models that interpret intent, reason, generate content, and understand visual semantics (**Section VI-A**).  
+> - **Agentic AI** — integrates LLMs, tools, memory, and reasoning to move from reactive generation toward **proactive orchestration**, enabling more autonomous workflows for PE design, control, analysis, and lifecycle management (**Section VI-B – VI-C**).
 >
-> This folder points to **[PE-GPT](https://github.com/XinzeLee/PE-GPT)** as a reference stack for agentic PE workflows; the [Algorithm Selector](https://xinzelee.github.io/AI_for_PE_Algorithm_Selector/) and [ChatGPT assistant](../README.md#companion-tools) in the main README support the predictive and generative layers in practice.
+> This part points to **[PE-GPT](https://github.com/XinzeLee/PE-GPT)** as a reference stack for agentic PE workflows.
 
 ---
 
@@ -47,13 +47,10 @@ Agentic AI for power-electronics workflows, with pointers to the external **PE-G
 - PE-GPT stack: LLM, RAG, model zoo, simulation hooks, optimization  
 - Where domain knowledge, physics-based models, and automation meet  
 - Example task classes: component selection, modulation optimization, parameter design  
-- High-level picture of local deployment (Streamlit, dependencies)  
 
 ## Notes
 
 - PE-GPT is an **agentic-AI framework** (agent + tools + models), not a single foundational model.  
-- Public releases are described as simplified relative to the full research stack.  
-- Python-centric codebase with core modules and tutorials.  
 - Streamlit front end (`main.py`) and `requirements` files for setup.  
 - After `5_PIML`: PINN/PANN ↔ zoo; `1_MHA` ↔ optimization layer; `8_PE_Simulation_Automation` ↔ verification loops.
 

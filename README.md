@@ -41,11 +41,11 @@ This repository accompanies the invited review *Fundamentals of Artificial Intel
 |--------|------------------|
 | [`0_To_Get_Started`](0_To_Get_Started/) | Prerequisite environment; supports hands-on material across the paper |
 | [`1_MHA`](1_MHA/) | **V** — `Single_Objective_MHA/`: V-A, V-C; `Multi_Objective_MHA/`: V-B, V-C |
-| [`2_Classic_ML`](2_Classic_ML/) | **III-B–III-E** (EDA, preprocessing, learning types, ML architectures); GP + BO notebook also illustrates hyperparameter search workflows related to **V-C** |
+| [`2_Classic_ML`](2_Classic_ML/) | **III-B – III-E** (EDA, preprocessing, learning types, ML architectures) |
 | [`3_Ensemble_Learning`](3_Ensemble_Learning/) | **III-E** (tree / ensemble architectures) |
-| [`4_Neural_Network`](4_Neural_Network/) | **II** (modalities) + **III-F–III-G** — see [4_Neural_Network/README.md](4_Neural_Network/README.md) |
-| [`5_PIML`](5_PIML/) | **IV-A–IV-C** |
-| [`6_Agentic_AI`](6_Agentic_AI/) | **VI** (VI-A–VI-C) |
+| [`4_Neural_Network`](4_Neural_Network/) | **II** (modalities) + **III-F – III-G** — see [4_Neural_Network/README.md](4_Neural_Network/README.md) |
+| [`5_PIML`](5_PIML/) | **IV** (IV-A – IV-C) |
+| [`6_Agentic_AI`](6_Agentic_AI/) | **VI** (VI-A – VI-C) |
 | [`7_Reinforcement_Learning`](7_Reinforcement_Learning/) | **III-D** (reinforcement learning) |
 | [`8_PE_Simulation_Automation`](8_PE_Simulation_Automation/) | **III-A** (simulation automation for batch data acquisition) |
 | [`9_Case_Studies_PE`](9_Case_Studies_PE/) | **VII** — see [9_Case_Studies_PE/README.md](9_Case_Studies_PE/README.md) and case-study READMEs below |
@@ -60,7 +60,7 @@ This repository accompanies the invited review *Fundamentals of Artificial Intel
 >
 > <p align="center"><em>Figure 1. “What–Which–How” framework to introduce the fundamentals of AI for PE.</em></p>
 >
-> This repository (**hands-on Jupyter notebooks**), together with the [Algorithm Selector](https://xinzelee.github.io/AI_for_PE_Algorithm_Selector/) web app and [ChatGPT assistant](#companion-tools), supports a practical **What–Which–How** framework for introducing AI fundamentals in power electronics.
+> The IEEE TIE review article "Fundamentals of Artificial Intelligence for Power Electronics", together with this repository (**hands-on Jupyter notebooks**), the [Algorithm Selector](https://xinzelee.github.io/AI_for_PE_Algorithm_Selector/) web app, and [ChatGPT assistant](#companion-tools), supports a practical **What–Which–How** framework for introducing AI fundamentals in power electronics.
 >
 > 1. **What** — clarify the PE problem you want to solve.  
 > 2. **Which** — select suitable AI models, from classic machine learning and ensemble learning to neural-network architectures (and related topics in this repo).  
@@ -72,9 +72,9 @@ This repository accompanies the invited review *Fundamentals of Artificial Intel
 
 ## Companion education article (pilot course)
 
-**[Reforming Power Electronics Education in the Era of AI: A Pilot Course by the University of Arkansas Power Group](docs/Reforming%20Power%20Electronics%20Education%20in%20the%20Era%20of%20AI.pdf)** — Xinze Li and H. Alan Mantooth ([`docs/`](docs/)). Short education paper on a pilot *Fundamentals of AI for Power Electronics* course.
+**[Reforming Power Electronics Education in the Era of AI: A Pilot Course by the University of Arkansas Power Group](docs/Reforming%20Power%20Electronics%20Education%20in%20the%20Era%20of%20AI.pdf)** — Xinze Li and H. Alan Mantooth ([`docs/`](docs/)).
 
-**Conclusion (in brief):** Effective AI-for-PE education should build **domain-grounded judgment** using open materials—not generic AI training alone. The authors call on **students, educators, industry, and public funders** to advance PE-relevant curricula, workforce training, responsibly shareable data, and supporting policy. The PDF frames this repository and the [companion tools](#companion-tools) at the top of this README as practical pieces of that wider effort; see the PDF for the full argument and references.
+**Conclusion:** Effective AI-for-PE education should build **domain-grounded judgment**—not generic AI training alone. The authors call on **students, educators, industry, and public funders** to advance PE-relevant curricula, workforce training, responsibly shareable data, and supporting policy. The PDF frames this repository and the [companion tools](#companion-tools) at the top of this README as practical pieces of that wider effort; see the PDF for the full argument and references.
 
 ---
 
@@ -100,7 +100,7 @@ This repository accompanies the invited review *Fundamentals of Artificial Intel
 | Module folders & learning path | [1. Contents and learning path](#1-contents-and-learning-path) |
 | Algorithm & data inventory | [2. Algorithms and data](#2-algorithms-and-data) → [2.1 Algorithms](#21-algorithms) · [2.2 Data](#22-data) |
 
-Structured summary of topics, notebook code volume, data assets, and algorithm coverage across Jupyter notebooks (`.ipynb`). Documentation files are omitted from the metrics below.
+Structured summary of topics, code volume, data assets, and algorithm coverage across Jupyter notebooks (`.ipynb`).
 
 ## Google Colab
 
@@ -113,9 +113,9 @@ Each module README includes **Open in Colab** badges for its notebooks. On Colab
 | Code lines (notebook cells) | **11,950** |
 | Jupyter notebooks | **31** |
 | PE-oriented dataset families | **7** |
-| Algorithm labels (see section 2) | **25** |
+| Algorithm labels | **25** |
 
-**Summary:** Teaching-oriented AI-for-power-electronics material, with the most notebook code in case studies, neural networks, and metaheuristic optimization.
+**Summary:** Teaching-oriented AI-for-power-electronics material.
 
 ## 1. Contents and algorithm learning path
 
@@ -125,14 +125,12 @@ Each module README includes **Open in Colab** badges for its notebooks. On Colab
 | [`1_MHA`](1_MHA/) | 5 | 1,721 | Single- and multi-objective metaheuristic optimization (**Sec. V**) |
 | [`2_Classic_ML`](2_Classic_ML/) | 3 | 559 | Polynomial Ridge (synthetic), classical classification, GP regression & Bayesian optimization (**Sec. III**) |
 | [`3_Ensemble_Learning`](3_Ensemble_Learning/) | 1 | 555 | Tree and ensemble methods (**Sec. III-E**) |
-| [`4_Neural_Network`](4_Neural_Network/) | 5 | 2,283 | NN fundamentals, **3D thermal field** regression (`Field_Data/`), good practices, sequences, MDN / hysteresis; [`Graph_NN/`](4_Neural_Network/Graph_NN/) resources (**Sec. II–III**) |
+| [`4_Neural_Network`](4_Neural_Network/) | 5 | 2,283 | NN fundamentals, 3D thermal field regression (`Field_Data/`), signal-domain waveform regression (`Signal_Domain/`), good practices, MDN / hysteresis; [`Graph_NN/`](4_Neural_Network/Graph_NN/) resources (**Sec. II–III**) |
 | [`5_PIML`](5_PIML/) | 3 | 1,000 | Physics-informed modeling (`PINN/`); PANN summary in [`PANN/`](5_PIML/PANN/) (**Sec. IV; VII-E**) |
 | [`6_Agentic_AI`](6_Agentic_AI/) | — | — | Agentic AI and PE-GPT (documentation; no local `.ipynb`) (**Sec. VI**) |
 | [`7_Reinforcement_Learning`](7_Reinforcement_Learning/) | 2 | 846 | Buck regulation tutorials — DQN and DDPG — plus curated RL reading (**Sec. III-D**) |
 | [`8_PE_Simulation_Automation`](8_PE_Simulation_Automation/) | 2 | 245 | LTspice, PLECS, Simulink automation (**Sec. III-A**) |
 | [`9_Case_Studies_PE`](9_Case_Studies_PE/) | 9 | 4,435 | Buck; DAB (performance / waveforms / TinyML — [tracks](9_Case_Studies_PE/DAB_Design/README.md)); IGBT RUL; magnetics (**Sec. VII**) — [overview](9_Case_Studies_PE/README.md) |
-
-Case-study notebooks account for the largest share of code, followed by neural-network and MHA modules.
 
 ## 2. Algorithms and data
 
@@ -174,7 +172,7 @@ Labels used in the inventory fall into three groups:
 
 ### 2.2 Data
 
-**Index of PE-oriented dataset families (D1–D7)** — bundled CSV/MAT in the repo or documented external sources used by case-study and field notebooks:
+**Index of PE-oriented dataset families (D1–D7)**:
 
 | ID | Family | Modality | Location / source | Primary notebooks |
 |----|--------|----------|-------------------|-------------------|

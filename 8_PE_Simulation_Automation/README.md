@@ -31,7 +31,7 @@ The automation notebooks here illustrate the **data acquisition** loop described
 >
 > <p align="center"><em>Figure 1. Power electronics simulation automation.</em></p>
 >
-> This figure introduces a simple **iterative workflow** for simulation automation in power electronics. **Python** schedules and sweeps simulation parameters, while tools such as **PLECS**, **LTspice**, **MATLAB/Simulink**, and **Ansys** run the simulations and export waveforms or performance metrics through configured I/O interfaces. Results are **parsed, stored, and analyzed**, forming an automated loop for efficient **batch data acquisition** for ML modeling and optimization (**Sec. III-A**).
+> This figure introduces a simple **iterative workflow** for simulation automation in power electronics. **Python** schedules and sweeps simulation parameters, while tools such as **PLECS**, **LTspice**, **MATLAB/Simulink**, and **Ansys** run the simulations and export waveforms or performance metrics through configured I/O interfaces. Results are **parsed, stored, and analyzed**, forming an automated loop for efficient **batch data acquisition** for ML modeling and optimization (**Section III-A**).
 >
 > This folder implements that pattern for three stacks: [`LTspiceAutomation/LTspiceAtuomate.ipynb`](LTspiceAutomation/LTspiceAtuomate.ipynb), [`PlecsAutomation/Data acquisition.ipynb`](PlecsAutomation/Data%20acquisition.ipynb), and [`SimulinkAutomation/BuckConverter_Automation.m`](SimulinkAutomation/BuckConverter_Automation.m). Downstream use cases include surrogates in [`2_Classic_ML/`](../2_Classic_ML/), [`4_Neural_Network/`](../4_Neural_Network/), and case studies in [`9_Case_Studies_PE/`](../9_Case_Studies_PE/).
 
@@ -49,10 +49,8 @@ Automation for PE simulation: batch runs, metrics extraction, and CSV-friendly o
 
 ## Outcomes
 
-- Parameter sweeps driven from code instead of manual GUI sweeps  
-- Waveforms and scalars in structured files (CSV) for training pipelines  
+- Parameter sweeps driven from code instead of manual sweeps  
 - Batch loops with timeout / error handling for large sweeps  
-- Patterns portable toward optimization and surrogate modeling  
 - Cross-tool perspective: LTspice, PLECS, Simulink, and similar Ansys-style flows  
 
 ---
@@ -75,7 +73,7 @@ Automation for PE simulation: batch runs, metrics extraction, and CSV-friendly o
 
 ### `SimulinkAutomation/BuckConverter_Automation.m`
 
-**Topics:** MATLAB orchestration for the Simulink buck model — parallel to the LTspice/PLECS notebooks.
+**Topics:** MATLAB orchestration for the Simulink models.
 
 ---
 
@@ -83,15 +81,14 @@ Automation for PE simulation: batch runs, metrics extraction, and CSV-friendly o
 
 A practical pattern for AEDT-class tools:
 
-1. **Record Script to File** in the GUI for a working baseline.  
+1. **Record Script to File** in the shortcut for a working baseline (The first simulation is built by hand).  
 2. Refactor into parameterized functions or modules.  
 3. **PyAEDT** (or similar) for sweeps, solves, and exports.
 
-Recording a known-good GUI flow first, then generalizing, is usually the fastest path to reliable automation.
+Recording a known-good workflow first, then generalizing, is usually the fastest path to reliable automation.
 
 ## Recommended learning sequence
 
 1. LTspice notebook — local sweep mechanics.  
 2. PLECS XML-RPC notebook — API-style remote control.  
 3. Connect CSV/waveform outputs to ML or PIML scripts.  
-4. Reuse the same ideas for Simulink or Ansys toolchains.

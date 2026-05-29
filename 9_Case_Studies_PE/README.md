@@ -56,12 +56,12 @@
 
 ## Alignment with the review article
 
-Case-study folders map to **Sec. VII** (*One-stop AI applications throughout the PE lifecycle*) of *Fundamentals of Artificial Intelligence for Power Electronics* (*IEEE Trans. Ind. Electron.*, 2026):
+Case-study folders map to **Section VII** (*One-stop AI applications throughout the PE lifecycle*) of *Fundamentals of Artificial Intelligence for Power Electronics* (*IEEE Trans. Ind. Electron.*, 2026):
 
 | Folder | Article sections | Details |
 |--------|------------------|---------|
 | [`Buck_Design/`](Buck_Design/) | **VII-A**; **VII-B**; **VII-C** | [`Buck_Design/README.md`](Buck_Design/README.md) |
-| [`DAB_Design/`](DAB_Design/) | **VII-A**–**VII-D** (by subfolder) | [`DAB_Design/README.md`](DAB_Design/README.md) |
+| [`DAB_Design/`](DAB_Design/) | **VII-A** – **VII-D** (by subfolder) | [`DAB_Design/README.md`](DAB_Design/README.md) |
 | [`IGBT_Maintenance/`](IGBT_Maintenance/) | **VII-F** | [`IGBT_Maintenance/README.md`](IGBT_Maintenance/README.md) |
 | [`Magnetic_Modeling/`](Magnetic_Modeling/) | **II-C**; **VII-B** | [`Magnetic_Modeling/README.md`](Magnetic_Modeling/README.md) |
 
@@ -95,19 +95,18 @@ End-to-end AI case studies for power electronics: data preparation, surrogates, 
 ## Outcomes
 
 - PE modeling pipelines from raw or simulation data to deployable models  
-- Comparison of classical ML, ensembles, NNs, and sequences under realistic constraints  
+- Comparison of classical ML, ensemble learning, and NNs under realistic constraints  
 - Objective-driven search with surrogates and metaheuristics  
 - Cleaning, outliers, and simple robustness statistics  
 - Uncertainty for reliability (e.g. probabilistic RUL)  
 - Compression and acceleration (pruning, ONNX, quantization) in a TinyML-oriented thread  
-
-Per-notebook **Topics**, **Algorithms & data**, and **Notes** live in each case-study README (links in **Scope** above).
+- Controller-oriented NN structure design
 
 ---
 
 ## Algorithm summary
 
-- Classical / ensembles: Random Forest, XGBoost, SVR  
+- Classical / ensemble learning: SVR, Random Forest, XGBoost  
 - Neural: FNN/MLP, RNN/LSTM/BiLSTM, probabilistic BiLSTM  
 - Analysis: PCA, t-SNE  
 - Quality / anomalies: One-Class SVM, Isolation Forest, z-score filters  

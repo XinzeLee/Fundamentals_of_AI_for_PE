@@ -67,7 +67,7 @@ The notebooks here support the metaheuristic optimization narrative in the invit
 > - **Decomposition-based MOO** — multiple objectives are combined into one scalar objective using predefined weights. This approach is simple and intuitive, but it needs careful weight selection and objective normalization, and can suffer from the curse of dimensionality in objective space.  
 > - **Population-based MOO** — a population of candidates is evaluated and ranked by dominance. Instead of a single optimum, the search approximates a **Pareto front**, which is especially useful in PE design when trading off efficiency, power density, reliability, and cost. See [`Multi_Objective_MHA/`](Multi_Objective_MHA/) for hands-on examples.
 >
-> **MHA tuning:** balance **global exploration** and **local exploitation**. A practical strategy is broad exploration in early iterations (cover diverse regions of the design space), then gradually emphasize local refinement around promising solutions—as explored in **Sec. V-C** notebooks such as `pso_hyp_tuning.ipynb`.
+> **MHA tuning:** balance **global exploration** and **local exploitation**. A practical strategy is broad exploration in early iterations (cover diverse regions of the design space), then gradually emphasize local refinement around promising solutions—as explored in **Section V-C** notebooks such as `pso_hyp_tuning.ipynb`.
 
 ---
 

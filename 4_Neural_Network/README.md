@@ -107,19 +107,19 @@ Neural networks from tabular regression/classification through **spatial (3D) fi
 ## Outcomes
 
 - Feedforward networks for regression and classification  
-- Train/val/test splits, normalization, minibatches, and **best-weight** selection (saved to disk where noted, or **in memory only** in `Field_Data/`)  
-- **3D thermal fields:** residual (skip-connection) FNN from tabular samples; **per-CSV** train/val/test splits; diagnostics (incl. 3-D residual plots and hotspot reporting)  
+- Train/val/test splits, normalization, minibatches, and **best-weight** selection
+- **3D thermal fields:** residual (skip-connection) FNN from tabular samples; diagnostics (incl. 3-D residual plots and hotspot reporting)  
 - Sequence models for waveforms / time series (RNN, LSTM, GRU, BiLSTM, related variants)  
 - Probabilistic regression via MDN and uncertainty in the outputs  
 - Model combination on multimodal targets and comparison to ensemble baselines  
-- Hysteresis as motivation: single-valued maps fail on loops; PI-style state (play operators) vs mixture models for **p(y|x)** on the same synthetic loop  
+- Hysteresis as motivation: single-valued maps fail on loops; Prandtl–Ishlinskii-style state (play operators) vs mixture models for **p(y|x)** on the same synthetic loop  
 - *(Graph track)* Where to learn **GNNs** and how they apply to **converter graphs** — see [`Graph_NN/README.md`](Graph_NN/README.md)
 
 ---
 
 ### `Fundamentals/NN_basics.ipynb`
 
-**Topics:** FNN on California Housing (regression) and Breast Cancer (classification); heads and losses; softmax + NLL-style classification; optional density / probabilistic section.
+**Topics:** FNN on California Housing (regression) and Breast Cancer (classification); heads and losses; softmax + NLL-style classification; density / probabilistic section.
 
 **Algorithms & data:** FNN/MLP regression and classification. `fetch_california_housing`, `load_breast_cancer`.
 
@@ -143,7 +143,7 @@ Neural networks from tabular regression/classification through **spatial (3D) fi
 
 **Algorithms & data:** Residual FNN (PyTorch). **`Field_Data/cap_Tfield/*.csv`** (loss and ambient in filename).
 
-**Notes:** Run with cwd **`4_Neural_Network/Field_Data`** (Colab setup cell `cd`s there).
+**Notes:** Run with cwd **`4_Neural_Network/Field_Data`**.
 
 ---
 
@@ -159,7 +159,7 @@ Neural networks from tabular regression/classification through **spatial (3D) fi
 
 ### `Multi_Modal_Distribution/mixture_density_net_ensemble_learning.ipynb`
 
-**Topics:** FNN → MDN for predictive uncertainty; optional hysteresis loop (play-operator NN vs MDN on \\(p(y|x)\\)).
+**Topics:** FNN → MDN for predictive uncertainty; optional hysteresis loop (play-operator NN vs MDN on *p(y|x)*).
 
 **Algorithms & data:** FNN, MDN, `RandomForestRegressor`; synthetic regression + hysteresis loop.
 
@@ -171,9 +171,8 @@ Neural networks from tabular regression/classification through **spatial (3D) fi
 
 - FNN / MLP (regression and classification)  
 - Residual (skip-block) FNN for **3D field** regression (`Field_Data/`)  
-- RNN family: vanilla RNN, LSTM, GRU, BiLSTM  
+- RNN family: vanilla RNN, LSTM, GRU, BiLSTM for signal-domain waveforms 
 - Mixture Density Network (MDN)  
-- `RandomForestRegressor` as a reference in the MDN notebook  
 - Prandtl–Ishlinskii-style hysteresis (play operators + superposition NN) in the MDN notebook  
 
 ## Data summary

@@ -21,9 +21,9 @@
 
 ## Alignment with the review article
 
-**Discussion in the article:** **Sec. VII-B** (sequence / surrogate modeling on signal-domain DAB waveforms).
+**Discussion in the article:** **Section VII-B** (time-domain waveform modeling on signal-domain DAB waveforms).
 
-This notebook supports the **DAB time-domain** case study in *Fundamentals of Artificial Intelligence for Power Electronics* (*IEEE Trans. Ind. Electron.*, 2026). Parent overview: [`../README.md`](../README.md) · [`../../README.md`](../../README.md).
+This notebook supports the **DAB time-domain** case study in *Fundamentals of Artificial Intelligence for Power Electronics* (*IEEE Trans. Ind. Electron.*, 2026). 
 
 ---
 
@@ -43,11 +43,11 @@ This notebook supports the **DAB time-domain** case study in *Fundamentals of Ar
 >
 > This case study covers **time-domain modeling** of DAB converters. Model inputs are voltage waveforms **v<sub>p</sub>** and **v<sub>s</sub>**; the output is the current waveform **i<sub>L</sub>**. As shown in Figure 1, four networks are trained in [`time_series_modeling.ipynb`](time_series_modeling.ipynb): **FNN**, **LSTM**, **BiLSTM**, and **BiLSTM with calibration**. Exemplary test-set waveforms appear in Figure 2.
 >
-> The large errors of the **FNN** show that a feedforward structure does not capture **temporal causality** in signal-domain data. **LSTM** and **BiLSTM** recurrent models handle waveforms more appropriately. Further gains come from **calibrating** waveforms to the rising edge of **v<sub>p</sub>**, which reduces phase ambiguity—aligned with **Sec. II-B** (signal-domain data) and [`4_Neural_Network/Signal_Domain/`](../../../4_Neural_Network/Signal_Domain/).
+> The large errors of the **FNN** show that a feedforward structure does not capture **temporal causality** in signal-domain data. **LSTM** and **BiLSTM** recurrent models handle waveforms more appropriately. Further gains come from **calibrating** waveforms to the rising edge of **v<sub>p</sub>**, which reduces phase ambiguity—aligned with **Section II-B** (signal-domain data) and [`4_Neural_Network/Signal_Domain/`](../../../4_Neural_Network/Signal_Domain/).
 
 ---
 
-Sequence models for DAB waveform CSVs: loading, alignment, recurrent architectures, and test-set evaluation.
+NNs for DAB waveform modeling: alignment/calibration, recurrent architectures.
 
 ## Contents
 
@@ -59,7 +59,7 @@ Sequence models for DAB waveform CSVs: loading, alignment, recurrent architectur
 - Load and preprocess DAB waveform time series  
 - Train RNN / LSTM / BiLSTM-style models with train/val/test splits  
 - Compare prediction accuracy (e.g. MAE) against measured waveforms  
-- Relate signal-domain modeling to **Sec. II-B** concepts in [`4_Neural_Network/Signal_Domain/`](../../../4_Neural_Network/Signal_Domain/)  
+- Relate signal-domain modeling to **Section II-B** concepts in [`4_Neural_Network/Signal_Domain/`](../../../4_Neural_Network/Signal_Domain/)  
 
 ---
 
@@ -80,7 +80,7 @@ Sequence models for DAB waveform CSVs: loading, alignment, recurrent architectur
 
 ## Data summary
 
-- `Waveform/*.csv` — DAB time-domain waveforms (100 bundled files)  
+- `Waveform/*.csv` — DAB time-domain waveforms (100 bundled files acquired using PLECS automation)  
 
 ## Recommended learning sequence
 

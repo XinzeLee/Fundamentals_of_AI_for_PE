@@ -29,9 +29,9 @@
 
 ## Alignment with the review article
 
-**Discussion in the article:** **Sec. VII-A** (EDA); **VII-B** (ML surrogate modeling); **VII-C** (MHA optimization).
+**Discussion in the article:** **Section VII-A** (Exploratory data analysis); **VII-B** (ML surrogate modeling); **VII-C** (MHA optimization).
 
-These notebooks support the **buck converter** one-stop case study in *Fundamentals of Artificial Intelligence for Power Electronics* (*IEEE Trans. Ind. Electron.*, 2026). Parent overview: [`../README.md`](../README.md).
+These notebooks support the **buck converter** one-stop case study in *Fundamentals of Artificial Intelligence for Power Electronics* (*IEEE Trans. Ind. Electron.*, 2026).
 
 ---
 
@@ -53,11 +53,11 @@ These notebooks support the **buck converter** one-stop case study in *Fundament
 >
 > <p align="center"><em>Figure 2. Comparison between GA and PSO for buck circuit optimization.</em></p>
 >
-> Figure 2 presents the **fitness evolution** of **genetic algorithm (GA)** and **particle swarm optimization (PSO)** on the buck optimization task. In this case, **GA achieves comparable efficiency optimization performance** to PSO—implemented in [`buck_comprehensive_case_study.ipynb`](buck_comprehensive_case_study.ipynb) and [`xgboost_buck_modeling.ipynb`](xgboost_buck_modeling.ipynb) (**Sec. VII-C**).
+> Figure 2 presents the **fitness evolution** of **genetic algorithm (GA)** and **particle swarm optimization (PSO)** on the buck optimization task. In this case, **GA achieves comparable efficiency optimization performance** to PSO—implemented in [`buck_comprehensive_case_study.ipynb`](buck_comprehensive_case_study.ipynb) and [`xgboost_buck_modeling.ipynb`](xgboost_buck_modeling.ipynb) (**Section VII-C**).
 
 ---
 
-Synchronous buck design: exploration, surrogate modeling, and metaheuristic optimization on simulation-derived performance tables.
+Synchronous buck design: data analysis, surrogate modeling, and metaheuristic optimization.
 
 ## Contents
 
@@ -81,7 +81,7 @@ Synchronous buck design: exploration, surrogate modeling, and metaheuristic opti
 
 **Algorithms & data:** FNN surrogates, PSO, GA, classical baselines in analysis. `total_100W_12V.csv` and derived loss/ripple-style targets.
 
-**Notes:** Weighted / scenario multi-objective steps; outlier handling; correlation and distribution diagnostics before optimization.
+**Notes:** Multi-objective; outlier handling; correlation and distribution diagnostics before optimization.
 
 ---
 
@@ -108,12 +108,12 @@ Synchronous buck design: exploration, surrogate modeling, and metaheuristic opti
 ## Algorithm summary
 
 - Random Forest, XGBoost, FNN/MLP surrogates  
-- PSO, GA (surrogate-assisted search)  
+- PSO, GA
 - t-SNE, correlation / outlier analysis  
 
 ## Data summary
 
-- `total_100W_12V.csv` — comprehensive case study (loss / ripple style targets)  
+- `total_100W_12V.csv` — comprehensive case study
 - `sync_buck_performances_cleaned.csv` — efficiency and ripple modeling notebooks  
 
 ## Recommended learning sequence

@@ -21,9 +21,9 @@
 
 ## Alignment with the review article
 
-**Discussion in the article:** **Sec. VII-D** (TinyML for PE control and deployment).
+**Discussion in the article:** **Section VII-D** (TinyML for PE control and deployment).
 
-This notebook supports the **DAB adaptive modulation / edge deployment** case study in *Fundamentals of Artificial Intelligence for Power Electronics* (*IEEE Trans. Ind. Electron.*, 2026). Parent overview: [`../README.md`](../README.md) · [`../../README.md`](../../README.md).
+This notebook supports the **DAB adaptive modulation / edge deployment** case study in *Fundamentals of Artificial Intelligence for Power Electronics* (*IEEE Trans. Ind. Electron.*, 2026). 
 
 ---
 
@@ -35,13 +35,13 @@ This notebook supports the **DAB adaptive modulation / edge deployment** case st
 >
 > <p align="center"><em>Figure 1. NN structure selection for online adaptive modulation leveraging the Pareto front of model size versus mean squared error.</em></p>
 >
-> Figure 1 illustrates how to select an **NN-based controller** by comparing model accuracy and model size (**Sec. VII-D**). Different architectures are evaluated by varying hidden layers and neuron counts; candidates are plotted in **accuracy–size** space. The **Pareto front** highlights models with the best trade-offs between lower **mean squared error (MSE)** and smaller footprint.
+> Figure 1 illustrates how to select an **NN-based controller** by comparing model accuracy and model size (**Section VII-D**). Different architectures are evaluated by varying hidden layers and neuron counts; candidates are plotted in **accuracy–size** space. The **Pareto front** highlights models with the best trade-offs between lower **mean squared error (MSE)** and smaller footprint.
 >
-> For NNs with comparable size and accuracy, a **shallow-wide** structure is often preferred over **deep-narrow** when accuracy is similar—fewer sequential layers reduce **inference latency** and support faster real-time deployment. This workflow is implemented in [`TinyML.ipynb`](TinyML.ipynb) (capacity sweep, pruning, ONNX, and quantization on `optimization_results.csv`).
+> For NNs with comparable size and accuracy, a **shallow-wide** structure is often preferred over **deep-narrow** when accuracy is similar—fewer sequential layers reduce **inference latency** and support faster real-time deployment. This workflow is implemented in [`TinyML.ipynb`](TinyML.ipynb).
 
 ---
 
-TinyML-oriented DAB modulation: neural capacity sweeps, compression, and ONNX-based inference timing.
+TinyML-oriented DAB modulation: neural network structure sweeps, compression, and ONNX-based inference timing.
 
 ## Contents
 
@@ -58,11 +58,11 @@ TinyML-oriented DAB modulation: neural capacity sweeps, compression, and ONNX-ba
 
 ### `TinyML.ipynb`
 
-**Topics:** Modulation-oriented NN; capacity sweep and Pareto-style size vs. loss; L1, pruning, ONNX, timing, quantization.
+**Topics:** Modulation-oriented NN; NN structure sweeps and Pareto-style size vs. loss; L1, pruning, ONNX, timing, quantization.
 
 **Algorithms & data:** FNN mapping, Pareto selection, pruning, ONNX Runtime, dynamic quantization. `optimization_results.csv`.
 
-**Notes:** Speed/accuracy tradeoffs; compression path toward small-footprint inference. Complements the TinyML segment in [`one_stop_AI_DAB_modulation.ipynb`](../Performance_Modeling_and_Design/one_stop_AI_DAB_modulation.ipynb).
+**Notes:** Speed/accuracy tradeoffs; small-footprint inference. Complements the modulation optimization segment in [`one_stop_AI_DAB_modulation.ipynb`](../Performance_Modeling_and_Design/one_stop_AI_DAB_modulation.ipynb).
 
 ---
 
@@ -74,9 +74,9 @@ TinyML-oriented DAB modulation: neural capacity sweeps, compression, and ONNX-ba
 
 ## Data summary
 
-- `optimization_results.csv` — capacity / optimization sweep results for TinyML experiments  
+- `optimization_results.csv` — optimized modulation parameters under different operating conditions  
 
 ## Recommended learning sequence
 
-1. [`Performance_Modeling_and_Design/one_stop_AI_DAB_modulation.ipynb`](../Performance_Modeling_and_Design/one_stop_AI_DAB_modulation.ipynb) *(surrogate and modulation context)*  
+1. [`Performance_Modeling_and_Design/one_stop_AI_DAB_modulation.ipynb`](../Performance_Modeling_and_Design/one_stop_AI_DAB_modulation.ipynb) *(surrogate modeling and modulation optimization)*  
 2. `TinyML.ipynb`  

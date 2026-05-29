@@ -21,9 +21,9 @@
 
 ## Alignment with the review article
 
-**Discussion in the article:** **Sec. III-E** (tree and ensemble ML architectures).
+**Discussion in the article:** **Section III-E** (tree and ensemble ML architectures).
 
-The ensemble-learning notebook supports the tree/ensemble discussion in *Fundamentals of Artificial Intelligence for Power Electronics* (*IEEE Trans. Ind. Electron.*, 2026).
+The ensemble-learning notebook supports the tree/ensemble learning discussion in *Fundamentals of Artificial Intelligence for Power Electronics* (*IEEE Trans. Ind. Electron.*, 2026).
 
 ---
 
@@ -48,7 +48,7 @@ The ensemble-learning notebook supports the tree/ensemble discussion in *Fundame
 ## Outcomes
 
 - Behavior of **Random Forest**, **XGBoost**, and **Decision Tree** baselines side by side  
-- Controlled synthetic setups that stress ensembles  
+- Controlled synthetic setups that stress ensembles (correlated features, noises, class imbalance, etc.)
 - Repeated runs and distribution-level metrics  
 - Class imbalance and noisy labels in classification and regression  
 - Mitigations (PCA, outlier handling, regularization) and their effect on scores  
@@ -57,15 +57,15 @@ The ensemble-learning notebook supports the tree/ensemble discussion in *Fundame
 
 ## Notebook outline
 
-1. **Correlated features** — RF vs. XGBoost vs. tree; distribution plots; significance tests; PCA + retrain.  
-2. **Class imbalance** — `make_classification`; RF vs. XGBoost; aggregated confusion behavior.  
+1. **Correlated features** — RF vs. XGBoost vs. tree; distribution plots; significance statistical tests; PCA + retrain.  
+2. **Class imbalance** — `make_classification`; RF vs. XGBoost; confusion matrix.  
 3. **Noisy regression** — noisy sinusoid; `XGBRegressor` vs. `Ridge`; z-score outlier removal and repeat.  
 4. **Analysis style** — many random splits; histograms and t-tests; normalized confusion matrices and averaged metrics.
 
 ## Algorithms & data
 
 - **Algorithms:** `RandomForestClassifier`, `DecisionTreeClassifier`, `XGBClassifier`, `XGBRegressor`, `Ridge`, `PCA` (preprocessing).  
-- **Data:** Synthetic correlated classification, imbalanced classification, noisy regression. No local CSV/MAT.
+- **Data:** Synthetic correlated classification, imbalanced classification, noisy regression.
 
 ## Notes
 
@@ -78,6 +78,6 @@ The ensemble-learning notebook supports the tree/ensemble discussion in *Fundame
 
 1. Run sections with fixed seeds for reproducibility.  
 2. Compare score distributions, not only means.  
-3. Tie each EL algorithm failure mode to the data generator settings.  
+3. Tie each ensemble learning algorithm failure mode to the data generator settings.  
 4. Vary noise, imbalance ratio, and correlation to see regime changes.  
 5. Reuse the notebook as a template for pre-deployment tests.

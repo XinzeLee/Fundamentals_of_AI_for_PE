@@ -1,4 +1,4 @@
-﻿# Module 7: Reinforcement Learning (curated resources)
+﻿# 7_Reinforcement_Learning
 
 ## Authorship & status
 
@@ -27,7 +27,7 @@
 
 ## Alignment with the review article
 
-**Discussion in the article:** **Sec. III-D** (learning types — reinforcement learning for PE control).
+**Discussion in the article:** **Section III-D** (learning types — reinforcement learning for PE).
 
 These curated resources support the **RL** thread in *Fundamentals of Artificial Intelligence for Power Electronics* (*IEEE Trans. Ind. Electron.*, 2026).
 
@@ -43,19 +43,11 @@ These curated resources support the **RL** thread in *Fundamentals of Artificial
 > - **Topology synthesis** — actions add, remove, or modify circuit components.  
 > - **System-level coordination** — **multi-agent RL** can coordinate PV inverters, storage, and EVs for active/reactive power optimization.
 >
-> Batch simulation for rollouts connects to [`8_PE_Simulation_Automation/`](../8_PE_Simulation_Automation/README.md) (**Sec. III-A**). Curated reading: **[Awesome RL](https://github.com/aikorea/awesome-rl)**.
+> Batch simulation for rollouts connects to [`8_PE_Simulation_Automation/`](../8_PE_Simulation_Automation/README.md) (**Section III-A**). Curated reading: **[Awesome RL](https://github.com/aikorea/awesome-rl)**.
 
 ---
 
-Curated entry to reinforcement learning (RL) with emphasis on **control** and **how rewards shape what the agent learns**. Main external index: **[Awesome RL](https://github.com/aikorea/awesome-rl)**.
-
-## Contents
-
-| Item | Description |
-|------|-------------|
-| **Reading (control)** | Classic RL-for-control papers under Awesome RL’s `#control` anchor (summary below). |
-| **Rewards & objectives** | Related themes elsewhere on the same Awesome RL page and ties to control / PE. |
-| **Local notebooks** | `RL_buck_control.ipynb` — DQN-style discrete duty steps; `DDPG_buck_control.ipynb` — DDPG with continuous normalized actions for the same averaged buck voltage-tracking task (NumPy + PyTorch). Both include an optional smooth-duty reward variant. |
+Curated entry to reinforcement learning (RL) with emphasis on **control** and **how rewards shape what the agent learns**.
 
 ---
 
@@ -63,7 +55,7 @@ Curated entry to reinforcement learning (RL) with emphasis on **control** and **
 
 Control as sequential decisions under dynamics; learning from **returns, costs, or surrogates** — hence central role of **reward / objective design**. Design choices for regulation, current limiting, efficiency, and thermal limits often include:
 
-- **Tracking:** negative squared error on \(v\), \(i\), or power; optional derivative terms for damping.  
+- **Tracking:** negative squared error on voltage, current, or power; optional derivative terms for damping.  
 - **Constraints:** penalties or barriers for over-current, over-voltage, overshoot; shaping before hard limits.  
 - **Stability:** sparse penalties for instability; curricula from easy to hard setpoints.  
 - **Multi-objective:** weighted sums or scalarizations aligned with deployment goals.

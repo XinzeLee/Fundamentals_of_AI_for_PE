@@ -31,7 +31,7 @@
 
 ## Alignment with the review article
 
-**Discussion in the article:** [`PINN/`](PINN/) notebooks — **Section IV-A–IV-C** (PIML motivation, priors, PINN fundamentals). [`prior_integration_example.ipynb`](PINN/prior_integration_example.ipynb) emphasizes **IV-B** (integrating prior knowledge).
+**Discussion in the article:** [`PINN/`](PINN/) notebooks — **Section IV-A – IV-C** (PIML motivation, priors, PINN fundamentals). [`prior_integration_example.ipynb`](PINN/prior_integration_example.ipynb) emphasizes **IV-B** (integrating prior knowledge).
 
 For **physics-in-architecture (PANN)** material, see [`PANN/README.md`](PANN/README.md) (**Section IV-B**; **VII-E**).
 
@@ -47,8 +47,8 @@ For **physics-in-architecture (PANN)** material, see [`PANN/README.md`](PANN/REA
 >
 > Figure 1 introduces the basic idea of **physics-informed learning**, where generic physical prior knowledge is integrated into machine learning to improve data efficiency, interpretability, and generalization. Using the apparent-power relation **P² + Q² = S²** as an example, a purely data-driven model learns the mapping from P and Q to S only by minimizing prediction error. Physical priors can be added in two ways:
 >
-> - **Prior in loss** — the physics equation is included as an additional penalty term (PINN-style; see [`PINN/`](PINN/)).  
-> - **Prior in architecture** — the network structure is designed to reflect the physical equation directly (PANN-style; see [`PANN/README.md`](PANN/README.md)).
+> - **Prior in loss** — the physics equation is included as an additional penalty term.  
+> - **Prior in architecture** — the network structure is designed to reflect the physical equation directly.
 >
 > Both strategies constrain learning with domain knowledge, helping produce more physically consistent predictions while reducing overfitting compared with a purely data-driven baseline—illustrated in [`PINN/prior_integration_example.ipynb`](PINN/prior_integration_example.ipynb).
 >
@@ -68,14 +68,14 @@ For **physics-in-architecture (PANN)** material, see [`PANN/README.md`](PANN/REA
 
 ---
 
-Physics priors in neural training: **PINN-style** residual losses in the notebooks here, plus **PANN-style** physics-in-architecture modeling (summary and links in [`PANN/README.md`](PANN/README.md)).
+Physics priors in neural training: **PINN-style** residual losses in the notebooks here, plus **PANN-style** physics-in-architecture modeling.
 
 ## Contents
 
 | Kind | Path |
 |------|------|
-| Physics-informed Neural Network | `PINN/pinn_ode.ipynb`, `PINN/pinn_pde.ipynb`, `PINN/prior_integration_example.ipynb` |
-| Physics-in-architecture Neural Network | [`PANN/README.md`](PANN/README.md) — external [XinzeLee/PANN](https://github.com/XinzeLee/PANN) |
+| Physics-informed neural network | `PINN/pinn_ode.ipynb`, `PINN/pinn_pde.ipynb`, `PINN/prior_integration_example.ipynb` |
+| Physics-in-architecture neural network | [`PANN/README.md`](PANN/README.md) — external [XinzeLee/PANN](https://github.com/XinzeLee/PANN) |
 
 ## Outcomes
 
@@ -94,13 +94,13 @@ Physics priors in neural training: **PINN-style** residual losses in the noteboo
 
 **Algorithms & data:** FNN + PINN (ODE residuals via autograd). Synthetic cooling trajectories.
 
-**Notes:** Same recipe as `pinn_pde.ipynb` (fixed collocation, soft constraints, Adam + optional L-BFGS).
+**Notes:** Same recipe as `pinn_pde.ipynb` (soft constraints, Adam + optional L-BFGS).
 
 ---
 
 ### `PINN/pinn_pde.ipynb`
 
-**Topics:** Burgers PDE PINN; MoL reference solution; fixed collocation grids; weighted PDE + IC + BC loss; contour diagnostics.
+**Topics:** Burgers PDE PINN; fixed collocation grids; weighted PDE + IC + BC loss; contour diagnostics.
 
 **Algorithms & data:** FNN + PINN (PDE residuals via autograd). Synthetic Burgers reference field.
 
@@ -137,7 +137,6 @@ The PINN notebooks here emphasize **residual constraints in the loss**. PANN com
 
 - Synthetic ODE temperature / cooling trajectories  
 - Toy prior-constrained synthetic sets  
-- Little reliance on repo CSV/MAT for the core PINN demos  
 - External PANN materials for architecture-centric workflows
 
 ## Practice notes (from the notebooks)
