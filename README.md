@@ -3,20 +3,20 @@
 <!-- traffic:start -->
 <p align="center">
   <a href="https://github.com/XinzeLee/Fundamentals_of_AI_for_PE/graphs/traffic">
-    <img src="https://img.shields.io/badge/Views-0-2563eb?style=flat-square" alt="Repository views: 0" />
+    <img src="https://img.shields.io/badge/Views-394-2563eb?style=flat-square" alt="Repository views: 394" />
   </a>
   <a href="https://github.com/XinzeLee/Fundamentals_of_AI_for_PE/graphs/traffic">
-    <img src="https://img.shields.io/badge/Unique_visitors-0-0f766e?style=flat-square" alt="Unique repository visitors: 0" />
+    <img src="https://img.shields.io/badge/Unique_visitors-28-0f766e?style=flat-square" alt="Unique repository visitors: 28" />
   </a>
   <a href="https://github.com/XinzeLee/Fundamentals_of_AI_for_PE/graphs/traffic">
-    <img src="https://img.shields.io/badge/Clones-0-7c3aed?style=flat-square" alt="Repository clones: 0" />
+    <img src="https://img.shields.io/badge/Clones-94-7c3aed?style=flat-square" alt="Repository clones: 94" />
   </a>
   <a href="https://github.com/XinzeLee/Fundamentals_of_AI_for_PE/graphs/traffic">
-    <img src="https://img.shields.io/badge/Unique_clones-0-b45309?style=flat-square" alt="Unique repository clones: 0" />
+    <img src="https://img.shields.io/badge/Unique_clones-49-b45309?style=flat-square" alt="Unique repository clones: 49" />
   </a>
 </p>
 
-<p align="center"><sub>Weekly traffic · cumulative since first run · pending first run</sub></p>
+<p align="center"><sub>Weekly traffic · cumulative since first run · 2026-06-06 UTC</sub></p>
 <!-- traffic:end -->
 
 ## Companion tools
