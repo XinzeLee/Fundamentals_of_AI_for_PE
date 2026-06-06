@@ -103,10 +103,10 @@ def render_block(history: dict) -> str:
     <img src="https://img.shields.io/badge/Total_Views-{badge_value(views)}-2563eb?style=flat-square" alt="Total repository views: {fmt(views)}" />
   </a>
   <a href="https://github.com/XinzeLee/Fundamentals_of_AI_for_PE/graphs/traffic">
-    <img src="https://img.shields.io/badge/Clones-{badge_value(clones)}-7c3aed?style=flat-square" alt="Repository clones: {fmt(clones)}" />
+    <img src="https://img.shields.io/badge/Total_Clones-{badge_value(clones)}-7c3aed?style=flat-square" alt="Total repository clones: {fmt(clones)}" />
   </a>
   <a href="https://github.com/XinzeLee/Fundamentals_of_AI_for_PE/graphs/traffic">
-    <img src="https://img.shields.io/badge/Unique_clones-{badge_value(unique_clones)}-b45309?style=flat-square" alt="Unique repository clones: {fmt(unique_clones)}" />
+    <img src="https://img.shields.io/badge/Unique_Clones-{badge_value(unique_clones)}-b45309?style=flat-square" alt="Unique repository clones: {fmt(unique_clones)}" />
   </a>
 </p>
 
