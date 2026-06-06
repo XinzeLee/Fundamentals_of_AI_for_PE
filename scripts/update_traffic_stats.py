@@ -113,7 +113,7 @@ def render_block(history: dict) -> str:
   </a>
 </p>
 
-<p align="center"><sub>Weekly traffic · cumulative since first run · {updated} UTC</sub></p>
+<p align="center"><sub>GitHub traffic · cumulative tracked totals · {updated} UTC</sub></p>
 {TRAFFIC_END}"""
 
 

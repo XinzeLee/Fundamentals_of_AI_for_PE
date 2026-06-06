@@ -16,7 +16,7 @@
   </a>
 </p>
 
-<p align="center"><sub>Weekly traffic · cumulative since first run · 2026-06-06 UTC</sub></p>
+<p align="center"><sub>GitHub traffic · cumulative tracked totals · 2026-06-06 UTC</sub></p>
 <!-- traffic:end -->
 
 ## Companion tools
