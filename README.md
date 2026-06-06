@@ -1,5 +1,6 @@
 ﻿# Fundamentals of AI for PE — repository overview
 
+<!-- traffic:start -->
 <p align="center">
   <a href="https://github.com/XinzeLee/Fundamentals_of_AI_for_PE/graphs/traffic">
     <img src="https://img.shields.io/badge/Views-GitHub_Insights-2563eb?style=flat-square" alt="Repository views on GitHub Insights" />
@@ -14,6 +15,16 @@
     <img src="https://img.shields.io/badge/Unique_clones-GitHub_Insights-b45309?style=flat-square" alt="Unique repository clones on GitHub Insights" />
   </a>
 </p>
+
+| Traffic indicator | Cumulative value |
+|---|---:|
+| Views | 0 |
+| Unique visitors | 0 |
+| Clones | 0 |
+| Unique clones | 0 |
+
+<sub>Updated weekly from GitHub traffic data. Cumulative values start from the first successful updater run. GitHub reports unique visitors/clones per day, so unique totals are accumulated daily unique counts. Last updated: pending first run.</sub>
+<!-- traffic:end -->
 
 ## Companion tools
 
