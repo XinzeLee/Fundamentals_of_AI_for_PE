@@ -3,10 +3,7 @@
 <!-- traffic:start -->
 <p align="center">
   <a href="https://github.com/XinzeLee/Fundamentals_of_AI_for_PE/graphs/traffic">
-    <img src="https://img.shields.io/badge/Views-394-2563eb?style=flat-square" alt="Repository views: 394" />
-  </a>
-  <a href="https://github.com/XinzeLee/Fundamentals_of_AI_for_PE/graphs/traffic">
-    <img src="https://img.shields.io/badge/Unique_visitors-28-0f766e?style=flat-square" alt="Unique repository visitors: 28" />
+    <img src="https://img.shields.io/badge/Total_Views-394-2563eb?style=flat-square" alt="Total repository views: 394" />
   </a>
   <a href="https://github.com/XinzeLee/Fundamentals_of_AI_for_PE/graphs/traffic">
     <img src="https://img.shields.io/badge/Clones-94-7c3aed?style=flat-square" alt="Repository clones: 94" />

@@ -93,17 +93,14 @@ def badge_value(n: int) -> str:
 
 
 def render_block(history: dict) -> str:
-    views, unique_visitors = totals(history, "views")
+    views, _unique_visitors = totals(history, "views")
     clones, unique_clones = totals(history, "clones")
     updated = datetime.now(timezone.utc).strftime("%Y-%m-%d")
 
     return f"""{TRAFFIC_START}
 <p align="center">
   <a href="https://github.com/XinzeLee/Fundamentals_of_AI_for_PE/graphs/traffic">
-    <img src="https://img.shields.io/badge/Views-{badge_value(views)}-2563eb?style=flat-square" alt="Repository views: {fmt(views)}" />
-  </a>
-  <a href="https://github.com/XinzeLee/Fundamentals_of_AI_for_PE/graphs/traffic">
-    <img src="https://img.shields.io/badge/Unique_visitors-{badge_value(unique_visitors)}-0f766e?style=flat-square" alt="Unique repository visitors: {fmt(unique_visitors)}" />
+    <img src="https://img.shields.io/badge/Total_Views-{badge_value(views)}-2563eb?style=flat-square" alt="Total repository views: {fmt(views)}" />
   </a>
   <a href="https://github.com/XinzeLee/Fundamentals_of_AI_for_PE/graphs/traffic">
     <img src="https://img.shields.io/badge/Clones-{badge_value(clones)}-7c3aed?style=flat-square" alt="Repository clones: {fmt(clones)}" />
