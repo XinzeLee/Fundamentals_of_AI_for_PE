@@ -1,5 +1,20 @@
 ﻿# Fundamentals of AI for PE — repository overview
 
+<p align="center">
+  <a href="https://github.com/XinzeLee/Fundamentals_of_AI_for_PE/graphs/traffic">
+    <img src="https://img.shields.io/badge/Views-GitHub_Insights-2563eb?style=flat-square" alt="Repository views on GitHub Insights" />
+  </a>
+  <a href="https://github.com/XinzeLee/Fundamentals_of_AI_for_PE/graphs/traffic">
+    <img src="https://img.shields.io/badge/Unique_visitors-GitHub_Insights-0f766e?style=flat-square" alt="Unique repository visitors on GitHub Insights" />
+  </a>
+  <a href="https://github.com/XinzeLee/Fundamentals_of_AI_for_PE/graphs/traffic">
+    <img src="https://img.shields.io/badge/Clones-GitHub_Insights-7c3aed?style=flat-square" alt="Repository clones on GitHub Insights" />
+  </a>
+  <a href="https://github.com/XinzeLee/Fundamentals_of_AI_for_PE/graphs/traffic">
+    <img src="https://img.shields.io/badge/Unique_clones-GitHub_Insights-b45309?style=flat-square" alt="Unique repository clones on GitHub Insights" />
+  </a>
+</p>
+
 ## Companion tools
 
 Use the interactive **Algorithm Selector** to narrow AI/ML approaches for your PE task, and the **ChatGPT** tutor for deeper Q&A and resource-rich reports aligned with this course.
