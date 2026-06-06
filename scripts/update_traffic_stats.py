@@ -26,9 +26,12 @@ DEFAULT_REPOSITORY = "XinzeLee/Fundamentals_of_AI_for_PE"
 
 
 def api_get(path: str) -> dict:
-    token = os.environ.get("GH_TOKEN") or os.environ.get("GITHUB_TOKEN")
+    token = os.environ.get("TRAFFIC_STATS_TOKEN") or os.environ.get("GH_TOKEN") or os.environ.get("GITHUB_TOKEN")
     if not token:
-        raise RuntimeError("GH_TOKEN or GITHUB_TOKEN is required to read GitHub traffic data.")
+        raise RuntimeError(
+            "TRAFFIC_STATS_TOKEN, GH_TOKEN, or GITHUB_TOKEN is required to read GitHub traffic data. "
+            "For GitHub Actions, create a repository secret named TRAFFIC_STATS_TOKEN."
+        )
 
     repository = os.environ.get("GITHUB_REPOSITORY", DEFAULT_REPOSITORY)
     url = f"https://api.github.com/repos/{repository}{path}"
@@ -46,6 +49,14 @@ def api_get(path: str) -> dict:
             return json.loads(response.read().decode("utf-8"))
     except urllib.error.HTTPError as exc:
         detail = exc.read().decode("utf-8", errors="replace")
+        if exc.code == 403:
+            raise RuntimeError(
+                "GitHub traffic API returned 403 Forbidden. The default GITHUB_TOKEN usually cannot read "
+                "repository traffic metrics. Create a repository secret named TRAFFIC_STATS_TOKEN using a "
+                "classic PAT with repo scope, or a fine-grained PAT for XinzeLee/Fundamentals_of_AI_for_PE "
+                "with read access to repository Administration/traffic metrics, then rerun the workflow. "
+                f"API response: {detail}"
+            ) from exc
         raise RuntimeError(f"GitHub API request failed: {exc.code} {detail}") from exc
 
 
@@ -77,6 +88,10 @@ def fmt(n: int) -> str:
     return f"{n:,}"
 
 
+def badge_value(n: int) -> str:
+    return fmt(n).replace("-", "--").replace("_", "__").replace(" ", "_")
+
+
 def render_block(history: dict) -> str:
     views, unique_visitors = totals(history, "views")
     clones, unique_clones = totals(history, "clones")
@@ -85,27 +100,20 @@ def render_block(history: dict) -> str:
     return f"""{TRAFFIC_START}
 <p align="center">
   <a href="https://github.com/XinzeLee/Fundamentals_of_AI_for_PE/graphs/traffic">
-    <img src="https://img.shields.io/badge/Views-GitHub_Insights-2563eb?style=flat-square" alt="Repository views on GitHub Insights" />
+    <img src="https://img.shields.io/badge/Views-{badge_value(views)}-2563eb?style=flat-square" alt="Repository views: {fmt(views)}" />
   </a>
   <a href="https://github.com/XinzeLee/Fundamentals_of_AI_for_PE/graphs/traffic">
-    <img src="https://img.shields.io/badge/Unique_visitors-GitHub_Insights-0f766e?style=flat-square" alt="Unique repository visitors on GitHub Insights" />
+    <img src="https://img.shields.io/badge/Unique_visitors-{badge_value(unique_visitors)}-0f766e?style=flat-square" alt="Unique repository visitors: {fmt(unique_visitors)}" />
   </a>
   <a href="https://github.com/XinzeLee/Fundamentals_of_AI_for_PE/graphs/traffic">
-    <img src="https://img.shields.io/badge/Clones-GitHub_Insights-7c3aed?style=flat-square" alt="Repository clones on GitHub Insights" />
+    <img src="https://img.shields.io/badge/Clones-{badge_value(clones)}-7c3aed?style=flat-square" alt="Repository clones: {fmt(clones)}" />
   </a>
   <a href="https://github.com/XinzeLee/Fundamentals_of_AI_for_PE/graphs/traffic">
-    <img src="https://img.shields.io/badge/Unique_clones-GitHub_Insights-b45309?style=flat-square" alt="Unique repository clones on GitHub Insights" />
+    <img src="https://img.shields.io/badge/Unique_clones-{badge_value(unique_clones)}-b45309?style=flat-square" alt="Unique repository clones: {fmt(unique_clones)}" />
   </a>
 </p>
 
-| Traffic indicator | Cumulative value |
-|---|---:|
-| Views | {fmt(views)} |
-| Unique visitors | {fmt(unique_visitors)} |
-| Clones | {fmt(clones)} |
-| Unique clones | {fmt(unique_clones)} |
-
-<sub>Updated weekly from GitHub traffic data. Cumulative values start from the first successful updater run. GitHub reports unique visitors/clones per day, so unique totals are accumulated daily unique counts. Last updated: {updated} UTC.</sub>
+<p align="center"><sub>Weekly traffic · cumulative since first run · {updated} UTC</sub></p>
 {TRAFFIC_END}"""
 
 

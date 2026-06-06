@@ -3,27 +3,20 @@
 <!-- traffic:start -->
 <p align="center">
   <a href="https://github.com/XinzeLee/Fundamentals_of_AI_for_PE/graphs/traffic">
-    <img src="https://img.shields.io/badge/Views-GitHub_Insights-2563eb?style=flat-square" alt="Repository views on GitHub Insights" />
+    <img src="https://img.shields.io/badge/Views-0-2563eb?style=flat-square" alt="Repository views: 0" />
   </a>
   <a href="https://github.com/XinzeLee/Fundamentals_of_AI_for_PE/graphs/traffic">
-    <img src="https://img.shields.io/badge/Unique_visitors-GitHub_Insights-0f766e?style=flat-square" alt="Unique repository visitors on GitHub Insights" />
+    <img src="https://img.shields.io/badge/Unique_visitors-0-0f766e?style=flat-square" alt="Unique repository visitors: 0" />
   </a>
   <a href="https://github.com/XinzeLee/Fundamentals_of_AI_for_PE/graphs/traffic">
-    <img src="https://img.shields.io/badge/Clones-GitHub_Insights-7c3aed?style=flat-square" alt="Repository clones on GitHub Insights" />
+    <img src="https://img.shields.io/badge/Clones-0-7c3aed?style=flat-square" alt="Repository clones: 0" />
   </a>
   <a href="https://github.com/XinzeLee/Fundamentals_of_AI_for_PE/graphs/traffic">
-    <img src="https://img.shields.io/badge/Unique_clones-GitHub_Insights-b45309?style=flat-square" alt="Unique repository clones on GitHub Insights" />
+    <img src="https://img.shields.io/badge/Unique_clones-0-b45309?style=flat-square" alt="Unique repository clones: 0" />
   </a>
 </p>
 
-| Traffic indicator | Cumulative value |
-|---|---:|
-| Views | 0 |
-| Unique visitors | 0 |
-| Clones | 0 |
-| Unique clones | 0 |
-
-<sub>Updated weekly from GitHub traffic data. Cumulative values start from the first successful updater run. GitHub reports unique visitors/clones per day, so unique totals are accumulated daily unique counts. Last updated: pending first run.</sub>
+<p align="center"><sub>Weekly traffic · cumulative since first run · pending first run</sub></p>
 <!-- traffic:end -->
 
 ## Companion tools
