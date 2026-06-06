@@ -40,6 +40,7 @@ Agentic AI for power-electronics workflows, with pointers to the external **PE-G
 ## Official repository
 
 - [XinzeLee/PE-GPT](https://github.com/XinzeLee/PE-GPT)
+- [PE-GPT official website](https://github.com/Fannie1803/pegpt.ai)
 
 ## Outcomes
 

@@ -13,7 +13,7 @@
   </a>
 </p>
 
-<p align="center"><sub>GitHub traffic · cumulative tracked totals · 2026-06-06 UTC</sub></p>
+<p align="center"><sub>Github traffic (monitoring started on May, 23, 2026) · cumulative tracked totals · Till 2026-06-06 UTC</sub></p>
 <!-- traffic:end -->
 
 ## Companion tools
