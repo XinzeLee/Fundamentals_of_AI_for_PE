@@ -16,6 +16,20 @@
 <p align="center"><sub>Github traffic (monitoring started on May, 23, 2026) · cumulative tracked totals · Till 2026-06-06 UTC</sub></p>
 <!-- traffic:end -->
 
+## Support & citation
+
+If this repository is useful to you, please give it a Star ⭐! Your Support means a lot to us!
+
+To cite this work:
+
+<details>
+
+```
+X. Li, F. Lin, J. J. Rodríguez-Andina, S. Vazquez, H. A. Mantooth, and L. García Franquelo, "Fundamentals of Artificial Intelligence for Power Electronics," IEEE Trans. Ind. Electron., 2026.
+```
+
+</details>
+
 ## Companion tools
 
 Use the interactive **Algorithm Selector** to narrow AI/ML approaches for your PE task, and the **ChatGPT** tutor for deeper Q&A and resource-rich reports aligned with this course.
@@ -107,6 +121,7 @@ This repository accompanies the invited review *Fundamentals of Artificial Intel
 
 | Section | Jump to |
 |--------|---------|
+| Support & citation | [Star & cite this work](#support--citation) |
 | Companion tools | [Algorithm selector & ChatGPT](#companion-tools) |
 | Article ↔ repo mapping | [Alignment with the review article](#alignment-with-the-review-article) · [Case studies (Sec. VII)](#case-studies-sec-vii) |
 | What–Which–How framework | [Review article excerpt](#review-article-excerpt) |
