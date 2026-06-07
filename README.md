@@ -22,13 +22,9 @@ If this repository is useful to you, please give it a Star ⭐! Your Support mea
 
 To cite this work:
 
-<details>
-
 ```
 X. Li, F. Lin, J. J. Rodríguez-Andina, S. Vazquez, H. A. Mantooth, and L. García Franquelo, "Fundamentals of Artificial Intelligence for Power Electronics," IEEE Trans. Ind. Electron., 2026.
 ```
-
-</details>
 
 ## Companion tools
 
