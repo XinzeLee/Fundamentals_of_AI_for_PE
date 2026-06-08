@@ -44,6 +44,7 @@ This notebook supports the **DAB adaptive modulation / edge deployment** case st
 ## Dataset Description
 
 **DAB dataset** — adaptive modulation for DAB converters
+
 **Note:** This example lies downstream of modulation design for DAB converters; the dataset was generated using [`one_stop_AI_DAB_modulation.ipynb`](../Performance_Modeling_and_Design/one_stop_AI_DAB_modulation.ipynb).
 
 | Item | Description |
