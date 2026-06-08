@@ -79,6 +79,30 @@ This notebook supports the **DAB performance modeling and design** thread in *Fu
 
 ---
 
+## Dataset Description
+
+| Item | Description |
+|------|-------------|
+| **Topology** | DAB converter |
+| **Modulation** | Triple phase shift (TPS) |
+| **Jupyter Notebook** | [`one_stop_AI_DAB_modulation.ipynb`](one_stop_AI_DAB_modulation.ipynb) |
+| **Operating range** | Input voltage **V<sub>in</sub>** = 200 V, output voltage **V<sub>out</sub>** ∈ [160 V, 240 V], rated power = 1 kW, P<sub>L</sub> range ∈ [100 W, 1000 W] |
+| **Power electronics task** | Optimize the TPS modulation parameters for DAB converters |
+| **Design variables** | Inner phase shift angles **D<sub>1</sub>**, **D<sub>2</sub>** for different operating conditions |
+| **Objectives / constraints** | **Objective:** peak-to-peak current stress **i<sub>pp</sub>**<br>**Constraint:** number of switches achieving zero voltage switching **n<sub>ZVS</sub>** |
+
+**AI solutions**
+
+1. **Stage 1 — ML surrogate modeling** for current stress (regression) and **n<sub>ZVS</sub>** (classification)  
+   - **ML model inputs:** **D<sub>1</sub>**, **D<sub>2</sub>**, **V<sub>out</sub>**, **P<sub>L</sub>**  
+   - **ML model outputs:** **i<sub>pp</sub>**, **n<sub>ZVS</sub>**  
+
+2. **Stage 2 — MHA optimization** to reduce current stress while satisfying all-switch ZVS operation  
+   - **MHA input space:** **D<sub>1</sub>**, **D<sub>2</sub>**, under the given **V<sub>out</sub>** and **P<sub>L</sub>** (**V<sub>out</sub>** and **P<sub>L</sub>** are sampled and enumerated)  
+   - **MHA objective space:** objective function that minimizes current stress with **n<sub>ZVS</sub>** as additional penalty terms  
+
+---
+
 One-stop DAB pipeline: exploratory analysis, data quality control, surrogate training, and metaheuristic optimization on tabular data.
 
 ## Contents

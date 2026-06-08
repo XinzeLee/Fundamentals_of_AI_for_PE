@@ -57,6 +57,31 @@ These notebooks support the **buck converter** one-stop case study in *Fundament
 
 ---
 
+## Dataset Description
+
+**Buck dataset** — circuit parameters of buck converters
+
+| Item | Description |
+|------|-------------|
+| **Topology** | Synchronous buck converter |
+| **Jupyter Notebook** | [`buck_comprehensive_case_study.ipynb`](buck_comprehensive_case_study.ipynb) |
+| **Operating range** | Input voltage **V<sub>in</sub>** = 48 V, output voltage **V<sub>out</sub>** = 12 V, rated power = 100 W |
+| **Power electronics task** | Optimize LC filter for synchronous buck converters |
+| **Design variables** | **switching frequency f<sub>s</sub>** ∈ [10 kHz, 200 kHz], inductance **L**, capacitance **C** |
+| **Objectives / Constraints** | **Objective:** Maximize efficiency<br>**Constraints:** Voltage ripple < 1%, current ripple < 10%, LC filter volume < 7 cm³ |
+
+**AI solutions**
+
+1. **Stage 1 — ML surrogate modeling** for efficiency, voltage ripple, and current ripple  
+   - **ML model inputs:** **f<sub>s</sub>**, **L**, **C**  
+   - **ML model outputs:** efficiency, voltage ripple, current ripple  
+
+2. **Stage 2 — MHA optimization** to improve efficiency while satisfying ripple and volume constraints  
+   - **MHA input space:** **f<sub>s</sub>**, **L**, **C**  
+   - **MHA objective space:** objective function that maximizes efficiency with ripples and volume as additional penalty terms  
+
+---
+
 Synchronous buck design: data analysis, surrogate modeling, and metaheuristic optimization.
 
 ## Contents

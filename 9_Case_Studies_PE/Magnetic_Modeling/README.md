@@ -31,6 +31,27 @@ These notebooks support the **magnetic core loss** case study in *Fundamentals o
 
 ---
 
+## Dataset Description
+
+**MagNet Challenge dataset (downscaled)** — core loss modeling of 3C90 magnetic material
+
+| Item | Description |
+|------|-------------|
+| **Jupyter Notebooks** | [`magnet_fnn.ipynb`](magnet_fnn.ipynb); [`magnet_lstm.ipynb`](magnet_lstm.ipynb) |
+| **Task** | Model the core loss of 3C90 magnetic material |
+
+**AI solutions**
+
+1. **Solution 1 — Feedforward NN**  
+   - **Neural network inputs:** harmonic magnitudes, frequency, temperature  
+   - **Neural network outputs:** volumetric core loss  
+
+2. **Solution 2 — LSTM**  
+   - **Neural network inputs:** B-field waveform, frequency, temperature  
+   - **Neural network outputs:** volumetric core loss  
+
+---
+
 Core-loss surrogate modeling from B-waveforms, frequency, and temperature (MagNet downscaled CSVs).
 
 ## External dataset

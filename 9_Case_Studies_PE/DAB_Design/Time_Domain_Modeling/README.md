@@ -47,6 +47,25 @@ This notebook supports the **DAB time-domain** case study in *Fundamentals of Ar
 
 ---
 
+## Dataset Description
+
+**DAB dataset** — time-domain modeling of DAB converters
+
+| Item | Description |
+|------|-------------|
+| **Topology** | DAB converter |
+| **Modulation** | Triple phase shift (TPS) |
+| **Jupyter Notebook** | [`time_series_modeling.ipynb`](time_series_modeling.ipynb) |
+| **Operating range** | Input voltage **V<sub>in</sub>** = 200 V, output voltage **V<sub>out</sub>** ∈ [160 V, 240 V], rated power = 1 kW, load range ∈ [100 W, 1000 W] |
+| **Task** | Model the inductor current **i<sub>L</sub>** given the ac voltages **v<sub>p</sub>** and **v<sub>s</sub>** |
+
+**AI solutions — ML for time-domain modeling of DAB converters**
+
+- **ML model inputs:** ac voltage waveforms **v<sub>p</sub>** and **v<sub>s</sub>**  
+- **ML model outputs:** inductor current waveform **i<sub>L</sub>**  
+
+---
+
 NNs for DAB waveform modeling: alignment/calibration, recurrent architectures.
 
 ## Contents

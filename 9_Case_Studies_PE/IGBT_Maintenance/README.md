@@ -47,6 +47,22 @@ This notebook supports the **IGBT maintenance / RUL** case study in *Fundamental
 
 ---
 
+## Dataset Description
+
+**IGBT maintenance dataset** — remaining useful life prediction of IGBT devices under thermal stress
+
+| Item | Description |
+|------|-------------|
+| **Jupyter Notebook** | [`rul_prediction.ipynb`](rul_prediction.ipynb) |
+| **Task** | Predict the remaining useful life of IGBT devices while quantifying uncertainty |
+
+**AI solutions — probabilistic NN with Gaussian model head for remaining useful life estimation**
+
+- **Neural network inputs:** two node voltages, collector–emitter current, and package temperature of the IGBT under test  
+- **Neural network outputs:** mean of RUL, log variance of the RUL  
+
+---
+
 Probabilistic remaining useful life (RUL) from accelerated-aging IGBT measurements.
 
 ## External dataset

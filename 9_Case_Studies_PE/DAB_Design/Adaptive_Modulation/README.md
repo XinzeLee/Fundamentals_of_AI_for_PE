@@ -41,6 +41,25 @@ This notebook supports the **DAB adaptive modulation / edge deployment** case st
 
 ---
 
+## Dataset Description
+
+**DAB dataset** — adaptive modulation for DAB converters
+**Note:** This example lies downstream of modulation design for DAB converters; the dataset was generated using [`one_stop_AI_DAB_modulation.ipynb`](../Performance_Modeling_and_Design/one_stop_AI_DAB_modulation.ipynb).
+
+| Item | Description |
+|------|-------------|
+| **Topology** | DAB converter |
+| **Modulation** | Triple phase shift (TPS) |
+| **Jupyter Notebook** | [`TinyML.ipynb`](TinyML.ipynb) |
+| **Operating range** | Input voltage **V<sub>in</sub>** = 200 V, output voltage **V<sub>out</sub>** ∈ [160 V, 240 V], rated power = 1 kW, **P<sub>L</sub>** range ∈ [100 W, 1000 W] |
+| **Task** | Adapt **D<sub>1</sub>** and **D<sub>2</sub>** based on operating conditions **P<sub>L</sub>** and **V<sub>out</sub>** to ensure optimized current stress and full-ZVS operation across the entire operating range |
+
+**AI solutions** - **ML surrogate modeling** for the adaptive modulator  
+- **ML model inputs:** operating conditions **V<sub>out</sub>**, **P<sub>L</sub>**  
+- **ML model outputs:** optimized **D<sub>1</sub>** and **D<sub>2</sub>**  
+
+---
+
 TinyML-oriented DAB modulation: neural network structure sweeps, compression, and ONNX-based inference timing.
 
 ## Contents
