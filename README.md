@@ -238,7 +238,7 @@ This repository uses a dual-license structure:
 - **Code**: Apache License 2.0  
 - **Educational Content (text, figures, explanations)**: CC BY-NC 4.0  
 
-- Code can be used freely.  
-- Educational materials cannot be used commercially without permission.  
+- Users of any code from this repository are requested to cite the associated TIE paper.
+- The code and related materials are provided for educational use only and cannot be used for commercial purposes without permission.
 
 See the `LICENSE` and `NOTICE` files for details.
