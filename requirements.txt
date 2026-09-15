@@ -2,7 +2,7 @@
 # System tools (e.g. LTspice, PLECS, MATLAB) are not installable via pip.
 # For macOS users, when using `uv`, first install OpenMP required by XGBoost: `brew install libomp`
 
-numpy>=1.24,<2.0
+numpy # >=1.24,<2.0
 matplotlib
 seaborn
 pandas
