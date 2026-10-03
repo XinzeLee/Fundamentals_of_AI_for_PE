@@ -25,6 +25,11 @@ X. Li, F. Lin, J. J. Rodríguez-Andina, S. Vazquez, H. A. Mantooth, and L. Garc�
 "Fundamentals of Artificial Intelligence for Power Electronics," IEEE Trans. Ind. Electron., 2026.
 ```
 
+**Paper links**
+
+- [IEEE Xplore](https://ieeexplore.ieee.org/document/11707256)
+- [ResearchGate](https://www.researchgate.net/publication/411564495_Fundamentals_of_Artificial_Intelligence_for_Power_Electronics)
+
 ## Companion tools
 
 Use the interactive **Algorithm Selector** to narrow AI/ML approaches for your PE task, and the **ChatGPT** tutor for deeper Q&A and resource-rich reports aligned with this course.
@@ -103,6 +108,15 @@ This repository accompanies the invited review *Fundamentals of Artificial Intel
 
 ---
 
+## Environment setup
+
+- **Local:** clone the repo → create a Python environment (`python -m venv .venv` then activate it, or conda/mamba if you prefer) → `pip install -r requirements.txt` → run [`0_To_Get_Started/package_install.ipynb`](0_To_Get_Started/) to verify imports.
+- **Google Colab:** open a notebook via its module **Open in Colab** badge (see [Google Colab](#google-colab)); the first cell clones the repo, installs requirements, and sets the working directory.
+
+[`8_PE_Simulation_Automation`](8_PE_Simulation_Automation/) needs local simulators and is not intended for Colab.
+
+---
+
 ## Authorship & status
 
 - **Course / code author:** Xinze Li  
@@ -121,6 +135,7 @@ This repository accompanies the invited review *Fundamentals of Artificial Intel
 | Article ↔ repo mapping | [Alignment with the review article](#alignment-with-the-review-article) · [Case studies (Sec. VII)](#case-studies-sec-vii) |
 | What–Which–How framework | [Review article excerpt](#review-article-excerpt) |
 | Education article (PDF) | [Companion education article](#companion-education-article-pilot-course) |
+| Environment setup | [Local & Google Colab](#environment-setup) |
 | Google Colab | [Colab links for all notebooks](#google-colab) |
 | Repository metrics | [Overview](#overview) |
 | Module folders & learning path | [1. Contents and learning path](#1-contents-and-learning-path) |
