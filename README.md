@@ -55,6 +55,8 @@ Use the interactive **Algorithm Selector** to narrow AI/ML approaches for your P
   <sub>Source code for the selector: <a href="https://github.com/XinzeLee/AI_for_PE_Algorithm_Selector">XinzeLee/AI_for_PE_Algorithm_Selector</a></sub>
 </p>
 
+<br/>
+
 <p align="center">
   <b>Jump to:</b>
   <a href="#alignment-with-the-review-article">Paper alignment</a> ·
@@ -175,38 +177,16 @@ Structured summary of topics, code volume, data assets, and algorithm coverage a
 
 A suggested learning route is as follows:
 
-<p align="center">
-  <sub><b>Foundations</b></sub><br/>
-  <a href="0_To_Get_Started/"><img src="https://img.shields.io/badge/0-Setup-2563eb?style=for-the-badge&labelColor=1e293b" alt="0 Setup" /></a>
-  &nbsp;→&nbsp;
-  <a href="2_Classic_ML/"><img src="https://img.shields.io/badge/2-Classic_ML-2563eb?style=for-the-badge&labelColor=1e293b" alt="2 Classic ML" /></a>
-  &nbsp;→&nbsp;
-  <a href="3_Ensemble_Learning/"><img src="https://img.shields.io/badge/3-Ensembles-2563eb?style=for-the-badge&labelColor=1e293b" alt="3 Ensemble Learning" /></a>
-  &nbsp;→&nbsp;
-  <a href="4_Neural_Network/"><img src="https://img.shields.io/badge/4-Neural_nets-2563eb?style=for-the-badge&labelColor=1e293b" alt="4 Neural Network" /></a>
-</p>
-
-<p align="center">↓</p>
-
-<p align="center">
-  <sub><b>Advanced methods</b> (any order)</sub><br/>
-  <a href="1_MHA/"><img src="https://img.shields.io/badge/1-MHA-7c3aed?style=for-the-badge&labelColor=1e293b" alt="1 Metaheuristic algorithms" /></a>
-  &nbsp;
-  <a href="5_PIML/"><img src="https://img.shields.io/badge/5-PIML-7c3aed?style=for-the-badge&labelColor=1e293b" alt="5 Physics-informed ML" /></a>
-  &nbsp;
-  <a href="7_Reinforcement_Learning/"><img src="https://img.shields.io/badge/7-RL-7c3aed?style=for-the-badge&labelColor=1e293b" alt="7 Reinforcement Learning" /></a>
-  &nbsp;
-  <a href="6_Agentic_AI/"><img src="https://img.shields.io/badge/6-Agentic_AI-10a37f?style=for-the-badge&labelColor=1e293b" alt="6 Agentic AI" /></a>
-</p>
-
-<p align="center">↓</p>
-
-<p align="center">
-  <sub><b>Simulation &amp; applications</b></sub><br/>
-  <a href="8_PE_Simulation_Automation/"><img src="https://img.shields.io/badge/8-Simulation-b45309?style=for-the-badge&labelColor=1e293b" alt="8 PE Simulation Automation" /></a>
-  &nbsp;→&nbsp;
-  <a href="9_Case_Studies_PE/"><img src="https://img.shields.io/badge/9-Case_studies-b45309?style=for-the-badge&labelColor=1e293b" alt="9 Case Studies" /></a>
-</p>
+```mermaid
+flowchart LR
+  setup["0_To_Get_Started"] --> classic["2_Classic_ML"]
+  classic --> ensemble["3_Ensemble_Learning"]
+  ensemble --> nn["4_Neural_Network"]
+  nn --> advanced["1_MHA / 5_PIML / 7_RL"]
+  advanced --> sim["8_Simulation"]
+  sim --> cases["9_Case_Studies"]
+  nn --> agentic["6_Agentic_AI"]
+```
 
 | Folder | Notebooks | Code lines | Role |
 |--------|---:|---:|------|
