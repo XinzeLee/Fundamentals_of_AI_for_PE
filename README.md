@@ -1,4 +1,6 @@
-﻿# Fundamentals of AI for PE — repository overview
+﻿<a id="readme-top"></a>
+
+# Fundamentals of AI for PE — repository overview
 
 <!-- traffic:start -->
 <p align="center">
@@ -53,11 +55,24 @@ Use the interactive **Algorithm Selector** to narrow AI/ML approaches for your P
   <sub>Source code for the selector: <a href="https://github.com/XinzeLee/AI_for_PE_Algorithm_Selector">XinzeLee/AI_for_PE_Algorithm_Selector</a></sub>
 </p>
 
+<p align="center">
+  <b>Jump to:</b>
+  <a href="#alignment-with-the-review-article">Paper alignment</a> ·
+  <a href="#review-article-excerpt">What–Which–How</a> ·
+  <a href="#companion-education-article-pilot-course">Education article</a> ·
+  <a href="#environment-setup">Environment setup</a> ·
+  <a href="#google-colab">Google Colab</a> ·
+  <a href="#1-contents-and-algorithm-learning-path">Learning path</a> ·
+  <a href="#21-algorithms">Algorithms</a> ·
+  <a href="#22-data">Data</a> ·
+  <a href="#license">License</a>
+</p>
+
 ---
 
 ## Alignment with the review article
 
-This repository accompanies the invited review *Fundamentals of Artificial Intelligence for Power Electronics* (*IEEE Trans. Ind. Electron.*, 2026). Section numbers below follow the **revised manuscript** structure:
+This repository accompanies the invited review [*Fundamentals of Artificial Intelligence for Power Electronics*](https://ieeexplore.ieee.org/document/11707256) (*IEEE Trans. Ind. Electron.*, 2026). Section numbers below follow the **revised manuscript** structure:
 
 | Article section | Topic |
 |-----------------|---------------|
@@ -85,6 +100,8 @@ This repository accompanies the invited review *Fundamentals of Artificial Intel
 | [`8_PE_Simulation_Automation`](8_PE_Simulation_Automation/) | **III-A** (simulation automation for batch data acquisition) |
 | [`9_Case_Studies_PE`](9_Case_Studies_PE/) | **VII** — see [9_Case_Studies_PE/README.md](9_Case_Studies_PE/README.md) and case-study READMEs below |
 
+<p align="right"><a href="#readme-top">Back to top ↑</a></p>
+
 ---
 
 ## Review article excerpt
@@ -95,13 +112,15 @@ This repository accompanies the invited review *Fundamentals of Artificial Intel
 >
 > <p align="center"><em>Figure 1. “What–Which–How” framework to introduce the fundamentals of AI for PE.</em></p>
 >
-> The IEEE TIE review article "Fundamentals of Artificial Intelligence for Power Electronics", together with this repository (**hands-on Jupyter notebooks**), the [Algorithm Selector](https://xinzelee.github.io/AI_for_PE_Algorithm_Selector/) web app, and [ChatGPT assistant](#companion-tools), supports a practical **What–Which–How** framework for introducing AI fundamentals in power electronics.
+> The IEEE TIE review article "[Fundamentals of Artificial Intelligence for Power Electronics](https://ieeexplore.ieee.org/document/11707256)", together with this repository (**hands-on Jupyter notebooks**), the [Algorithm Selector](https://xinzelee.github.io/AI_for_PE_Algorithm_Selector/) web app, and [ChatGPT assistant](#companion-tools), supports a practical **What–Which–How** framework for introducing AI fundamentals in power electronics.
 >
 > 1. **What** — clarify the PE problem you want to solve.  
 > 2. **Which** — select suitable AI models, from classic machine learning and ensemble learning to neural-network architectures (and related topics in this repo).  
 > 3. **How** — tune and deploy those models through guided, hands-on coding.
 >
 > The framework aims to make AI methods more **accessible** and **actionable** for the PE community.
+
+<p align="right"><a href="#readme-top">Back to top ↑</a></p>
 
 ---
 
@@ -110,6 +129,8 @@ This repository accompanies the invited review *Fundamentals of Artificial Intel
 **[Reforming Power Electronics Education in the Era of AI: A Pilot Course by the University of Arkansas Power Group](docs/Reforming%20Power%20Electronics%20Education%20in%20the%20Era%20of%20AI.pdf)** — Xinze Li and H. Alan Mantooth ([`docs/`](docs/)).
 
 **Conclusion:** Effective AI-for-PE education should build **domain-grounded judgment**—not generic AI training alone. The authors call on **students, educators, industry, and public funders** to advance PE-relevant curricula, workforce training, responsibly shareable data, and supporting policy. The PDF frames this repository and the [companion tools](#companion-tools) at the top of this README as practical pieces of that wider effort; see the PDF for the full argument and references.
+
+<p align="right"><a href="#readme-top">Back to top ↑</a></p>
 
 ---
 
@@ -120,39 +141,26 @@ This repository accompanies the invited review *Fundamentals of Artificial Intel
 
 [`8_PE_Simulation_Automation`](8_PE_Simulation_Automation/) needs local simulators and is not intended for Colab.
 
+<p align="right"><a href="#readme-top">Back to top ↑</a></p>
+
 ---
 
 ## Authorship & status
 
 - **Course / code author:** Xinze Li  
-- **Review article:** Xinze Li, Fanfan Lin, Juan J. Rodríguez-Andina, Sergio Vazquez, Homer Alan Mantooth, Leopoldo García Franquelo, “Fundamentals of Artificial Intelligence for Power Electronics,” *IEEE Transactions on Industrial Electronics*, 2026.
+- **Review article:** Xinze Li, Fanfan Lin, Juan J. Rodríguez-Andina, Sergio Vazquez, Homer Alan Mantooth, Leopoldo García Franquelo, “[Fundamentals of Artificial Intelligence for Power Electronics](https://ieeexplore.ieee.org/document/11707256),” *IEEE Transactions on Industrial Electronics*, 2026.
 
 *These learning resources are still under active refinement; notebooks, data, and documentation may change.*
 
 ---
-
-## Navigate this README
-
-| Section | Jump to |
-|--------|---------|
-| Support & citation | [Star & cite this work](#support--citation) |
-| Companion tools | [Algorithm selector & ChatGPT](#companion-tools) |
-| Article ↔ repo mapping | [Alignment with the review article](#alignment-with-the-review-article) · [Case studies (Sec. VII)](#case-studies-sec-vii) |
-| What–Which–How framework | [Review article excerpt](#review-article-excerpt) |
-| Education article (PDF) | [Companion education article](#companion-education-article-pilot-course) |
-| Environment setup | [Local & Google Colab](#environment-setup) |
-| Google Colab | [Colab links for all notebooks](#google-colab) |
-| Repository metrics | [Overview](#overview) |
-| Module folders & learning path | [1. Contents and learning path](#1-contents-and-learning-path) |
-| Algorithm & data inventory | [2. Algorithms and data](#2-algorithms-and-data) → [2.1 Algorithms](#21-algorithms) · [2.2 Data](#22-data) |
-
-Structured summary of topics, code volume, data assets, and algorithm coverage across Jupyter notebooks (`.ipynb`).
 
 ## Google Colab
 
 Each module README includes **Open in Colab** badges for its notebooks. On Colab, the usual first code cell clones this repository to `/content/Fundamentals_of_AI_for_PE`, runs `pip install -r requirements.txt`, and sets the working directory to the notebook’s folder so paths resolve. **Exception:** [`8_PE_Simulation_Automation`](8_PE_Simulation_Automation/) relies on local simulators (LTspice, PLECS, etc.) and is not intended for Colab.
 
 ## Overview
+
+Structured summary of topics, code volume, data assets, and algorithm coverage across Jupyter notebooks (`.ipynb`).
 
 | Metric | Value |
 |---|---:|
@@ -165,7 +173,7 @@ Each module README includes **Open in Colab** badges for its notebooks. On Colab
 
 ## 1. Contents and algorithm learning path
 
-Folder numbers follow the review article's sections, not a strict course order. A suggested route is below; click any block to open that module.
+A suggested learning route is as follows:
 
 <p align="center">
   <sub><b>Foundations</b></sub><br/>
@@ -213,6 +221,8 @@ Folder numbers follow the review article's sections, not a strict course order. 
 | [`8_PE_Simulation_Automation`](8_PE_Simulation_Automation/) | 2 | 245 | LTspice, PLECS, Simulink automation (**Sec. III-A**) |
 | [`9_Case_Studies_PE`](9_Case_Studies_PE/) | 9 | 4,435 | Buck; DAB (performance / waveforms / TinyML — [tracks](9_Case_Studies_PE/DAB_Design/README.md)); IGBT RUL; magnetics (**Sec. VII**) — [overview](9_Case_Studies_PE/README.md) |
 
+<p align="right"><a href="#readme-top">Back to top ↑</a></p>
+
 ## 2. Algorithms and data
 
 ### 2.1 Algorithms
@@ -223,7 +233,8 @@ Labels used in the inventory fall into three groups:
 - **Neural models:** FNN/MLP, CNN, RNN, GRU, LSTM, Transformer/Attention, MDN, PINN  
 - **Classical / ensemble:** Decision Trees, Random Forests, Ridge, SVR, PCA, TSNE, Isolation Forest, One-Class SVM, XGBoost, Gaussian process regression (sklearn)  
 
-**Full list (25 labels):**
+<details>
+<summary><b>Full list (25 labels)</b></summary>
 
 - `CNN (PyTorch)`
 - `FNN/MLP (PyTorch)`
@@ -250,6 +261,8 @@ Labels used in the inventory fall into three groups:
 - `sklearn:Ridge`
 - `sklearn:SVR`
 - `sklearn:TSNE`
+
+</details>
 
 ### 2.2 Data
 
@@ -286,6 +299,8 @@ Labels used in the inventory fall into three groups:
 
 External dataset licensing and citations: [9_Case_Studies_PE](9_Case_Studies_PE/README.md) — per-track READMEs under `Buck_Design/`, `DAB_Design/` ([performance](9_Case_Studies_PE/DAB_Design/Performance_Modeling_and_Design/README.md), [time-domain](9_Case_Studies_PE/DAB_Design/Time_Domain_Modeling/README.md), [TinyML](9_Case_Studies_PE/DAB_Design/Adaptive_Modulation/README.md)), `IGBT_Maintenance/`, and `Magnetic_Modeling/`.
 
+<p align="right"><a href="#readme-top">Back to top ↑</a></p>
+
 ## License
 
 This repository uses a dual-license structure:
@@ -293,7 +308,7 @@ This repository uses a dual-license structure:
 - **Code**: Apache License 2.0  
 - **Educational Content (text, figures, explanations)**: CC BY-NC 4.0  
 
-- Users of any code from this repository are requested to cite the associated TIE paper.
+- Users of any code from this repository are requested to cite the associated [TIE paper](https://ieeexplore.ieee.org/document/11707256).
 - The code and related materials are provided for educational use only and cannot be used for commercial purposes without permission.
 
 See the `LICENSE` and `NOTICE` files for details.
