@@ -25,10 +25,15 @@ X. Li, F. Lin, J. J. Rodr√≠guez-Andina, S. Vazquez, H. A. Mantooth, and L. Garc√
 "Fundamentals of Artificial Intelligence for Power Electronics," IEEE Trans. Ind. Electron., 2026.
 ```
 
-**Paper links**
-
-- [IEEE Xplore](https://ieeexplore.ieee.org/document/11707256)
-- [ResearchGate](https://www.researchgate.net/publication/411564495_Fundamentals_of_Artificial_Intelligence_for_Power_Electronics)
+<p align="center">
+  <a href="https://ieeexplore.ieee.org/document/11707256">
+    <img src="https://img.shields.io/badge/Read_on_IEEE_Xplore-00629B?style=for-the-badge&logo=ieee&logoColor=white" alt="Read the paper on IEEE Xplore" />
+  </a>
+  &nbsp;&nbsp;
+  <a href="https://www.researchgate.net/publication/411564495_Fundamentals_of_Artificial_Intelligence_for_Power_Electronics">
+    <img src="https://img.shields.io/badge/Read_on_ResearchGate-00CCBB?style=for-the-badge&logo=researchgate&logoColor=white" alt="Read the paper on ResearchGate" />
+  </a>
+</p>
 
 ## Companion tools
 
