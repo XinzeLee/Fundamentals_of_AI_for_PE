@@ -18,7 +18,7 @@
 
 ## Support & citation
 
-If this repo helps you, please give it a Star ⭐. Citation:
+If this repository is useful to you, please give it a Star ⭐! Your Support means a lot to us! To cite this work:
 
 ```
 X. Li, F. Lin, J. J. Rodríguez-Andina, S. Vazquez, H. A. Mantooth, and L. García Franquelo,
@@ -37,7 +37,7 @@ X. Li, F. Lin, J. J. Rodríguez-Andina, S. Vazquez, H. A. Mantooth, and L. Garc�
 
 ## Companion tools
 
-**Algorithm Selector** — pick AI/ML methods for a PE task. **ChatGPT tutor** — Q&A and reports aligned with this material.
+Use the interactive **Algorithm Selector** to narrow AI/ML approaches for your PE task, and the **ChatGPT** tutor for deeper Q&A and resource-rich reports aligned with this course.
 
 <p align="center">
   <a href="https://xinzelee.github.io/AI_for_PE_Algorithm_Selector/">
@@ -50,120 +50,180 @@ X. Li, F. Lin, J. J. Rodríguez-Andina, S. Vazquez, H. A. Mantooth, and L. Garc�
 </p>
 
 <p align="center">
-  <sub>Selector source: <a href="https://github.com/XinzeLee/AI_for_PE_Algorithm_Selector">XinzeLee/AI_for_PE_Algorithm_Selector</a></sub>
+  <sub>Source code for the selector: <a href="https://github.com/XinzeLee/AI_for_PE_Algorithm_Selector">XinzeLee/AI_for_PE_Algorithm_Selector</a></sub>
 </p>
 
 ---
 
-Hands-on Jupyter notebooks for the IEEE TIE review *Fundamentals of Artificial Intelligence for Power Electronics*—classic ML, neural nets, PIML, metaheuristics, and PE case studies.
+## Alignment with the review article
 
-## Navigate this README
+This repository accompanies the invited review *Fundamentals of Artificial Intelligence for Power Electronics* (*IEEE Trans. Ind. Electron.*, 2026). Section numbers below follow the **revised manuscript** structure:
 
-| | |
-|--|--|
-| [Quick start](#quick-start) | [Learning path](#learning-path) |
-| [What–Which–How](#whatwhichhow-framework) | [Paper ↔ repo](#paper--repo) |
-| [Education PDF](#companion-education-article-pilot-course) | [Overview](#overview) |
-| [Algorithms & data](#reference-algorithms--data) | [Authorship](#authorship--status) · [License](#license) |
-
-## Quick start
-
-1. **Local:** clone → `python -m venv .venv` (or conda/mamba) → activate → `pip install -r requirements.txt` → run [`0_To_Get_Started/package_install.ipynb`](0_To_Get_Started/).
-2. **Colab:** use the **Open in Colab** badge in a module README; the first cell clones the repo, installs dependencies, and `cd`s to the notebook folder.
-
-[`8_PE_Simulation_Automation`](8_PE_Simulation_Automation/) needs local simulators (LTspice, PLECS, …)—not for Colab.
-
-## Learning path
-
-Folder IDs follow the paper, not a strict week order. Suggested route:
-
-```mermaid
-flowchart LR
-  setup["0 Setup"] --> classic["2 Classic ML"]
-  classic --> ensemble["3 Ensembles"]
-  ensemble --> nn["4 Neural nets"]
-  nn --> advanced["1 MHA / 5 PIML / 7 RL"]
-  advanced --> sim["8 Simulation"]
-  sim --> cases["9 Case studies"]
-  nn --> agentic["6 Agentic AI"]
-```
-
-| Folder | # | Role |
-|--------|--:|------|
-| [`0_To_Get_Started`](0_To_Get_Started/) | 1 | Env check |
-| [`2_Classic_ML`](2_Classic_ML/) | 3 | Classical ML, GP, BO (**III**) |
-| [`3_Ensemble_Learning`](3_Ensemble_Learning/) | 1 | Trees / ensembles (**III-E**) |
-| [`4_Neural_Network`](4_Neural_Network/) | 5 | NNs, modalities, practices (**II–III**) |
-| [`1_MHA`](1_MHA/) | 5 | Metaheuristics (**V**) |
-| [`5_PIML`](5_PIML/) | 3 | Physics-informed ML (**IV**) |
-| [`7_Reinforcement_Learning`](7_Reinforcement_Learning/) | 2 | DQN / DDPG (**III-D**) |
-| [`6_Agentic_AI`](6_Agentic_AI/) | — | PE-GPT docs (**VI**) |
-| [`8_PE_Simulation_Automation`](8_PE_Simulation_Automation/) | 2 | LTspice / PLECS / Simulink (**III-A**) |
-| [`9_Case_Studies_PE`](9_Case_Studies_PE/) | 9 | Buck, DAB, IGBT, magnetics (**VII**) — [overview](9_Case_Studies_PE/README.md) |
-
-## What–Which–How framework
-
-<p align="center">
-  <img src="docs/img/what-which-how-framework.png" alt="What-Which-How framework for introducing AI fundamentals in power electronics" width="800" />
-</p>
-
-<p align="center"><em>Figure 1. “What–Which–How” framework for AI in power electronics.</em></p>
-
-1. **What** — define the PE problem.
-2. **Which** — choose models (classic ML, ensembles, NNs, …).
-3. **How** — implement and tune them in the notebooks (and via the [tools](#companion-tools) above).
-
-## Paper ↔ repo
-
-Companion to *Fundamentals of Artificial Intelligence for Power Electronics* (*IEEE Trans. Ind. Electron.*, 2026).
-
-| Sec. | Topic |
-|------|-------|
+| Article section | Topic |
+|-----------------|---------------|
 | **I** | Introduction |
-| **II** | PE data modalities |
-| **III** | ML for PE |
-| **IV** | PIML for PE |
-| **V** | Metaheuristic optimization |
-| **VI** | Agentic AI / PE-GPT |
-| **VII** | Lifecycle case studies |
-| **VIII** | Outlook |
+| **II** | Basics of PE data (tabular, signal, field, graph, unstructured) |
+| **III** | Fundamentals of ML for PE (simulation automation, EDA, preprocessing, learning types, architectures, NNs, good practices) |
+| **IV** | Fundamentals of PIML for PE |
+| **V** | Fundamentals of MHAs for PE optimization |
+| **VI** | Agentic AI (including PE-GPT) |
+| **VII** | One-stop AI applications throughout the PE lifecycle |
+| **VIII** | Conclusion and outlook |
 
-| Folder | Maps to |
-|--------|---------|
-| [`0_To_Get_Started`](0_To_Get_Started/) | Setup (supports III–VII) |
-| [`1_MHA`](1_MHA/) | **V** (V-A–C) |
-| [`2_Classic_ML`](2_Classic_ML/) | **III-B – III-E** |
-| [`3_Ensemble_Learning`](3_Ensemble_Learning/) | **III-E** |
-| [`4_Neural_Network`](4_Neural_Network/) | **II**, **III-F – III-G** |
-| [`5_PIML`](5_PIML/) | **IV** |
-| [`6_Agentic_AI`](6_Agentic_AI/) | **VI** |
-| [`7_Reinforcement_Learning`](7_Reinforcement_Learning/) | **III-D** |
-| [`8_PE_Simulation_Automation`](8_PE_Simulation_Automation/) | **III-A** |
-| [`9_Case_Studies_PE`](9_Case_Studies_PE/) | **VII** |
+**Folder ↔ article mapping**
+
+| Folder | Article sections |
+|--------|------------------|
+| [`0_To_Get_Started`](0_To_Get_Started/) | Prerequisite environment; supports hands-on material across the paper |
+| [`1_MHA`](1_MHA/) | **V** — `Single_Objective_MHA/`: V-A, V-C; `Multi_Objective_MHA/`: V-B, V-C |
+| [`2_Classic_ML`](2_Classic_ML/) | **III-B – III-E** (EDA, preprocessing, learning types, ML architectures) |
+| [`3_Ensemble_Learning`](3_Ensemble_Learning/) | **III-E** (tree / ensemble architectures) |
+| [`4_Neural_Network`](4_Neural_Network/) | **II** (modalities) + **III-F – III-G** — see [4_Neural_Network/README.md](4_Neural_Network/README.md) |
+| [`5_PIML`](5_PIML/) | **IV** (IV-A – IV-C) |
+| [`6_Agentic_AI`](6_Agentic_AI/) | **VI** (VI-A – VI-C) |
+| [`7_Reinforcement_Learning`](7_Reinforcement_Learning/) | **III-D** (reinforcement learning) |
+| [`8_PE_Simulation_Automation`](8_PE_Simulation_Automation/) | **III-A** (simulation automation for batch data acquisition) |
+| [`9_Case_Studies_PE`](9_Case_Studies_PE/) | **VII** — see [9_Case_Studies_PE/README.md](9_Case_Studies_PE/README.md) and case-study READMEs below |
+
+---
+
+## Review article excerpt
+
+> <p align="center">
+>   <img src="docs/img/what-which-how-framework.png" alt="What-Which-How framework for introducing AI fundamentals in power electronics" width="800" />
+> </p>
+>
+> <p align="center"><em>Figure 1. “What–Which–How” framework to introduce the fundamentals of AI for PE.</em></p>
+>
+> The IEEE TIE review article "Fundamentals of Artificial Intelligence for Power Electronics", together with this repository (**hands-on Jupyter notebooks**), the [Algorithm Selector](https://xinzelee.github.io/AI_for_PE_Algorithm_Selector/) web app, and [ChatGPT assistant](#companion-tools), supports a practical **What–Which–How** framework for introducing AI fundamentals in power electronics.
+>
+> 1. **What** — clarify the PE problem you want to solve.  
+> 2. **Which** — select suitable AI models, from classic machine learning and ensemble learning to neural-network architectures (and related topics in this repo).  
+> 3. **How** — tune and deploy those models through guided, hands-on coding.
+>
+> The framework aims to make AI methods more **accessible** and **actionable** for the PE community.
+
+---
 
 ## Companion education article (pilot course)
 
-[Reforming Power Electronics Education in the Era of AI](docs/Reforming%20Power%20Electronics%20Education%20in%20the%20Era%20of%20AI.pdf) (Xinze Li, H. Alan Mantooth) — makes the case for **domain-grounded** AI-for-PE teaching; this repo and the [companion tools](#companion-tools) are part of that toolkit.
+**[Reforming Power Electronics Education in the Era of AI: A Pilot Course by the University of Arkansas Power Group](docs/Reforming%20Power%20Electronics%20Education%20in%20the%20Era%20of%20AI.pdf)** — Xinze Li and H. Alan Mantooth ([`docs/`](docs/)).
+
+**Conclusion:** Effective AI-for-PE education should build **domain-grounded judgment**—not generic AI training alone. The authors call on **students, educators, industry, and public funders** to advance PE-relevant curricula, workforce training, responsibly shareable data, and supporting policy. The PDF frames this repository and the [companion tools](#companion-tools) at the top of this README as practical pieces of that wider effort; see the PDF for the full argument and references.
+
+---
+
+## Environment setup
+
+- **Local:** clone the repo → create a Python environment (`python -m venv .venv` then activate it, or conda/mamba if you prefer) → `pip install -r requirements.txt` → run [`0_To_Get_Started/package_install.ipynb`](0_To_Get_Started/) to verify imports.
+- **Google Colab:** open a notebook via its module **Open in Colab** badge (see [Google Colab](#google-colab)); the first cell clones the repo, installs requirements, and sets the working directory.
+
+[`8_PE_Simulation_Automation`](8_PE_Simulation_Automation/) needs local simulators and is not intended for Colab.
+
+---
+
+## Authorship & status
+
+- **Course / code author:** Xinze Li  
+- **Review article:** Xinze Li, Fanfan Lin, Juan J. Rodríguez-Andina, Sergio Vazquez, Homer Alan Mantooth, Leopoldo García Franquelo, “Fundamentals of Artificial Intelligence for Power Electronics,” *IEEE Transactions on Industrial Electronics*, 2026.
+
+*These learning resources are still under active refinement; notebooks, data, and documentation may change.*
+
+---
+
+## Navigate this README
+
+| Section | Jump to |
+|--------|---------|
+| Support & citation | [Star & cite this work](#support--citation) |
+| Companion tools | [Algorithm selector & ChatGPT](#companion-tools) |
+| Article ↔ repo mapping | [Alignment with the review article](#alignment-with-the-review-article) · [Case studies (Sec. VII)](#case-studies-sec-vii) |
+| What–Which–How framework | [Review article excerpt](#review-article-excerpt) |
+| Education article (PDF) | [Companion education article](#companion-education-article-pilot-course) |
+| Environment setup | [Local & Google Colab](#environment-setup) |
+| Google Colab | [Colab links for all notebooks](#google-colab) |
+| Repository metrics | [Overview](#overview) |
+| Module folders & learning path | [1. Contents and learning path](#1-contents-and-learning-path) |
+| Algorithm & data inventory | [2. Algorithms and data](#2-algorithms-and-data) → [2.1 Algorithms](#21-algorithms) · [2.2 Data](#22-data) |
+
+Structured summary of topics, code volume, data assets, and algorithm coverage across Jupyter notebooks (`.ipynb`).
+
+## Google Colab
+
+Each module README includes **Open in Colab** badges for its notebooks. On Colab, the usual first code cell clones this repository to `/content/Fundamentals_of_AI_for_PE`, runs `pip install -r requirements.txt`, and sets the working directory to the notebook’s folder so paths resolve. **Exception:** [`8_PE_Simulation_Automation`](8_PE_Simulation_Automation/) relies on local simulators (LTspice, PLECS, etc.) and is not intended for Colab.
 
 ## Overview
 
 | Metric | Value |
 |---|---:|
-| Notebook code lines | **11,950** |
+| Code lines (notebook cells) | **11,950** |
 | Jupyter notebooks | **31** |
-| PE dataset families | **7** |
+| PE-oriented dataset families | **7** |
 | Algorithm labels | **25** |
 
-## Reference: algorithms & data
+**Summary:** Teaching-oriented AI-for-power-electronics material.
 
-### Algorithms
+## 1. Contents and algorithm learning path
 
-- **Optimization:** GA, PSO, NSGA-II
-- **Neural:** FNN/MLP, CNN, RNN, GRU, LSTM, Transformer/Attention, MDN, PINN
-- **Classical / ensemble:** Decision Trees, Random Forests, Ridge, SVR, PCA, t-SNE, Isolation Forest, One-Class SVM, XGBoost, GP regression
+Folder numbers follow the review article's sections, not a strict course order. A suggested route is below; click any block to open that module.
 
-<details>
-<summary><strong>Full label list (25)</strong></summary>
+<p align="center">
+  <sub><b>Foundations</b></sub><br/>
+  <a href="0_To_Get_Started/"><img src="https://img.shields.io/badge/0-Setup-2563eb?style=for-the-badge&labelColor=1e293b" alt="0 Setup" /></a>
+  &nbsp;→&nbsp;
+  <a href="2_Classic_ML/"><img src="https://img.shields.io/badge/2-Classic_ML-2563eb?style=for-the-badge&labelColor=1e293b" alt="2 Classic ML" /></a>
+  &nbsp;→&nbsp;
+  <a href="3_Ensemble_Learning/"><img src="https://img.shields.io/badge/3-Ensembles-2563eb?style=for-the-badge&labelColor=1e293b" alt="3 Ensemble Learning" /></a>
+  &nbsp;→&nbsp;
+  <a href="4_Neural_Network/"><img src="https://img.shields.io/badge/4-Neural_nets-2563eb?style=for-the-badge&labelColor=1e293b" alt="4 Neural Network" /></a>
+</p>
+
+<p align="center">↓</p>
+
+<p align="center">
+  <sub><b>Advanced methods</b> (any order)</sub><br/>
+  <a href="1_MHA/"><img src="https://img.shields.io/badge/1-MHA-7c3aed?style=for-the-badge&labelColor=1e293b" alt="1 Metaheuristic algorithms" /></a>
+  &nbsp;
+  <a href="5_PIML/"><img src="https://img.shields.io/badge/5-PIML-7c3aed?style=for-the-badge&labelColor=1e293b" alt="5 Physics-informed ML" /></a>
+  &nbsp;
+  <a href="7_Reinforcement_Learning/"><img src="https://img.shields.io/badge/7-RL-7c3aed?style=for-the-badge&labelColor=1e293b" alt="7 Reinforcement Learning" /></a>
+  &nbsp;
+  <a href="6_Agentic_AI/"><img src="https://img.shields.io/badge/6-Agentic_AI-10a37f?style=for-the-badge&labelColor=1e293b" alt="6 Agentic AI" /></a>
+</p>
+
+<p align="center">↓</p>
+
+<p align="center">
+  <sub><b>Simulation &amp; applications</b></sub><br/>
+  <a href="8_PE_Simulation_Automation/"><img src="https://img.shields.io/badge/8-Simulation-b45309?style=for-the-badge&labelColor=1e293b" alt="8 PE Simulation Automation" /></a>
+  &nbsp;→&nbsp;
+  <a href="9_Case_Studies_PE/"><img src="https://img.shields.io/badge/9-Case_studies-b45309?style=for-the-badge&labelColor=1e293b" alt="9 Case Studies" /></a>
+</p>
+
+| Folder | Notebooks | Code lines | Role |
+|--------|---:|---:|------|
+| [`0_To_Get_Started`](0_To_Get_Started/) | 1 | 306 | Environment setup and package checks |
+| [`1_MHA`](1_MHA/) | 5 | 1,721 | Single- and multi-objective metaheuristic optimization (**Sec. V**) |
+| [`2_Classic_ML`](2_Classic_ML/) | 3 | 559 | Polynomial Ridge (synthetic), classical classification, GP regression & Bayesian optimization (**Sec. III**) |
+| [`3_Ensemble_Learning`](3_Ensemble_Learning/) | 1 | 555 | Tree and ensemble methods (**Sec. III-E**) |
+| [`4_Neural_Network`](4_Neural_Network/) | 5 | 2,283 | NN fundamentals, 3D thermal field regression (`Field_Data/`), signal-domain waveform regression (`Signal_Domain/`), good practices, MDN / hysteresis; [`Graph_NN/`](4_Neural_Network/Graph_NN/) resources (**Sec. II–III**) |
+| [`5_PIML`](5_PIML/) | 3 | 1,000 | Physics-informed modeling (`PINN/`); PANN summary in [`PANN/`](5_PIML/PANN/) (**Sec. IV; VII-E**) |
+| [`6_Agentic_AI`](6_Agentic_AI/) | — | — | Agentic AI and PE-GPT (documentation; no local `.ipynb`) (**Sec. VI**) |
+| [`7_Reinforcement_Learning`](7_Reinforcement_Learning/) | 2 | 846 | Buck regulation tutorials — DQN and DDPG — plus curated RL reading (**Sec. III-D**) |
+| [`8_PE_Simulation_Automation`](8_PE_Simulation_Automation/) | 2 | 245 | LTspice, PLECS, Simulink automation (**Sec. III-A**) |
+| [`9_Case_Studies_PE`](9_Case_Studies_PE/) | 9 | 4,435 | Buck; DAB (performance / waveforms / TinyML — [tracks](9_Case_Studies_PE/DAB_Design/README.md)); IGBT RUL; magnetics (**Sec. VII**) — [overview](9_Case_Studies_PE/README.md) |
+
+## 2. Algorithms and data
+
+### 2.1 Algorithms
+
+Labels used in the inventory fall into three groups:
+
+- **Optimization:** Genetic Algorithm, PSO, NSGA-II  
+- **Neural models:** FNN/MLP, CNN, RNN, GRU, LSTM, Transformer/Attention, MDN, PINN  
+- **Classical / ensemble:** Decision Trees, Random Forests, Ridge, SVR, PCA, TSNE, Isolation Forest, One-Class SVM, XGBoost, Gaussian process regression (sklearn)  
+
+**Full list (25 labels):**
 
 - `CNN (PyTorch)`
 - `FNN/MLP (PyTorch)`
@@ -191,34 +251,49 @@ Companion to *Fundamentals of Artificial Intelligence for Power Electronics* (*I
 - `sklearn:SVR`
 - `sklearn:TSNE`
 
-</details>
+### 2.2 Data
 
-### Data
+**Index of PE-oriented dataset families (D1–D7)**:
 
-**PE datasets (D1–D7)**
+| ID | Family | Modality | Location / source | Primary notebooks |
+|----|--------|----------|-------------------|-------------------|
+| **D1** | Synchronous buck performance | Tabular | [`sync_buck_performances_cleaned.csv`](9_Case_Studies_PE/Buck_Design/sync_buck_performances_cleaned.csv), [`total_100W_12V.csv`](9_Case_Studies_PE/Buck_Design/total_100W_12V.csv) — [README](9_Case_Studies_PE/Buck_Design/README.md) | `buck_modeling_NN.ipynb`, `xgboost_buck_modeling.ipynb`, `buck_comprehensive_case_study.ipynb` |
+| **D2** | DAB modulation / performance table | Tabular | [`DAB_TPS.csv`](9_Case_Studies_PE/DAB_Design/Performance_Modeling_and_Design/DAB_TPS.csv) — [README](9_Case_Studies_PE/DAB_Design/Performance_Modeling_and_Design/README.md) | `one_stop_AI_DAB_modulation.ipynb` |
+| **D3** | DAB adaptive-modulation sweep | Tabular | [`optimization_results.csv`](9_Case_Studies_PE/DAB_Design/Adaptive_Modulation/optimization_results.csv) — [README](9_Case_Studies_PE/DAB_Design/Adaptive_Modulation/README.md) | `TinyML.ipynb` |
+| **D4** | DAB time-domain waveforms | Signal (time series) | [`Waveform/*.csv`](9_Case_Studies_PE/DAB_Design/Time_Domain_Modeling/Waveform/) (100 files) — [README](9_Case_Studies_PE/DAB_Design/Time_Domain_Modeling/README.md) | `time_series_modeling.ipynb`, `rnn_basics.ipynb` |
+| **D5** | IGBT accelerated aging (RUL) | Signal / tabular windows | [`april22nd-23rdIgbtIRCG40BC30kd-A17.mat`](9_Case_Studies_PE/IGBT_Maintenance/april22nd-23rdIgbtIRCG40BC30kd-A17.mat) — [README](9_Case_Studies_PE/IGBT_Maintenance/README.md); [NASA IGBT dataset](https://data.nasa.gov/dataset/insulated-gate-bipolar-transistor-igbt-accelerated-aging) | `rul_prediction.ipynb` |
+| **D6** | Magnetic core-loss (MagNet-style) | Tabular + harmonic features | [`*_downscaled.csv`](9_Case_Studies_PE/Magnetic_Modeling/) (4 files) — [README](9_Case_Studies_PE/Magnetic_Modeling/README.md); [MagNet Challenge](https://www.princeton.edu/~minjie/magnet.html) | `magnet_fnn.ipynb`, `magnet_lstm.ipynb` |
+| **D7** | 3-D thermal field samples | Field (spatial) | [`4_Neural_Network/Field_Data/cap_Tfield/Tfield_*_downsampled.csv`](4_Neural_Network/Field_Data/cap_Tfield/) (70 scenarios; `x,y,z,T`; loss & Tamb in filename) | `field_temperature_residual_fnn.ipynb` |
 
-| ID | Family | Modality | Source | Notebooks |
-|----|--------|----------|--------|-----------|
-| **D1** | Sync. buck performance | Tabular | [`Buck_Design/`](9_Case_Studies_PE/Buck_Design/) | `buck_modeling_NN`, `xgboost_buck_modeling`, `buck_comprehensive_case_study` |
-| **D2** | DAB modulation table | Tabular | [`Performance_Modeling_and_Design/`](9_Case_Studies_PE/DAB_Design/Performance_Modeling_and_Design/) | `one_stop_AI_DAB_modulation` |
-| **D3** | DAB adaptive modulation | Tabular | [`Adaptive_Modulation/`](9_Case_Studies_PE/DAB_Design/Adaptive_Modulation/) | `TinyML` |
-| **D4** | DAB waveforms | Signal | [`Time_Domain_Modeling/Waveform/`](9_Case_Studies_PE/DAB_Design/Time_Domain_Modeling/Waveform/) | `time_series_modeling`, `rnn_basics` |
-| **D5** | IGBT aging (RUL) | Signal / windows | [`IGBT_Maintenance/`](9_Case_Studies_PE/IGBT_Maintenance/); [NASA](https://data.nasa.gov/dataset/insulated-gate-bipolar-transistor-igbt-accelerated-aging) | `rul_prediction` |
-| **D6** | Magnetic core loss | Tabular + harmonics | [`Magnetic_Modeling/`](9_Case_Studies_PE/Magnetic_Modeling/); [MagNet](https://www.princeton.edu/~minjie/magnet.html) | `magnet_fnn`, `magnet_lstm` |
-| **D7** | 3-D thermal field | Field | [`Field_Data/cap_Tfield/`](4_Neural_Network/Field_Data/cap_Tfield/) | `field_temperature_residual_fnn` |
+**Built-in / sklearn datasets (no repo file)**
 
-**Also used:** sklearn built-ins (`iris`, `breast_cancer`, `california_housing`, `make_*`) and in-notebook synthetics (Sphere/Rastrigin/ZDT, analytical buck surfaces, PINN demos, RL rollouts, MDN/hysteresis). Licensing: see [9_Case_Studies_PE](9_Case_Studies_PE/README.md) and per-track READMEs.
+| Dataset | Modality | Notebooks (examples) |
+|---------|----------|----------------------|
+| `sklearn.datasets.load_iris` | Tabular | `package_install.ipynb` |
+| `sklearn.datasets.load_breast_cancer` | Tabular | `classic_ML.ipynb`, `NN_basics.ipynb` |
+| `sklearn.datasets.fetch_california_housing` | Tabular | `NN_basics.ipynb`, `good_practice_NN.ipynb`, `gaussian_process_bayesian_optimization.ipynb` |
+| `sklearn.datasets.make_regression`, `make_classification`, `make_moons`, etc. | Synthetic tabular | `package_install.ipynb`, `ensemle_learning.ipynb`, `mixture_density_net_ensemble_learning.ipynb`, … |
 
-## Authorship & status
+**Synthetic / generated in-notebook (no external file)**
 
-- **Code / course:** Xinze Li
-- **Review article:** Xinze Li, Fanfan Lin, Juan J. Rodríguez-Andina, Sergio Vazquez, Homer Alan Mantooth, Leopoldo García Franquelo (*IEEE TIE*, 2026)—cite as above.
+| Use | Modality | Notebooks (examples) |
+|-----|----------|----------------------|
+| Optimization benchmarks (Sphere, Rastrigin, ZDT-1, …) | Scalar objectives | `1_MHA/**/*.ipynb` |
+| Analytical buck / PE-style surfaces | Tabular design space | `buck_design_PSO.ipynb`, `buck_comprehensive_case_study.ipynb` |
+| PINN teaching curves (ODE cooling, Burgers PDE) | Field / time | `5_PIML/PINN/*.ipynb` |
+| Sequence / control rollouts | Signal / state trajectories | `rnn_basics.ipynb`, `7_Reinforcement_Learning/*.ipynb` |
+| Hysteresis loops, MDN demos | Synthetic nonlinear | `mixture_density_net_ensemble_learning.ipynb` |
 
-*Materials are under active refinement.*
+External dataset licensing and citations: [9_Case_Studies_PE](9_Case_Studies_PE/README.md) — per-track READMEs under `Buck_Design/`, `DAB_Design/` ([performance](9_Case_Studies_PE/DAB_Design/Performance_Modeling_and_Design/README.md), [time-domain](9_Case_Studies_PE/DAB_Design/Time_Domain_Modeling/README.md), [TinyML](9_Case_Studies_PE/DAB_Design/Adaptive_Modulation/README.md)), `IGBT_Maintenance/`, and `Magnetic_Modeling/`.
 
 ## License
 
-- **Code:** Apache 2.0
-- **Educational content** (text, figures, explanations): CC BY-NC 4.0
+This repository uses a dual-license structure:
 
-Please cite the TIE paper when using the code. Educational use only; commercial use needs permission. See `LICENSE` and `NOTICE`.
+- **Code**: Apache License 2.0  
+- **Educational Content (text, figures, explanations)**: CC BY-NC 4.0  
+
+- Users of any code from this repository are requested to cite the associated TIE paper.
+- The code and related materials are provided for educational use only and cannot be used for commercial purposes without permission.
+
+See the `LICENSE` and `NOTICE` files for details.
