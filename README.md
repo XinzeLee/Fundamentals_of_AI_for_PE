@@ -5,17 +5,17 @@
 <!-- traffic:start -->
 <p align="center">
   <a href="https://github.com/XinzeLee/Fundamentals_of_AI_for_PE/graphs/traffic">
-    <img src="https://img.shields.io/badge/Total_Views-2,567-2563eb?style=flat-square" alt="Total repository views: 2,567" />
+    <img src="https://img.shields.io/badge/Total_Views-2,752-2563eb?style=flat-square" alt="Total repository views: 2,752" />
   </a>
   <a href="https://github.com/XinzeLee/Fundamentals_of_AI_for_PE/graphs/traffic">
-    <img src="https://img.shields.io/badge/Total_Clones-857-7c3aed?style=flat-square" alt="Total repository clones: 857" />
+    <img src="https://img.shields.io/badge/Total_Clones-884-7c3aed?style=flat-square" alt="Total repository clones: 884" />
   </a>
   <a href="https://github.com/XinzeLee/Fundamentals_of_AI_for_PE/graphs/traffic">
-    <img src="https://img.shields.io/badge/Unique_Clones-494-b45309?style=flat-square" alt="Unique repository clones: 494" />
+    <img src="https://img.shields.io/badge/Unique_Clones-513-b45309?style=flat-square" alt="Unique repository clones: 513" />
   </a>
 </p>
 
-<p align="center"><sub>Github traffic (monitoring started on May, 23, 2026) · cumulative tracked totals · Till 2026-10-05 UTC</sub></p>
+<p align="center"><sub>Github traffic (monitoring started on May, 23, 2026) · cumulative tracked totals · Till 2026-10-12 UTC</sub></p>
 <!-- traffic:end -->
 
 ## Support & citation
